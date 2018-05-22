@@ -36,7 +36,7 @@ let items = {
         "name": "Crowbar",
         "description": "On hit: Deal +50% damage to enemies above 80% health.",
         "stack": "+30% damage.",
-        "unlock": "",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -44,6 +44,7 @@ let items = {
         "name": "Fire Shield",
         "description": "After being hit for 10% of your maximum health in one hit: explode, dealing 200% damage",
         "stack": "Increases explosion damage.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -51,7 +52,7 @@ let items = {
         "name": "Gasoline",
         "description": "On kill: Killing enemies burns the ground for 60% damage for 2 seconds.",
         "stack": "+40% damage.",
-        "unlock": "",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -68,6 +69,7 @@ let items = {
         "description": "10% chance to evade attacks.",
         "stack": "Increases dodge chance +5%, up to a maximum of 35% at 6 stacks.",
         "unlock": "Huntress: Achieve 200% attack speed.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -89,6 +91,7 @@ let items = {
         "name": "Meat Nugget",
         "description": "On hit: 8% chance to drop 2 meat nuggets that heals for 2x6 health.",
         "stack": "+6 health per meat nugget.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -96,6 +99,7 @@ let items = {
         "name": "Medkit",
         "description": "Heal for 10 health after 1.1 seconds of getting hit.",
         "stack": "Each additional Medkit increases the heal by 10.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -119,6 +123,7 @@ let items = {
         "name": "Mysterious Vial",
         "description": "Increase health regeneration by 1.2 per second",
         "stack": "+1.2 health per second.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -127,6 +132,7 @@ let items = {
         "description": "+20% movement speed.",
         "stack": "Further increases movement speed by 20%",
         "unlock": "Fail a shrine 3 times in a row.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -143,6 +149,7 @@ let items = {
         "description": "Failing a shrine increases crit chance by 5%.",
         "stack": "Further increases crit chance by 3% for each shrine fail.",
         "unlock": "Pass a shrine 4 times in a row.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -167,6 +174,7 @@ let items = {
         "name": "Sprouting Egg",
         "description": "After not being hit for 7 seconds, increase health regen by 2.4 health per second.",
         "stack": "+2.4 heath per second out of combat.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -236,6 +244,7 @@ let items = {
         "description": "Killing an enemy generates a lightning ring, dealing 100% damage/sec for 6 seconds.",
         "stack": "+10% damage/sec.",
         "unlock": "Mercenary: Eviscerate 50 enemies.",
+        "usage": true,
         "itemClass": "green"
     },
 
@@ -244,6 +253,7 @@ let items = {
         "description": "On hit: 6% chance to stun enemies for two seconds.",
         "stack": "+6% increased stun chance, stacks multiplicatively.",
         "unlock": "Engineer: Kill a Boss in 15 seconds or less.",
+        "usage": true,
         "itemClass": "green"
     },
 
@@ -274,6 +284,7 @@ let items = {
         "name": "Frost Relic",
         "description": "On kill: Killing an enemy surrounds you with 3 icicles that deal 3x33% damage.",
         "stack": "+1 additional icicle.",
+        "usage": true,
         "itemClass": "green"
     },
 
@@ -312,6 +323,7 @@ let items = {
         "name": "Infusion",
         "description": "On kill: Killing an enemy increases your health permanently by 1.",
         "stack": "+0.5 health on kill.",
+        "usage": true,
         "itemClass": "green"
     },
 
@@ -319,6 +331,7 @@ let items = {
         "name": "Leeching Seed",
         "description": "On hit: Dealing damage heals you for 2 health.",
         "stack": "+1 health on hit.",
+        "usage": true,
         "itemClass": "green"
     },
 
@@ -349,6 +362,7 @@ let items = {
         "name": "Red Whip",
         "description": "Leaving combat for 1.5 seconds boosts your movement speed by 80%.",
         "stack": "Increases speed bonus slightly.",
+        "usage": true,
         "itemClass": "green"
     },
 
@@ -386,6 +400,7 @@ let items = {
         "description": "Infect enemies, dealing 50% damage/sec. Bounces to other enemies on death.",
         "stack": "Allows infection on multiple targets.",
         "unlock": "	Acrid: Spread 10,000 feet of \"Caustic Sludge\".",
+        "usage": true,
         "itemClass": "green"
     },
 
@@ -663,6 +678,7 @@ let items = {
         "cooldown": 135,
         "embryo": "Calls down an additional chest.",
         "unlock": "Unlock a Golden Chest with the Skeleton Key.",
+        "usage": true,
         "itemClass": "orange"
     },
 
@@ -688,6 +704,7 @@ let items = {
         "description": "Fire a swarm of 12 missiles.",
         "cooldown": 45,
         "embryo": "Doubles the amount of missiles to 24.",
+        "usage": true,
         "itemClass": "orange"
     },
 
@@ -731,6 +748,7 @@ let items = {
         "cooldown": 70,
         "embryo": "# of meteors, and doubled active duration.",
         "unlock": "Deal 5000 damage in one shot.",
+        "usage": true,
         "itemClass": "orange"
     },
 
@@ -747,6 +765,7 @@ let items = {
         "description": "Drop 6 mines at your feet, each dealing 400% damage.",
         "cooldown": 45,
         "embryo": "Drop 6 additional mines.",
+        "usage": true,
         "itemClass": "orange"
     },
 
@@ -842,6 +861,7 @@ let items = {
         "description": "Open all the chests in view.",
         "cooldown": 90,
         "embryo": "Increases range of the chest opening, causing it to go offscreen.",
+        "usage": true,
         "itemClass": "orange"
     },
 
