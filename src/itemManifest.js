@@ -3,6 +3,7 @@ let items = {
         "name": "Barbed Wire",
         "description": "Touching enemies deals 50% damage/sec.",
         "stack": "+20% larger radius. Decreasing increase in damage per stack start at +17% damage/sec",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -19,6 +20,7 @@ let items = {
         "name": "Bundle of Fireworks",
         "description": "Fire 8 fireworks that deal 300% damage.",
         "stack": "+2 Fireworks per stack, fireworks do more damage.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -132,6 +134,7 @@ let items = {
         "name": "Rusty Knife",
         "description": "On hit: 15% chance to bleed an enemy for 4x35% damage.",
         "stack": "15% extra chance to bleed (Non linear stacking), does not stack damage.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -156,6 +159,7 @@ let items = {
         "description": "When hit, drops spikestrips (lasts for 2 seconds) that slow enemies by 20%",
         "stack": "Increases the duration of spikestrips by 1 second per stack.",
         "unlock": "Enforcer: Block 2000 damage total with your shield.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -171,6 +175,7 @@ let items = {
         "description": "On hit: 8% chance to attach a bomb to an enemy, detonating for 140% damage.",
         "stack": "+40% damage.",
         "unlock": "Engineer: Detonate 15 \"Bounding Mines\" within 5 seconds.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -179,6 +184,7 @@ let items = {
         "description": "7% chance to snare enemies for 1.5 seconds.",
         "stack": "	Increases snare duration by 0.5 seconds.",
         "unlock": "Loader: Travel for 20,000 feet using the Hydraulic Gauntlet.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -186,6 +192,7 @@ let items = {
         "name": "Warbanner",
         "description": "On level up drop a banner. Raise attack/move speed by 30% and damage by 4.",
         "stack": "Increases area of effect from banners.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -349,6 +356,7 @@ let items = {
         "name": "Rusty Jetpack",
         "description": "Decrease gravity by 50% and increase jump height by 10%.",
         "stack": "+10% jump height.",
+        "usage": true,
         "itemClass": "green"
     },
 
