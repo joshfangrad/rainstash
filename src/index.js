@@ -1,5 +1,6 @@
 window.onload = () => {
     loadIcons();
+    document.getElementsByClassName('search')[0].oninput = (e) => { searchFilter(e) }
 }
 
 let loadIcons = () => {
@@ -9,6 +10,7 @@ let loadIcons = () => {
         let itemImg = document.createElement('img');
         itemImg.classList.add('item');
         itemImg.src = `static/itemIcons/item_${item}.png`;
+        itemImg.id = item;
         targetCategory.appendChild(itemImg);
 
         itemImg.onmouseenter = () => {
@@ -72,4 +74,19 @@ let wipeInfo = () => {
     let panel = document.getElementsByClassName('infoPanel')[0];
     panel.classList.remove('fadeIn');
     panel.classList.add('fadeOut');
+}
+
+let searchFilter = (e) => {
+    let text = e.srcElement.value;
+    let itemList = document.getElementsByClassName('item');
+    let filter = new RegExp(`(${text})`);
+    for (let item in items) {
+        let name = items[item].name.toLowerCase();
+        let desc = items[item].description.toLowerCase();
+        if (name.match(filter) !== null || desc.match(filter) !== null) {
+            document.getElementById(item).classList.remove('faded');
+        } else {
+            document.getElementById(item).classList.add('faded');
+        }
+    }
 }
