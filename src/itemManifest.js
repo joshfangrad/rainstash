@@ -11,6 +11,7 @@ let items = {
         "description": "Gain 8% max hp.",
         "stack": "Further gain 8% max hp, up to 38 stacks (300% extra HP).",
         "unlock": "Reach 650 health.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -25,6 +26,7 @@ let items = {
         "name": "Bustling Fungus",
         "description": "After 2 seconds, heal for 4.5% of your health every second.",
         "stack": "4.5% More Healing.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -55,6 +57,7 @@ let items = {
         "name": "Headstompers",
         "description": "Hurt enemies by falling for up to 507% damage.",
         "stack": "Increases max damage.",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -98,14 +101,15 @@ let items = {
         "name": "Monster Tooth",
         "description": "On kill: Killing an enemy heals you for 10 health.",
         "stack": "+5 more health after kill.",
+        "usage": true,
         "itemClass": "white"
     },
 
     "Mortar_Tube": {
-        "name": "Mortal Tube",
+        "name": "Mortar Tube",
         "description": "On hit: 9% chance to fire a mortar for 170% damage",
         "stack": "+170% damage.",
-        "unlock": "",
+        "usage": true,
         "itemClass": "white"
     },
 
@@ -293,6 +297,7 @@ let items = {
         "name": "Hopoo Feather",
         "description": "Gain another jump.",
         "stack": "Adds an additional jump",
+        "usage": true,
         "itemClass": "green"
     },
 
@@ -380,6 +385,7 @@ let items = {
         "name": "Ukulele",
         "description": "On hit: 20% chance to fire chain lighting for 4x33% damage.",
         "stack": "+33% damage per bounce.",
+        "usage": true,
         "itemClass": "green"
     },
 
@@ -794,6 +800,7 @@ let items = {
         "description": "Drop a lantern for 10 seconds. Fears and damages enemies for 20% damage.",
         "cooldown": 45,
         "embryo": "Doubles duration to 20 seconds.",
+        "usage": true,
         "itemClass": "orange"
     },
 
@@ -845,6 +852,7 @@ let items = {
         "cooldown": 45,
         "embryo": "+2 Drones.",
         "unlock": "Have 4 drone helpers at once.",
+        "usage": true,
         "itemClass": "orange"
     },
 

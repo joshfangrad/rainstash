@@ -40,11 +40,11 @@ let setInfo = (item, itemName) => {
     
     let unlock = document.getElementsByClassName('infoUnlock')[0];
     let unlockTitle = document.getElementById('infoUnlockTitle');
-
+    
     title.innerHTML = item.name;
     image.src = `static/itemIcons/item_${itemName}.png`;
     desc.innerHTML = item.description;
-    
+    // hide/show/change headings based on content
     if ("cooldown" in item) {
         cooldownTitle.classList.remove('hidden');
         cooldown.innerHTML = `${item.cooldown} seconds`;
@@ -52,7 +52,7 @@ let setInfo = (item, itemName) => {
         cooldownTitle.classList.add('hidden');
         cooldown.innerHTML = '';
     }
-
+    
     if ("stack" in item) {
         stackTitle.innerHTML = 'Stacking Effect:';
         stack.innerHTML = item.stack;
@@ -68,6 +68,19 @@ let setInfo = (item, itemName) => {
         unlockTitle.classList.add('hidden');
         unlock.innerHTML = '';
     }
+    //change the usage video if the item has one
+    let video = document.getElementById('video');
+    video.innerHTML = '';
+    if ("usage" in item && item.usage === true) {
+        video.classList.remove('hidden');
+        let source = document.createElement('source');
+        source.setAttribute('src', `static/usageMP4s/usage_${itemName}.mp4`);
+        video.appendChild(source);
+        video.load();
+    } else {
+        video.classList.add('hidden');
+    }
+
 }
 
 let wipeInfo = () => {
