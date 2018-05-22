@@ -1,0 +1,9 @@
+{
+  "name": "rainstash",
+  "version": "1.0.0",
+  "description": "A convenient list of all the items and their effects from the game Risk of Rain.",
+  "main": "index.js",
+  "repository": "https://github.com/Fustran/rainstash.git",
+  "author": "Josh Fangrad",
+  "license": "MIT"
+}
