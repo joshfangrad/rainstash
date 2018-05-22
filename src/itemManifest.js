@@ -14,7 +14,7 @@ let items = {
         "itemClass": "white"
     },
 
-    "Bundle_Of_Fireworks": {
+    "Bundle_of_Fireworks": {
         "name": "Bundle of Fireworks",
         "description": "Fire 8 fireworks that deal 300% damage.",
         "stack": "+2 Fireworks per stack, fireworks do more damage.",
@@ -432,7 +432,7 @@ let items = {
         "itemClass": "red"
     },
 
-    "Dios_Best_friend": {
+    "Dios_Best_Friend": {
         "name": "Dio's Best friend",
         "description": "Taking fatal damage revives you to 40% health. Invincible for 2 seconds.",
         "stack": "Can not be stacked for multiple revives, but if the revive effect has been used picking up another will reset it.",

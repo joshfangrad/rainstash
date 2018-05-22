@@ -3,7 +3,6 @@ window.onload = () => {
 }
 
 let loadIcons = () => {
-    let white = document.getElementsByClassName('white')[0];
     for (let item in items) {
         let itemClass = items[item].itemClass;
         let targetCategory = document.getElementsByClassName(itemClass)[0];
@@ -23,6 +22,10 @@ let loadIcons = () => {
 }
 
 let setInfo = (item, itemName) => {
+    let panel = document.getElementsByClassName('infoPanel')[0];
+    panel.classList.remove('fadeOut');
+    panel.classList.add('fadeIn');
+
     let title = document.getElementsByClassName('infoTitle')[0];
     let image = document.getElementsByClassName('infoImage')[0];
     let desc = document.getElementsByClassName('infoDesc')[0];
@@ -42,7 +45,7 @@ let setInfo = (item, itemName) => {
     
     if ("cooldown" in item) {
         cooldownTitle.classList.remove('hidden');
-        cooldown.innerHTML = item.cooldown;
+        cooldown.innerHTML = `${item.cooldown} seconds`;
     } else {
         cooldownTitle.classList.add('hidden');
         cooldown.innerHTML = '';
@@ -66,9 +69,7 @@ let setInfo = (item, itemName) => {
 }
 
 let wipeInfo = () => {
-    //let title = document.getElementsByClassName('infoTitle')[0];
-    //let image = document.getElementsByClassName('infoImage')[0];
-    //let desc = document.getElementsByClassName('infoDesc')[0];
-    //let stack = document.getElementsByClassName('infoStack')[0];
-
+    let panel = document.getElementsByClassName('infoPanel')[0];
+    panel.classList.remove('fadeIn');
+    panel.classList.add('fadeOut');
 }
