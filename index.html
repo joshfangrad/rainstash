@@ -3,10 +3,12 @@
     <head>
         <link rel='stylesheet' href='styles/scroll.css'/>
         <link rel='stylesheet' href='styles/style.css'/>
-        <link rel="icon" href="static/favicon.ico" type="image/x-icon"/>
+        <link rel='icon' href='static/favicon.ico' type='image/x-icon'/>
+        <title>RAINSTASH</title>
+        <meta name='description' content='A convenient list of all the items and their effects from the game Risk of Rain.'>
+        <meta name='keywords' content='Risk of Rain, items, item, wiki, risk, of, rain, guide, risk of rain items'>
         <script type='text/javascript' src='src/itemManifest.js'></script>
         <script type='text/javascript' src='src/index.js'></script>
-        <title>RAINSTASH</title>
     </head>
     <body>
         <div class='mainFlex'>
@@ -15,20 +17,22 @@
                     <img src='static/Golden_Chest.png' class='icon'></img>
                     <div class='titleText'>Rainstash</div>
                 </div>
-                <input type="text" class='search' placeholder="Search...">
+                <input type='text' class='search' id='search' placeholder='Search...'>
             </div>
             <div class='contentContainer'>
                 <div class='infoPanel'>
                     <div class='infoTitle'></div>
                     <img class='infoImage'></img>
-                    <p class='gray'>Description:</p>
-                    <div class='infoDesc'></div>
-                    <p id='infoCooldownTitle' class='gray'>Cooldown:</p>
-                    <div class='infoCooldown'></div>
-                    <p id='infoStackTitle' class='gray'>Stacking effect:</p>
-                    <div class='infoStack'></div>
-                    <p id='infoUnlockTitle' class='gray'>Unlock:</p>
-                    <div class='infoUnlock'></div>
+                    <div class='subInfoPanel'>
+                        <p class='gray'>Description:</p>
+                        <div class='infoDesc'></div>
+                        <p id='infoCooldownTitle' class='gray'>Cooldown:</p>
+                        <div class='infoCooldown'></div>
+                        <p id='infoStackTitle' class='gray'>Stacking effect:</p>
+                        <div class='infoStack'></div>
+                        <p id='infoUnlockTitle' class='gray'>Unlock:</p>
+                        <div class='infoUnlock'></div>
+                    </div>
                     <video id='video' class='infoVideo' autoplay loop></video>
                 </div>
                 <div class='itemPanel'>

@@ -45,12 +45,13 @@ html, body {
 
 .search {
     width: 20%;
-    height: 45px;
+    height: 20%;
     background-color: #252525;
     font-family: rainFont;
     color: white;
     font-size: 100%;
     border-width: 0px;
+    padding: 15px;
 }
 
 .contentContainer {
@@ -64,6 +65,7 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    overflow-x: hidden; 
 }
 
 .category {
@@ -71,7 +73,6 @@ html, body {
     margin-bottom: 0px;
     padding: 5px;
     min-height: min-content;
-    overflow: hidden;
     border-color: black;
     border-style: solid;
     border-width: 5px;
@@ -82,30 +83,40 @@ html, body {
 }
 
 .item {
-    -webkit-filter: drop-shadow(0px 0px 10px #00000070 );
     filter: drop-shadow(0px 0px 10px #00000070);
     width: 80px;
     height: 80px;
     margin: 5px;
     padding: 5px;
-    transition: all 150ms ease-in;
-    transform: scale(1);
+    transition: all 120ms ease-in;
+    user-select: none;
+    
 }
 
 .item:hover {
-    -webkit-filter: drop-shadow(0px 0px 20px #00000070 );
     filter: drop-shadow(0px 0px 20px #0000002a);
-    transition: all 150ms ease-in;
     transform: scale(1.5);
 }
 
 .infoPanel {
     width: 30%;
+    height: 100%;
     background-color: #252525;
+    display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 14.5px;
+}
+
+.subInfoPanel {
+    width: 100%;
+    margin: 10px;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
+    flex-grow: 2;
+    align-items: center;
+    overflow-x: hidden;
 }
 
 .infoTitle {
@@ -115,30 +126,42 @@ html, body {
 }
 
 .infoImage {
-    -webkit-filter: drop-shadow(0px 0px 20px #00000070);
     filter: drop-shadow(0px 0px 20px #00000070);
-    width: 200px;
-    height: 200px;
+    width: 30%;
 }
 
 .infoDesc {
+    width: 100%;
     padding: 5px;
 }
 
 .infoCooldown {
+    width: 100%;
     padding: 5px;
 }
 
 .infoStack {
+    width: 100%;
     padding: 5px;
 }
 
 .infoUnlock {
+    width: 100%;
     padding: 5px;
 }
 
 .infoVideo {
-    
+    padding: 15px;
+}
+
+.select {
+    filter: drop-shadow(0px 0px 15px #ffffff70);
+    transform: scale(1.5);
+    animation: selectPulse 0.4s;
+}
+
+.select:hover {
+    filter: drop-shadow(0px 0px 15px #ffffff70);
 }
 
 .gray {
@@ -197,4 +220,12 @@ html, body {
 @keyframes fadeInAnim {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes selectPulse {
+    0% { transform: scale(1.5) }
+    25% { transform: scale(1.4) }
+    50% { transform: scale(1.8) }
+    75% { transform: scale(1.4) }
+    100% { transform: scale(1.5) }
 }

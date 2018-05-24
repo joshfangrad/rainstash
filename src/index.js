@@ -1,6 +1,8 @@
+let selectedItem;
+
 window.onload = () => {
     loadIcons();
-    document.getElementsByClassName('search')[0].oninput = (e) => { searchFilter(e) }
+    document.getElementById('search').oninput = () => { searchFilter(); }
 }
 
 let loadIcons = () => {
@@ -14,16 +16,49 @@ let loadIcons = () => {
         targetCategory.appendChild(itemImg);
 
         itemImg.onmouseenter = () => {
-            setInfo(items[item], item);
+            setInfo(item);
         }
 
-        itemImg.onmouseleave = () => {
-            wipeInfo();
+        itemImg.onmouseleave = (e) => {
+            hideInfo(e);
         }
+        
+        itemImg.ondragstart = (e) => {
+            changeSelected(e);
+            //return false to prevent dragging 'ghost' effect
+            return false;
+        }
+
+        itemImg.onclick = (e) => {
+            changeSelected(e);
+        }
+
     }
 }
 
-let setInfo = (item, itemName) => {
+//called by click event, changes what the currently selected item is
+let changeSelected = (e) => {
+    let itemName = e.srcElement.id;
+    let item = items[itemName];
+    //mobile compatibility in here later
+    if (selectedItem != itemName) {
+        let oldSelect = document.getElementById(selectedItem);
+        if (oldSelect != null) { 
+            oldSelect.classList.remove('select');
+        }
+        selectedItem = itemName;
+        e.srcElement.classList.add('select');
+    } else {
+        document.getElementById(selectedItem).classList.remove('select');
+        selectedItem = null;
+    }
+    //re-run search filter to re-hide / unhide selected items
+    searchFilter();
+}
+
+//sets the details on the info panel to the argument's info.
+let setInfo = (itemName) => {
+    let item = items[itemName];
     let panel = document.getElementsByClassName('infoPanel')[0];
     panel.classList.remove('fadeOut');
     panel.classList.add('fadeIn');
@@ -40,7 +75,6 @@ let setInfo = (item, itemName) => {
     
     let unlock = document.getElementsByClassName('infoUnlock')[0];
     let unlockTitle = document.getElementById('infoUnlockTitle');
-    
     title.innerHTML = item.name;
     image.src = `static/itemIcons/item_${itemName}.png`;
     desc.innerHTML = item.description;
@@ -83,20 +117,25 @@ let setInfo = (item, itemName) => {
 
 }
 
-let wipeInfo = () => {
-    let panel = document.getElementsByClassName('infoPanel')[0];
-    panel.classList.remove('fadeIn');
-    panel.classList.add('fadeOut');
+//hides the info panel.
+let hideInfo = (e) => {
+    if (selectedItem == null) {
+        let panel = document.getElementsByClassName('infoPanel')[0];
+        panel.classList.remove('fadeIn');
+        panel.classList.add('fadeOut');
+    } else if (e.fromElement.id != selectedItem) {
+        setInfo(selectedItem);
+    }
 }
 
-let searchFilter = (e) => {
-    let text = e.srcElement.value;
+//dims items based on the current text in the search bar.
+let searchFilter = () => {
+    let text = document.getElementById('search').value;
     let itemList = document.getElementsByClassName('item');
-    let filter = new RegExp(`(${text})`);
+    let filter = new RegExp(`${text}`, 'i');
     for (let item in items) {
-        let name = items[item].name.toLowerCase();
         let desc = items[item].description.toLowerCase();
-        if (name.match(filter) !== null || desc.match(filter) !== null) {
+        if (item.match(filter) !== null || desc.match(filter) !== null || item == selectedItem) {
             document.getElementById(item).classList.remove('faded');
         } else {
             document.getElementById(item).classList.add('faded');

@@ -165,7 +165,7 @@ let items = {
         "name": "Spikestrip",
         "description": "When hit, drops spikestrips (lasts for 2 seconds) that slow enemies by 20%",
         "stack": "Increases the duration of spikestrips by 1 second per stack.",
-        "unlock": "Enforcer: Block 2000 damage total with your shield.",
+        "unlock": "Enforcer: Block 2000 damage total with your shield.AAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
         "usage": true,
         "itemClass": "white"
     },
@@ -449,8 +449,9 @@ let items = {
 
     "Brilliant_Behemoth": {
         "name": "Brilliant Behemoth",
-        "description": "All your attacks explode for a bonus 20% damage to nearby enemies",
+        "description": "All your attacks explode for a bonus 20% damage to nearby enemies.",
         "stack": "+20% damage.",
+        "usage": true,
         "itemClass": "red"
     },
 
