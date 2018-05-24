@@ -165,7 +165,7 @@ let items = {
         "name": "Spikestrip",
         "description": "When hit, drops spikestrips (lasts for 2 seconds) that slow enemies by 20%",
         "stack": "Increases the duration of spikestrips by 1 second per stack.",
-        "unlock": "Enforcer: Block 2000 damage total with your shield.AAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "unlock": "Enforcer: Block 2000 damage total with your shield.",
         "usage": true,
         "itemClass": "white"
     },
