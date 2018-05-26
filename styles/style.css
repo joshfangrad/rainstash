@@ -37,12 +37,6 @@ html, body {
     display: flex;
 }
 
-.titleText {
-    font-family: rainFontBold;
-    font-stretch: expanded;
-    font-size: 200%;
-}
-
 .search {
     width: 20%;
     height: 20%;
@@ -119,7 +113,7 @@ html, body {
     overflow-x: hidden;
 }
 
-.infoTitle {
+.infoname {
     font-family: rainFontBold;
     font-size: 32px;
     color: white;
@@ -130,22 +124,27 @@ html, body {
     width: 30%;
 }
 
-.infoDesc {
+.infodescription {
     width: 100%;
     padding: 5px;
 }
 
-.infoCooldown {
+.infocooldown {
     width: 100%;
     padding: 5px;
 }
 
-.infoStack {
+.infostack {
     width: 100%;
     padding: 5px;
 }
 
-.infoUnlock {
+.infoembryo {
+    width: 100%;
+    padding: 5px;
+}
+
+.infounlock {
     width: 100%;
     padding: 5px;
 }

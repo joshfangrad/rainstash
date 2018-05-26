@@ -919,6 +919,7 @@ let items = {
         "description": "Opens locked doors on the UES Contact Light (Final Level).",
         "stack": "Each key unlocks one door. (Maximum of four keys)",
         "unlock": "	Dropped by enemies and golden containers on the UES Contact Light (Final Level).",
+        "usage": true,
         "itemClass": "purple"
     }
 }
