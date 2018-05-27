@@ -3,6 +3,9 @@ let selectedItem;
 window.onload = () => {
     loadIcons();
     document.getElementById('search').oninput = () => { searchFilter(); }
+    document.getElementById('clear').onclick = () => { clearSearch(); }
+    document.getElementById('gear').onclick = () => { openOptions(); }
+    document.getElementById('closeOptions').onclick = () => { closeOptions(); }
 }
 
 let loadIcons = () => {
@@ -32,7 +35,6 @@ let loadIcons = () => {
         itemImg.onclick = (e) => {
             changeSelected(e);
         }
-
     }
 }
 
@@ -131,11 +133,35 @@ let searchFilter = () => {
     let filter = new RegExp(`${text}`, 'i');
     for (let item in items) {
         let name = items[item].name;
-        let desc = items[item].description.toLowerCase();
+        let desc = items[item].description;
         if (name.match(filter) !== null || desc.match(filter) !== null || item == selectedItem) {
             document.getElementById(item).classList.remove('faded');
         } else {
             document.getElementById(item).classList.add('faded');
         }
     }
+
+    //toggle the clear button based on whether there's text in the search bar or not
+    let clear = document.getElementById('clear');
+    text.length > 0 ? clear.classList.add('unhideClear') : clear.classList.remove('unhideClear');
+}
+
+//clears the searchbar.
+let clearSearch = () => {
+    document.getElementById('search').value = '';
+    searchFilter();
+}
+
+//opens the options panel.
+let openOptions = () => {
+    document.getElementById('dim').classList.add('unhideDim');
+}
+
+let closeOptions = () => {
+    document.getElementById('dim').classList.remove('unhideDim');
+}
+
+let newTabLink = (href) => {
+    let newWindow = window.open(href, '_blank');
+    newWindow.focus();
 }

@@ -14,15 +14,19 @@
         <div class='mainFlex'>
             <div class='titleBar'>
                 <div class='titleWrap'>
-                    <img src='static/Golden_Chest.png' class='icon'></img>
+                    <img src='static/Golden_Chest.png' class='icon'/>
                     <div class='titleText'>Rainstash</div>
                 </div>
-                <input type='text' class='search' id='search' placeholder='Search...'>
+                <div class='titleWrap'>
+                    <input type='text' class='search' id='search' placeholder='Search...'/>
+                    <img id='clear' class='clearButton' src='static/close3.png'/>
+                    <img id='gear' class='gearButton' src='static/gear2.png'/>
+                </div>
             </div>
             <div class='contentContainer'>
                 <div class='infoPanel fadeOut'>
                     <div class='infoname'></div>
-                    <img class='infoImage'></img>
+                    <img class='infoImage'/>
                     <div class='subInfoPanel'>
                         <p class='gray'>Description:</p>
                         <div class='infodescription'></div>
@@ -43,6 +47,17 @@
                     <div class='category orange'></div>
                     <div class='category purple'></div>
                 </div>
+            </div>
+        </div>
+        <div id='dim' class='pageDim'>
+            <div id='options' class='optionsPanel'>
+                <img id='closeOptions' class='closeOptions' src='static/close3.png'/>
+                <div class='dividerLine'></div>
+                <p class='gray'>At the time of writing, not all items have videos. I'll finish them all eventually, promise!</p>
+                <div class='dividerLine'></div>
+                <div onclick='newTabLink("https://github.com/Fustran/rainstash")' class='titleText red link'>rainstash repository</div>
+                <div class='dividerLine'></div>
+                <p class='gray'>more stuff here soon :)</p>
             </div>
         </div>
     </body>

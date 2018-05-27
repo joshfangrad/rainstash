@@ -2,7 +2,7 @@ let items = {
     "Barbed_Wire": {
         "name": "Barbed Wire",
         "description": "Touching enemies deals 50% damage/sec.",
-        "stack": "+20% larger radius. Decreasing increase in damage per stack start at +17% damage/sec",
+        "stack": "+20% larger radius, +17% damage/sec. Deminishing returns on damage/sec increase.",
         "usage": true,
         "itemClass": "white"
     },
@@ -556,7 +556,6 @@ let items = {
         "name": "Repulsion Armor",
         "description": "After 6 hits reduce and reflect incoming damage by 83% for 3 seconds.",
         "stack": "Increases length of reflection by 1 second to a cap of 8 seconds.",
-        "unlock": "",
         "itemClass": "red"
     },
 
@@ -730,7 +729,6 @@ let items = {
         "description": "Heal yourself for 50% of your health.",
         "cooldown": 45,
         "embryo": "Recover all of your health.",
-        "unlock": "",
         "itemClass": "orange"
     },
 
@@ -819,7 +817,6 @@ let items = {
         "description": "Throw a brain that bounces in place, damaging/slowing enemies for 6x200%.",
         "cooldown": 45,
         "embryo": "Throw an additional brain.",
-        "unlock": "",
         "itemClass": "orange"
     },
 
@@ -871,7 +868,6 @@ let items = {
         "description": "Summon a snowstorm that freezes monsters at a 30% chance over 7 seconds.",
         "cooldown": 45,
         "embryo": "Doubles the duration of the snowstorm.",
-        "unlock": "",
         "itemClass": "orange"
     },
 
