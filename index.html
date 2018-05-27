@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
     <head>
         <link rel='stylesheet' href='styles/scroll.css'/>
         <link rel='stylesheet' href='styles/style.css'/>
         <link rel='icon' href='static/favicon.ico' type='image/x-icon'/>
         <title>RAINSTASH</title>
-        <meta name='description' content='A convenient list of all the items and their effects from the game Risk of Rain.'>
-        <meta name='keywords' content='Risk of Rain, items, item, wiki, risk, of, rain, guide, risk of rain items'>
+        <meta name='description' content='A convenient list of all the items and their effects from the game Risk of Rain.'/>
+        <meta name='keywords' content='Risk of Rain, items, item, wiki, risk, of, rain, guide, risk of rain items'/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <script type='text/javascript' src='src/itemManifest.js'></script>
         <script type='text/javascript' src='src/index.js'></script>
     </head>
@@ -14,7 +15,7 @@
         <div class='mainFlex'>
             <div class='titleBar'>
                 <div class='titleWrap'>
-                    <img src='static/Golden_Chest.png' class='icon'/>
+                    <img src='static/Golden_Chest.png' class='titleIcon'/>
                     <div class='titleText'>Rainstash</div>
                 </div>
                 <div class='titleWrap'>
@@ -25,9 +26,10 @@
             </div>
             <div class='contentContainer'>
                 <div class='infoPanel fadeOut'>
-                    <div class='infoname'></div>
-                    <img class='infoImage'/>
+                    <img id='closeInfo' class='closeButton hidden' src='static/close3.png'/>
                     <div class='subInfoPanel'>
+                        <div class='infoname'></div>
+                        <img class='infoImage'/>
                         <p class='gray'>Description:</p>
                         <div class='infodescription'></div>
                         <p id='cooldownTitle' class='gray'>Cooldown:</p>
@@ -51,13 +53,17 @@
         </div>
         <div id='dim' class='pageDim'>
             <div id='options' class='optionsPanel'>
-                <img id='closeOptions' class='closeOptions' src='static/close3.png'/>
-                <div class='dividerLine'></div>
+                <img id='closeOptions' class='closeButton' src='static/close3.png'/>
                 <p class='gray'>At the time of writing, not all items have videos. I'll finish them all eventually, promise!</p>
                 <div class='dividerLine'></div>
-                <div onclick='newTabLink("https://github.com/Fustran/rainstash")' class='titleText red link'>rainstash repository</div>
+                <div onclick='openInTab("https://github.com/Fustran/rainstash")' class='titleText red link'>rainstash repository</div>
                 <div class='dividerLine'></div>
-                <p class='gray'>more stuff here soon :)</p>
+                <p class='gray'>
+                    Found a bug? <br> I'd really appreciate a 
+                    <span onclick='openInTab("https://github.com/Fustran/rainstash/issues/new")' class='green link'>github issue</span>,<br>
+                    or email me at:<br><span class='purple link' onclick='openInTab("mailto:fustra1@gmail.com?Subject=Rainstash%20Feedback")'>fustra1@gmail.com</span><br>
+                    I'd also love to hear any suggestions or ideas you have.
+                </p>
             </div>
         </div>
     </body>

@@ -45,6 +45,10 @@ html, body {
     align-items: center;
 }
 
+.titleIcon {
+    position: relative;
+}
+
 .search {
     width: 20%;
     height: 20%;
@@ -74,7 +78,7 @@ html, body {
 }
 
 .gearButton:hover {
-    animation: gearSpin 0.2s;
+    animation: gearSpin 0.3s;
 }
 
 .contentContainer {
@@ -107,8 +111,8 @@ html, body {
 
 .item {
     filter: drop-shadow(0px 0px 10px #00000070);
-    width: 80px;
-    height: 80px;
+    width: 7%;
+    height: 7%;
     margin: 5px;
     padding: 5px;
     cursor: pointer;
@@ -130,7 +134,7 @@ html, body {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    font-size: 14.5px;
+    font-size: 100%;
 }
 
 .subInfoPanel {
@@ -205,21 +209,22 @@ html, body {
     border-style: solid;
     border-width: 5px;
     border-radius: 10px;
+    font-size: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 30%;
 }
 
-.closeOptions {
+.closeButton {
+    display: block;
     cursor: pointer;
-    width: 7%;
-    height: 7%;
-    margin-left: 91%;
-    margin-top: 1%;
+    min-height: 5%;
+    margin-left: 85%;
+    margin-top: 2%;
 }
 
-.closeOptions:hover {
+.closeButton:hover {
     animation: buttonPulse 0.3s;
 }
 
@@ -231,6 +236,10 @@ html, body {
 
 .select:hover {
     filter: drop-shadow(0px 0px 15px #ffffff70);
+}
+
+.fullWidth {
+    width: 100%;    
 }
 
 .dividerLine {
@@ -345,4 +354,56 @@ html, body {
 @keyframes gearSpin {
     0% { transform: rotate(0deg) }
     100% { transform: rotate(180deg) }
+}
+
+@media screen and (max-width: 560px) {
+    .item { 
+        width: 18%;
+        height: 18%;
+    }
+
+    .titleIcon {
+        display: none;
+    }
+
+    .optionsPanel {
+        height: 100%;
+        flex-grow: 1;
+    }
+
+    .titleText {
+        font-size: 150%;
+    }
+
+    .gearButton {
+        margin-left: 12%;
+        margin-right: 2%;
+        width: 20%;
+        height: 20%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 560px) {
+
+    .item { 
+        width: 15%;
+        height: 15%;
+    }
+
+    .optionsPanel {
+        height: 100%;
+        flex-grow: 1;
+    }
+
+    .closeButton {
+        margin-left: 93%;
+    }
+
+    .infoPanel {
+        width: 40%;
+    }
+
+    .itemPanel {
+        width: 60%;
+    }
 }

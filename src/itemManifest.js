@@ -427,7 +427,7 @@ let items = {
 
     "Ancient_Scepter": {
         "name": "Ancient Scepter",
-        "description": "Upgrade your fourth ability; this is unique to each character class. Full list of effects <a href=\"http://riskofrain.wikia.com/wiki/Ancient_Scepter\">here.</a>",
+        "description": "Upgrade your fourth ability; this is unique to each character class. Full list of effects <span class='link' onclick=\'openInTab(\"http://riskofrain.wikia.com/wiki/Ancient_Scepter\")\'>here.</span>",
         "stack": "Does not stack.",
         "unlock": "Mercenary: Beat the game on Monsoon difficulty.",
         "itemClass": "red"

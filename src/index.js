@@ -6,8 +6,19 @@ window.onload = () => {
     document.getElementById('clear').onclick = () => { clearSearch(); }
     document.getElementById('gear').onclick = () => { openOptions(); }
     document.getElementById('closeOptions').onclick = () => { closeOptions(); }
+    document.getElementById('closeInfo').onclick = () => { closeInfo(); removeSelection(); }
+    //change the formatting if we're on mobile
+    if (onMobile()) {
+        document.getElementById('closeInfo').classList.remove('hidden');
+        closeInfo();
+    }
+
+    //reformat in case a device gets rotated, or window resized.
+    window.onresize = () => { resizeCheck(); }
+    window.onorientationchange = () => { resizeCheck(); }
 }
 
+//iterates through the itemManifest and loads item icons and details from it.
 let loadIcons = () => {
     for (let item in items) {
         let itemClass = items[item].itemClass;
@@ -28,12 +39,14 @@ let loadIcons = () => {
         
         itemImg.ondragstart = (e) => {
             changeSelected(e);
+            if (onMobile()) { closeItems(); }
             //return false to prevent dragging 'ghost' effect
             return false;
         }
 
         itemImg.onclick = (e) => {
             changeSelected(e);
+            if (onMobile()) { closeItems(); }
         }
     }
 }
@@ -58,7 +71,7 @@ let changeSelected = (e) => {
     searchFilter();
 }
 
-//sets the details on the info panel to the argument's info.
+//sets the details on the info panel to the supplied item's info.
 let setInfo = (itemName) => {
     let panel = document.getElementsByClassName('infoPanel')[0];
     panel.classList.remove('fadeOut');
@@ -157,11 +170,70 @@ let openOptions = () => {
     document.getElementById('dim').classList.add('unhideDim');
 }
 
+//closes the options panel
 let closeOptions = () => {
     document.getElementById('dim').classList.remove('unhideDim');
 }
 
-let newTabLink = (href) => {
+//opens supplied link in a new tab, instead of replacing the current window like an <a> tag does by default
+let openInTab = (href) => {
     let newWindow = window.open(href, '_blank');
     newWindow.focus();
+}
+
+//MOBILE COMPATIBILITY THINGS
+
+//check if we're on mobile or not. Works in tandem with CSS media queries.
+let onMobile = () => {
+    if(typeof window.orientation !== "undefined" || navigator.userAgent.indexOf('IEMobile') !== -1) {
+        //experimental width check as well, need to test this with more devices
+        if (window.innerWidth <= 560) {
+            return true;
+        }
+    }
+    return false;
+}
+
+//switches formatting between mobile and desktop. Primarily used when screens get rotated on tablets
+let resizeCheck = () => {
+    if (onMobile()) {
+        document.getElementById('closeInfo').classList.remove('hidden');
+        closeInfo();
+    } else {
+        document.getElementById('closeInfo').classList.add('hidden');
+        let items = document.getElementsByClassName('itemPanel')[0];
+        items.classList.remove('hidden');
+        items.classList.remove('fullWidth');
+        let info = document.getElementsByClassName('infoPanel')[0];
+        info.classList.remove('hidden');
+        info.classList.remove('fullWidth');
+    }
+}
+
+//removes currently selected item.
+let removeSelection = () => {
+    if (selectedItem != null) {
+        document.getElementById(selectedItem).classList.remove('select');
+        selectedItem = null;
+    }
+}
+
+//closes the info panel and fullscreens the items.
+let closeInfo = () => {
+    let items = document.getElementsByClassName('itemPanel')[0];
+    items.classList.remove('hidden');
+    items.classList.add('fullWidth');
+    let info = document.getElementsByClassName('infoPanel')[0];
+    info.classList.add('hidden');
+    info.classList.remove('fullWidth');
+}
+
+//closes the items panel and fullscreens the item info.
+let closeItems = () => {
+    let items = document.getElementsByClassName('itemPanel')[0];
+    items.classList.add('hidden');
+    items.classList.remove('fullWidth');
+    let info = document.getElementsByClassName('infoPanel')[0];
+    info.classList.remove('hidden');
+    info.classList.add('fullWidth');
 }
