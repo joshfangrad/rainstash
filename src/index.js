@@ -38,6 +38,7 @@ let loadIcons = () => {
         }
         
         itemImg.ondragstart = (e) => {
+            setInfo(item);
             changeSelected(e);
             if (onMobile()) { closeItems(); }
             //return false to prevent dragging 'ghost' effect
@@ -45,6 +46,7 @@ let loadIcons = () => {
         }
 
         itemImg.onclick = (e) => {
+            setInfo(item);
             changeSelected(e);
             if (onMobile()) { closeItems(); }
         }
@@ -53,7 +55,7 @@ let loadIcons = () => {
 
 //called by click event, changes what the currently selected item is
 let changeSelected = (e) => {
-    let itemName = e.srcElement.id;
+    let itemName = e.target.id;
     let item = items[itemName];
     //mobile compatibility in here later
     if (selectedItem != itemName) {
@@ -62,7 +64,7 @@ let changeSelected = (e) => {
             oldSelect.classList.remove('select');
         }
         selectedItem = itemName;
-        e.srcElement.classList.add('select');
+        e.target.classList.add('select');
     } else {
         document.getElementById(selectedItem).classList.remove('select');
         selectedItem = null;
@@ -134,7 +136,7 @@ let hideInfo = (e) => {
         let panel = document.getElementsByClassName('infoPanel')[0];
         panel.classList.remove('fadeIn');
         panel.classList.add('fadeOut');
-    } else if (e.fromElement.id != selectedItem) {
+    } else if (e.target.id != selectedItem) {
         setInfo(selectedItem);
     }
 }
@@ -185,11 +187,8 @@ let openInTab = (href) => {
 
 //check if we're on mobile or not. Works in tandem with CSS media queries.
 let onMobile = () => {
-    if(typeof window.orientation !== "undefined" || navigator.userAgent.indexOf('IEMobile') !== -1) {
-        //experimental width check as well, need to test this with more devices
-        if (window.innerWidth <= 560) {
-            return true;
-        }
+    if(typeof window.orientation !== "undefined" || navigator.userAgent.indexOf('IEMobile') !== -1 || window.innerWidth <= 560) {
+        return true;
     }
     return false;
 }
