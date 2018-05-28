@@ -910,12 +910,21 @@ let items = {
         "unlock": "Dropped by the Armored Boar on the level Boar Beach.",
         "itemClass": "purple"
     },
+
     "Keycard": {
         "name": "Keycard",
         "description": "Opens locked doors on the UES Contact Light (Final Level).",
         "stack": "Each key unlocks one door. (Maximum of four keys)",
         "unlock": "	Dropped by enemies and golden containers on the UES Contact Light (Final Level).",
         "usage": true,
+        "itemClass": "purple"
+    },
+
+    "Small_Enigma": {
+        "name": "Small Enigma",
+        "description": "Reduces the cooldown of <span class='orange'>use</span> items by 5%.",
+        "stack": "Further increases cooldown by 5%.",
+        "unlock": "Can be obtained when the <span class='purple'>-ENIGMA-</span> artifact is enabled.",
         "itemClass": "purple"
     }
 }

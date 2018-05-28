@@ -38,17 +38,21 @@ let loadIcons = () => {
         }
         
         itemImg.ondragstart = (e) => {
-            setInfo(item);
+            if (onMobile()) { 
+                setInfo(item);
+                closeItems(); 
+            }
             changeSelected(e);
-            if (onMobile()) { closeItems(); }
             //return false to prevent dragging 'ghost' effect
             return false;
         }
 
         itemImg.onclick = (e) => {
-            setInfo(item);
+            if (onMobile()) { 
+                setInfo(item);
+                closeItems(); 
+            }
             changeSelected(e);
-            if (onMobile()) { closeItems(); }
         }
     }
 }
