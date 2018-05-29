@@ -16,7 +16,7 @@ let items = {
         "itemClass": "white"
     },
 
-    "Bundle_of_Fireworks": {
+    "Bundle_Of_Fireworks": {
         "name": "Bundle of Fireworks",
         "description": "Fire 8 fireworks that deal 300% damage.",
         "stack": "+2 Fireworks per stack, fireworks do more damage.",
@@ -42,8 +42,8 @@ let items = {
 
     "Fire_Shield": {
         "name": "Fire Shield",
-        "description": "After being hit for 10% of your maximum health in one hit: explode, dealing 200% damage",
-        "stack": "Increases explosion damage.",
+        "description": "After being hit for 10% of your maximum health in one hit: explode, dealing 400% damage and knocking back enemies.",
+        "stack": "Increases explosion damage by 200%, and increases knockback by 20%.",
         "usage": true,
         "itemClass": "white"
     },
@@ -59,7 +59,7 @@ let items = {
     "Headstompers": {
         "name": "Headstompers",
         "description": "Hurt enemies by falling for up to 507% damage.",
-        "stack": "Increases max damage.",
+        "stack": "Increases damage by 30%.",
         "usage": true,
         "itemClass": "white"
     },
@@ -83,7 +83,7 @@ let items = {
     "Life_Savings": {
         "name": "Life Savings",
         "description": "Generate $1 every 3 seconds.",
-        "stack": "+1 gold generation rate",
+        "stack": "+1 gold generation rate.",
         "itemClass": "white"
     },
 
@@ -95,10 +95,10 @@ let items = {
         "itemClass": "white"
     },
 
-    "Medkit": {
-        "name": "Medkit",
+    "First_Aid_Kit": {
+        "name": "First Aid Kit",
         "description": "Heal for 10 health after 1.1 seconds of getting hit.",
-        "stack": "Each additional Medkit increases the heal by 10.",
+        "stack": "Each additional First Aid Kit increases the heal by 10.",
         "usage": true,
         "itemClass": "white"
     },
@@ -136,8 +136,8 @@ let items = {
         "itemClass": "white"
     },
 
-    "Rusty_Knife": {
-        "name": "Rusty Knife",
+    "Rusty_Blade": {
+        "name": "Rusty Blade",
         "description": "On hit: 15% chance to bleed an enemy for 4x35% damage.",
         "stack": "15% extra chance to bleed (Non linear stacking), does not stack damage.",
         "usage": true,
@@ -220,7 +220,7 @@ let items = {
     "Arms_Race": {
         "name": "Arms Race",
         "description": "On drone action: 9% chance for drones to fire missiles and mortars.",
-        "stack": "Increases chance of firing artillery.",
+        "stack": "+10% chance to fire missles, +170% more mortar damage",
         "unlock": "	HAN-D: Kill 10 enemies with FORCED-REASSEMBLY simultaneously.",
         "itemClass": "green"
     },
@@ -267,8 +267,8 @@ let items = {
 
     "Energy_Cell": {
         "name": "Energy Cell",
-        "description": "Increased attack speed by up to 40% at lower health.",
-        "stack": "	Increases attack speed bonus when triggered.",
+        "description": "Increased attack speed by up to 40% based on how much hp you have lost.",
+        "stack": "+20% increased maximum attack speed, caps at 90% increase with 4 cells.",
         "itemClass": "green"
     },
 
@@ -300,6 +300,13 @@ let items = {
         "name": "Guardian's Heart",
         "description": "Gain a 60 health shield. Recharges in 7 seconds.",
         "stack": "+60 Shield",
+        "itemClass": "green"
+    },
+
+    "Will-O-The-Wisp": {
+        "name": "Will-o'-the-Wisp",
+        "description": "On kill: 33% chance on killing an enemy to create a lava pillar for 250% damage.",
+        "stack": "Further increases lava pillar damage by +100%.",
         "itemClass": "green"
     },
 
@@ -361,7 +368,7 @@ let items = {
     "Red_Whip": {
         "name": "Red Whip",
         "description": "Leaving combat for 1.5 seconds boosts your movement speed by 80%.",
-        "stack": "Increases speed bonus slightly.",
+        "stack": "None.",
         "usage": true,
         "itemClass": "green"
     },
@@ -462,8 +469,8 @@ let items = {
         "itemClass": "red"
     },
 
-    "Dios_Best_Friend": {
-        "name": "Dio's Best friend",
+    "Dios_Friend": {
+        "name": "Dio's friend",
         "description": "Taking fatal damage revives you to 40% health. Invincible for 2 seconds.",
         "stack": "Can not be stacked for multiple revives, but if the revive effect has been used picking up another will reset it.",
         "unlock": "Die 50 times.",
@@ -661,7 +668,7 @@ let items = {
     "Nematocyst_Nozzle": {
         "name": "Nematocyst Nozzle",
         "description": "On use: Shoot out 6 nematocysts that deal 200% damage.",
-        "cooldown": 23,
+        "cooldown": 22.5,
         "embryo": "Shoot 12 nematocysts instead of 6.",
         "unlock": "Dropped by the Wandering Vagrant.",
         "itemClass": "yellow"
@@ -745,7 +752,7 @@ let items = {
         "name": "Glowing Meteorite",
         "description": "Meteors fall from the sky, damaging enemies and friends for 220% damage. Lasts 8 seconds.",
         "cooldown": 70,
-        "embryo": "# of meteors, and doubled active duration.",
+        "embryo": "Doubled active duration.",
         "unlock": "Deal 5000 damage in one shot.",
         "usage": true,
         "itemClass": "orange"
@@ -759,11 +766,11 @@ let items = {
         "itemClass": "orange"
     },
 
-    "Instant_Minefield": {
-        "name": "Instant Minefield",
-        "description": "Drop 6 mines at your feet, each dealing 400% damage.",
+    "Minefield": {
+        "name": "Minefield",
+        "description": "Drop 7 mines at your feet, each dealing 400% damage.",
         "cooldown": 45,
-        "embryo": "Drop 6 additional mines.",
+        "embryo": "Drop 6 additional mines, for a total of 13.",
         "usage": true,
         "itemClass": "orange"
     },
@@ -796,7 +803,7 @@ let items = {
 
     "Pillaged_Gold": {
         "name": "Pillaged Gold",
-        "description": "Every monster in view drops 10 gold.",
+        "description": "For 14 seconds, every monster will drop 1 gold on hit.",
         "cooldown": 45,
         "embryo": "None.",
         "unlock": "Bandit: Kill a boss with \"Lights Out\"",
@@ -854,11 +861,11 @@ let items = {
         "itemClass": "orange"
     },
 
-    "Skeleton_Key": {
-        "name": "Skeleton Key",
+    "Explorers_Key": {
+        "name": "Explorer's Key",
         "description": "Open all the chests in view.",
         "cooldown": 90,
-        "embryo": "Increases range of the chest opening, causing it to go offscreen.",
+        "embryo": "None.",
         "usage": true,
         "itemClass": "orange"
     },
@@ -892,7 +899,7 @@ let items = {
     "Unstable_Watch": {
         "name": "Unstable Watch",
         "description": "Stop time for 7 seconds.",
-        "cooldown": 67,
+        "cooldown": 67.5,
         "embryo": "Doubles duration to 14 seconds.",
         "unlock": "Complete the first stage in under 5 minutes.",
         "itemClass": "orange"
@@ -923,7 +930,7 @@ let items = {
     "Small_Enigma": {
         "name": "Small Enigma",
         "description": "Reduces the cooldown of <span class='orange'>use</span> items by 5%.",
-        "stack": "Further increases cooldown by 5%.",
+        "stack": "Further decreases cooldown by 5%.",
         "unlock": "Can be obtained when the <span class='purple'>-ENIGMA-</span> artifact is enabled.",
         "itemClass": "purple"
     }

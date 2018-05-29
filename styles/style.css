@@ -304,6 +304,10 @@ html, body {
     animation: fadeInAnim 0.5s;
 }
 
+.smallerText {
+    font-size: 85%;
+}
+
 .faded {
     opacity: 0.15;
 }
