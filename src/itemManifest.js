@@ -19,7 +19,7 @@ let items = {
     "Bundle_Of_Fireworks": {
         "name": "Bundle of Fireworks",
         "description": "Fire 8 fireworks that deal 300% damage.",
-        "stack": "+2 Fireworks per stack, fireworks do more damage.",
+        "stack": "+2 Fireworks launched.",
         "usage": true,
         "itemClass": "white"
     },
@@ -130,7 +130,7 @@ let items = {
     "Pauls_Goat_Hoof": {
         "name": "Paul's Goat Hoof",
         "description": "+20% movement speed.",
-        "stack": "Further increases movement speed by 20%",
+        "stack": "Further increases movement speed by 20%, caps at around 35.",
         "unlock": "Fail a shrine 3 times in a row.",
         "usage": true,
         "itemClass": "white"
@@ -336,7 +336,7 @@ let items = {
 
     "Leeching_Seed": {
         "name": "Leeching Seed",
-        "description": "On hit: Dealing damage heals you for 2 health.",
+        "description": "On hit: Dealing damage heals you for 2 health. However if the shot pierces and hits mutiple enemies, there will be diminishing returns for each subsequent enemy hit.",
         "stack": "+1 health on hit.",
         "usage": true,
         "itemClass": "green"
@@ -775,7 +775,7 @@ let items = {
         "itemClass": "orange"
     },
 
-    "Jar_of_Souls": {
+    "Jar_Of_Souls": {
         "name": "Jar of Souls",
         "description": "Duplicate every enemy as a ghost to fight on your side.",
         "cooldown": 45,
@@ -922,7 +922,7 @@ let items = {
         "name": "Keycard",
         "description": "Opens locked doors on the UES Contact Light (Final Level).",
         "stack": "Each key unlocks one door. (Maximum of four keys)",
-        "unlock": "	Dropped by enemies and golden containers on the UES Contact Light (Final Level).",
+        "unlock": "	Dropped by enemies or found in golden containers on the UES Contact Light (Final Level).",
         "usage": true,
         "itemClass": "purple"
     },

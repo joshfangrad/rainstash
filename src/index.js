@@ -16,6 +16,10 @@ window.onload = () => {
     //reformat in case a device gets rotated, or window resized.
     window.onresize = () => { resizeCheck(); }
     window.onorientationchange = () => { resizeCheck(); }
+
+    let toggleVids = document.getElementById('loadVids');
+    toggleVids.checked = checkBoolCookie('loadVids', true);
+    toggleVids.onchange = (e) => { setCookie('loadVids', e.target.checked, 365); }
 }
 
 //iterates through the itemManifest and loads item icons and details from it.
@@ -57,7 +61,7 @@ let loadIcons = () => {
     }
 }
 
-//called by click event, changes what the currently selected item is
+//called by click event, changes what the currently selected item is.
 let changeSelected = (e) => {
     let itemName = e.target.id;
     let item = items[itemName];
@@ -119,10 +123,11 @@ let setInfo = (itemName) => {
     
     document.getElementById('stackTitle').innerHTML = 'stack' in item ? 'Stacking Effect:' : 'Beating Embryo effect:';
 
-    //change the usage video if the item has one
+    //change the usage video if the item has one, and the user has them turned on.
     let video = document.getElementById('video');
+    let loadVids = document.getElementById('loadVids');
     video.innerHTML = '';
-    if ('usage' in item && item.usage === true) {
+    if ('usage' in item && item.usage === true && loadVids.checked === true) {
         video.classList.remove('hidden');
         let source = document.createElement('source');
         source.setAttribute('src', `static/usageMP4s/usage_${itemName}.mp4`);

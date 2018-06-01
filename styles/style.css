@@ -196,8 +196,6 @@ html, body {
     top: 0px;
     height: 100%;
     width: 100%;
-    animation: fadeOutAnim 0.5s;
-    transition: all 500ms ease-in;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,6 +210,7 @@ html, body {
     font-size: 100%;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
     align-items: center;
     width: 30%;
 }
@@ -249,10 +248,99 @@ html, body {
     width: 90%;
 }
 
+
 .link {
     cursor: pointer;
     text-decoration: underline;
 }
+
+/* start of toggle switch css */
+
+.switchWrap {
+    width: 90%;
+    background-color: #2a2a2a;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.toggleWrap {
+    position: relative;
+}
+
+.toggleWrap input {
+    display: none;
+}
+
+.toggle {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #252525;
+    border-color: #ff8000;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px #0000004d;
+}
+
+.toggle:before {
+    content: 'leftText';
+    right: 110%;
+    position: absolute;
+    font-size: 16px;
+}
+
+.toggle:after {
+    content: 'rightText';
+    left: 118%;
+    position: absolute;
+    font-size: 16px;
+    color: #7e7e7e;
+}
+
+.toggleHandle {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 100%;
+    background-color: #ff8000;
+    transition: transform 200ms;
+    transform: translateX(-52%);
+}
+
+input:checked + .toggle .toggleHandle {
+    transform: translateX(52%);
+}
+
+input:checked + .toggle:before {
+    color: #7e7e7e;
+}
+
+input:checked + .toggle:after {
+    color: #ffffff;
+}
+
+.toggleBool {
+    transition: background-color 200ms;
+}
+
+input:checked + .toggleBool {
+    background-color: #814100;
+}
+
+.toggleBool:before {
+    content: 'Off';
+}
+
+.toggleBool:after {
+    content: 'On';
+}
+
+/* end of toggle switch css */
 
 .gray {
     color: #7e7e7e;
@@ -304,7 +392,7 @@ html, body {
     animation: fadeInAnim 0.5s;
 }
 
-.smallerText {
+.smallText {
     font-size: 85%;
 }
 

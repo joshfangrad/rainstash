@@ -19,6 +19,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta charset="utf-8"/>
         <script type='text/javascript' src='src/itemManifest.js'></script>
+        <script type='text/javascript' src='src/cookie.js'></script>
         <script type='text/javascript' src='src/index.js'></script>
     </head>
     <body>
@@ -38,15 +39,15 @@
                 <div class='infoPanel fadeOut'>
                     <img id='closeInfo' class='closeButton hidden' src='static/close3.png'/>
                     <div class='subInfoPanel'>
-                        <div class='infoname'></div>
+                        <label class='infoname'></label>
                         <img class='infoImage'/>
-                        <p class='gray'>Description:</p>
+                        <label class='gray'>Description:</label>
                         <div class='infodescription'></div>
-                        <p id='cooldownTitle' class='gray'>Cooldown:</p>
-                        <div class='infocooldown'></div>
-                        <p id='stackTitle' class='gray'>Stacking effect:</p>
+                        <label id='stackTitle' class='gray'>Stacking effect:</label>
                         <div class='infostack infoembryo'></div>
-                        <p id='unlockTitle' class='gray'>Unlock:</p>
+                        <label id='cooldownTitle' class='gray'>Cooldown:</label>
+                        <div class='infocooldown'></div>
+                        <label id='unlockTitle' class='gray'>Unlock:</label>
                         <div class='infounlock'></div>
                         <video id='video' class='infoVideo' autoplay loop></video>
                     </div>
@@ -64,6 +65,17 @@
         <div id='dim' class='pageDim'>
             <div id='options' class='optionsPanel'>
                 <img id='closeOptions' class='closeButton' src='static/close3.png'/>
+                <div class='switchWrap'>
+
+                    <label class='gray smallText'>load preview videos:</label>
+                    <div class='toggleWrap'>
+                        <input type='checkbox' class='check' id='loadVids'/>
+                        <label class='toggle toggleBool' for='loadVids'>
+                            <span class='toggleHandle'></span>
+                        </label>
+                    </div>
+
+                </div>
                 <p class='gray'>At the time of writing, not all items have videos. I'll finish them all eventually, promise!</p>
                 <div class='dividerLine'></div>
                 <div onclick='openInTab("https://github.com/Fustran/rainstash")' class='titleText red link'>rainstash repository</div>
@@ -75,7 +87,7 @@
                     I'd also love to hear any suggestions or ideas you have.
                 </p>
                 <div class='dividerLine'></div>
-                <p class='gray smallerText'>
+                <p class='gray smallText'>
                     Big thanks to Saturnyoshi (Saturnyoshi#5861 on discord) for providing me with correct item effects from the source code!
                 </p>
             </div>
