@@ -1,7 +1,6 @@
 let selectedItem;
 
 window.onload = () => {
-    loadIcons();
     document.getElementById('search').oninput = () => { searchFilter(); }
     document.getElementById('clear').onclick = () => { clearSearch(); }
     document.getElementById('gear').onclick = () => { openOptions(); }
@@ -17,9 +16,21 @@ window.onload = () => {
     window.onresize = () => { resizeCheck(); }
     window.onorientationchange = () => { resizeCheck(); }
 
+    //set up toggleVids switch
     let toggleVids = document.getElementById('loadVids');
     toggleVids.checked = checkBoolCookie('loadVids', true);
     toggleVids.onchange = (e) => { setCookie('loadVids', e.target.checked, 365); }
+
+    //set up toggleSort switch
+    let toggleSort = document.getElementById('toggleSort');
+    toggleSort.checked = checkBoolCookie('toggleSort', false);
+    toggleSort.onchange = (e) => { 
+        setCookie('toggleSort', e.target.checked, 365); 
+        sortItems(e.target.checked);
+    }
+
+    loadIcons();
+    sortItems(toggleSort.checked);
 }
 
 //iterates through the itemManifest and loads item icons and details from it.
@@ -190,6 +201,13 @@ let closeOptions = () => {
 let openInTab = (href) => {
     let newWindow = window.open(href, '_blank');
     newWindow.focus();
+}
+
+//sorts based on toggleSort's status by using the order property. false is sort alphabetically, true is by the commandSort list.
+let sortItems = (toggleSort) => {
+    for (i=0; i < commandSort.length; i++) {
+        document.getElementById(commandSort[i]).style = toggleSort === true ? `order: ${i};` : '';
+    }
 }
 
 //MOBILE COMPATIBILITY THINGS

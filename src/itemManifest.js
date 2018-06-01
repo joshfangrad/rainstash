@@ -48,6 +48,14 @@ let items = {
         "itemClass": "white"
     },
 
+    "First_Aid_Kit": {
+        "name": "First Aid Kit",
+        "description": "Heal for 10 health after 1.1 seconds of getting hit.",
+        "stack": "Each additional First Aid Kit increases the heal by 10.",
+        "usage": true,
+        "itemClass": "white"
+    },
+
     "Gasoline": {
         "name": "Gasoline",
         "description": "On kill: Killing enemies burns the ground for 60% damage for 2 seconds.",
@@ -91,14 +99,6 @@ let items = {
         "name": "Meat Nugget",
         "description": "On hit: 8% chance to drop 2 meat nuggets that heals for 2x6 health.",
         "stack": "+6 health per meat nugget.",
-        "usage": true,
-        "itemClass": "white"
-    },
-
-    "First_Aid_Kit": {
-        "name": "First Aid Kit",
-        "description": "Heal for 10 health after 1.1 seconds of getting hit.",
-        "stack": "Each additional First Aid Kit increases the heal by 10.",
         "usage": true,
         "itemClass": "white"
     },
@@ -303,13 +303,6 @@ let items = {
         "itemClass": "green"
     },
 
-    "Will-O-The-Wisp": {
-        "name": "Will-o'-the-Wisp",
-        "description": "On kill: 33% chance on killing an enemy to create a lava pillar for 250% damage.",
-        "stack": "Further increases lava pillar damage by +100%.",
-        "itemClass": "green"
-    },
-
     "Harvesters_Scythe": {
         "name": "Harvester's Scythe",
         "description": "Gain 5% critical chance. Critical strikes heal for 8 health.",
@@ -416,6 +409,13 @@ let items = {
         "description": "On hit: 20% chance to fire chain lighting for 4x33% damage.",
         "stack": "+33% damage per bounce.",
         "usage": true,
+        "itemClass": "green"
+    },
+
+    "Will-O-The-Wisp": {
+        "name": "Will-o'-the-Wisp",
+        "description": "On kill: 33% chance on killing an enemy to create a lava pillar for 250% damage.",
+        "stack": "Further increases lava pillar damage by +100%.",
         "itemClass": "green"
     },
 
@@ -910,14 +910,7 @@ let items = {
 
 
 
-    "White_Undershirt_(M)": {
-        "name": "White Undershirt (M)",
-        "description": "Increases armor by 3.",
-        "stack": "N/A; Item only drops once.",
-        "unlock": "Dropped by the Armored Boar on the level Boar Beach.",
-        "itemClass": "purple"
-    },
-
+    
     "Keycard": {
         "name": "Keycard",
         "description": "Opens locked doors on the UES Contact Light (Final Level).",
@@ -926,12 +919,134 @@ let items = {
         "usage": true,
         "itemClass": "purple"
     },
-
+    
     "Small_Enigma": {
         "name": "Small Enigma",
         "description": "Reduces the cooldown of <span class='orange'>use</span> items by 5%.",
         "stack": "Further decreases cooldown by 5%.",
         "unlock": "Can be obtained when the <span class='purple'>-ENIGMA-</span> artifact is enabled.",
         "itemClass": "purple"
+    },
+
+    "White_Undershirt_(M)": {
+        "name": "White Undershirt (M)",
+        "description": "Increases armor by 3.",
+        "stack": "N/A; Item only drops once.",
+        "unlock": "Dropped by the Armored Boar on the level Boar Beach.",
+        "itemClass": "purple"
     }
 }
+
+let commandSort = [
+    "Mysterious_Vial",
+    "Lens_Makers_Glasses",
+    "Monster_Tooth",
+    "Soldiers_Syringe",
+    "Pauls_Goat_Hoof",
+    "Barbed_Wire",
+    "Sprouting_Egg",
+    "Life_Savings",
+    "Rusty_Blade",
+    "Fire_Shield",
+    "Bustling_Fungus",
+    "Gasoline",
+    "Bitter_Root",
+    "Headstompers",
+    "First_Aid_Kit",
+    "Spikestrip",
+    "Mortar_Tube",
+    "Snake_Eyes",
+    "Warbanner",
+    "Meat_Nugget",
+    "Crowbar",
+    "Hermits_Scarf",
+    "Sticky_Bomb",
+    "Bundle_Of_Fireworks",
+    "Taser",
+
+    "Prison_Shackles",
+    "Rusty_Jetpack",
+    "Leeching_Seed",
+    "Ukulele",
+    "Golden_Gun",
+    "AtG_Missile_Mk_1",
+    "Concussion_Grenade",
+    "Toxic_Worm",
+    "Panic_Mines",
+    "Guardians_Heart",
+    "Infusion",
+    "Smart_Shopper",
+    "Boxing_Gloves",
+    "Harvesters_Scythe",
+    "Tough_Times",
+    "56_Leaf_Clover",
+    "Energy_Cell",
+    "Dead_Mans_Foot",
+    "Arms_Race",
+    "Will-O-The-Wisp",
+    "Time_Keepers_Secret",
+    "Chargefield_Generator",
+    "Predatory_Instincts",
+    "Filial_Imprinting",
+    "Hopoo_Feather",
+    "Red_Whip",
+    "Frost_Relic",
+
+    "Firemans_Boots",
+    "Brilliant_Behemoth",
+    "AtG_Missile_Mk_2",
+    "Wicked_Ring",
+    "Heaven_Cracker",
+    "Beating_Embryo",
+    "Rapid_Mitosis",
+    "Alien_Head",
+    "Old_Box",
+    "Happiest_Mask",
+    "The_Hit_List",
+    "Ceremonial_Dagger",
+    "Plasma_Chain",
+    "Permafrost",
+    "The_Ol_Lopper",
+    "Telescopic_Sight",
+    "Repulsion_Armor",
+    "Tesla_Coil",
+    "Photon_Jetpack",
+    "Thallium",
+    "Dios_Friend",
+    "Shattering_Justice",
+    "Ancient_Scepter",
+    "Hyper-Threader",
+    "Interstellar_Desk_Plant",
+    "Laser_Turbine",
+
+    "Explorers_Key",
+    "Foreign_Fruit",
+    "Lost_Doll",
+    "Pillaged_Gold",
+    "Disposable_Missile_Launcher",
+    "Minefield",
+    "Massive_Leech",
+    "Prescriptions",
+    "Shield_Generator",
+    "Shattered_Mirror",
+    "Unstable_Watch",
+    "Safeguard_Lantern",
+    "Jar_Of_Souls",
+    "The_Back-up",
+    "Drone_Repair_Kit",
+    "Captains_Brooch",
+    "Sawmerang",
+    "Snowglobe",
+    "Gold-plated_Bomb",
+    "Rotten_Brain",
+    "Crudely_Drawn_Buddy",
+    "Carrara_Marble",
+    "Glowing_Meteorite",
+    "Gigantic_Amethyst",
+    "Dynamite_Plunger",
+    "Thqwib",
+
+    "Keycard",
+    "Small_Enigma",
+    "White_Undershirt_(M)"
+];

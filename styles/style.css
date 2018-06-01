@@ -211,6 +211,7 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    overflow-x: hidden;
     align-items: center;
     width: 30%;
 }
@@ -285,6 +286,7 @@ html, body {
     border-style: solid;
     border-radius: 5px;
     box-shadow: 0px 2px 8px #0000004d;
+    transition: background-color 200ms;
 }
 
 .toggle:before {
@@ -324,12 +326,12 @@ input:checked + .toggle:after {
     color: #ffffff;
 }
 
-.toggleBool {
-    transition: background-color 200ms;
+input:checked + .toggle {
+    background-color: #814100;
 }
 
-input:checked + .toggleBool {
-    background-color: #814100;
+.toggleBool {
+    cursor: pointer;
 }
 
 .toggleBool:before {
@@ -338,6 +340,19 @@ input:checked + .toggleBool {
 
 .toggleBool:after {
     content: 'On';
+}
+
+.toggleSort {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.toggleSort:before {
+    content: 'Alphabetical';
+}
+
+.toggleSort:after {
+    content: '-COMMAND-';
 }
 
 /* end of toggle switch css */
