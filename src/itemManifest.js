@@ -83,7 +83,7 @@ let items = {
 
     "Lens_Makers_Glasses": {
         "name": "Lens Maker's Glasses",
-        "description": "On hit: Your attacks have a chance(7%) to critically strike, dealing double damage.",
+        "description": "On hit: your attacks have a 7% chance to critically strike, dealing double damage.",
         "stack": "+7% crit chance. 100% chance to crit on 14 stacks.",
         "itemClass": "white"
     },
@@ -139,7 +139,7 @@ let items = {
     "Rusty_Blade": {
         "name": "Rusty Blade",
         "description": "On hit: 15% chance to bleed an enemy for 4x35% damage.",
-        "stack": "15% extra chance to bleed (Non linear stacking), does not stack damage.",
+        "stack": "15% extra chance to bleed (Non linear stacking).",
         "usage": true,
         "itemClass": "white"
     },
@@ -227,14 +227,14 @@ let items = {
 
     "AtG_Missile_Mk_1": {
         "name": "AtG Missle Mk. 1",
-        "description": "On hit: A 10% chance of firing a missile that deals 300% damage.",
+        "description": "On hit: 10% chance of firing a missile that deals 300% damage.",
         "stack": "+10% chance to fire missiles.",
         "itemClass": "green"
     },
 
     "Boxing_Gloves": {
         "name": "Boxing Gloves",
-        "description": "On hit: Hitting enemies have a 15% chance to knock them back.",
+        "description": "On hit: hitting enemies have a 15% chance to knock them back.",
         "stack": "6% multiplicatively increase in knockback chance.",
         "itemClass": "green"
     },
@@ -305,7 +305,7 @@ let items = {
 
     "Harvesters_Scythe": {
         "name": "Harvester's Scythe",
-        "description": "Gain 5% critical chance. Critical strikes heal for 8 health.",
+        "description": "On crit: heal for 8 health. Gain 5% critical chance.",
         "stack": "+5% critical chance and +2 health on a critical strike.",
         "unlock": "Use a health shrine that drops you below 5% health.",
         "itemClass": "green"
@@ -321,7 +321,7 @@ let items = {
 
     "Infusion": {
         "name": "Infusion",
-        "description": "On kill: Killing an enemy increases your health permanently by 1.",
+        "description": "On kill: killing an enemy increases your health permanently by 1.",
         "stack": "+0.5 health on kill.",
         "usage": true,
         "itemClass": "green"
@@ -345,7 +345,7 @@ let items = {
 
     "Predatory_Instincts": {
         "name": "Predatory Instincts",
-        "description": "Critical strikes increase attack speed by 10%. Stacks up to 30%.",
+        "description": "On crit: increase attack speed by 10%. Stacks up to 30%.",
         "stack": "+5% crit chance. Further increase 1% attack speed increment on crit strikes.",
         "unlock": "Huntress: Defeat the Legendary Wisp without taking damage.",
         "itemClass": "green"
@@ -442,7 +442,7 @@ let items = {
 
     "AtG_Missile_Mk_2": {
         "name": "AtG Missle Mk. 2",
-        "description": "A 7% chance on hitting an enemy to fire three missiles that deal 3x300% damage.",
+        "description": "On hit: 7% chance to fire three missiles that deal 3x300% damage.",
         "stack": "+7% chance to fire missiles.",
         "itemClass": "red"
     },
@@ -456,7 +456,7 @@ let items = {
 
     "Brilliant_Behemoth": {
         "name": "Brilliant Behemoth",
-        "description": "All your attacks explode for a bonus 20% damage to nearby enemies.",
+        "description": "On hit: your projectiles explode for a bonus 20% damage to nearby enemies.",
         "stack": "+20% damage.",
         "usage": true,
         "itemClass": "red"
@@ -464,7 +464,7 @@ let items = {
 
     "Ceremonial_Dagger": {
         "name": "Ceremonial Dagger",
-        "description": "Upon killing an enemy fire out 4 heat-seeking bolts that deal 100% damage.",
+        "description": "On kill: fire out 4 heat-seeking bolts that deal 100% damage.",
         "stack": "Fires +2 additional bolts.",
         "itemClass": "red"
     },
@@ -487,7 +487,7 @@ let items = {
 
     "Happiest_Mask": {
         "name": "Happiest Mask",
-        "description": "Killing enemies spawn a ghost of the killed enemy with 70% health and 50% damage for 15 seconds.",
+        "description": "On kill: spawn a ghost of the killed enemy with 70% health and 50% damage for 15 seconds.",
         "stack": "Increases ghost damage and durability.",
         "itemClass": "red"
     },
@@ -509,7 +509,7 @@ let items = {
 
     "Interstellar_Desk_Plant": {
         "name": "Interstellar Desk Plant",
-        "description": "On kill: Upon killing an enemy, spawn an alien plant that heals you for 8 hp.",
+        "description": "On kill: spawn an alien plant that heals you for 8 hp.",
         "stack": "+3 health per fruit.",
         "unlock": "CHEF: SEAR/FLAMBE 20 Sand Crabs.",
         "itemClass": "red"
@@ -591,14 +591,14 @@ let items = {
 
     "Thallium": {
         "name": "Thallium",
-        "description": "On hit: Damage/slow by 500 enemy damage% and 100% speed over 3 seconds.",
+        "description": "On hit: damage/slow by 500 enemy damage% and 100% speed over 3 seconds.",
         "stack": "Does not stack.",
         "itemClass": "red"
     },
 
     "The_Hit_List": {
         "name": "The Hit List",
-        "description": "Killing a randomly marked enemy permanently increases damage by 0.5 up to a maximum of 20.",
+        "description": "On kill: killing a marked enemy permanently increases damage by 0.5, up to a maximum of 20.",
         "stack": "Increase amount of markable enemies.",
         "unlock": "Bandit: Reset your cooldown 15 times consecutively.",
         "itemClass": "red"
@@ -614,7 +614,7 @@ let items = {
 
     "Wicked_Ring": {
         "name": "Wicked Ring",
-        "description": "Critical strikes reduce cooldowns by 1 second.",
+        "description": "On crit: reduce cooldowns by 1 second.",
         "stack": "+1s cooldown reduction on crit, +6% critical chance.",
         "unlock": "Collect 4 Keycards.",
         "itemClass": "red"
@@ -629,7 +629,7 @@ let items = {
         "name": "Burning Witness",
         "description": "On Kill: Grants a firetrail, 5% movement speed, and 1 damage for 6 seconds.",
         "stack": "+5% movement speed, increases duration",
-        "unlock": "Dropped by the Magma Worm.",
+        "drop": "Dropped by the Magma Worm.",
         "itemClass": "yellow"
     },
 
@@ -637,7 +637,7 @@ let items = {
         "name": "Colossal Knurl",
         "description": "Increase health by 40, health regeneration by 1.2/second, and armor by 6.",
         "stack": "+40 health, +1.2 health regen, +6 armor.",
-        "unlock": "Dropped by the Colossus.",
+        "drop": "Dropped by the Colossus.",
         "itemClass": "yellow"
     },
 
@@ -645,7 +645,7 @@ let items = {
         "name": "Ifrit's Horn",
         "description": "On hit: 8% chance to incinerate enemies for 220% damage.",
         "stack": "+30% damage.",
-        "unlock": "Dropped by Ifrit.",
+        "drop": "Dropped by Ifrit.",
         "itemClass": "yellow"
     },
 
@@ -653,7 +653,7 @@ let items = {
         "name": "Imp Overlord's Tentacle",
         "description": "Summon an Imp bodyguard that revives every 60 seconds.",
         "stack": "Increase his health, damage, and speed, and change his color.",
-        "unlock": "Dropped by the Imp Overlord.",
+        "drop": "Dropped by the Imp Overlord.",
         "itemClass": "yellow"
     },
 
@@ -661,7 +661,7 @@ let items = {
         "name": "Legendary Spark",
         "description": "On hit: 8% chance to smite enemies for 200% damage.",
         "stack": "+1 spark.",
-        "unlock": "Dropped by the Ancient Wisp.",
+        "drop": "Dropped by the Ancient Wisp.",
         "itemClass": "yellow"
     },
 
@@ -670,7 +670,7 @@ let items = {
         "description": "On use: Shoot out 6 nematocysts that deal 200% damage.",
         "cooldown": 22.5,
         "embryo": "Shoot 12 nematocysts instead of 6.",
-        "unlock": "Dropped by the Wandering Vagrant.",
+        "drop": "Dropped by the Wandering Vagrant.",
         "itemClass": "yellow"
     },
 
@@ -915,7 +915,7 @@ let items = {
         "name": "Keycard",
         "description": "Opens locked doors on the UES Contact Light (Final Level).",
         "stack": "Each key unlocks one door. (Maximum of four keys)",
-        "unlock": "	Dropped by enemies or found in golden containers on the UES Contact Light (Final Level).",
+        "drop": "Dropped by enemies or found in golden containers on the UES Contact Light (Final Level).",
         "usage": true,
         "itemClass": "purple"
     },
@@ -924,7 +924,7 @@ let items = {
         "name": "Small Enigma",
         "description": "Reduces the cooldown of <span class='orange'>use</span> items by 5%.",
         "stack": "Further decreases cooldown by 5%.",
-        "unlock": "Can be obtained when the <span class='purple'>-ENIGMA-</span> artifact is enabled.",
+        "unlock": "Can be obtained when the <span class='purple'>Enigma</span> artifact is enabled.",
         "itemClass": "purple"
     },
 
@@ -932,7 +932,7 @@ let items = {
         "name": "White Undershirt (M)",
         "description": "Increases armor by 3.",
         "stack": "N/A; Item only drops once.",
-        "unlock": "Dropped by the Armored Boar on the level Boar Beach.",
+        "drop": "Dropped by the Armored Boar on the level Boar Beach.",
         "itemClass": "purple"
     }
 }

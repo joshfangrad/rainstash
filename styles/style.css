@@ -352,7 +352,7 @@ input:checked + .toggle {
 }
 
 .toggleSort:after {
-    content: '-COMMAND-';
+    content: 'Command';
 }
 
 /* end of toggle switch css */
@@ -491,6 +491,11 @@ input:checked + .toggle {
     .gearButton {
         width: 15%;
         margin-right: 2%;
+    }
+
+    .toggle:before, .toggle:after {
+        font-size: 12px;
+        top: 5px;
     }
 }
 

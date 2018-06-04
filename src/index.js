@@ -121,9 +121,8 @@ let setInfo = (itemName) => {
     let unlock = document.getElementsByClassName('infounlock')[0];
     let unlockTitle = document.getElementById('unlockTitle');
 
-    if ('unlock' in item) {
+    if ('unlock' in item || 'drop' in item) {
         unlockTitle.classList.remove('hidden');
-        unlock.innerHTML = item.unlock;
     } else {
         unlockTitle.classList.add('hidden');
         unlock.innerHTML = '';
@@ -133,6 +132,7 @@ let setInfo = (itemName) => {
     image.src = `static/itemIcons/item_${itemName}.png`;
     
     document.getElementById('stackTitle').innerHTML = 'stack' in item ? 'Stacking Effect:' : 'Beating Embryo effect:';
+    document.getElementById('unlockTitle').innerHTML = 'unlock' in item ? 'Unlock:' : 'Dropped by:';
 
     //change the usage video if the item has one, and the user has them turned on.
     let video = document.getElementById('video');
