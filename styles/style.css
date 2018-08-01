@@ -80,6 +80,7 @@ html, body {
 
 .contentContainer {
     display: flex;
+    min-height: 0;
     height: 100%;
 }
 
@@ -89,12 +90,11 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .category {
-    margin: 10px;
-    margin-bottom: 0px;
+    margin: 5px;
     padding: 5px;
     min-height: min-content;
     border-color: black;
@@ -391,6 +391,11 @@ input:checked + .toggle {
 .purple {
     border-color: #ab6fbe;
     color: #ab6fbe;
+}
+
+.misc {
+    border-color: #7e7e7e;
+    color: #7e7e7e;
 }
 
 .hidden {

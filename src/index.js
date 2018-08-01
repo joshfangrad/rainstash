@@ -34,7 +34,7 @@ window.onload = () => {
 }
 
 //iterates through the itemManifest and loads item icons and details from it.
-let loadIcons = () => {
+function loadIcons() {
     for (let item in items) {
         let itemClass = items[item].itemClass;
         let targetCategory = document.getElementsByClassName(itemClass)[0];
@@ -73,9 +73,8 @@ let loadIcons = () => {
 }
 
 //called by click event, changes what the currently selected item is.
-let changeSelected = (e) => {
+function changeSelected(e) {
     let itemName = e.target.id;
-    let item = items[itemName];
     //mobile compatibility in here later
     if (selectedItem != itemName) {
         let oldSelect = document.getElementById(selectedItem);
@@ -93,8 +92,9 @@ let changeSelected = (e) => {
 }
 
 //sets the details on the info panel to the supplied item's info.
-let setInfo = (itemName) => {
+function setInfo(itemName) {
     let panel = document.getElementsByClassName('infoPanel')[0];
+    document.getElementsByClassName('infoImage')[0].innerHTML = '';
     panel.classList.remove('fadeOut');
     panel.classList.add('fadeIn');
     let item = items[itemName];
@@ -127,9 +127,19 @@ let setInfo = (itemName) => {
         unlockTitle.classList.add('hidden');
         unlock.innerHTML = '';
     }
+
+    let stack = document.getElementsByClassName('infostack')[0];
+    let stackTitle = document.getElementById('stackTitle');
+
+    if ('stack' in item || 'embryo' in item) {
+        stackTitle.classList.remove('hidden');
+    } else {
+        stackTitle.classList.add('hidden');
+        stack.innerHTML = '';
+    }
     
-    let image = document.getElementsByClassName('infoImage')[0];
-    image.src = `static/itemIcons/item_${itemName}.png`;
+    let infoImage = document.getElementsByClassName('infoImage')[0];
+    infoImage.src = `static/itemIcons/item_${itemName}.png`;
     
     document.getElementById('stackTitle').innerHTML = 'stack' in item ? 'Stacking Effect:' : 'Beating Embryo effect:';
     document.getElementById('unlockTitle').innerHTML = 'unlock' in item ? 'Unlock:' : 'Dropped by:';
@@ -151,7 +161,7 @@ let setInfo = (itemName) => {
 }
 
 //hides the info panel.
-let hideInfo = (e) => {
+function hideInfo(e) {
     if (selectedItem == null) {
         let panel = document.getElementsByClassName('infoPanel')[0];
         panel.classList.remove('fadeIn');
@@ -162,7 +172,7 @@ let hideInfo = (e) => {
 }
 
 //dims items based on the current text in the search bar.
-let searchFilter = () => {
+function searchFilter() {
     let text = document.getElementById('search').value;
     let itemList = document.getElementsByClassName('item');
     let filter = new RegExp(`${text}`, 'i');
@@ -182,84 +192,39 @@ let searchFilter = () => {
 }
 
 //clears the searchbar.
-let clearSearch = () => {
+function clearSearch() {
     document.getElementById('search').value = '';
     searchFilter();
 }
 
-//opens the options panel.
-let openOptions = () => {
-    document.getElementById('dim').classList.add('unhideDim');
-}
-
-//closes the options panel
-let closeOptions = () => {
-    document.getElementById('dim').classList.remove('unhideDim');
-}
-
-//opens supplied link in a new tab, instead of replacing the current window like an <a> tag does by default
-let openInTab = (href) => {
-    let newWindow = window.open(href, '_blank');
-    newWindow.focus();
-}
-
-//sorts based on toggleSort's status by using the order property. false is sort alphabetically, true is by the commandSort list.
-let sortItems = (toggleSort) => {
-    for (i=0; i < commandSort.length; i++) {
-        document.getElementById(commandSort[i]).style = toggleSort === true ? `order: ${i};` : '';
-    }
-}
-
-//MOBILE COMPATIBILITY THINGS
-
-//check if we're on mobile or not. Works in tandem with CSS media queries.
-let onMobile = () => {
-    if(typeof window.orientation !== "undefined" || navigator.userAgent.indexOf('IEMobile') !== -1 || window.innerWidth <= 560) {
-        return true;
-    }
-    return false;
-}
-
-//switches formatting between mobile and desktop. Primarily used when screens get rotated on tablets
-let resizeCheck = () => {
-    if (onMobile()) {
-        document.getElementById('closeInfo').classList.remove('hidden');
-        closeInfo();
-    } else {
-        document.getElementById('closeInfo').classList.add('hidden');
-        let items = document.getElementsByClassName('itemPanel')[0];
-        items.classList.remove('hidden');
-        items.classList.remove('fullWidth');
-        let info = document.getElementsByClassName('infoPanel')[0];
-        info.classList.remove('hidden');
-        info.classList.remove('fullWidth');
-    }
-}
-
 //removes currently selected item.
-let removeSelection = () => {
+function removeSelection() {
     if (selectedItem != null) {
         document.getElementById(selectedItem).classList.remove('select');
         selectedItem = null;
     }
 }
 
-//closes the info panel and fullscreens the items.
-let closeInfo = () => {
-    let items = document.getElementsByClassName('itemPanel')[0];
-    items.classList.remove('hidden');
-    items.classList.add('fullWidth');
-    let info = document.getElementsByClassName('infoPanel')[0];
-    info.classList.add('hidden');
-    info.classList.remove('fullWidth');
+
+//opens the options panel.
+function openOptions() {
+    document.getElementById('dim').classList.add('unhideDim');
 }
 
-//closes the items panel and fullscreens the item info.
-let closeItems = () => {
-    let items = document.getElementsByClassName('itemPanel')[0];
-    items.classList.add('hidden');
-    items.classList.remove('fullWidth');
-    let info = document.getElementsByClassName('infoPanel')[0];
-    info.classList.remove('hidden');
-    info.classList.add('fullWidth');
+//closes the options panel
+function closeOptions() {
+    document.getElementById('dim').classList.remove('unhideDim');
+}
+
+//opens supplied link in a new tab, instead of replacing the current window like an <a> tag does by default
+function openInTab(href) {
+    let newWindow = window.open(href, '_blank');
+    newWindow.focus();
+}
+
+//sorts based on toggleSort's status by using the order property. false is sort alphabetically, true is by the commandSort list.
+function sortItems(toggleSort) {
+    for (i=0; i < commandSort.length; i++) {
+        document.getElementById(commandSort[i]).style = toggleSort === true ? `order: ${i};` : '';
+    }
 }

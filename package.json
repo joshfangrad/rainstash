@@ -4,7 +4,7 @@
   "description": "A convenient list of all the items and their effects from the game Risk of Rain.",
   "main": "index.js",
   "scripts": {
-    "dev:watch": "nodemon --exec http-server"
+    "dev": "nodemon --exec http-server"
   },
   "repository": "https://github.com/Fustran/rainstash.git",
   "author": "Josh Fangrad",

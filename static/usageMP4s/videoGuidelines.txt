@@ -4,7 +4,6 @@ Requirements:
 
 mp4 format
 350x350
-uses the commando character
 health related items must have an on-screen healthbar
 cooldown related items must have abilities on-screen
 
