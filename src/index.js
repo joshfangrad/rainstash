@@ -29,6 +29,7 @@ window.onload = () => {
         sortItems(e.target.checked);
     }
 
+    addTextFlair();
     loadIcons();
     sortItems(toggleSort.checked);
 }
@@ -174,7 +175,6 @@ function hideInfo(e) {
 //dims items based on the current text in the search bar.
 function searchFilter() {
     let text = document.getElementById('search').value;
-    let itemList = document.getElementsByClassName('item');
     let filter = new RegExp(`${text}`, 'i');
     for (let item in items) {
         let name = items[item].name;
@@ -226,5 +226,21 @@ function openInTab(href) {
 function sortItems(toggleSort) {
     for (i=0; i < commandSort.length; i++) {
         document.getElementById(commandSort[i]).style = toggleSort === true ? `order: ${i};` : '';
+    }
+}
+
+//adds extra visual flair to item descriptions. We use this so we don't clog up our descriptions with HTML tags
+function addTextFlair() {
+    for (let i in items) {
+        if (items[i].name) {
+            //add artifact label to artifacts
+            if (items[i].itemClass == 'purple') {
+                items[i].description = `<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the character select screen.</span><br><br>${items[i].description}`;
+            }
+            //add color tags to keywords
+            items[i].description = items[i].description.replace(/On hit:/i, '<span class=\'red\'>On hit:</span>');
+            items[i].description = items[i].description.replace(/On kill:/i, '<span class=\'red\'>On kill:</span>');
+            items[i].description = items[i].description.replace(/On crit:/i, '<span class=\'red\'>On crit:</span>');
+        }
     }
 }

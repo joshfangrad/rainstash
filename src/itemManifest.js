@@ -34,7 +34,7 @@ let items = {
 
     "Crowbar": {
         "name": "Crowbar",
-        "description": "<span class='red'>On hit:</span> Deal +50% damage to enemies above 80% health.",
+        "description": "On Hit: Deal +50% damage to enemies above 80% health.",
         "stack": "+30% damage.",
         "usage": true,
         "itemClass": "white"
@@ -58,7 +58,7 @@ let items = {
 
     "Gasoline": {
         "name": "Gasoline",
-        "description": "<span class='red'>On kill:</span> Killing enemies burns the ground for 60% damage for 2 seconds.",
+        "description": "On kill: Killing enemies burns the ground for 60% damage for 2 seconds.",
         "stack": "+40% damage.",
         "usage": true,
         "itemClass": "white"
@@ -83,7 +83,7 @@ let items = {
 
     "Lens_Makers_Glasses": {
         "name": "Lens Maker's Glasses",
-        "description": "<span class='red'>On hit:</span> your attacks have a 7% chance to critically strike, dealing double damage.",
+        "description": "On Hit: your attacks have a 7% chance to critically strike, dealing double damage.",
         "stack": "+7% crit chance. 100% chance to crit on 14 stacks.",
         "itemClass": "white"
     },
@@ -97,7 +97,7 @@ let items = {
 
     "Meat_Nugget": {
         "name": "Meat Nugget",
-        "description": "<span class='red'>On hit:</span> 8% chance to drop 2 meat nuggets that heals for 2x6 health.",
+        "description": "On Hit: 8% chance to drop 2 meat nuggets that heals for 2x6 health.",
         "stack": "+6 health per meat nugget.",
         "usage": true,
         "itemClass": "white"
@@ -105,7 +105,7 @@ let items = {
 
     "Monster_Tooth": {
         "name": "Monster Tooth",
-        "description": "<span class='red'>On kill:</span> Killing an enemy heals you for 10 health.",
+        "description": "On kill: Killing an enemy heals you for 10 health.",
         "stack": "+5 more health after kill.",
         "usage": true,
         "itemClass": "white"
@@ -113,7 +113,7 @@ let items = {
 
     "Mortar_Tube": {
         "name": "Mortar Tube",
-        "description": "<span class='red'>On hit:</span> 9% chance to fire a mortar for 170% damage",
+        "description": "On Hit: 9% chance to fire a mortar for 170% damage",
         "stack": "+170% damage.",
         "usage": true,
         "itemClass": "white"
@@ -138,8 +138,8 @@ let items = {
 
     "Rusty_Blade": {
         "name": "Rusty Blade",
-        "description": "<span class='red'>On hit:</span> 15% chance to bleed an enemy for 4x35% damage.",
-        "stack": "15% extra chance to bleed (Non linear stacking).",
+        "description": "On Hit: 15% chance to bleed an enemy for 4x35% damage.",
+        "stack": "15% extra chance to bleed.",
         "usage": true,
         "itemClass": "white"
     },
@@ -180,7 +180,7 @@ let items = {
 
     "Sticky_Bomb": {
         "name": "Sticky Bomb",
-        "description": "<span class='red'>On hit:</span> 8% chance to attach a bomb to an enemy, detonating for 140% damage.",
+        "description": "On Hit: 8% chance to attach a bomb to an enemy, detonating for 140% damage.",
         "stack": "+40% damage.",
         "unlock": "Engineer: Detonate 15 \"Bounding Mines\" within 5 seconds.",
         "usage": true,
@@ -189,7 +189,7 @@ let items = {
 
     "Taser": {
         "name": "Taser",
-        "description": "<span class='red'>On hit:</span> 7% chance to snare enemies for 1.5 seconds.",
+        "description": "On Hit: 7% chance to snare enemies for 1.5 seconds.",
         "stack": "	Increases snare duration by 0.5 seconds.",
         "unlock": "Loader: Travel for 20,000 feet using the Hydraulic Gauntlet.",
         "usage": true,
@@ -199,7 +199,7 @@ let items = {
     "Warbanner": {
         "name": "Warbanner",
         "description": "On level up drop a banner. Raise attack/move speed by 30% and damage by 4.",
-        "stack": "Increases area of effect from banners.",
+        "stack": "area of effect.",
         "usage": true,
         "itemClass": "white"
     },
@@ -227,21 +227,21 @@ let items = {
 
     "AtG_Missile_Mk_1": {
         "name": "AtG Missle Mk. 1",
-        "description": "<span class='red'>On hit:</span> 10% chance of firing a missile that deals 300% damage.",
+        "description": "On Hit: 10% chance of firing a missile that deals 300% damage.",
         "stack": "+10% chance to fire missiles.",
         "itemClass": "green"
     },
 
     "Boxing_Gloves": {
         "name": "Boxing Gloves",
-        "description": "<span class='red'>On hit:</span> hitting enemies have a 15% chance to knock them back.",
+        "description": "On Hit: hitting enemies have a 15% chance to knock them back.",
         "stack": "6% multiplicatively increase in knockback chance.",
         "itemClass": "green"
     },
 
     "Chargefield_Generator": {
         "name": "Chargefield Generator",
-        "description": "<span class='red'>On kill:</span> generate a lightning ring, dealing 100% damage/sec for 6 seconds. Subsequent kills will expland the ring.",
+        "description": "On kill: generate a lightning ring, dealing 100% damage/sec for 6 seconds. Subsequent kills will expland the ring.",
         "stack": "+10% damage/sec.",
         "unlock": "Mercenary: Eviscerate 50 enemies.",
         "usage": true,
@@ -250,7 +250,7 @@ let items = {
 
     "Concussion_Grenade": {
         "name": "Concussion Grenade",
-        "description": "<span class='red'>On hit:</span> 6% chance to stun enemies for two seconds.",
+        "description": "On Hit: 6% chance to stun enemies for two seconds.",
         "stack": "+6% increased stun chance, stacks multiplicatively.",
         "unlock": "Engineer: Kill a Boss in 15 seconds or less.",
         "usage": true,
@@ -282,7 +282,7 @@ let items = {
 
     "Frost_Relic": {
         "name": "Frost Relic",
-        "description": "<span class='red'>On kill:</span> Killing an enemy surrounds you with 3 icicles that deal 3x33% damage.",
+        "description": "On kill: Killing an enemy surrounds you with 3 icicles that deal 3x33% damage.",
         "stack": "+1 additional icicle.",
         "usage": true,
         "itemClass": "green"
@@ -305,7 +305,7 @@ let items = {
 
     "Harvesters_Scythe": {
         "name": "Harvester's Scythe",
-        "description": "<span class='red'>On crit:</span> heal for 8 health. Gain 5% critical chance.",
+        "description": "On crit: heal for 8 health. Gain 5% critical chance.",
         "stack": "+5% critical chance and +2 health on a critical strike.",
         "unlock": "Use a health shrine that drops you below 5% health.",
         "itemClass": "green"
@@ -321,7 +321,7 @@ let items = {
 
     "Infusion": {
         "name": "Infusion",
-        "description": "<span class='red'>On kill:</span> killing an enemy increases your health permanently by 1.",
+        "description": "On kill: killing an enemy increases your health permanently by 1.",
         "stack": "+0.5 health on kill.",
         "usage": true,
         "itemClass": "green"
@@ -329,7 +329,7 @@ let items = {
 
     "Leeching_Seed": {
         "name": "Leeching Seed",
-        "description": "<span class='red'>On hit:</span> Dealing damage heals you for 2 health. If the shot pierces and hits mutiple enemies, there will be diminishing returns for each subsequent enemy hit.",
+        "description": "On Hit: Dealing damage heals you for 2 health. If the shot pierces and hits mutiple enemies, there will be diminishing returns for each subsequent enemy hit.",
         "stack": "+1 health on hit.",
         "usage": true,
         "itemClass": "green"
@@ -345,7 +345,7 @@ let items = {
 
     "Predatory_Instincts": {
         "name": "Predatory Instincts",
-        "description": "<span class='red'>On crit:</span> increase attack speed by 10%. Stacks up to 30%.",
+        "description": "On crit: increase attack speed by 10%. Stacks up to 30%.",
         "stack": "+5% crit chance. Further increase 1% attack speed increment on crit strikes.",
         "unlock": "Huntress: Defeat the Legendary Wisp without taking damage.",
         "itemClass": "green"
@@ -353,7 +353,7 @@ let items = {
 
     "Prison_Shackles": {
         "name": "Prison Shackles",
-        "description": "<span class='red'>On hit:</span> Slow enemies by 20% on every attack.",
+        "description": "On Hit: Slow enemies by 20% on every attack.",
         "stack": "+0.5s slowing duration.",
         "itemClass": "green"
     },
@@ -406,7 +406,7 @@ let items = {
 
     "Ukulele": {
         "name": "Ukulele",
-        "description": "<span class='red'>On hit:</span> 20% chance to fire chain lighting for 4x33% damage.",
+        "description": "On Hit: 20% chance to fire chain lighting for 4x33% damage.",
         "stack": "+33% damage per bounce.",
         "usage": true,
         "itemClass": "green"
@@ -414,7 +414,7 @@ let items = {
 
     "Will-O-The-Wisp": {
         "name": "Will-o'-the-Wisp",
-        "description": "<span class='red'>On kill:</span> 33% chance to create a lava pillar from the enemy's corpse for 250% damage.",
+        "description": "On kill: 33% chance to create a lava pillar from the enemy's corpse for 250% damage.",
         "stack": "Further increases lava pillar damage by +100%.",
         "itemClass": "green"
     },
@@ -442,7 +442,7 @@ let items = {
 
     "AtG_Missile_Mk_2": {
         "name": "AtG Missle Mk. 2",
-        "description": "<span class='red'>On hit:</span> 7% chance to fire three missiles that deal 3x300% damage.",
+        "description": "On Hit: 7% chance to fire three missiles that deal 3x300% damage.",
         "stack": "+7% chance to fire missiles.",
         "itemClass": "red"
     },
@@ -456,7 +456,7 @@ let items = {
 
     "Brilliant_Behemoth": {
         "name": "Brilliant Behemoth",
-        "description": "<span class='red'>On hit:</span> your projectiles explode for a bonus 20% damage to nearby enemies.",
+        "description": "On Hit: your projectiles explode for a bonus 20% damage to nearby enemies.",
         "stack": "+20% damage.",
         "usage": true,
         "itemClass": "red"
@@ -464,7 +464,7 @@ let items = {
 
     "Ceremonial_Dagger": {
         "name": "Ceremonial Dagger",
-        "description": "<span class='red'>On kill:</span> fire out 4 heat-seeking bolts that deal 100% damage.",
+        "description": "On kill: fire out 4 heat-seeking bolts that deal 100% damage.",
         "stack": "Fires +2 additional bolts.",
         "itemClass": "red"
     },
@@ -487,7 +487,7 @@ let items = {
 
     "Happiest_Mask": {
         "name": "Happiest Mask",
-        "description": "<span class='red'>On kill:</span> spawn a ghost of the killed enemy with 70% health and 50% damage for 15 seconds.",
+        "description": "On kill: spawn a ghost of the killed enemy with 70% health and 50% damage for 15 seconds.",
         "stack": "Increases ghost damage and durability.",
         "itemClass": "red"
     },
@@ -501,7 +501,7 @@ let items = {
 
     "Hyper-Threader": {
         "name": "Hyper-Threader",
-        "description": "<span class='red'>On hit:</span> Every attack fires a laser, dealing 40% damage and bouncing to 2 enemies.",
+        "description": "On Hit: Every attack fires a laser, dealing 40% damage and bouncing to 2 enemies.",
         "stack": "+1 additional bounce.",
         "unlock": "Commando: Activate the third teleporter without being hit once.",
         "itemClass": "red"
@@ -509,7 +509,7 @@ let items = {
 
     "Interstellar_Desk_Plant": {
         "name": "Interstellar Desk Plant",
-        "description": "<span class='red'>On kill:</span> spawn an alien plant that heals you for 8 HP.",
+        "description": "On kill: spawn an alien plant that heals you for 8 HP.",
         "stack": "+3 health per fruit.",
         "unlock": "CHEF: SEAR/FLAMBE 20 Sand Crabs.",
         "itemClass": "red"
@@ -532,7 +532,7 @@ let items = {
 
     "Permafrost": {
         "name": "Permafrost",
-        "description": "<span class='red'>On hit:</span> Chance to stun enemies for 1.5 seconds and slow enemies by 60% for three seconds.",
+        "description": "On Hit: Chance to stun enemies for 1.5 seconds and slow enemies by 60% for three seconds.",
         "stack": "Further increases chance by 6%.",
         "itemClass": "red"
     },
@@ -547,7 +547,7 @@ let items = {
 
     "Plasma_Chain": {
         "name": "Plasma Chain",
-        "description": "<span class='red'>On hit:</span> Chance to tether onto enemies dealing 60% damage per second.",
+        "description": "On Hit: Chance to tether onto enemies dealing 60% damage per second.",
         "stack": "Max tethers increased.",
         "itemClass": "red"
     },
@@ -576,7 +576,7 @@ let items = {
 
     "Telescopic_Sight": {
         "name": "Telescopic Sight",
-        "description": "<span class='red'>On hit:</span> 1% chance to instantly kill an enemy.",
+        "description": "On Hit: 1% chance to instantly kill an enemy.",
         "stack": "+0.5% proc chance up to a maximum of 3%.",
         "unlock": "Sniper: 1-shot kill 10 enemies consecutively.",
         "itemClass": "red"
@@ -591,14 +591,14 @@ let items = {
 
     "Thallium": {
         "name": "Thallium",
-        "description": "<span class='red'>On hit:</span> damage/slow by 500 enemy damage% and 100% speed over 3 seconds.",
+        "description": "On Hit: damage/slow by 500 enemy damage% and 100% speed over 3 seconds.",
         "stack": "Does not stack.",
         "itemClass": "red"
     },
 
     "The_Hit_List": {
         "name": "The Hit List",
-        "description": "<span class='red'>On kill:</span> killing a marked enemy permanently increases damage by 0.5, up to a maximum of 20.",
+        "description": "On kill: killing a marked enemy permanently increases damage by 0.5, up to a maximum of 20.",
         "stack": "Increase amount of markable enemies.",
         "unlock": "Bandit: Reset your cooldown 15 times consecutively.",
         "itemClass": "red"
@@ -614,7 +614,7 @@ let items = {
 
     "Wicked_Ring": {
         "name": "Wicked Ring",
-        "description": "<span class='red'>On crit:</span> reduce cooldowns by 1 second.",
+        "description": "On crit: reduce cooldowns by 1 second.",
         "stack": "+1s cooldown reduction on crit, +6% critical chance.",
         "unlock": "Collect 4 Keycards.",
         "itemClass": "red"
@@ -627,7 +627,7 @@ let items = {
 
     "Burning_Witness": {
         "name": "Burning Witness",
-        "description": "<span class='red'>On kill:</span> Grants a firetrail, 5% movement speed, and 1 damage for 6 seconds.",
+        "description": "On kill: Grants a firetrail, 5% movement speed, and 1 damage for 6 seconds.",
         "stack": "+5% movement speed, increases duration",
         "drop": "Dropped by the Magma Worm.",
         "itemClass": "yellow"
@@ -643,7 +643,7 @@ let items = {
 
     "Ifrits_Horn": {
         "name": "Ifrit's Horn",
-        "description": "<span class='red'>On hit:</span> 8% chance to incinerate enemies for 220% damage.",
+        "description": "On Hit: 8% chance to incinerate enemies for 220% damage.",
         "stack": "+30% damage.",
         "drop": "Dropped by Ifrit.",
         "itemClass": "yellow"
@@ -659,7 +659,7 @@ let items = {
 
     "Legendary_Spark": {
         "name": "Legendary Spark",
-        "description": "<span class='red'>On hit:</span> 8% chance to smite enemies for 200% damage.",
+        "description": "On Hit: 8% chance to smite enemies for 200% damage.",
         "stack": "+1 spark.",
         "drop": "Dropped by the Ancient Wisp.",
         "itemClass": "yellow"
@@ -913,70 +913,70 @@ let items = {
 
     "Honor": {
         "name": "Honor",
-        "description": "<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the main menu.</span><br><br>Enemies always spawn as elites.",
+        "description": "Enemies always spawn as elites.",
         "unlock": "Found in the Desolate Forest.",
         "itemClass": "purple"
     },
 
     "Kin": {
         "name": "Kin",
-        "description": "<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the main menu.</span><br><br>Only one enemy type will spawn per stage.",
+        "description": "Only one enemy type will spawn per stage.",
         "unlock": "Found in Dried Lake.",
         "itemClass": "purple"
     },
 
     "Distortion": {
         "name": "Distortion",
-        "description": "<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the main menu.</span><br><br>Locks a random skill every minute.",
+        "description": "Locks a random skill every minute, but gives you 25% cooldown reduction.",
         "unlock": "Found in the Damp Caverns.",
         "itemClass": "purple"
     },
 
     "Spite": {
         "name": "Spite",
-        "description": "<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the main menu.</span><br><br>Enemies release small bouncing explosives. These explosives only hurt the player.",
+        "description": "Enemies release small bouncing explosives. These explosives only hurt the player.",
         "unlock": "Found in the Sky Meadow.",
         "itemClass": "purple"
     },
 
     "Glass": {
         "name": "Glass",
-        "description": "<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the main menu.</span><br><br>You deal 500% more damage, but have 10% of your normal HP.",
+        "description": "You start with 500% more damage, but have 10% of your normal HP.",
         "unlock": "Found in the Ancient Valley.",
         "itemClass": "purple"
     },
 
     "Enigma": {
         "name": "Enigma",
-        "description": "<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the main menu.</span><br><br>Enigma will replace your active item. Using enigma will trigger a random use item effect. When Enigma is active, <span class='purple'>Small Enigma</span>s will drop.",
+        "description": "Enigma will replace your active item. Using enigma will trigger a random use item effect. When Enigma is active, <span class='purple'>Small Enigma</span>s will drop instead of use items.",
         "unlock": "Found in the Sunken Tomb.",
         "itemClass": "purple"
     },
 
     "Sacrifice": {
         "name": "Sacrifice",
-        "description": "<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the main menu.</span><br><br>Enemies have a chance to drop items, but chests no longer spawn. Stacks with <span class='green'>56 Leaf Clover</span>.",
+        "description": "Enemies have a chance to drop items, but chests no longer spawn. Stacks with <span class='green'>56 Leaf Clover</span>.",
         "unlock": "Found in the Magma Barracks.",
         "itemClass": "purple"
     },
 
     "Command": {
         "name": "Command",
-        "description": "<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the main menu.</span><br><br>Items are replaced with boxes that allow the player to choose the dropped item.",
+        "description": "Items are replaced with boxes that allow the player to choose the dropped item.",
         "unlock": "Found in the Hive Cluster.",
         "itemClass": "purple"
     },
 
     "Spirit": {
         "name": "Spirit",
-        "description": "<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the main menu.</span><br><br>Run faster when at lower HP. Applies to monsters as well as the player.",
+        "description": "Run faster when at lower HP. Applies to monsters as well as the player.",
         "unlock": "Found in the Temple of the Elders.",
         "itemClass": "purple"
     },
 
     "Origin": {
         "name": "Origin",
-        "description": "<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the main menu.</span><br><br>Every 10 minutes, a portal materializes and summons 3-5 Purple imps, and 1 Imp Vanguard.",
+        "description": "Every 10 minutes, a portal materializes and summons 3-5 Purple imps, and 1 Imp Vanguard.",
         "unlock": "Defeat <span class='red'>Providence</span> with all other artifacts activated.",
         "itemClass": "purple"
     },
