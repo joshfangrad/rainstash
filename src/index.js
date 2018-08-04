@@ -101,8 +101,8 @@ function setInfo(itemName) {
     let item = items[itemName];
     
     for (prop in item) {
-        //we can get rid of the usage check later once we complete all the mp4s
-        if (prop != 'usage' && prop != 'itemClass') {
+        //we can get rid of the hasVideo check later once we complete all the mp4s
+        if (prop != 'hasVideo' && prop != 'itemClass') {
             let target = document.getElementsByClassName(`info${prop}`)[0];
             target.innerHTML = item[prop];
         }
@@ -145,11 +145,11 @@ function setInfo(itemName) {
     document.getElementById('stackTitle').innerHTML = 'stack' in item ? 'Stacking Effect:' : 'Beating Embryo effect:';
     document.getElementById('unlockTitle').innerHTML = 'unlock' in item ? 'Unlock:' : 'Dropped by:';
 
-    //change the usage video if the item has one, and the user has them turned on.
+    //change the hasVideo video if the item has one, and the user has them turned on.
     let video = document.getElementById('video');
     let loadVids = document.getElementById('loadVids');
     video.innerHTML = '';
-    if ('usage' in item && item.usage === true && loadVids.checked === true) {
+    if ('hasVideo' in item && item.hasVideo === true && loadVids.checked === true) {
         video.classList.remove('hidden');
         let source = document.createElement('source');
         source.setAttribute('src', `static/usageMP4s/usage_${itemName}.mp4`);

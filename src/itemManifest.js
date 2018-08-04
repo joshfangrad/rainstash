@@ -3,7 +3,7 @@ let items = {
         "name": "Barbed Wire",
         "description": "Touching enemies deals 50% damage/sec.",
         "stack": "+20% larger radius, +17% damage/sec. Deminishing returns on damage/sec increase.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -12,7 +12,7 @@ let items = {
         "description": "Gain 8% max HP.",
         "stack": "Further gain 8% max HP, up to 38 stacks (300% extra HP).",
         "unlock": "Reach 650 health.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -20,7 +20,7 @@ let items = {
         "name": "Bundle of Fireworks",
         "description": "Upon opening/activating an object, fire 8 fireworks that deal 300% damage.",
         "stack": "+2 Fireworks launched.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -28,7 +28,7 @@ let items = {
         "name": "Bustling Fungus",
         "description": "After 2 seconds, heal for 4.5% of your health every second.",
         "stack": "4.5% More Healing.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -36,7 +36,7 @@ let items = {
         "name": "Crowbar",
         "description": "On Hit: Deal +50% damage to enemies above 80% health.",
         "stack": "+30% damage.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -44,7 +44,7 @@ let items = {
         "name": "Fire Shield",
         "description": "After being hit for 10% of your maximum health in one hit: explode, dealing 400% damage and knocking back enemies.",
         "stack": "Increases explosion damage by 200%, and increases knockback by 20%.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -52,7 +52,7 @@ let items = {
         "name": "First Aid Kit",
         "description": "Heal for 10 health after 1.1 seconds of getting hit.",
         "stack": "Each additional First Aid Kit increases the heal by 10.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -60,7 +60,7 @@ let items = {
         "name": "Gasoline",
         "description": "On kill: Killing enemies burns the ground for 60% damage for 2 seconds.",
         "stack": "+40% damage.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -68,7 +68,7 @@ let items = {
         "name": "Headstompers",
         "description": "Hurt enemies by falling for up to 507% damage.",
         "stack": "Increases damage by 30%.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -77,7 +77,7 @@ let items = {
         "description": "10% chance to evade attacks.",
         "stack": "Increases dodge chance +5%, up to a maximum of 35% at 6 stacks.",
         "unlock": "Huntress: Achieve 200% attack speed.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -99,7 +99,7 @@ let items = {
         "name": "Meat Nugget",
         "description": "On Hit: 8% chance to drop 2 meat nuggets that heals for 2x6 health.",
         "stack": "+6 health per meat nugget.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -107,7 +107,7 @@ let items = {
         "name": "Monster Tooth",
         "description": "On kill: Killing an enemy heals you for 10 health.",
         "stack": "+5 more health after kill.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -115,15 +115,15 @@ let items = {
         "name": "Mortar Tube",
         "description": "On Hit: 9% chance to fire a mortar for 170% damage",
         "stack": "+170% damage.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
     "Mysterious_Vial": {
         "name": "Mysterious Vial",
-        "description": "Increase health regeneration by 1.2 per second",
+        "description": "Increase health regeneration by 1.2 per second.",
         "stack": "+1.2 health per second.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -132,7 +132,7 @@ let items = {
         "description": "+20% movement speed.",
         "stack": "Further increases movement speed by 20%, caps at around 35.",
         "unlock": "Fail a shrine 3 times in a row.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -140,7 +140,7 @@ let items = {
         "name": "Rusty Blade",
         "description": "On Hit: 15% chance to bleed an enemy for 4x35% damage.",
         "stack": "15% extra chance to bleed.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -149,7 +149,7 @@ let items = {
         "description": "Failing a shrine increases crit chance by 5%.",
         "stack": "Further increases crit chance by 3% for each shrine fail.",
         "unlock": "Pass a shrine 4 times in a row.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -166,7 +166,7 @@ let items = {
         "description": "When hit, drops spikestrips (lasts for 2 seconds) that slow enemies by 20%",
         "stack": "Increases the duration of spikestrips by 1 second per stack.",
         "unlock": "Enforcer: Block 2000 damage total with your shield.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -174,7 +174,7 @@ let items = {
         "name": "Sprouting Egg",
         "description": "After not being hit for 7 seconds, increase health regen by 2.4 health per second.",
         "stack": "+2.4 heath per second out of combat.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -183,7 +183,7 @@ let items = {
         "description": "On Hit: 8% chance to attach a bomb to an enemy, detonating for 140% damage.",
         "stack": "+40% damage.",
         "unlock": "Engineer: Detonate 15 \"Bounding Mines\" within 5 seconds.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -192,7 +192,7 @@ let items = {
         "description": "On Hit: 7% chance to snare enemies for 1.5 seconds.",
         "stack": "	Increases snare duration by 0.5 seconds.",
         "unlock": "Loader: Travel for 20,000 feet using the Hydraulic Gauntlet.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -200,7 +200,7 @@ let items = {
         "name": "Warbanner",
         "description": "On level up drop a banner. Raise attack/move speed by 30% and damage by 4.",
         "stack": "area of effect.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "white"
     },
 
@@ -244,7 +244,7 @@ let items = {
         "description": "On kill: generate a lightning ring, dealing 100% damage/sec for 6 seconds. Subsequent kills will expland the ring.",
         "stack": "+10% damage/sec.",
         "unlock": "Mercenary: Eviscerate 50 enemies.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "green"
     },
 
@@ -253,7 +253,7 @@ let items = {
         "description": "On Hit: 6% chance to stun enemies for two seconds.",
         "stack": "+6% increased stun chance, stacks multiplicatively.",
         "unlock": "Engineer: Kill a Boss in 15 seconds or less.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "green"
     },
 
@@ -284,7 +284,7 @@ let items = {
         "name": "Frost Relic",
         "description": "On kill: Killing an enemy surrounds you with 3 icicles that deal 3x33% damage.",
         "stack": "+1 additional icicle.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "green"
     },
 
@@ -315,7 +315,7 @@ let items = {
         "name": "Hopoo Feather",
         "description": "Gain another jump.",
         "stack": "Adds an additional jump.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "green"
     },
 
@@ -323,7 +323,7 @@ let items = {
         "name": "Infusion",
         "description": "On kill: killing an enemy increases your health permanently by 1.",
         "stack": "+0.5 health on kill.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "green"
     },
 
@@ -331,7 +331,7 @@ let items = {
         "name": "Leeching Seed",
         "description": "On Hit: Dealing damage heals you for 2 health. If the shot pierces and hits mutiple enemies, there will be diminishing returns for each subsequent enemy hit.",
         "stack": "+1 health on hit.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "green"
     },
 
@@ -362,7 +362,7 @@ let items = {
         "name": "Red Whip",
         "description": "Leaving combat for 1.5 seconds boosts your movement speed by 80%.",
         "stack": "None.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "green"
     },
 
@@ -370,7 +370,7 @@ let items = {
         "name": "Rusty Jetpack",
         "description": "Decrease gravity by 50% and increase jump height by 10%.",
         "stack": "+10% jump height.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "green"
     },
 
@@ -399,8 +399,8 @@ let items = {
         "name": "Toxic Worm",
         "description": "Infect enemies, dealing 50% damage/sec. Bounces to other enemies on death.",
         "stack": "Allows infection on multiple targets.",
-        "unlock": "	Acrid: Spread 10,000 feet of \"Caustic Sludge\".",
-        "usage": true,
+        "unlock": "Acrid: Spread 10,000 feet of \"Caustic Sludge\".",
+        "hasVideo": true,
         "itemClass": "green"
     },
 
@@ -408,7 +408,7 @@ let items = {
         "name": "Ukulele",
         "description": "On Hit: 20% chance to fire chain lighting for 4x33% damage.",
         "stack": "+33% damage per bounce.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "green"
     },
 
@@ -458,7 +458,7 @@ let items = {
         "name": "Brilliant Behemoth",
         "description": "On Hit: your projectiles explode for a bonus 20% damage to nearby enemies.",
         "stack": "+20% damage.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "red"
     },
 
@@ -685,7 +685,7 @@ let items = {
         "cooldown": 135,
         "embryo": "Calls down an additional chest.",
         "unlock": "Unlock a Golden Chest with the Skeleton Key.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "orange"
     },
 
@@ -711,7 +711,7 @@ let items = {
         "description": "Fire a swarm of 12 missiles.",
         "cooldown": 45,
         "embryo": "Doubles the amount of missiles to 24.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "orange"
     },
 
@@ -754,7 +754,7 @@ let items = {
         "cooldown": 70,
         "embryo": "Doubled active duration.",
         "unlock": "Deal 5000 damage in one shot.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "orange"
     },
 
@@ -771,7 +771,7 @@ let items = {
         "description": "Drop 7 mines at your feet, each dealing 400% damage.",
         "cooldown": 45,
         "embryo": "Drop 6 additional mines, for a total of 13.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "orange"
     },
 
@@ -832,7 +832,7 @@ let items = {
         "description": "Drop a lantern for 10 seconds. Fears and damages enemies for 20% damage.",
         "cooldown": 45,
         "embryo": "Doubles duration to 20 seconds.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "orange"
     },
 
@@ -866,7 +866,7 @@ let items = {
         "description": "Open all the chests in view.",
         "cooldown": 90,
         "embryo": "None.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "orange"
     },
 
@@ -884,7 +884,7 @@ let items = {
         "cooldown": 45,
         "embryo": "+2 Drones.",
         "unlock": "Have 4 drone helpers at once.",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "orange"
     },
 
@@ -991,7 +991,7 @@ let items = {
         "description": "Opens locked doors on the UES Contact Light (Final Level).",
         "stack": "Each key unlocks one door. (Maximum of four keys)",
         "drop": "Dropped by enemies or found in golden containers on the UES Contact Light (Final Level).",
-        "usage": true,
+        "hasVideo": true,
         "itemClass": "misc"
     },
     
