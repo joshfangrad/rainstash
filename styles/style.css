@@ -229,7 +229,7 @@ html, body {
 }
 
 .select {
-    filter: drop-shadow(0px 0px 15px #ffffff70);
+    filter: drop-shadow(0px 0px 15px #ffffff70) !important;
     transform: scale(1.5);
     animation: selectPulse 0.4s;
 }
@@ -428,6 +428,19 @@ input:checked + .toggle {
 .fadeIn {
     opacity: 1;
     animation: fadeInAnim 0.2s;
+}
+
+.noFlair * {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    animation: none;
+    filter: none;
+}
+
+.noFlair:hover * {
+    animation: none;
 }
 
 @keyframes fadeOutAnim {

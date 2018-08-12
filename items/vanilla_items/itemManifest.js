@@ -422,8 +422,6 @@ let items = {
 
 
 
-
-
     "Alien_Head": {
         "name": "Alien Head",
         "description": "Decreases your cooldowns by 25%.",
@@ -623,8 +621,6 @@ let items = {
 
 
 
-
-
     "Burning_Witness": {
         "name": "Burning Witness",
         "description": "On kill: Grants a firetrail, 5% movement speed, and 1 damage for 6 seconds.",
@@ -673,8 +669,6 @@ let items = {
         "drop": "Dropped by the Wandering Vagrant.",
         "itemClass": "yellow"
     },
-
-
 
 
 
@@ -908,9 +902,6 @@ let items = {
 
 
 
-
-
-
     "Honor": {
         "name": "Honor",
         "description": "Enemies always spawn as elites.",
@@ -980,8 +971,6 @@ let items = {
         "unlock": "Defeat <span class='red'>Providence</span> with all other artifacts activated.",
         "itemClass": "purple"
     },
-
-
 
 
 

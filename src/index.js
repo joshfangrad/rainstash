@@ -11,16 +11,11 @@ window.onload = () => {
         document.getElementById('closeInfo').classList.remove('hidden');
         closeInfo();
     }
-
+    
     //reformat in case a device gets rotated, or window resized.
     window.onresize = () => { resizeCheck(); }
     window.onorientationchange = () => { resizeCheck(); }
-
-    //set up toggleVids switch
-    let toggleVids = document.getElementById('loadVids');
-    toggleVids.checked = checkBoolCookie('loadVids', true);
-    toggleVids.onchange = (e) => { setCookie('loadVids', e.target.checked, 365); }
-
+    
     //set up toggleSort switch
     let toggleSort = document.getElementById('toggleSort');
     toggleSort.checked = checkBoolCookie('toggleSort', false);
@@ -29,9 +24,43 @@ window.onload = () => {
         sortItems(e.target.checked);
     }
 
-    addTextFlair();
-    loadIcons();
-    sortItems(toggleSort.checked);
+    //set up toggleVids switch
+    let toggleVids = document.getElementById('loadVids');
+    toggleVids.checked = checkBoolCookie('loadVids', true);
+    toggleVids.onchange = (e) => { setCookie('loadVids', e.target.checked, 365); }
+    
+    //set up togglePerformance switch
+    let togglePerformance = document.getElementById('togglePerformance');
+    togglePerformance.checked = checkBoolCookie('togglePerformance', false);
+    togglePerformance.onchange = (e) => { 
+        setCookie('togglePerformance', e.target.checked, 365);
+        togglePerformanceMode(e.target.checked);
+    }
+    
+    loadItems(['vanilla'], () => {
+        addTextFlair();
+        loadIcons();
+        sortItems(toggleSort.checked);
+        togglePerformanceMode(togglePerformance.checked);
+    });
+}
+
+//function to load item manifests.
+function loadItems(manifests, callback) {
+    if (manifests.length > 0) {
+        let scriptCount = manifests.length;
+        for (let manifest of manifests) {
+            let script = document.createElement('script');
+            script.setAttribute('type', 'text/javascript');
+            script.setAttribute('src', `items/${manifest}_items/itemManifest.js`);
+            script.onload = script.onreadystatechange = () => {
+                script.onload = script.onreadystatechange = null;
+                scriptCount--;
+                if (scriptCount < 1) { callback(script); } 
+            }
+            document.head.appendChild(script);
+        }
+    }
 }
 
 //iterates through the itemManifest and loads item icons and details from it.
@@ -205,7 +234,6 @@ function removeSelection() {
     }
 }
 
-
 //opens the options panel.
 function openOptions() {
     document.getElementById('dim').classList.add('unhideDim');
@@ -214,6 +242,15 @@ function openOptions() {
 //closes the options panel
 function closeOptions() {
     document.getElementById('dim').classList.remove('unhideDim');
+}
+
+//toggles performance mode. Performance mode is just a css class that disables things like animations or shadows that we apply to body
+function togglePerformanceMode(state) {
+    if (state && state === true) {
+        document.body.classList.add('noFlair');
+    } else {
+        document.body.classList.remove('noFlair');
+    }
 }
 
 //opens supplied link in a new tab, instead of replacing the current window like an <a> tag does by default
