@@ -1,0 +1,40 @@
+{
+    "items": {
+        "Test_One": {
+            "name": "Test one",
+            "description": "on hit: adds one to test.",
+            "stack": "adds one more to test on hit.",
+            "hasVideo": false,
+            "itemClass": "purple"
+        },
+    
+        "Test_Two": {
+            "name": "Test two",
+            "description": "The second test item.",
+            "stack": "you get more test items.",
+            "unlock": "AAAAAAAH",
+            "hasVideo": false,
+            "itemClass": "gay2"
+        },
+    
+        "Test_Three": {
+            "name": "Test Three",
+            "description": "IT'S THE THIRD TEST ITEM, DUHH",
+            "stack": "REEEEEEEEE",
+            "hasVideo": false,
+            "itemClass": "gay"
+        }
+    },
+
+    "classInfo": {
+        "purple": "#ab6fbe",
+        "gay": "#5867c6",
+        "gay2": "#c7cf6f"
+    },
+
+    "commandSort": [
+        "Test_Three",
+        "Test_Two",
+        "Test_One"
+    ]
+}

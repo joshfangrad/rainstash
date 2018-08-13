@@ -70,8 +70,8 @@ html, body {
 
 .gearButton {
     cursor: pointer;
-    margin-left: 3%;
-    width: 9%;
+    margin-left: 10px;
+    width: 32px;
 }
 
 .gearButton:hover {
@@ -228,6 +228,16 @@ html, body {
     animation: buttonPulse 0.3s;
 }
 
+.modText {
+    color: #7e7e7e;
+}
+
+.modArrow {
+    width: 24px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+}
+
 .select {
     filter: drop-shadow(0px 0px 15px #ffffff70) !important;
     transform: scale(1.5);
@@ -249,10 +259,13 @@ html, body {
     width: 90%;
 }
 
-
 .link {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 /* start of toggle switch css */
@@ -348,7 +361,7 @@ input:checked + .toggle {
 }
 
 .toggleSort:before {
-    content: 'Alphabetical';
+    content: 'Default';
 }
 
 .toggleSort:after {

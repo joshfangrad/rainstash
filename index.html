@@ -19,6 +19,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta charset="utf-8"/>
         <script type='text/javascript' src='src/mobile.js'></script>
+        <script type='text/javascript' src='src/load.js'></script>
         <script type='text/javascript' src='src/cookie.js'></script>
         <script type='text/javascript' src='src/index.js'></script>
     </head>
@@ -30,6 +31,10 @@
                     <div class='titleText'>Rainstash</div>
                 </div>
                 <div class='titleWrap'>
+                    <div class='titleWrap hidden' id='modWrap'>
+                        <div class='modText pointer'>Mods</div>
+                        <img class='modArrow pointer' src='static/downArrow.png'/>
+                    </div>
                     <input type='text' class='search' id='search' placeholder='Search...'/>
                     <img id='clear' class='clearButton' src='static/close3.png'/>
                     <img id='gear' class='gearButton' src='static/gear2.png'/>
@@ -52,15 +57,7 @@
                         <video id='video' class='infoVideo' autoplay loop></video>
                     </div>
                 </div>
-                <div class='itemPanel'>
-                    <div class='category white'></div>
-                    <div class='category green'></div>
-                    <div class='category red'></div>
-                    <div class='category yellow'></div>
-                    <div class='category orange'></div>
-                    <div class='category purple'></div>
-                    <div class='category misc'></div>
-                </div>
+                <div class='itemPanel' id='itemPanel'></div>
             </div>
         </div>
         <div id='dim' class='pageDim'>
@@ -80,6 +77,14 @@
                     <div class='toggleWrap'>
                         <input type='checkbox' class='check' id='loadVids'/>
                         <label class='toggle toggleBool' for='loadVids'>
+                            <span class='toggleHandle'></span>
+                        </label>
+                    </div>
+
+                    <label class='gray smallText'>modded content:</label>
+                    <div class='toggleWrap'>
+                        <input type='checkbox' class='check' id='toggleMods'/>
+                        <label class='toggle toggleBool' for='toggleMods'>
                             <span class='toggleHandle'></span>
                         </label>
                     </div>
