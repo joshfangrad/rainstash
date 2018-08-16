@@ -14,22 +14,22 @@
             "stack": "you get more test items.",
             "unlock": "AAAAAAAH",
             "hasVideo": false,
-            "itemClass": "gay2"
+            "itemClass": "testCategory"
         },
     
         "Test_Three": {
             "name": "Test Three",
-            "description": "IT'S THE THIRD TEST ITEM, DUHH",
+            "description": "IT'S THE THIRD TEST ITEM!!!!!!!",
             "stack": "REEEEEEEEE",
             "hasVideo": false,
-            "itemClass": "gay"
+            "itemClass": "testCategory"
         }
     },
 
     "classInfo": {
-        "purple": "#ab6fbe",
-        "gay": "#5867c6",
-        "gay2": "#c7cf6f"
+        "purple": { "color": "#ab6fbe" },
+        "testCategory": { "color": "#5867c6", 
+            "textFlair": "<span class='gray'>This is a test category, with test textFlair.</span><br>WOW!<br><br><br>" }
     },
 
     "commandSort": [

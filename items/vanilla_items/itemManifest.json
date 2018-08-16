@@ -1003,13 +1003,14 @@
     },
 
     "classInfo": {
-        "white": "#ffffff",
-        "green": "#93e180",
-        "red": "#e7543a",
-        "yellow": "#ffff00",
-        "orange": "#ff8000",
-        "purple": "#ab6fbe",
-        "misc": "#7e7e7e"
+        "white": { "color": "#ffffff" },
+        "green": { "color": "#93e180" },
+        "red": { "color": "#e7543a" },
+        "yellow": { "color": "#ffff00" },
+        "orange": { "color": "#ff8000" },
+        "purple": { "color": "#ab6fbe", 
+            "textFlair": "<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the character select screen.</span><br><br>" },
+        "misc": { "color": "#7e7e7e" }
     },
     
     "commandSort": [

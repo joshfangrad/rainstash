@@ -39,6 +39,6 @@ function getOrCreateEnabledItems() {
         return JSON.parse(cookie);
     } else {
         setCookie('enabledItems', '[\"vanilla\"]', 365);
+        return ["vanilla"];
     }
-    return null;
 }

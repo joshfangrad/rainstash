@@ -49,10 +49,7 @@ window.onload = () => {
     }
     createModButtons();
     
-    loadItems([
-        'test',
-        'vanilla'
-    ]);
+    loadItems(getOrCreateEnabledItems());
 }
 
 //function to reload item manifests and propagate the changes. called when the site starts / loaded mods are changed.
@@ -78,10 +75,10 @@ async function loadItems(targetManifests) {
     }
     if (targetManifests.length > 0) {
         loadManifests(targetManifests).then(res => {
-            itemsCache = Object.assign({}, itemsCache, res);
-            addTextFlair(itemsCache);
-            createCategories(res);
-            loadIcons(res);
+            let resWithFlair = addTextFlair(res);
+            itemsCache = Object.assign({}, itemsCache, resWithFlair);
+            createCategories(resWithFlair);
+            loadIcons(resWithFlair);
             sortItems(document.getElementById('toggleSort').checked);
             togglePerformanceMode(document.getElementById('togglePerformance').checked);
             toggleModText(document.getElementById('toggleMods').checked);
@@ -333,9 +330,11 @@ function addTextFlair(items) {
         let set = items[setName];
         for (let itemName in set.items) {
             if (set.items[itemName].name) {
-                //add artifact label to artifacts
-                if (set.items[itemName].itemClass == 'purple') {
-                    items[setName].items[itemName].description = `<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the character select screen.</span><br><br>${items[setName].items[itemName].description}`;
+                //add category flair text if necessary.
+                let itemClass = set.items[itemName].itemClass;
+                let flair = set.classInfo[itemClass].textFlair;
+                if (flair) {
+                    items[setName].items[itemName].description = `${flair}${items[setName].items[itemName].description}`;
                 }
                 //add color tags to keywords
                 items[setName].items[itemName].description = items[setName].items[itemName].description.replace(/On hit:/i, '<span class=\'red\'>On hit:</span>');
@@ -344,6 +343,7 @@ function addTextFlair(items) {
             }
         }
     }
+    return items;
 }
 
 //function to generate categories based on what sets are being loaded.
@@ -356,7 +356,7 @@ function createCategories(items) {
         for (let category in set.classInfo) {
             if (!alreadyExists(category, set.classInfo[category], categories)) {
                 if (!alreadyCreated(category, oldCategories)) {
-                    categories[category] = set.classInfo[category];
+                    categories[category] = set.classInfo[category].color;
                 }
             }
         }
@@ -370,6 +370,26 @@ function createCategories(items) {
         catDiv.style = `color:${categories[catName]};border-color:${categories[catName]};`
         itemPanel.appendChild(catDiv);
     }
+}
+
+//function to check for a key/value match in an obj.
+function alreadyExists(key, value, obj) {
+    for (let objKey in obj) {
+        if (objKey.color == key || obj[objKey] == value) {
+            return true;
+        }
+    }
+    return false;
+}
+
+//loops through a list of elements to see if the target category has already been created or not.
+function alreadyCreated(target, list) {
+    for (let i in list) {
+        if (list[i].id == target) {
+            return true; 
+        }
+    }
+    return false;
 }
 
 //function to create mod menu toggle switches based on the item packs listed in manifests.js
@@ -426,23 +446,6 @@ function getItem(target) {
         }
     }
     return null;
-}
-
-//function to check for a key/value match in an obj.
-function alreadyExists(key, value, obj) {
-    for (let objKey in obj) {
-        if (objKey == key || obj[objKey] == value) {
-            return true;
-        }
-    }
-    return false;
-}
-
-//loops through a list of elements to see if the target category has already been created or not.
-function alreadyCreated(target, list) {
-    list.forEach(element => {
-        if (element.id == target) { return true; }
-    });
 }
 
 //opens supplied link in a new tab, instead of replacing the current window like an <a> tag does by default
