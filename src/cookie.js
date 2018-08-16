@@ -1,5 +1,5 @@
 //adds or modifies a cookie.
-let setCookie = (key, value, expireDays) => {
+function setCookie(key, value, expireDays) {
     expireDays = expireDays || 5;
     let date = new Date();
     date.setTime(+date + (expireDays * 86400000));
@@ -8,10 +8,10 @@ let setCookie = (key, value, expireDays) => {
 }
 
 //looks for a specific key in the website's cookies. Usually not called externally.
-let getCookie = (key) => {
+function getCookie(key) {
     let dCookie = decodeURIComponent(document.cookie);
     //look for key=value in cookie
-    let find = dCookie.match(new RegExp(`${key}=\\w+`));
+    let find = dCookie.match(new RegExp(`${key}=[^;]+`));
     if (find) {
         //remove key from the match
         return find[0].replace(new RegExp(`\\w+=`), '');
@@ -21,7 +21,7 @@ let getCookie = (key) => {
 }
 
 //returns the value of a cookie that has a boolean value. defaultState is used if the supplied cookie isn't already defined.
-let checkBoolCookie = (key, defaultState) => {
+function checkBoolCookie(key, defaultState) {
     let cookie = getCookie(key);
     if (cookie) {
         return cookie == 'true' ? true : false;
@@ -30,4 +30,15 @@ let checkBoolCookie = (key, defaultState) => {
         setCookie(key, `${defaultState}`, 365);
         return defaultState;
     }
+}
+
+//retrieves last enabled items, or creates a default template if it's never been called
+function getOrCreateEnabledItems() {
+    let cookie = getCookie('enabledItems');
+    if (cookie) {
+        return JSON.parse(cookie);
+    } else {
+        setCookie('enabledItems', '[\"vanilla\"]', 365);
+    }
+    return null;
 }

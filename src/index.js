@@ -7,6 +7,8 @@ window.onload = () => {
     document.getElementById('gear').onclick = () => { openOptions(); }
     document.getElementById('closeOptions').onclick = () => { closeOptions(); }
     document.getElementById('closeInfo').onclick = () => { closeInfo(); removeSelection(); }
+    document.getElementById('modWrap').onclick = () => { toggleModMenu(); }
+
     //change the formatting if we're on mobile
     if (onMobile()) {
         document.getElementById('closeInfo').classList.remove('hidden');
@@ -45,20 +47,21 @@ window.onload = () => {
         setCookie('togglePerformance', e.target.checked, 365);
         togglePerformanceMode(e.target.checked);
     }
+    createModButtons();
     
     loadItems([
-        'vanilla', 
-        'test'
+        'test',
+        'vanilla'
     ]);
 }
 
 //function to reload item manifests and propagate the changes. called when the site starts / loaded mods are changed.
-async function loadItems(manifests) {
+async function loadItems(targetManifests) {
     //make sure we don't load mods that are already loaded
     for (let setName in itemsCache) {
-        let find = manifests.findIndex(element => element == setName);
+        let find = targetManifests.findIndex(element => element == setName);
         if (find !== -1) { 
-            manifests.splice(find, 1); 
+            targetManifests.splice(find, 1); 
         } else {
             //if something currently loaded is missing from the manifest, unload the set
             for (let item in itemsCache[setName].items) {
@@ -73,14 +76,16 @@ async function loadItems(manifests) {
             delete itemsCache[setName];
         }
     }
-    if (manifests.length > 0) {
-        let items = itemsCache = await loadManifests(manifests);
-        items = addTextFlair(items);
-        createCategories(items);
-        loadIcons(items);
-        sortItems(document.getElementById('toggleSort').checked);
-        togglePerformanceMode(document.getElementById('togglePerformance').checked);
-        toggleModText(document.getElementById('toggleMods').checked);
+    if (targetManifests.length > 0) {
+        loadManifests(targetManifests).then(res => {
+            itemsCache = Object.assign({}, itemsCache, res);
+            addTextFlair(itemsCache);
+            createCategories(res);
+            loadIcons(res);
+            sortItems(document.getElementById('toggleSort').checked);
+            togglePerformanceMode(document.getElementById('togglePerformance').checked);
+            toggleModText(document.getElementById('toggleMods').checked);
+        });
     }
 }
 
@@ -144,6 +149,8 @@ function changeSelected(e) {
     }
     //re-run search filter to re-hide / unhide selected items
     searchFilter();
+    //also close mod menu for convenience
+    toggleModMenu(true);
 }
 
 //sets the details on the info panel to the supplied item's info.
@@ -287,8 +294,24 @@ function togglePerformanceMode(state) {
 function toggleModText(state) {
     if (state && state === true) {
         document.getElementById('modWrap').classList.remove('hidden');
+        reloadItems();
     } else {
         document.getElementById('modWrap').classList.add('hidden');
+        //upon disabling mods, we also load just vanilla items
+        loadItems(['vanilla']);
+    }
+}
+
+//function to toggle the mod menu's visibility
+function toggleModMenu(forceOff = false) {
+    let menu = document.getElementById('modPanel');
+    let modWrap = document.getElementById('modWrap');
+    if (menu.classList.contains('hidden') && forceOff === false) {
+        menu.classList.remove('hidden');
+        modWrap.classList.add('whiteGlow');
+    } else {
+        menu.classList.add('hidden');
+        modWrap.classList.remove('whiteGlow');
     }
 }
 
@@ -321,18 +344,20 @@ function addTextFlair(items) {
             }
         }
     }
-    return items;
 }
 
 //function to generate categories based on what sets are being loaded.
 function createCategories(items) {
     let categories = {};
     //make sure we don't have duplicate group names or colors
+    let oldCategories =  [ ...document.getElementById('itemPanel').childNodes ];
     for (let setName in items) {
         let set = items[setName];
         for (let category in set.classInfo) {
             if (!alreadyExists(category, set.classInfo[category], categories)) {
-                categories[category] = set.classInfo[category];
+                if (!alreadyCreated(category, oldCategories)) {
+                    categories[category] = set.classInfo[category];
+                }
             }
         }
     }
@@ -345,6 +370,49 @@ function createCategories(items) {
         catDiv.style = `color:${categories[catName]};border-color:${categories[catName]};`
         itemPanel.appendChild(catDiv);
     }
+}
+
+//function to create mod menu toggle switches based on the item packs listed in manifests.js
+function createModButtons() {
+    let checkFlex = document.getElementById('checkFlex');
+    let enabledItems = getOrCreateEnabledItems();
+    for (let man in manifests) {
+        let toggleLabel = document.createElement('label');
+        let toggleInput = document.createElement('input');
+        let toggleSpan = document.createElement('span');
+        let text = document.createTextNode(manifests[man]);
+        toggleLabel.classList.add('checkContainer');
+        toggleLabel.setAttribute('id', manifests[man])
+        toggleSpan.classList.add('modCheckmark');
+        toggleInput.setAttribute('type', 'checkbox')
+        toggleInput.setAttribute('id', 'check')
+        toggleLabel.appendChild(text)
+        toggleLabel.appendChild(toggleInput);
+        toggleLabel.appendChild(toggleSpan);
+        checkFlex.appendChild(toggleLabel);
+        toggleLabel.onchange = () => { reloadItems(); }
+        enabledItems.forEach((element) => {
+            if (element == manifests[man]) { toggleInput.checked = 'checked' }
+        });
+    }
+}
+
+//reloads items based on currently selected mods checkboxes
+function reloadItems() {
+    let toBeLoaded = [];
+    let checkFlex = document.getElementById('checkFlex');
+    let children = [ ...checkFlex.childNodes ];
+    for (let childName in children) {
+        let child = children[childName];
+        if (child.tagName == 'LABEL') {
+            let buttonState = child.getElementsByTagName('input')[0].checked;
+            if (buttonState) {
+                toBeLoaded.push(child.id);
+            }
+        }
+    }
+    setCookie('enabledItems', JSON.stringify(toBeLoaded), 365);
+    loadItems(toBeLoaded);
 }
 
 //retrieves an item object and set from the cache by name
@@ -368,6 +436,13 @@ function alreadyExists(key, value, obj) {
         }
     }
     return false;
+}
+
+//loops through a list of elements to see if the target category has already been created or not.
+function alreadyCreated(target, list) {
+    list.forEach(element => {
+        if (element.id == target) { return true; }
+    });
 }
 
 //opens supplied link in a new tab, instead of replacing the current window like an <a> tag does by default

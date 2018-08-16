@@ -1,21 +1,23 @@
 //function to load item manifests.
 async function loadManifests(manifests) {
-    let items = {};
-    for (let manifest of manifests) {
-        let res = await getJSON(`items/${manifest}_items/itemManifest.json`);
-        let json = JSON.parse(res);
-        items[manifest] = {};
-        if (json.items) {
-            items[manifest].items = json.items;
+    return new Promise(async resolve => {
+        let items = {};
+        for (let manifest of manifests) {
+            let res = await getJSON(`items/${manifest}_items/itemManifest.json`);
+            let json = JSON.parse(res);
+            items[manifest] = {};
+            if (json.items) {
+                items[manifest].items = json.items;
+            }
+            if (json.classInfo) {
+                items[manifest].classInfo = json.classInfo;
+            }
+            if (json.commandSort) {
+                items[manifest].commandSort = json.commandSort;
+            }
         }
-        if (json.classInfo) {
-            items[manifest].classInfo = json.classInfo;
-        }
-        if (json.commandSort) {
-            items[manifest].commandSort = json.commandSort;
-        }
-    }
-    return items;
+        resolve(items);
+    });
 }
 
 //function to retrieve a json from the server

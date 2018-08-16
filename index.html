@@ -18,6 +18,7 @@
         <meta name='keywords' content='Risk of Rain, items, item, wiki, risk, of, rain, guide, risk of rain items'/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta charset="utf-8"/>
+        <script type='text/javascript' src='src/manifests.js'></script>
         <script type='text/javascript' src='src/mobile.js'></script>
         <script type='text/javascript' src='src/load.js'></script>
         <script type='text/javascript' src='src/cookie.js'></script>
@@ -31,9 +32,9 @@
                     <div class='titleText'>Rainstash</div>
                 </div>
                 <div class='titleWrap'>
-                    <div class='titleWrap hidden' id='modWrap'>
-                        <div class='modText pointer'>Mods</div>
-                        <img class='modArrow pointer' src='static/downArrow.png'/>
+                    <div class='titleWrap hidden noselect' id='modWrap'>
+                        <div class='modText pointer' id='modText'>Mods</div>
+                        <img class='modArrow pointer' src='static/downArrow.png' id='modArrow'/>
                     </div>
                     <input type='text' class='search' id='search' placeholder='Search...'/>
                     <img id='clear' class='clearButton' src='static/close3.png'/>
@@ -41,6 +42,12 @@
                 </div>
             </div>
             <div class='contentContainer'>
+                <div class='modPanel hidden' id='modPanel'>
+                    <div class='titleText'>Mods:</div>
+                    <div class='dividerLine white'></div>
+                    <div class='checkboxFlex' id='checkFlex'>
+                    </div>
+                </div>
                 <div class='infoPanel fadeOut'>
                     <img id='closeInfo' class='closeButton hidden' src='static/close3.png'/>
                     <div class='subInfoPanel'>

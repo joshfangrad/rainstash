@@ -70,7 +70,7 @@ html, body {
 
 .gearButton {
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 5px;
     width: 32px;
 }
 
@@ -216,6 +216,17 @@ html, body {
     width: 30%;
 }
 
+.modPanel {
+    background-color: #252525;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
 .closeButton {
     display: block;
     cursor: pointer;
@@ -229,7 +240,7 @@ html, body {
 }
 
 .modText {
-    color: #7e7e7e;
+    color: #ffffff;
 }
 
 .modArrow {
@@ -248,6 +259,10 @@ html, body {
     filter: drop-shadow(0px 0px 15px #ffffff70);
 }
 
+.whiteGlow {
+    filter: drop-shadow(0px 0px 10px #ffffffa4) !important;
+}
+
 .fullWidth {
     width: 100%;    
 }
@@ -257,6 +272,10 @@ html, body {
     margin: 5px;
     height: 2px;
     width: 90%;
+}
+
+.dividerLine.white {
+    background-color: #ffffff;
 }
 
 .link {
@@ -370,6 +389,57 @@ input:checked + .toggle {
 
 /* end of toggle switch css */
 
+/* start of checkbox css */
+
+.checkboxFlex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.checkContainer {
+    display: block;
+    position: relative;
+    padding: 10px;
+    padding-left: 30px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+  
+.checkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.modCheckmark {
+    position: absolute;
+    overflow: hidden;
+    border: #ffffff solid 2px;
+    font-size: 32px;
+    text-align: left;
+    line-height: 13px;
+    left: 0;
+    top: 11px;
+    height: 20px;
+    width: 20px;
+}
+
+.modCheckmark:after {
+    content: "x";
+    display: none;
+}
+
+.checkContainer input:checked ~ .modCheckmark:after {
+    display: block;
+}
+
+/* end of checkbox css */
+
 .gray {
     color: #7e7e7e;
     margin-top: 10px;
@@ -456,6 +526,10 @@ input:checked + .toggle {
     animation: none;
 }
 
+.noselect {
+    user-select: none;
+}
+
 @keyframes fadeOutAnim {
     0% { opacity: 1; }
     100% { opacity: 0; }
@@ -509,6 +583,10 @@ input:checked + .toggle {
         flex-grow: 1;
     }
 
+    .modPanel {
+        width: 100%;
+    }
+
     .titleText {
         font-size: 150%;
     }
@@ -547,11 +625,11 @@ input:checked + .toggle {
     }
 
     .infoPanel {
-        width: 40%;
+        width: 30%;
     }
 
     .itemPanel {
-        width: 60%;
+        width: 70%;
     }
 }
 
