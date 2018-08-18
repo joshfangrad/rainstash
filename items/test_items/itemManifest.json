@@ -5,7 +5,7 @@
             "description": "on hit: adds one to test.",
             "stack": "adds one more to test on hit.",
             "hasVideo": false,
-            "itemClass": "purple"
+            "itemClass": "special items"
         },
     
         "Test_Two": {
@@ -14,7 +14,7 @@
             "stack": "you get more test items.",
             "unlock": "AAAAAAAH",
             "hasVideo": false,
-            "itemClass": "testCategory"
+            "itemClass": "test items"
         },
     
         "Test_Three": {
@@ -22,14 +22,14 @@
             "description": "IT'S THE THIRD TEST ITEM!!!!!!!",
             "stack": "REEEEEEEEE",
             "hasVideo": false,
-            "itemClass": "testCategory"
+            "itemClass": "test items"
         }
     },
 
     "classInfo": {
-        "purple": { "color": "#ab6fbe" },
-        "testCategory": { "color": "#5867c6", 
-            "textFlair": "<span class='gray'>This is a test category, with test textFlair.</span><br>WOW!<br><br><br>" }
+        "special items": { "color": "#ab6fbe" },
+        "test items": { "color": "#5867c6", 
+            "textFlair": "<span class='gray'>This is a test category, with test textFlair.</span><br>WOW!<br><br>" }
     },
 
     "commandSort": [

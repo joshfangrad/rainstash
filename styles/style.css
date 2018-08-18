@@ -106,6 +106,14 @@ html, body {
     justify-content: center;
 }
 
+.categoryTitle {
+    font-family: rainFontBold;
+    padding-bottom: 8px;
+    flex-basis: 100%;
+    opacity: 0.5;
+    border-bottom: 2px dashed black;
+}
+
 .item {
     filter: drop-shadow(0px 0px 10px #00000070);
     object-fit: contain;

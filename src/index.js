@@ -68,7 +68,7 @@ async function loadItems(targetManifests) {
             //also delete any empty categories they used
             for (let category in itemsCache[setName].classInfo) {
                 let catDiv = document.getElementById(category);
-                if (catDiv.childElementCount == 0) { catDiv.parentNode.removeChild(catDiv); }
+                if (catDiv.childElementCount == 1) { catDiv.parentNode.removeChild(catDiv); }
             }
             delete itemsCache[setName];
         }
@@ -320,6 +320,7 @@ function sortItems(toggleSort) {
         commandSort = commandSort.concat(set.commandSort);
     }
     for (i=0; i < commandSort.length; i++) {
+        //console.log(commandSort[i]);
         document.getElementById(commandSort[i]).style = toggleSort === true ? `order: ${i};` : '';
     }
 }
@@ -365,9 +366,14 @@ function createCategories(items) {
     for (let catName in categories) {
         let itemPanel = document.getElementById('itemPanel');
         let catDiv = document.createElement('div');
+        let catTitle = document.createElement('div');
         catDiv.id = catName;
         catDiv.classList.add('category');
-        catDiv.style = `color:${categories[catName]};border-color:${categories[catName]};`
+        catDiv.style = `color:${categories[catName]};border-color:${categories[catName]};`;
+        catTitle.classList.add('categoryTitle');
+        catTitle.style = `border-color:${categories[catName]};`;
+        catTitle.appendChild(document.createTextNode(catName));
+        catDiv.appendChild(catTitle)
         itemPanel.appendChild(catDiv);
     }
 }
