@@ -1,4 +1,5 @@
 let selectedItem;
+let itemsCache = [];
 
 window.onload = () => {
     document.getElementById('search').oninput = () => { searchFilter(); }
@@ -6,6 +7,8 @@ window.onload = () => {
     document.getElementById('gear').onclick = () => { openOptions(); }
     document.getElementById('closeOptions').onclick = () => { closeOptions(); }
     document.getElementById('closeInfo').onclick = () => { closeInfo(); removeSelection(); }
+    document.getElementById('modWrap').onclick = () => { toggleModMenu(); }
+
     //change the formatting if we're on mobile
     if (onMobile()) {
         document.getElementById('closeInfo').classList.remove('hidden');
@@ -28,7 +31,20 @@ window.onload = () => {
     let toggleVids = document.getElementById('loadVids');
     toggleVids.checked = checkBoolCookie('loadVids', true);
     toggleVids.onchange = (e) => { setCookie('loadVids', e.target.checked, 365); }
-    
+
+    //set up toggleStacks switch
+    let toggleStacks = document.getElementById('toggleStacks');
+    toggleStacks.checked = checkBoolCookie('toggleStacks', true);
+    toggleStacks.onchange = (e) => { setCookie('toggleStacks', e.target.checked, 365); reloadStackLabels(e.target.checked); }
+
+    //set up toggleMods switch
+    let toggleMods = document.getElementById('toggleMods');
+    toggleMods.checked = checkBoolCookie('toggleMods', false);
+    toggleMods.onchange = (e) => { 
+        setCookie('toggleMods', e.target.checked, 365);
+        toggleModText(e.target.checked);
+    }
+
     //set up togglePerformance switch
     let togglePerformance = document.getElementById('togglePerformance');
     togglePerformance.checked = checkBoolCookie('togglePerformance', false);
@@ -36,75 +52,101 @@ window.onload = () => {
         setCookie('togglePerformance', e.target.checked, 365);
         togglePerformanceMode(e.target.checked);
     }
+    createModButtons();
     
-    loadItems(['vanilla'], () => {
-        addTextFlair();
-        loadIcons();
-        sortItems(toggleSort.checked);
-        togglePerformanceMode(togglePerformance.checked);
-    });
+    loadItems(getOrCreateEnabledItems());
 }
 
-//function to load item manifests.
-function loadItems(manifests, callback) {
-    if (manifests.length > 0) {
-        let scriptCount = manifests.length;
-        for (let manifest of manifests) {
-            let script = document.createElement('script');
-            script.setAttribute('type', 'text/javascript');
-            script.setAttribute('src', `items/${manifest}_items/itemManifest.js`);
-            script.onload = script.onreadystatechange = () => {
-                script.onload = script.onreadystatechange = null;
-                scriptCount--;
-                if (scriptCount < 1) { callback(script); } 
+//function to reload item manifests and propagate the changes. called when the site starts / loaded mods are changed.
+async function loadItems(targetManifests) {
+    //make sure we don't load mods that are already loaded
+    for (let setName in itemsCache) {
+        let find = targetManifests.findIndex(element => element == setName);
+        if (find !== -1) { 
+            targetManifests.splice(find, 1); 
+        } else {
+            //if something currently loaded is missing from the manifest, unload the set
+            for (let item in itemsCache[setName].items) {
+                let img = document.getElementById(item);
+                img.parentNode.removeChild(img);
             }
-            document.head.appendChild(script);
+            //also delete any empty categories they used
+            for (let category in itemsCache[setName].classInfo) {
+                let catDiv = document.getElementById(category);
+                if (catDiv.childElementCount == 1) { catDiv.parentNode.removeChild(catDiv); }
+            }
+            delete itemsCache[setName];
         }
+    }
+    if (targetManifests.length > 0) {
+        loadManifests(targetManifests).then(res => {
+            let resWithFlair = addTextFlair(res);
+            itemsCache = Object.assign({}, itemsCache, resWithFlair);
+            createCategories(resWithFlair);
+            loadIcons(resWithFlair);
+            sortItems(document.getElementById('toggleSort').checked);
+            togglePerformanceMode(document.getElementById('togglePerformance').checked);
+            toggleModText(document.getElementById('toggleMods').checked);
+        });
     }
 }
 
 //iterates through the itemManifest and loads item icons and details from it.
-function loadIcons() {
-    for (let item in items) {
-        let itemClass = items[item].itemClass;
-        let targetCategory = document.getElementsByClassName(itemClass)[0];
-        let itemImg = document.createElement('img');
-        itemImg.classList.add('item');
-        itemImg.src = `static/itemIcons/item_${item}.png`;
-        itemImg.id = item;
-        targetCategory.appendChild(itemImg);
-
-        itemImg.onmouseenter = () => {
-            setInfo(item);
-        }
-
-        itemImg.onmouseleave = (e) => {
-            hideInfo(e);
-        }
-        
-        itemImg.ondragstart = (e) => {
-            if (onMobile()) { 
-                setInfo(item);
-                closeItems(); 
+function loadIcons(items) {
+    for (let setName in items) {
+        let set = items[setName];
+        for (let itemName in set.items) {
+            let item = set.items[itemName];
+            let itemClass = item.itemClass;
+            let targetCategory = document.getElementById(itemClass);
+            let itemDiv = document.createElement('div');
+            let itemImg = document.createElement('img');
+            itemDiv.classList.add('item');
+            itemDiv.id = itemName;
+            itemImg.src = `items/${setName}_items/itemIcons/item_${itemName}.png`;
+            itemImg.classList.add('itemImg');
+            itemDiv.appendChild(itemImg)
+            if (item.maxStacks && checkBoolCookie('toggleStacks')) {
+                let stack = document.createElement('div');
+                stack.classList.add('itemCap');
+                stack.innerHTML = item.maxStacks;
+                itemDiv.appendChild(stack)
             }
-            changeSelected(e);
-            //return false to prevent dragging 'ghost' effect
-            return false;
-        }
-
-        itemImg.onclick = (e) => {
-            if (onMobile()) { 
-                setInfo(item);
-                closeItems(); 
+            targetCategory.appendChild(itemDiv);
+    
+            itemDiv.onmouseenter = () => {
+                setInfo(itemName);
             }
-            changeSelected(e);
+    
+            itemDiv.onmouseleave = (e) => {
+                hideInfo(e);
+            }
+            
+            itemDiv.ondragstart = (e) => {
+                if (onMobile()) { 
+                    setInfo(itemName);
+                    closeItems(); 
+                }
+                changeSelected(e);
+                //return false to prevent dragging 'ghost' effect
+                return false;
+            }
+    
+            itemDiv.onclick = (e) => {
+                if (onMobile()) { 
+                    setInfo(itemName);
+                    closeItems(); 
+                }
+                changeSelected(e);
+            }
         }
     }
 }
 
 //called by click event, changes what the currently selected item is.
 function changeSelected(e) {
-    let itemName = e.target.id;
+    //we use path 
+    let itemName = e.target.parentElement.id;
     //mobile compatibility in here later
     if (selectedItem != itemName) {
         let oldSelect = document.getElementById(selectedItem);
@@ -112,13 +154,15 @@ function changeSelected(e) {
             oldSelect.classList.remove('select');
         }
         selectedItem = itemName;
-        e.target.classList.add('select');
+        e.target.parentElement.classList.add('select');
     } else {
         document.getElementById(selectedItem).classList.remove('select');
         selectedItem = null;
     }
     //re-run search filter to re-hide / unhide selected items
     searchFilter();
+    //also close mod menu for convenience
+    toggleModMenu(true);
 }
 
 //sets the details on the info panel to the supplied item's info.
@@ -127,11 +171,13 @@ function setInfo(itemName) {
     document.getElementsByClassName('infoImage')[0].innerHTML = '';
     panel.classList.remove('fadeOut');
     panel.classList.add('fadeIn');
-    let item = items[itemName];
+    let result = getItem(itemName);
+    let item = result['item'];
+    let setName = result['setName'];
     
     for (prop in item) {
         //we can get rid of the hasVideo check later once we complete all the mp4s
-        if (prop != 'hasVideo' && prop != 'itemClass') {
+        if (prop != 'hasVideo' && prop != 'itemClass' && prop != 'maxStacks') {
             let target = document.getElementsByClassName(`info${prop}`)[0];
             target.innerHTML = item[prop];
         }
@@ -169,7 +215,7 @@ function setInfo(itemName) {
     }
     
     let infoImage = document.getElementsByClassName('infoImage')[0];
-    infoImage.src = `static/itemIcons/item_${itemName}.png`;
+    infoImage.src = `items/${setName}_items/itemIcons/item_${itemName}.png`;
     
     document.getElementById('stackTitle').innerHTML = 'stack' in item ? 'Stacking Effect:' : 'Beating Embryo effect:';
     document.getElementById('unlockTitle').innerHTML = 'unlock' in item ? 'Unlock:' : 'Dropped by:';
@@ -181,9 +227,12 @@ function setInfo(itemName) {
     if ('hasVideo' in item && item.hasVideo === true && loadVids.checked === true) {
         video.classList.remove('hidden');
         let source = document.createElement('source');
-        source.setAttribute('src', `static/usageMP4s/usage_${itemName}.mp4`);
+        source.setAttribute('src', `items/${setName}_items/usageMP4s/usage_${itemName}.mp4`);
         video.appendChild(source);
         video.load();
+        video.oncanplay = () => {
+            video.play();
+        }
     } else {
         video.classList.add('hidden');
     }
@@ -196,7 +245,7 @@ function hideInfo(e) {
         let panel = document.getElementsByClassName('infoPanel')[0];
         panel.classList.remove('fadeIn');
         panel.classList.add('fadeOut');
-    } else if (e.target.id != selectedItem) {
+    } else if (e.target.parentElement.id != selectedItem) {
         setInfo(selectedItem);
     }
 }
@@ -205,13 +254,16 @@ function hideInfo(e) {
 function searchFilter() {
     let text = document.getElementById('search').value;
     let filter = new RegExp(`${text}`, 'i');
-    for (let item in items) {
-        let name = items[item].name;
-        let desc = items[item].description;
-        if (name.match(filter) !== null || desc.match(filter) !== null || item == selectedItem) {
-            document.getElementById(item).classList.remove('faded');
-        } else {
-            document.getElementById(item).classList.add('faded');
+    for (let setName in itemsCache) {
+        let set = itemsCache[setName];
+        for (let item in set.items) {
+            let name = set.items[item].name;
+            let desc = set.items[item].description;
+            if (name.match(filter) !== null || desc.match(filter) !== null || item == selectedItem) {
+                document.getElementById(item).classList.remove('faded');
+            } else {
+                document.getElementById(item).classList.add('faded');
+            }
         }
     }
 
@@ -253,31 +305,196 @@ function togglePerformanceMode(state) {
     }
 }
 
-//opens supplied link in a new tab, instead of replacing the current window like an <a> tag does by default
-function openInTab(href) {
-    let newWindow = window.open(href, '_blank');
-    newWindow.focus();
+//function to toggle the mod menu on or off.
+function toggleModText(state) {
+    if (state && state === true) {
+        document.getElementById('modWrap').classList.remove('hidden');
+        reloadItems();
+    } else {
+        document.getElementById('modWrap').classList.add('hidden');
+        //upon disabling mods, we also load just vanilla items
+        loadItems(['vanilla']);
+    }
+}
+
+//function to toggle the mod menu's visibility
+function toggleModMenu(forceOff = false) {
+    let menu = document.getElementById('modPanel');
+    let modWrap = document.getElementById('modWrap');
+    if (menu.classList.contains('hidden') && forceOff === false) {
+        menu.classList.remove('hidden');
+        modWrap.classList.add('whiteGlow');
+    } else {
+        menu.classList.add('hidden');
+        modWrap.classList.remove('whiteGlow');
+    }
 }
 
 //sorts based on toggleSort's status by using the order property. false is sort alphabetically, true is by the commandSort list.
 function sortItems(toggleSort) {
+    let commandSort = [];
+    for (setName in itemsCache) {
+        let set = itemsCache[setName];
+        commandSort = commandSort.concat(set.commandSort);
+    }
     for (i=0; i < commandSort.length; i++) {
         document.getElementById(commandSort[i]).style = toggleSort === true ? `order: ${i};` : '';
     }
 }
 
 //adds extra visual flair to item descriptions. We use this so we don't clog up our descriptions with HTML tags
-function addTextFlair() {
-    for (let i in items) {
-        if (items[i].name) {
-            //add artifact label to artifacts
-            if (items[i].itemClass == 'purple') {
-                items[i].description = `<span class='purple'>ARTIFACT.</span><br><span class='gray'>This item must be toggled on the character select screen.</span><br><br>${items[i].description}`;
+function addTextFlair(items) {
+    for (let setName in items) {
+        let set = items[setName];
+        for (let itemName in set.items) {
+            if (set.items[itemName].name) {
+                //add category flair text if necessary.
+                let itemClass = set.items[itemName].itemClass;
+                let flair = set.classInfo[itemClass].textFlair;
+                if (flair) {
+                    items[setName].items[itemName].description = `${flair}${items[setName].items[itemName].description}`;
+                }
+                //add color tags to keywords
+                items[setName].items[itemName].description = items[setName].items[itemName].description.replace(/On hit:/i, '<span class=\'red\'>On hit:</span>');
+                items[setName].items[itemName].description = items[setName].items[itemName].description.replace(/On kill:/i, '<span class=\'red\'>On kill:</span>');
+                items[setName].items[itemName].description = items[setName].items[itemName].description.replace(/On crit:/i, '<span class=\'red\'>On crit:</span>');
             }
-            //add color tags to keywords
-            items[i].description = items[i].description.replace(/On hit:/i, '<span class=\'red\'>On hit:</span>');
-            items[i].description = items[i].description.replace(/On kill:/i, '<span class=\'red\'>On kill:</span>');
-            items[i].description = items[i].description.replace(/On crit:/i, '<span class=\'red\'>On crit:</span>');
         }
     }
+    return items;
+}
+
+//function to generate categories based on what sets are being loaded.
+function createCategories(items) {
+    let categories = {};
+    //make sure we don't have duplicate group names or colors
+    let oldCategories =  [ ...document.getElementById('itemPanel').childNodes ];
+    for (let setName in items) {
+        let set = items[setName];
+        for (let category in set.classInfo) {
+            if (!alreadyExists(category, set.classInfo[category], categories)) {
+                if (!alreadyCreated(category, oldCategories)) {
+                    categories[category] = set.classInfo[category].color;
+                }
+            }
+        }
+    }
+    //create the categories
+    for (let catName in categories) {
+        let itemPanel = document.getElementById('itemPanel');
+        let catDiv = document.createElement('div');
+        let catTitle = document.createElement('div');
+        catDiv.id = catName;
+        catDiv.classList.add('category');
+        catDiv.style = `color:${categories[catName]};border-color:${categories[catName]};`;
+        catTitle.classList.add('categoryTitle');
+        catTitle.style = `border-color:${categories[catName]};`;
+        catTitle.appendChild(document.createTextNode(catName));
+        catDiv.appendChild(catTitle)
+        itemPanel.appendChild(catDiv);
+    }
+}
+
+//function to check for a key/value match in an obj.
+function alreadyExists(key, value, obj) {
+    for (let objKey in obj) {
+        if (objKey.color == key || obj[objKey] == value) {
+            return true;
+        }
+    }
+    return false;
+}
+
+//loops through a list of elements to see if the target category has already been created or not.
+function alreadyCreated(target, list) {
+    for (let i in list) {
+        if (list[i].id == target) {
+            return true; 
+        }
+    }
+    return false;
+}
+
+//function to create mod menu toggle switches based on the item packs listed in manifests.js
+function createModButtons() {
+    let checkFlex = document.getElementById('checkFlex');
+    let enabledItems = getOrCreateEnabledItems();
+    for (let man in manifests) {
+        let toggleLabel = document.createElement('label');
+        let toggleInput = document.createElement('input');
+        let toggleSpan = document.createElement('span');
+        let text = document.createTextNode(manifests[man]);
+        toggleLabel.classList.add('checkContainer');
+        toggleLabel.setAttribute('id', manifests[man])
+        toggleSpan.classList.add('modCheckmark');
+        toggleInput.setAttribute('type', 'checkbox')
+        toggleInput.setAttribute('id', 'check')
+        toggleLabel.appendChild(text)
+        toggleLabel.appendChild(toggleInput);
+        toggleLabel.appendChild(toggleSpan);
+        checkFlex.appendChild(toggleLabel);
+        toggleLabel.onchange = () => { reloadItems(); }
+        enabledItems.forEach((element) => {
+            if (element == manifests[man]) { toggleInput.checked = 'checked' }
+        });
+    }
+}
+
+//reloads items based on currently selected mods checkboxes
+function reloadItems() {
+    let toBeLoaded = [];
+    let checkFlex = document.getElementById('checkFlex');
+    let children = [ ...checkFlex.childNodes ];
+    for (let childName in children) {
+        let child = children[childName];
+        if (child.tagName == 'LABEL') {
+            let buttonState = child.getElementsByTagName('input')[0].checked;
+            if (buttonState) {
+                toBeLoaded.push(child.id);
+            }
+        }
+    }
+    setCookie('enabledItems', JSON.stringify(toBeLoaded), 365);
+    loadItems(toBeLoaded);
+}
+
+//function to add or remove maximum stack labels from item images
+function reloadStackLabels(state) {
+    for (catName in itemsCache) {
+        let items = itemsCache[catName].items;
+        for (itemName in items) {
+            let item = items[itemName];
+            if (item.maxStacks) {
+                let imgDiv = document.getElementById(itemName);
+                let imgStack = imgDiv.getElementsByTagName('div')[0];
+                if (state === true && !imgStack) {
+                    let newImgStack = document.createElement('div');
+                    newImgStack.innerHTML = item.maxStacks;
+                    newImgStack.classList.add('itemCap');
+                    imgDiv.appendChild(newImgStack);
+                } else if (state === false && imgStack) {
+                    imgDiv.removeChild(imgStack);
+                }
+            }
+        }
+    }
+}
+
+//retrieves an item object and set from the cache by name
+function getItem(target) {
+    for (let setName in itemsCache) {
+        let set = itemsCache[setName];
+        for (let itemName in set.items) {
+            if (target == itemName) {
+                return {"item": set.items[itemName], "setName": setName};
+            }
+        }
+    }
+    return null;
+}
+
+//opens supplied link in a new tab, instead of replacing the current window like an <a> tag does by default
+function openInTab(href) {
+    let newWindow = window.open(href, '_blank');
+    newWindow.focus();
 }

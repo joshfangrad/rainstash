@@ -18,24 +18,37 @@
         <meta name='keywords' content='Risk of Rain, items, item, wiki, risk, of, rain, guide, risk of rain items'/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta charset="utf-8"/>
+        <script type='text/javascript' src='src/manifests.js'></script>
         <script type='text/javascript' src='src/mobile.js'></script>
+        <script type='text/javascript' src='src/load.js'></script>
         <script type='text/javascript' src='src/cookie.js'></script>
         <script type='text/javascript' src='src/index.js'></script>
     </head>
     <body>
         <div class='mainFlex'>
             <div class='titleBar'>
-                <div class='titleWrap'>
+                <div class='centerWrap'>
                     <img src='static/Golden_Chest.png' class='titleIcon'/>
                     <div class='titleText'>Rainstash</div>
                 </div>
-                <div class='titleWrap'>
-                    <input type='text' class='search' id='search' placeholder='Search...'/>
-                    <img id='clear' class='clearButton' src='static/close3.png'/>
+                <div class='centerWrap'>
+                    <div class='centerWrap hidden noselect' id='modWrap'>
+                        <div class='modText pointer' id='modText'>Mods</div>
+                        <img class='modArrow pointer' src='static/downArrow.png' id='modArrow'/>
+                    </div>
+                    <div class='centerWrap'>
+                        <input type='text' class='search' id='search' placeholder='Search...'/>
+                        <img id='clear' class='clearButton' src='static/close3.png'/>
+                    </div>
                     <img id='gear' class='gearButton' src='static/gear2.png'/>
                 </div>
             </div>
             <div class='contentContainer'>
+                <div class='modPanel hidden' id='modPanel'>
+                    <div class='titleText'>Mods:</div>
+                    <div class='dividerLine white'></div>
+                    <div class='checkboxFlex' id='checkFlex'></div>
+                </div>
                 <div class='infoPanel fadeOut'>
                     <img id='closeInfo' class='closeButton hidden' src='static/close3.png'/>
                     <div class='subInfoPanel'>
@@ -49,18 +62,10 @@
                         <div class='infocooldown'></div>
                         <label id='unlockTitle' class='gray'>Unlock:</label>
                         <div class='infounlock infodrop'></div>
-                        <video id='video' class='infoVideo' autoplay loop></video>
+                        <video id='video' class='infoVideo' preload="auto" muted loop></video>
                     </div>
                 </div>
-                <div class='itemPanel'>
-                    <div class='category white'></div>
-                    <div class='category green'></div>
-                    <div class='category red'></div>
-                    <div class='category yellow'></div>
-                    <div class='category orange'></div>
-                    <div class='category purple'></div>
-                    <div class='category misc'></div>
-                </div>
+                <div class='itemPanel' id='itemPanel'></div>
             </div>
         </div>
         <div id='dim' class='pageDim'>
@@ -84,6 +89,14 @@
                         </label>
                     </div>
 
+                    <label class='gray smallText'>display maximum stacks:</label>
+                    <div class='toggleWrap'>
+                        <input type='checkbox' class='check' id='toggleStacks'/>
+                        <label class='toggle toggleBool' for='toggleStacks'>
+                            <span class='toggleHandle'></span>
+                        </label>
+                    </div>
+                    
                     <label class='gray smallText'>performance mode:</label>
                     <div class='toggleWrap'>
                         <input type='checkbox' class='check' id='togglePerformance'/>
@@ -92,9 +105,15 @@
                         </label>
                     </div>
                     
+                    <label class='gray smallText'>modded content:</label>
+                    <div class='toggleWrap'>
+                        <input type='checkbox' class='check' id='toggleMods'/>
+                        <label class='toggle toggleBool' for='toggleMods'>
+                            <span class='toggleHandle'></span>
+                        </label>
+                    </div>
+                
                 </div>
-                <p class='gray'>At the time of writing, not all items have videos. I'll finish them all eventually, promise!</p>
-                <div class='dividerLine'></div>
                 <div onclick='openInTab("https://github.com/Fustran/rainstash")' class='titleText red link'>rainstash repository</div>
                 <div class='dividerLine'></div>
                 <p class='gray'>

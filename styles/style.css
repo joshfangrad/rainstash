@@ -32,12 +32,14 @@ html, body {
 
 .titleBar {
     background-color: #474747;
+    height: 40px;
     display: flex;
+    flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
 } 
 
-.titleWrap {
+.centerWrap {
     display: flex;
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -63,15 +65,14 @@ html, body {
     z-index: 1;
     cursor: pointer;
     visibility: hidden;
-    margin-left: -37px;
-    margin-right: 0%;
-    width: 9%;
+    margin-left: -40px;
+    margin-right: 18px;
+    width: 8%;
 }
 
 .gearButton {
     cursor: pointer;
-    margin-left: 3%;
-    width: 9%;
+    width: 32px;
 }
 
 .gearButton:hover {
@@ -81,7 +82,7 @@ html, body {
 .contentContainer {
     display: flex;
     min-height: 0;
-    height: 100%;
+    flex-grow: 1;
 }
 
 .itemPanel {
@@ -106,22 +107,47 @@ html, body {
     justify-content: center;
 }
 
+.categoryTitle {
+    font-family: rainFontBold;
+    padding-bottom: 8px;
+    flex-basis: 100%;
+    opacity: 0.5;
+    border-bottom: 2px dashed black;
+}
+
 .item {
-    filter: drop-shadow(0px 0px 10px #00000070);
+    position: relative;
     object-fit: contain;
     width: 7%;
-    height: 7%;
     margin: 5px;
-    padding: 5px;
     cursor: pointer;
+    filter: drop-shadow(0px 0px 10px #00000070);
     transition: all 120ms ease-in;
-    user-select: none;
-    
+    user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 .item:hover {
     filter: drop-shadow(0px 0px 20px #0000002a);
     transform: scale(1.5);
+}
+
+.itemImg {
+    width: 100%; 
+}
+
+.itemCap {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 22px;
+	text-shadow:
+		-3px -3px 0 #252525,
+		3px -3px 0 #252525,
+		-3px 3px 0 #252525,
+		3px 3px 0 #252525;
+    color: white;
 }
 
 .infoPanel {
@@ -183,8 +209,8 @@ html, body {
 }
 
 .infoVideo {
-    padding: 15px;
-    width: 95%
+    margin: 15px;
+    width: 95%;
 }
 
 .pageDim {
@@ -216,6 +242,17 @@ html, body {
     width: 30%;
 }
 
+.modPanel {
+    background-color: #252525;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
 .closeButton {
     display: block;
     cursor: pointer;
@@ -228,6 +265,16 @@ html, body {
     animation: buttonPulse 0.3s;
 }
 
+.modText {
+    color: #ffffff;
+}
+
+.modArrow {
+    width: 24px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+}
+
 .select {
     filter: drop-shadow(0px 0px 15px #ffffff70) !important;
     transform: scale(1.5);
@@ -236,6 +283,10 @@ html, body {
 
 .select:hover {
     filter: drop-shadow(0px 0px 15px #ffffff70);
+}
+
+.whiteGlow {
+    filter: drop-shadow(0px 0px 10px #ffffffa4) !important;
 }
 
 .fullWidth {
@@ -249,10 +300,17 @@ html, body {
     width: 90%;
 }
 
+.dividerLine.white {
+    background-color: #ffffff;
+}
 
 .link {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 /* start of toggle switch css */
@@ -348,7 +406,7 @@ input:checked + .toggle {
 }
 
 .toggleSort:before {
-    content: 'Alphabetical';
+    content: 'Default';
 }
 
 .toggleSort:after {
@@ -356,6 +414,57 @@ input:checked + .toggle {
 }
 
 /* end of toggle switch css */
+
+/* start of checkbox css */
+
+.checkboxFlex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.checkContainer {
+    display: block;
+    position: relative;
+    padding: 10px;
+    padding-left: 30px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+  
+.checkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.modCheckmark {
+    position: absolute;
+    overflow: hidden;
+    border: #ffffff solid 2px;
+    font-size: 32px;
+    text-align: left;
+    line-height: 13px;
+    left: 0;
+    top: 11px;
+    height: 20px;
+    width: 20px;
+}
+
+.modCheckmark:after {
+    content: "x";
+    display: none;
+}
+
+.checkContainer input:checked ~ .modCheckmark:after {
+    display: block;
+}
+
+/* end of checkbox css */
 
 .gray {
     color: #7e7e7e;
@@ -435,12 +544,19 @@ input:checked + .toggle {
     -moz-transition: none;
     -o-transition: none;
     transition: none;
+    text-shadow: none;
     animation: none;
     filter: none;
 }
 
 .noFlair:hover * {
     animation: none;
+}
+
+.noselect {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 @keyframes fadeOutAnim {
@@ -487,28 +603,23 @@ input:checked + .toggle {
         height: 18%;
     }
 
-    .titleIcon {
-        display: none;
-    }
-
     .optionsPanel {
         height: 100%;
         flex-grow: 1;
     }
 
+    .modPanel {
+        width: 100%;
+    }
+
     .titleText {
-        font-size: 150%;
+        display: none;
     }
 
     .clearButton {
         margin-left: -12%;
         margin-right: 2%;
         width: 10%;
-    }
-
-    .gearButton {
-        width: 15%;
-        margin-right: 2%;
     }
 
     .toggle:before, .toggle:after {
@@ -534,24 +645,21 @@ input:checked + .toggle {
     }
 
     .infoPanel {
-        width: 40%;
+        width: 30%;
     }
 
     .itemPanel {
-        width: 60%;
+        width: 70%;
     }
 }
 
 @-moz-document url-prefix() { 
+
     .item {
         height: unset;
     }
-
-    .gearButton {
-        width: 13%;
-    }
-
+    
     .clearButton {
-        margin-right: 5%;
+        width: 12%;
     }
 }
