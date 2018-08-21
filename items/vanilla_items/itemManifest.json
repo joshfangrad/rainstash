@@ -374,6 +374,7 @@
             "description": "Leaving combat for 1.5 seconds boosts your movement speed by 80%.",
             "stack": "None.",
             "hasVideo": true,
+            "maxStacks": 1,
             "itemClass": "uncommon items"
         },
     
@@ -487,6 +488,7 @@
             "description": "Taking fatal damage revives you to 40% health. Invincible for 2 seconds.",
             "stack": "Can not be stacked for multiple revives, but if the revive effect has been used picking up another will reset it.",
             "unlock": "Die 50 times.",
+            "maxStacks": 1,
             "itemClass": "rare items"
         },
     
