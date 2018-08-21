@@ -15,6 +15,7 @@
             "stack": "Further gain 8% max HP, up to 38 stacks (300% extra HP).",
             "unlock": "Reach 650 health.",
             "hasVideo": true,
+            "maxStacks": 38,
             "itemClass": "common items"
         },
     
@@ -80,6 +81,7 @@
             "stack": "Increases dodge chance +5%, up to a maximum of 35% at 6 stacks.",
             "unlock": "Huntress: Achieve 200% attack speed.",
             "hasVideo": true,
+            "maxStacks": 6,
             "itemClass": "common items"
         },
     
@@ -87,6 +89,7 @@
             "name": "Lens Maker's Glasses",
             "description": "On Hit: your attacks have a 7% chance to critically strike, dealing double damage.",
             "stack": "+7% crit chance. 100% chance to crit on 14 stacks.",
+            "maxStacks": 14,
             "itemClass": "common items"
         },
     
@@ -135,14 +138,16 @@
             "stack": "Further increases movement speed by 20%, caps at around 35.",
             "unlock": "Fail a shrine 3 times in a row.",
             "hasVideo": true,
+            "maxStacks": 35,
             "itemClass": "common items"
         },
     
         "Rusty_Blade": {
             "name": "Rusty Blade",
             "description": "On Hit: 15% chance to bleed an enemy for 4x35% damage.",
-            "stack": "15% extra chance to bleed.",
+            "stack": "15% extra chance to bleed, 100% chance at 7 stacks.",
             "hasVideo": true,
+            "maxStacks": 7,
             "itemClass": "common items"
         },
     
@@ -160,6 +165,7 @@
             "description": "Increases attack speed by 15%.",
             "stack": "adds another 15% increase up to 13 times, maxing at +195%",
             "unlock": "Commando: Dodge 7 lethal attacks.",
+            "maxStacks": 13,
             "itemClass": "common items"
         },
     
@@ -216,6 +222,7 @@
             "description": "Elite mobs have a 4% chance to drop items.",
             "stack": "+1.5% item drop chance, up to a maximum of 100% at 65 stacks.",
             "unlock": "Kill the Scavenger.",
+            "maxStacks": 65,
             "itemClass": "uncommon items"
         },
     
@@ -231,6 +238,7 @@
             "name": "AtG Missle Mk. 1",
             "description": "On Hit: 10% chance of firing a missile that deals 300% damage.",
             "stack": "+10% chance to fire missiles.",
+            "maxStacks": 10,
             "itemClass": "uncommon items"
         },
     
@@ -271,6 +279,7 @@
             "name": "Energy Cell",
             "description": "Increased attack speed by up to 40% based on how much HP you have lost.",
             "stack": "+20% increased maximum attack speed, caps at 90% increase with 4 cells.",
+            "maxStacks": 4,
             "itemClass": "uncommon items"
         },
     
@@ -387,6 +396,7 @@
             "name": "Time Keeper's Secret",
             "description": "Falling to low health stops time for 3 seconds.",
             "stack": "+1s time stop duration, up to a maximum of 10 seconds at 8 stacks.",
+            "maxStacks": 8,
             "itemClass": "uncommon items"
         },
     
@@ -429,6 +439,7 @@
             "description": "Decreases your cooldowns by 25%.",
             "stack": "Stacks multiplicatively up to 3 times. (60% reduction).",
             "unlock": "Obtain 7 Monster Teeth and 1 Guardian's Heart.",
+            "maxStacks": 3,
             "itemClass": "rare items"
         },
     
@@ -437,13 +448,15 @@
             "description": "Upgrade your fourth ability; this is unique to each character class. Full list of effects <span class='link' onclick=\\'openInTab(\"http://riskofrain.wikia.com/wiki/Ancient_Scepter\")\\'>here.</span>",
             "stack": "Does not stack.",
             "unlock": "Mercenary: Beat the game on Monsoon difficulty.",
+            "maxStacks": 1,
             "itemClass": "rare items"
         },
     
         "AtG_Missile_Mk_2": {
             "name": "AtG Missle Mk. 2",
             "description": "On Hit: 7% chance to fire three missiles that deal 3x300% damage.",
-            "stack": "+7% chance to fire missiles.",
+            "stack": "+7% chance to fire missiles. 100% at 15 stacks.",
+            "maxStacks": 15,
             "itemClass": "rare items"
         },
     
@@ -496,6 +509,7 @@
             "name": "Heaven Cracker",
             "description": "Every 4 basic attacks pierce through enemies for 100% damage.",
             "stack": "Reduce attacks required by 1 per additional Heaven Cracker. Pierces every attack at 4 stacks.",
+            "maxStacks": 4,
             "itemClass": "rare items"
         },
     
@@ -556,6 +570,7 @@
             "name": "Rapid Mitosis",
             "description": "Reduce the cooldown of use items by 25%.",
             "stack": "Further reduces item cooldowns by 25%, multiplicatively. Soft caps at around 30 stacks.",
+            "maxStacks": 30,
             "itemClass": "rare items"
         },
     
@@ -563,6 +578,7 @@
             "name": "Repulsion Armor",
             "description": "After 6 hits reduce and reflect incoming damage by 83% for 3 seconds.",
             "stack": "Increases length of reflection by 1 second to a cap of 8 seconds.",
+            "maxStacks": 5,
             "itemClass": "rare items"
         },
     
@@ -579,6 +595,7 @@
             "description": "On Hit: 1% chance to instantly kill an enemy.",
             "stack": "+0.5% proc chance up to a maximum of 3%.",
             "unlock": "Sniper: 1-shot kill 10 enemies consecutively.",
+            "maxStacks": 5,
             "itemClass": "rare items"
         },
     
@@ -593,6 +610,7 @@
             "name": "Thallium",
             "description": "On Hit: damage/slow by 500 enemy damage% and 100% speed over 3 seconds.",
             "stack": "Does not stack.",
+            "maxStacks": 1,
             "itemClass": "rare items"
         },
     
@@ -609,6 +627,7 @@
             "description": "100% critical chance on enemies below 9% health.",
             "stack": "+4% health threshold, up to a cap of 35% health at 8 stacks",
             "unlock": "Survive 40 minutes.",
+            "maxStacks": 8,
             "itemClass": "rare items"
         },
     
@@ -934,7 +953,7 @@
     
         "Glass": {
             "name": "Glass",
-            "description": "You start with 500% more damage, but have 10% of your normal HP.",
+            "description": "You start with 500% more damage, but have 10% of your normal HP. Upon leveling up, recieve 300% and 25% of the damage and health increase, respectively.",
             "unlock": "Found in the Ancient Valley.",
             "itemClass": "special items"
         },
@@ -969,7 +988,7 @@
     
         "Origin": {
             "name": "Origin",
-            "description": "Every 10 minutes, a portal materializes and summons 3-5 Purple imps, and 1 Imp Vanguard.",
+            "description": "Every 10 minutes, a portal materializes and summons 3 Purple imps, and 1 Imp Vanguard.",
             "unlock": "Defeat <span class='red'>Providence</span> with all other artifacts activated.",
             "itemClass": "special items"
         },
@@ -998,6 +1017,7 @@
             "name": "White Undershirt (M)",
             "description": "Increases armor by 3.",
             "drop": "Dropped by the Armored Boar on the level Boar Beach.",
+            "maxStacks": 1,
             "itemClass": "misc items"
         }
     },

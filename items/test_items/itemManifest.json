@@ -1,33 +1,36 @@
 {
     "items": {
-        "Test_One": {
-            "name": "Test one",
-            "description": "on hit: adds one to test.",
-            "stack": "adds one more to test on hit.",
-            "hasVideo": false,
-            "itemClass": "special items"
-        },
     
-        "Test_Two": {
-            "name": "Test two",
-            "description": "The second test item.",
-            "stack": "you get more test items.",
-            "unlock": "AAAAAAAH",
+        "Test_One": {
+            "name": "Test One",
+            "description": "The first test item.",
+            "stack": "you get more test items..? You can't take more than 15 of these though. that'd be impolite.",
+            "unlock": "Press every key on your keyboard at once in the exact same moment you kill providence.",
             "hasVideo": false,
+            "maxStacks": 15,
             "itemClass": "test items"
         },
     
+        "Test_Two": {
+            "name": "Test Two",
+            "description": "IT'S THE SECOND TEST ITEM!!!!!!!",
+            "stack": "REEEEEEEEE",
+            "hasVideo": false,
+            "itemClass": "test items"
+        },
+
         "Test_Three": {
             "name": "Test Three",
-            "description": "IT'S THE THIRD TEST ITEM!!!!!!!",
-            "stack": "REEEEEEEEE",
+            "description": "The third test item.",
+            "drop": "Dropped by nobody. Sorry. ¯\\_(ツ)_\/¯",
+            "cooldown": 1337,
+            "embryo": "Doubles all your test items. maybe.",
             "hasVideo": false,
             "itemClass": "test items"
         }
     },
 
     "classInfo": {
-        "special items": { "color": "#ab6fbe" },
         "test items": { "color": "#5867c6", 
             "textFlair": "<span class='gray'>This is a test category, with test textFlair.</span><br>WOW!<br><br>" }
     },

@@ -31,7 +31,12 @@ window.onload = () => {
     let toggleVids = document.getElementById('loadVids');
     toggleVids.checked = checkBoolCookie('loadVids', true);
     toggleVids.onchange = (e) => { setCookie('loadVids', e.target.checked, 365); }
-    
+
+    //set up toggleStacks switch
+    let toggleStacks = document.getElementById('toggleStacks');
+    toggleStacks.checked = checkBoolCookie('toggleStacks', true);
+    toggleStacks.onchange = (e) => { setCookie('toggleStacks', e.target.checked, 365); reloadStackLabels(e.target.checked); }
+
     //set up toggleMods switch
     let toggleMods = document.getElementById('toggleMods');
     toggleMods.checked = checkBoolCookie('toggleMods', false);
@@ -94,21 +99,30 @@ function loadIcons(items) {
             let item = set.items[itemName];
             let itemClass = item.itemClass;
             let targetCategory = document.getElementById(itemClass);
+            let itemDiv = document.createElement('div');
             let itemImg = document.createElement('img');
-            itemImg.classList.add('item');
+            itemDiv.classList.add('item');
+            itemDiv.id = itemName;
             itemImg.src = `items/${setName}_items/itemIcons/item_${itemName}.png`;
-            itemImg.id = itemName;
-            targetCategory.appendChild(itemImg);
+            itemImg.classList.add('itemImg');
+            itemDiv.appendChild(itemImg)
+            if (item.maxStacks && checkBoolCookie('toggleStacks')) {
+                let stack = document.createElement('div');
+                stack.classList.add('itemCap');
+                stack.innerHTML = item.maxStacks;
+                itemDiv.appendChild(stack)
+            }
+            targetCategory.appendChild(itemDiv);
     
-            itemImg.onmouseenter = () => {
+            itemDiv.onmouseenter = () => {
                 setInfo(itemName);
             }
     
-            itemImg.onmouseleave = (e) => {
+            itemDiv.onmouseleave = (e) => {
                 hideInfo(e);
             }
             
-            itemImg.ondragstart = (e) => {
+            itemDiv.ondragstart = (e) => {
                 if (onMobile()) { 
                     setInfo(itemName);
                     closeItems(); 
@@ -118,7 +132,7 @@ function loadIcons(items) {
                 return false;
             }
     
-            itemImg.onclick = (e) => {
+            itemDiv.onclick = (e) => {
                 if (onMobile()) { 
                     setInfo(itemName);
                     closeItems(); 
@@ -131,7 +145,8 @@ function loadIcons(items) {
 
 //called by click event, changes what the currently selected item is.
 function changeSelected(e) {
-    let itemName = e.target.id;
+    //we use path 
+    let itemName = e.target.parentElement.id;
     //mobile compatibility in here later
     if (selectedItem != itemName) {
         let oldSelect = document.getElementById(selectedItem);
@@ -139,7 +154,7 @@ function changeSelected(e) {
             oldSelect.classList.remove('select');
         }
         selectedItem = itemName;
-        e.target.classList.add('select');
+        e.target.parentElement.classList.add('select');
     } else {
         document.getElementById(selectedItem).classList.remove('select');
         selectedItem = null;
@@ -162,7 +177,7 @@ function setInfo(itemName) {
     
     for (prop in item) {
         //we can get rid of the hasVideo check later once we complete all the mp4s
-        if (prop != 'hasVideo' && prop != 'itemClass') {
+        if (prop != 'hasVideo' && prop != 'itemClass' && prop != 'maxStacks') {
             let target = document.getElementsByClassName(`info${prop}`)[0];
             target.innerHTML = item[prop];
         }
@@ -227,7 +242,7 @@ function hideInfo(e) {
         let panel = document.getElementsByClassName('infoPanel')[0];
         panel.classList.remove('fadeIn');
         panel.classList.add('fadeOut');
-    } else if (e.target.id != selectedItem) {
+    } else if (e.target.parentElement.id != selectedItem) {
         setInfo(selectedItem);
     }
 }
@@ -320,7 +335,6 @@ function sortItems(toggleSort) {
         commandSort = commandSort.concat(set.commandSort);
     }
     for (i=0; i < commandSort.length; i++) {
-        //console.log(commandSort[i]);
         document.getElementById(commandSort[i]).style = toggleSort === true ? `order: ${i};` : '';
     }
 }
@@ -439,6 +453,28 @@ function reloadItems() {
     }
     setCookie('enabledItems', JSON.stringify(toBeLoaded), 365);
     loadItems(toBeLoaded);
+}
+
+//function to add or remove maximum stack labels from item images
+function reloadStackLabels(state) {
+    for (catName in itemsCache) {
+        let items = itemsCache[catName].items;
+        for (itemName in items) {
+            let item = items[itemName];
+            if (item.maxStacks) {
+                let imgDiv = document.getElementById(itemName);
+                let imgStack = imgDiv.getElementsByTagName('div')[0];
+                if (state === true && !imgStack) {
+                    let newImgStack = document.createElement('div');
+                    newImgStack.innerHTML = item.maxStacks;
+                    newImgStack.classList.add('itemCap');
+                    imgDiv.appendChild(newImgStack);
+                } else if (state === false && imgStack) {
+                    imgDiv.removeChild(imgStack);
+                }
+            }
+        }
+    }
 }
 
 //retrieves an item object and set from the cache by name
