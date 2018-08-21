@@ -32,12 +32,14 @@ html, body {
 
 .titleBar {
     background-color: #474747;
+    height: 40px;
     display: flex;
+    flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
 } 
 
-.titleWrap {
+.centerWrap {
     display: flex;
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -63,14 +65,13 @@ html, body {
     z-index: 1;
     cursor: pointer;
     visibility: hidden;
-    margin-left: -37px;
-    margin-right: 0%;
-    width: 9%;
+    margin-left: -40px;
+    margin-right: 18px;
+    width: 8%;
 }
 
 .gearButton {
     cursor: pointer;
-    margin-left: 5px;
     width: 32px;
 }
 
@@ -81,7 +82,7 @@ html, body {
 .contentContainer {
     display: flex;
     min-height: 0;
-    height: 100%;
+    flex-grow: 1;
 }
 
 .itemPanel {
@@ -123,6 +124,8 @@ html, body {
     filter: drop-shadow(0px 0px 10px #00000070);
     transition: all 120ms ease-in;
     user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 .item:hover {
@@ -131,7 +134,7 @@ html, body {
 }
 
 .itemImg {
-    width: 100%;
+    width: 100%; 
 }
 
 .itemCap {
@@ -206,8 +209,8 @@ html, body {
 }
 
 .infoVideo {
-    padding: 15px;
-    width: 95%
+    margin: 15px;
+    width: 95%;
 }
 
 .pageDim {
@@ -552,6 +555,8 @@ input:checked + .toggle {
 
 .noselect {
     user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 @keyframes fadeOutAnim {
@@ -598,10 +603,6 @@ input:checked + .toggle {
         height: 18%;
     }
 
-    .titleIcon {
-        display: none;
-    }
-
     .optionsPanel {
         height: 100%;
         flex-grow: 1;
@@ -612,18 +613,13 @@ input:checked + .toggle {
     }
 
     .titleText {
-        font-size: 150%;
+        display: none;
     }
 
     .clearButton {
         margin-left: -12%;
         margin-right: 2%;
         width: 10%;
-    }
-
-    .gearButton {
-        width: 15%;
-        margin-right: 2%;
     }
 
     .toggle:before, .toggle:after {
@@ -658,15 +654,12 @@ input:checked + .toggle {
 }
 
 @-moz-document url-prefix() { 
+
     .item {
         height: unset;
     }
-
-    .gearButton {
-        width: 13%;
-    }
-
+    
     .clearButton {
-        margin-right: 5%;
+        width: 12%;
     }
 }

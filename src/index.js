@@ -230,6 +230,9 @@ function setInfo(itemName) {
         source.setAttribute('src', `items/${setName}_items/usageMP4s/usage_${itemName}.mp4`);
         video.appendChild(source);
         video.load();
+        video.oncanplay = () => {
+            video.play();
+        }
     } else {
         video.classList.add('hidden');
     }

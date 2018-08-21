@@ -32,7 +32,7 @@
 
     "classInfo": {
         "test items": { "color": "#5867c6", 
-            "textFlair": "<span class='gray'>This is a test category, with test textFlair.</span><br>WOW!<br><br>" }
+            "textFlair": "<span class='gray'>These are temporary examples of modded items, They're not actually in the game.</span><br><br>" }
     },
 
     "commandSort": [

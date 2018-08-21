@@ -27,17 +27,19 @@
     <body>
         <div class='mainFlex'>
             <div class='titleBar'>
-                <div class='titleWrap'>
+                <div class='centerWrap'>
                     <img src='static/Golden_Chest.png' class='titleIcon'/>
                     <div class='titleText'>Rainstash</div>
                 </div>
-                <div class='titleWrap'>
-                    <div class='titleWrap hidden noselect' id='modWrap'>
+                <div class='centerWrap'>
+                    <div class='centerWrap hidden noselect' id='modWrap'>
                         <div class='modText pointer' id='modText'>Mods</div>
                         <img class='modArrow pointer' src='static/downArrow.png' id='modArrow'/>
                     </div>
-                    <input type='text' class='search' id='search' placeholder='Search...'/>
-                    <img id='clear' class='clearButton' src='static/close3.png'/>
+                    <div class='centerWrap'>
+                        <input type='text' class='search' id='search' placeholder='Search...'/>
+                        <img id='clear' class='clearButton' src='static/close3.png'/>
+                    </div>
                     <img id='gear' class='gearButton' src='static/gear2.png'/>
                 </div>
             </div>
@@ -45,8 +47,7 @@
                 <div class='modPanel hidden' id='modPanel'>
                     <div class='titleText'>Mods:</div>
                     <div class='dividerLine white'></div>
-                    <div class='checkboxFlex' id='checkFlex'>
-                    </div>
+                    <div class='checkboxFlex' id='checkFlex'></div>
                 </div>
                 <div class='infoPanel fadeOut'>
                     <img id='closeInfo' class='closeButton hidden' src='static/close3.png'/>
@@ -61,7 +62,7 @@
                         <div class='infocooldown'></div>
                         <label id='unlockTitle' class='gray'>Unlock:</label>
                         <div class='infounlock infodrop'></div>
-                        <video id='video' class='infoVideo' autoplay loop></video>
+                        <video id='video' class='infoVideo' preload="auto" muted loop></video>
                     </div>
                 </div>
                 <div class='itemPanel' id='itemPanel'></div>
