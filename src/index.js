@@ -495,6 +495,8 @@ function getItem(target) {
 
 //opens supplied link in a new tab, instead of replacing the current window like an <a> tag does by default
 function openInTab(href) {
+    console.log(href);
     let newWindow = window.open(href, '_blank');
     newWindow.focus();
+    return false;
 }

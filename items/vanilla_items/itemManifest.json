@@ -135,10 +135,10 @@
         "Pauls_Goat_Hoof": {
             "name": "Paul's Goat Hoof",
             "description": "+20% movement speed.",
-            "stack": "Further increases movement speed by 20%, caps at around 35.",
+            "stack": "Further increases movement speed by 20%, caps at around 25.",
             "unlock": "Fail a shrine 3 times in a row.",
             "hasVideo": true,
-            "maxStacks": 35,
+            "maxStacks": 25,
             "itemClass": "common items"
         },
     
@@ -408,8 +408,8 @@
             "itemClass": "uncommon items"
         },
     
-        "Toxic_Worm": {
-            "name": "Toxic Worm",
+        "Toxic_Centipede": {
+            "name": "Toxic Centipede",
             "description": "Infect enemies, dealing 50% damage/sec. Bounces to other enemies on death.",
             "stack": "Increases damage dealt.",
             "unlock": "Acrid: Spread 10,000 feet of \"Caustic Sludge\".",
@@ -446,7 +446,7 @@
     
         "Ancient_Scepter": {
             "name": "Ancient Scepter",
-            "description": "Upgrade your fourth ability; this is unique to each character class. Full list of effects <span class='link' onclick=\\'openInTab(\"http://riskofrain.wikia.com/wiki/Ancient_Scepter\")\\'>here.</span>",
+            "description": "Upgrade your fourth ability; this is unique to each character class. Full list of effects <a class='red link' onclick='return openInTab(\"http://riskofrain.wikia.com/wiki/Ancient_Scepter\")' href=\"http://riskofrain.wikia.com/wiki/Ancient_Scepter\">here.</a>",
             "stack": "Does not stack.",
             "unlock": "Mercenary: Beat the game on Monsoon difficulty.",
             "maxStacks": 1,
@@ -464,7 +464,8 @@
         "Beating_Embryo": {
             "name": "Beating Embryo",
             "description": "use items have a 30% chance to deal double the effect.",
-            "stack": "Increases duplication chance by 30%.",
+            "stack": "Increases duplication chance by 30%. 100% at 4 stacks.",
+            "maxStacks": 4,
             "itemClass": "rare items"
         },
     
@@ -1069,7 +1070,7 @@
         "Golden_Gun",
         "AtG_Missile_Mk_1",
         "Concussion_Grenade",
-        "Toxic_Worm",
+        "Toxic_Centipede",
         "Panic_Mines",
         "Guardians_Heart",
         "Infusion",
