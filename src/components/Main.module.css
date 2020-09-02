@@ -1,0 +1,10 @@
+.mainFlex {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.panelsFlex {
+    flex-grow: 2;
+    display: flex;
+}

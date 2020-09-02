@@ -1,0 +1,25 @@
+.titleBar {
+    background-color: #474747;
+    height: 40px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleIcon {
+    position: relative;
+}
+
+.titleText {
+    font-family: rainFontBold;
+    font-stretch: expanded;
+    font-size: 200%;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.spacer {
+    flex-grow: 2;
+}

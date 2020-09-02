@@ -1,0 +1,11 @@
+.infoPanel {
+    width: 30%;
+    height: 100%;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    font-size: 100%;
+}
