@@ -2,26 +2,27 @@ import React from 'react';
 import styles from './Category.module.css';
 import Item from './Item';
 
-import manifest from './../data/itemManifest.json';
-
 function Category(props) {
-    //go through the items in the manifest and add them to this category if they're apart of it
-    const items = Object.values(manifest.items).map((item, index) => {
-        if (item.itemClass === props.name) {
-            return (
-                <Item 
-                    key={index}
-                    keyId={index}
-                    src={process.env.PUBLIC_URL + `/items/vanilla_items/itemIcons/${item.imgName}`}
-                    alt={item.name}
-                />
-            );
-        } else { return (<></>);}
+    //go through the items and add them to the category
+    const items = props.items.map((item) => {
+        return (
+            <Item 
+                key={item.name}
+                alt={item.name}
+                name={item.name}
+                // className={props.selected && props.selected.name === item.name ? styles.selected : null}
+                selected={props.selected}
+                src={process.env.PUBLIC_URL + `/items/vanilla_items/itemIcons/${item.imgName}`}
+                onMouseOut={() => props.handlers.onOut()}
+                onMouseOver={() => props.handlers.onOver(item)}
+                onClick={() => props.handlers.onClick(item)}
+            />
+        );
     });
 
     return (
         <div className={styles.category} key={props.name} style={{borderColor: props.color}}>
-            <div className={styles.categoryTitle} style={{color: props.color, borderColor: props.color}}>
+            <div className={styles.categoryTitle} style={{color: props.color, borderColor: props.color}} key={`title_${props.name}`}>
                 {props.name}
             </div>
             {items}

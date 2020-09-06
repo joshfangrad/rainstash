@@ -9,3 +9,24 @@
     overflow-y: auto;
     font-size: 100%;
 }
+
+.infoTitle {
+    font-family: rainFontBold;
+    font-size: 32px;
+    color: white;
+}
+
+.infoImage {
+    filter: drop-shadow(0px 0px 20px #00000070);
+    flex-shrink: 0;
+    width: 30%;
+}
+
+.infoSubtitle {
+    color: #7e7e7e;
+}
+
+.infoVideo {
+    margin: 15px;
+    width: 90%;
+}

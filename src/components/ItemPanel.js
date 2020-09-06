@@ -4,14 +4,27 @@ import Category from './Category';
 
 import manifest from './../data/itemManifest.json';
 
-function ItemPanel() {
-    const categories = Object.entries(manifest.classInfo).map((category) => {
-        console.log(category)
+function ItemPanel(props) {
+    //prep an object of classnames for item sorting, where the key is the name, and value an empty array
+    const itemSplit = Object.keys(manifest.classInfo).reduce((res, item) => {
+        res[item] = [];
+        return res;
+    }, {})
+    //load each category's array with the associated items
+    for (const item of Object.values(manifest.items)) {
+        itemSplit[item.itemClass].push(item);
+    };
+    
+    //create categories
+    const categories = Object.entries(manifest.classInfo).map(([name, category]) => {
         return (
             <Category 
-                key={category[0]}
-                name={category[0]}
-                color={category[1].color}
+                key={name}
+                name={name}
+                color={category.color}
+                selected={props.selected}
+                items={itemSplit[name]}
+                handlers={props.handlers}
             />
         );
     });
