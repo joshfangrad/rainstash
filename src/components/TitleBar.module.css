@@ -23,3 +23,18 @@
 .spacer {
     flex-grow: 2;
 }
+
+.gearButton {
+    margin-right: 0.5%;
+    cursor: pointer;
+    width: 32px;
+}
+
+.gearButton:hover {
+    animation: gearSpin 0.3s;
+}
+
+@keyframes gearSpin {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(180deg) }
+}

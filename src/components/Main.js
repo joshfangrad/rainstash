@@ -10,12 +10,10 @@ function Main() {
     const [hovered, setHovered] = useState(null);
     const [selected, setSelected] = useState(null);
 
-    const mouseOverHandler = (item) => { 
-        setHovered(item); 
+    const mouseOverHandler = (item) => { setHovered(item); 
     }
 
-    const mouseOutHandler = () => { 
-        setHovered(null);
+    const mouseOutHandler = () => { setHovered(null); 
     }
 
     //selection
@@ -42,33 +40,36 @@ function Main() {
     }
 
     const Ror1 = () => {
-        return (
-            <div className={styles.panelsFlex}>
-                <InfoPanel item={infoItem()} />
-                <ItemPanel selected={selected} handlers={{
-                    onOut: () => mouseOutHandler(), 
-                    onOver: (name) => mouseOverHandler(name),
-                    onClick: (name) => clickHandler(name)
-                }} />
-            </div>
-        );
-        
+        return ([
+            <InfoPanel key='infoPanel' item={infoItem()} />,
+            <ItemPanel key='ItemPanel' selected={selected} handlers={{
+                onOut: () => mouseOutHandler(), 
+                onOver: (name) => mouseOverHandler(name),
+                onClick: (name) => clickHandler(name)
+            }} />
+        ]);
     }
 
     const Ror2 = () => {
         return (
-            <div>:)</div>
+            <div>ROR2</div>
+        );
+    }
+
+    const Settings = () => {
+        return (
+            <div>SETTINGS</div>
         );
     }
 
     return (
         <div className={styles.mainFlex}>
             <TitleBar />
-            <Router>
+            <Router className={styles.panelsFlex}>
                 <Ror1 path='ror1' default />
                 <Ror2 path='ror2' />
+                <Settings path='settings' />
             </Router>
-            
         </div>
     );
 }

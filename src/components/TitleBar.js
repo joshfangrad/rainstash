@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "@reach/router"
+import { Link, navigate } from "@reach/router"
 import styles from './TitleBar.module.css';
 
 function TitleBar() {
@@ -12,6 +12,11 @@ function TitleBar() {
                 <Link to='ror2'>ror2</Link>
             </nav>
             <span className={styles.spacer}></span>
+            <img className={styles.gearButton} 
+                alt="settings button" 
+                src='static/gear2.png'
+                onClick={() => navigate('/settings')}
+            />
         </div>
     );
 }

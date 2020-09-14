@@ -8,7 +8,9 @@
             "unlock": "Press every key on your keyboard at once in the exact same moment you kill providence.",
             "hasVideo": false,
             "maxStacks": 15,
-            "itemClass": "test items"
+            "itemClass": "test items",
+            "imgName": "item_Test_One.png",
+            "vidName": ""
         },
     
         "Test_Two": {
@@ -16,7 +18,9 @@
             "description": "IT'S THE SECOND TEST ITEM!!!!!!!",
             "stack": "REEEEEEEEE",
             "hasVideo": false,
-            "itemClass": "test items"
+            "itemClass": "test items",
+            "imgName": "item_Test_Two.png",
+            "vidName": ""
         },
 
         "Test_Three": {
@@ -26,7 +30,9 @@
             "cooldown": 1337,
             "embryo": "Doubles all your test items. maybe.",
             "hasVideo": false,
-            "itemClass": "test items"
+            "itemClass": "test items",
+            "imgName": "item_Test_Three.png",
+            "vidName": ""
         }
     },
 

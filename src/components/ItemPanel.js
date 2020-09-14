@@ -1,10 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './ItemPanel.module.css';
 import Category from './Category';
 
-import manifest from './../data/itemManifest.json';
+import manifestsToLoad from './../misc/manifests';
+
+// import manifest from './../data/itemManifest.json';
+// import { loadManifests } from './../misc/loadManifests';
 
 function ItemPanel(props) {
+    const [manifest, setManifest] = useState(null);
+
+    useEffect(() => {
+        async function loadManifests () {
+            //let manifestsToLoad = getOrCreateEnabledItems();
+        
+            let combinedManifest = {'items': {}, 'classInfo': {} };
+        
+            for (const manifestName of manifestsToLoad) {
+                // import manifest from `${process.env.PUBLIC_URL}items/${manifestName}/itemManifest.json`;
+                // const manifest = await require(`${process.env.PUBLIC_URL}items/${manifestName}/itemManifest.json`).then(module => module.default);
+                const result = await fetch(process.env.PUBLIC_URL + `items/${manifestName}/itemManifest.json`);
+                const manifest = await result.json();
+                //merge items and classes
+                if (manifest.items) { Object.assign(combinedManifest.items, manifest.items) }
+                if (manifest.classInfo) { Object.assign(combinedManifest.classInfo, manifest.classInfo) }
+            }
+            setManifest(combinedManifest);
+        }
+        loadManifests();
+    }, []);
+
+    if (manifest === null) return null;
+
     //prep an object of classnames for item sorting, where the key is the name, and value an empty array
     const itemSplit = Object.keys(manifest.classInfo).reduce((res, item) => {
         res[item] = [];
