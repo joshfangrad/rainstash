@@ -1,0 +1,1185 @@
+{
+    "items": {
+        "Armor-Piercing_Rounds": {
+            "name": "Armor-Piercing Rounds",
+            "description": "Deal an additional 20% damage to bosses.",
+            "stack": "+20% additional damage dealt.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Armor-Piercing_Rounds.png",
+            "vidName": "usage_Armor-Piercing_Rounds.mp4"
+        },
+        "Backup_Magazine": {
+            "name": "Backup Magazine",
+            "description": "add +1 charge of your Secondary skill.",
+            "stack": "+1 additional charge.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Backup_Magazine.png",
+            "vidName": "usage_Backup_Magazine.mp4"
+        },
+        "Bundle_of_Fireworks": {
+            "name": "Bundle of Fireworks",
+            "description": "Activating an interactable launches 8 fireworks that deal 300% base damage.",
+            "stack": "+4 fireworks launched.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Bundle_of_Fireworks.png",
+            "vidName": "usage_Bundle_of_Fireworks.mp4"
+        },
+        "Bustling_Fungus": {
+            "name": "Bustling Fungus",
+            "description": "After standing still for 2 seconds, create a zone that heals for 4.5% of your health every second to all allies within 3m.",
+            "stack": "+2.25% more health healed, +1.5m to area of effect.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Bustling_Fungus.png",
+            "vidName": "usage_Bustling_Fungus.mp4"
+        },
+        "Cautious_Slug": {
+            "name": "Cautious Slug",
+            "description": "Increases base health regeneration by +3 hp/s after not taking damage for 7 seconds.",
+            "stack": "+3 hp/s healing.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Cautious_Slug.png",
+            "vidName": "usage_Cautious_Slug.mp4"
+        },
+        "Crowbar": {
+            "name": "Crowbar",
+            "description": "Deal 150% damage to enemies above 90% health.",
+            "stack": "+50% more damage.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Crowbar.png",
+            "vidName": "usage_Crowbar.mp4"
+        },
+        "Energy_Drink": {
+            "name": "Energy Drink",
+            "description": "Sprint speed is increased by 30%",
+            "stack": "+20% sprint speed.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Energy_Drink.png",
+            "vidName": "usage_Energy_Drink.mp4"
+        },
+        "Focus_Crystal": {
+            "name": "Focus Crystal",
+            "description": "Increase damage to enemies within 13m by 15%.",
+            "stack": "+15% additional damage dealt.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Focus_Crystal.png",
+            "vidName": "usage_Focus_Crystal.mp4"
+        },
+        "Fresh_Meat": {
+            "name": "Fresh Meat",
+            "description": "Increases base health regeneration by +hp/s for 3s after killing an enemy.",
+            "stack": "+3 additional seconds.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Fresh_Meat.png",
+            "vidName": "usage_Fresh_Meat.mp4"
+        },
+        "Gasoline": {
+            "name": "Gasoline",
+            "description": "Killing an enemy ignites all enemies within 12m. Enemies burn for 150% base damage.",
+            "stack": "+4m to area of effect, +75% base damage dealt.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Gasoline.png",
+            "vidName": "usage_Gasoline.mp4"
+        },
+        "Item_Scrap_White": {
+            "name": "Item Scrap, White",
+            "description": "Does nothing. Consumed first when using a 3D printer of the same tier.",
+            "itemClass": "Common",
+            "imgName": "item_Item_Scrap_White.png",
+            "hasVideo": false,
+            "vidName": "usage_Item_Scrap_White.mp4"
+        },
+        "Lens-Makers_Glasses": {
+            "name": "Lens-Maker's Glasses",
+            "description": "You attacks have a 10% chance to critically strike, dealing double damage.",
+            "stack": "+10% increased chance to critically strike.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Lens-Makers_Glasses.png",
+            "vidName": "usage_Lens-Makers_Glasses.mp4"
+        },
+        "Medkit": {
+            "name": "Medkit",
+            "description": "2 seconds after getting hurt, heal for 20 plus an additional 5% of maximum health.",
+            "stack": "+5% maximum health healed.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Medkit.png",
+            "vidName": "usage_Medkit.mp4"
+        },
+        "Monster_Tooth": {
+            "name": "Monster Tooth",
+            "description": "On Kill: Enemy spawns a healing orb that heals the player for 8 plus an additional 2% of maximum health.",
+            "stack": "+2% additional max hp healed.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Monster_Tooth.png",
+            "vidName": "usage_Monster_Tooth.mp4"
+        },
+        "Pauls_Goat_Hoof": {
+            "name": "Paul's Goat Hoof",
+            "description": "Increases movement speed by 14%.",
+            "stack": "+14% increased movement speed.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Pauls_Goat_Hoof.png",
+            "vidName": "usage_Pauls_Goat_Hoof.mp4"
+        },
+        "Personal_Shield_Generator": {
+            "name": "Personal Shield Generator",
+            "description": "Gain a shield equal to 8% of your maximum health. Recharges after not taking damage for 7 seconds.",
+            "stack": "",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Personal_Shield_Generator.png",
+            "vidName": "usage_Personal_Shield_Generator.mp4"
+        },
+        "Repulsion_Armor_Plate": {
+            "name": "Repulsion Armor Plate",
+            "description": "Reduce all incoming damage by 5. Cannot be reduced below 1.",
+            "stack": "+5 additional damage blocked.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Repulsion_Armor_Plate.png",
+            "vidName": "usage_Repulsion_Armor_Plate.mp4"
+        },
+        "Rusted_Key": {
+            "name": "Rusted Key",
+            "description": "A hidden cache containing an item will appear in a random locaiton on each stage.",
+            "stack": "Increases rarity of the item per stack.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Rusted_Key.png",
+            "vidName": "usage_Rusted_Key.mp4"
+        },
+        "Soldiers_Syringe": {
+            "name": "Soldiers Syringe",
+            "description": "Increases attack speed by 15%.",
+            "stack": "+15% more attack speed.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Soldiers_Syringe.png",
+            "vidName": "usage_Soldiers_Syringe.mp4"
+        },
+        "Sticky_Bomb": {
+            "name": "Sticky Bomb",
+            "description": "5% chance on hit to attach a bomb to an enemy, detonating for 180% TOTAL damage.",
+            "stack": "+5% additional chance to attach a bomb.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Sticky_Bomb.png",
+            "vidName": "usage_Sticky_Bomb.mp4"
+        },
+        "Stun_Grenade": {
+            "name": "Stun Grenade",
+            "description": "5% chance on hit to stun enemies for 2 seconds.",
+            "stack": "+5% chance to stun.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Stun_Grenade.png",
+            "vidName": "usage_Stun_Grenade.mp4"
+        },
+        "Topaz_Brooch": {
+            "name": "Topaz Brooch",
+            "description": "Gain a temporary barrier on kill for 15 health.",
+            "stack": "+15 additional barrier health.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Topaz_Brooch.png",
+            "vidName": "usage_Topaz_Brooch.mp4"
+        },
+        "Tougher_Times": {
+            "name": "Tougher Times",
+            "description": "15% chance to block incoming damage. Unaffected by luck.",
+            "stack": "+15% more chance to block incoming damage.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Tougher_Times.png",
+            "vidName": "usage_Tougher_Times.mp4"
+        },
+        "Tri-Tip_Dagger": {
+            "name": "Tri-Tip Dagger",
+            "description": "15% chance to bleed an enemy for 240% base damage.",
+            "stack": "+15% chance to bleed.",
+            "maxStacks": 7,
+            "hasVideo": false,
+            "itemClass": "Common",
+            "imgName": "item_Tri-Tip_Dagger.png",
+            "vidName": "usage_Tri-Tip_Dagger.mp4"
+        },
+        "Warbanner": {
+            "name": "Warbanner",
+            "description": "On level up or starting the Teleporter event, drop a banner that strengthens all allies within 16m. Raise attack and movement speed by 30%.",
+            "stack": "+8m to area of effect.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Warbanner.png",
+            "vidName": "usage_Warbanner.mp4"
+        },
+
+
+
+
+
+        "AtG_Missile_Mk_1": {
+            "name": "AtG Missile Mk. 1",
+            "description": "10% chance to fire a missile that deals 300% TOTAL damage.",
+            "stack": "+300% damage dealt.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_AtG_Missile_Mk_1.png",
+            "vidName": "usage_AtG_Missile_Mk_1.mp4"
+        },
+        "Bandolier": {
+            "name": "Bandolier",
+            "description": "18% chance on kill to drip an ammo pack that resets all skill cooldowns.",
+            "stack": "+10% additional chance.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Bandolier.png",
+            "vidName": "usage_Bandolier.mp4"
+        },
+        "Berzerkers_Pauldron": {
+            "name": "Berzerker's Pauldron",
+            "description": "Killing 3 enemies within 1 second send you into a frenzy for 6s, increasing movement speed by 50% and attack speed by 100%.",
+            "stack": "+4 seconds of frenzy time.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Berzerkers_Pauldron.png",
+            "vidName": "usage_Berzerkers_Pauldron.mp4"
+        },
+        "Chronobauble": {
+            "name": "Chronobauble",
+            "description": "Slow enemies on hit for -60% movement speed for 2 seconds.",
+            "stack": "+2 additional seconds of slow.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Chronobauble.png",
+            "vidName": "usage_Chronobauble.mp4"
+        },
+        "Death_Mark": {
+            "name": "Death Mark",
+            "description": "Enemies with 4 or more debuffs are marked for death, increasing damage taken by 50% from al lsources for 7 seconds.",
+            "stack": "+7 seconds of mark time.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Death_Mark.png",
+            "vidName": "usage_Death_Mark.mp4"
+        },
+        "Fuel_Cell": {
+            "name": "Fuel Cell",
+            "description": "Gain an additional equipment charge. Reduce equipment cooldown by 15%.",
+            "stack": "+1 additional charge, +15% reduced cooldown speed.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Fuel_Cell.png",
+            "vidName": "usage_Fuel_Cell.mp4"
+        },
+        "Ghors_Tome": {
+            "name": "Ghor's Tome",
+            "description": "4% chance on kill to drop a treasure worth $25. Scales over time.",
+            "stack": "+4% additional chance to drop a treasure.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Ghors_Tome.png",
+            "vidName": "usage_Ghors_Tome.mp4"
+        },
+        "Harvesters_Scythe": {
+            "name": "Harvester's Scythe",
+            "description": "Gain 5% critical chance. Critical strikes heal for 8 health.",
+            "stack": "+4 health healed.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Harvesters_Scythe.png",
+            "vidName": "usage_Harvesters_Scythe.mp4"
+        },
+        "Hopoo_Feather": {
+            "name": "Hopoo Feather",
+            "description": "Gain +1 maximum jump count.",
+            "stack": "+1 additional jump.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Hopoo_Feather.png",
+            "vidName": "usage_Hopoo_Feather.mp4"
+        },
+        "Infusion": {
+            "name": "Infusion",
+            "description": "Killing an enemy increases your health permanently by 1, up to a maximum of 100 additional health.",
+            "stack": "+1 health gained on kill, +100 max health.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Infusion.png",
+            "vidName": "usage_Infusion.mp4"
+        },
+        "Item_Scrap_Green": {
+            "name": "Item Scrap, Green",
+            "description": "Does nothing. Consumed first when using a 3D printer of the same tier.",
+            "itemClass": "Uncommon",
+            "imgName": "item_Item_Scrap_Green.png",
+            "hasVideo": false,
+            "vidName": "usage_Item_Scrap_Green.mp4"
+        },
+        "Kjaros_Band": {
+            "name": "Kjaro's Band",
+            "description": "Hits that deal more than 400% damage also blast enemies with a runic flame tornado, dealing 300% TOTAL damage over time. Recharges every 10 seconds.",
+            "stack": "+300% additional damage dealt.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Kjaros_Band.png",
+            "vidName": "usage_Kjaros_Band.mp4"
+        },
+        "Leeching_Seed": {
+            "name": "Leeching Seed",
+            "description": "Dealing damage heals you for 1 health.",
+            "stack": "+1 health healed.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Leeching_Seed.png",
+            "vidName": "usage_Leeching_Seed.mp4"
+        },
+        "Lepton_Daisy": {
+            "name": "Lepton Daisy",
+            "description": "Release a healing nova during the Teleporter event, healing all nearby allies for 50% of their maximum health. Occurs 1 time.",
+            "stack": "+1 occurrences.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Lepton_Daisy.png",
+            "vidName": "usage_Lepton_Daisy.mp4"
+        },
+        "Old_Guillotine": {
+            "name": "Old Guillotine",
+            "description": "Instantly kill Elite monsters below 13% health.",
+            "stack": "+13% increased kill threshhold.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Old_Guillotine.png",
+            "vidName": "usage_Old_Guillotine.mp4"
+        },
+        "Old_War_Stealthkit": {
+            "name": "Old War Stealthkit",
+            "description": "Chance on taking damage to gain 40% movement speed and invisibility for 3 seconds. +1% chance to activate for every 1% of damage taken.",
+            "stack": "+1.5 additional seconds of speed and invisibility.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Old_War_Stealthkit.png",
+            "vidName": "usage_Old_War_Stealthkit.mp4"
+        },
+        "Predatory_Instincts": {
+            "name": "Predatory Instincts",
+            "description": "Critical strikes increase attack speed by 12%. Maximum cap of 36% attack speed.",
+            "stack": "+24% additional max attack speed.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Predatory_Instincts.png",
+            "vidName": "usage_Predatory_Instincts.mp4"
+        },
+        "Razorwire": {
+            "name": "Razorwire",
+            "description": "Getting hit causes you to explode in a burst of razors, dealing 160% damage. Hits up to 5 targets in a 25m radius.",
+            "stack": "+2 targets hit, 10m to radius.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Razorwire.png",
+            "vidName": "usage_Razorwire.mp4"
+        },
+        "Red_Whip": {
+            "name": "Red Whip",
+            "description": "After not using skills for 5 seconds, boost movement speed by 30%.",
+            "stack": "+30% movement speed.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Red_Whip.png",
+            "vidName": "usage_Red_Whip.mp4"
+        },
+        "Rose_Buckler": {
+            "name": "Rose Buckler",
+            "description": "Increase armor by 30 while sprinting.",
+            "stack": "+30 additional armor.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Rose_Buckler.png",
+            "vidName": "usage_Rose_Buckler.mp4"
+        },
+        "Runalds_Band": {
+            "name": "Runald's Band",
+            "description": "Hits that deal more than 400% damage also blast enemies with a runic ice blast, slowing them by 80% for 3 seconds and dealing 250% TOTAL damage. Recharges every 10 seconds.",
+            "stack": "+3 seconds of freeze time, +250% damage dealt.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Runalds_Band.png",
+            "vidName": "usage_Runalds_Band.mp4"
+        },
+        "Squid_Polyp": {
+            "name": "Squid Polyp",
+            "description": "Activating an interactable summons a Squid Turret that attacks nearby at 100% attack speed. Lasts 30 seconds.",
+            "stack": "+100% attack speed.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Squid_Polyp.png",
+            "vidName": "usage_Squid_Polyp.mp4"
+        },
+        "Ukulele": {
+            "name": "Ukulele",
+            "description": "25% chance to fire chain lighting for 80% TOTAL damage on up to 3 targets within 20m.",
+            "stack": "+2 chains, +2m to chain distance.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Ukulele.png",
+            "vidName": "usage_Ukulele.mp4"
+        },
+        "War_Horn": {
+            "name": "War Horn",
+            "description": "Activating your Equipment gives you +70% attack speed for 8 seconds.",
+            "stack": "+4 seconds of additional attack speed.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_War_Horn.png",
+            "vidName": "usage_War_Horn.mp4"
+        },
+        "Wax_Quail": {
+            "name": "Wax Quail",
+            "description": "Jumping while sprinting boosts you forward by 10m.",
+            "stack": "+10m boost distance.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Wax_Quail.png",
+            "vidName": "usage_Wax_Quail.mp4"
+        },
+        "Will-o-the-wisp": {
+            "name": "Will-o'-the-wisp",
+            "description": "On killing an enemy, spawn a lava pillar in a 12m radius for 350% base damage.",
+            "stack": "+2.4m to radius, +280% damage dealt.",
+            "itemClass": "Uncommon",
+            "hasVideo": false,
+            "imgName": "item_Will-o-the-wisp.png",
+            "vidName": "usage_Will-o-the-wisp.mp4"
+        },
+
+
+
+
+        "57_Leaf_Clover": {
+            "name": "57 Leaf Clover",
+            "description": "All random effects are rolled 1 time for a favourable outcome.",
+            "stack": "+1 additional roll.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_57_Leaf_Clover.png",
+            "vidName": "usage_57_Leaf_Clover.mp4"
+        },
+        "Aegis": {
+            "name": "Aegis",
+            "description": "Healing past full grants you a temporary barrier for 50% of the amount you healed.",
+            "stack": "+50% additional shield amount.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Aegis.png",
+            "vidName": "usage_Aegis.mp4"
+        },
+        "Alien_Head": {
+            "name": "Alien Head",
+            "description": "Reduce skill cooldowns by 25%.",
+            "stack": "+25% reduced skill cooldowns.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Alien_Head.png",
+            "vidName": "usage_Alien_Head.mp4"
+        },
+        "Brainstalks": {
+            "name": "Brainstalks",
+            "description": "Upon killing a monster, enter a frenzy for 4 seconds where skills have no cooldowns.",
+            "stack": "+4 additional seconds of frenzy.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Brainstalks.png",
+            "vidName": "usage_Brainstalks.mp4"
+        },
+        "Brilliant_Behemoth": {
+            "name": "Brilliant Behemoth",
+            "description": "All your attacks explode in a 4m radius for a bonus 60% TOTAL damage to nearby enemies.",
+            "stack": "+1.5m to radius.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Brilliant_Behemoth.png",
+            "vidName": "usage_Brilliant_Behemoth.mp4"
+        },
+        "Ceremonial_Dagger": {
+            "name": "Ceremonial Dagger",
+            "description": "Killing an enemy fires out 3 homing daggers that deal 150% base damage.",
+            "stack": "+150% additional damage dealt.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Ceremonial_Dagger.png",
+            "vidName": "usage_Ceremonial_Dagger.mp4"
+        },
+        "Defensive_Microbots": {
+            "name": "Defensive Microbots",
+            "description": "Shoot down 1 projectile within 20m every 0.5 seconds. Recharge rate scales with attack speed.",
+            "stack": "+1 additional projectiles shot down.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Defensive_Microbots.png",
+            "vidName": "usage_Defensive_Microbots.mp4"
+        },
+        "Dios_Best_Friend": {
+            "name": "Dio's Best Friend",
+            "description": "Upon death, this item will be consumed and you will return to life with 3 seconds of invulnerability.",
+            "stack": "More respawns.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Dios_Best_Friend.png",
+            "vidName": "usage_Dios_Best_Friend.mp4"
+        },
+        "Frost_Relic": {
+            "name": "Frost Relic",
+            "description": "Killing an enemy surrounds you with an ice storm that deals 600% damage per second. The storm grows with every kill, increasing its radius by 1m. Stacks up to 6m.",
+            "stack": "+6m maximum radius.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Frost_Relic.png",
+            "vidName": "usage_Frost_Relic.mp4"
+        },
+        "H3AD-5T_v2": {
+            "name": "H3AD-5T v2",
+            "description": "Increase jump height. Creates a 5m-100m radius kinetic explosion upon hitting the ground, dealing 1000%-10,000% base damage that scales up with speed. Recharges in 10 seconds.",
+            "stack": "-50% recharge time.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_H3AD-5T_v2.png",
+            "vidName": "usage_H3AD-5T_v2.mp4"
+        },
+        "Happiest_Mask": {
+            "name": "Happiest Mask",
+            "description": "Killing enemies has a 7% chance to spawn a ghost of the killed enemy with 1500% damage. Lasts 30 seconds.",
+            "stack": "+30 seconds of ghost lifespan.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Happiest_Mask.png",
+            "vidName": "usage_Happiest_Mask.mp4"
+        },
+        "Hardlight_Afterburner": {
+            "name": "Hardlight Afterburner",
+            "description": "Add +2 charges of your Utility skill. Reduces Utility skill cooldown by 33%.",
+            "stack": "+2 additional utility skill charges.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Hardlight_Afterburner.png",
+            "vidName": "usage_Hardlight_Afterburner.mp4"
+        },
+        "Interstellar_Desk_Plant": {
+            "name": "Interstellar Desk Plant",
+            "description": "On kill, plant a healing fruit seed that grows into a plant after 5 seconds. The plant heals for 10% of maximum health every second to all allies within 5m. Lasts 10 seconds.",
+            "stack": "+5m to plant radius.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Interstellar_Desk_Plant.png",
+            "vidName": "usage_Interstellar_Desk_Plant.mp4"
+        },
+        "Item_Scrap_Red": {
+            "name": "Item Scrap, Red",
+            "description": "Does nothing. Consumed first when using a 3D printer of the same tier.",
+            "itemClass": "Legendary",
+            "imgName": "item_Item_Scrap_Red.png",
+            "hasVideo": false,
+            "vidName": "usage_Item_Scrap_Red.mp4"
+        },
+        "Nkuhanas_Opinion": {
+            "name": "N'kuhana's Opinion",
+            "description": "Store 100% of healing as Soul Energy. After your Soul Energy reaches 10% of your maximum health, fire a skull that deals 250% of your Soul Energy as damage.",
+            "stack": "+100% healing stored as Soul Energy.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Nkuhanas_Opinion.png",
+            "vidName": "usage_Nkuhanas_Opinion.mp4"
+        },
+        "Rejuvenation_Rack": {
+            "name": "Rejuvenation Rack",
+            "description": "Heal 100% more.",
+            "stack": "+100% additional healing.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Rejuvenation_Rack.png",
+            "vidName": "usage_Rejuvenation_Rack.mp4"
+        },
+        "Resonance_Disc": {
+            "name": "Resonance Disc",
+            "description": "Kiling enemies charges the Resonance Disc. The disc launches itself toward a target for 300% base damage, piercing all enemies it doesn't kill, and then explodes for 1000% base damage. Returns to the user, striking all enemies along the way for 300% base damage.",
+            "stack": "+300% additional flight damage, +1000% additional explosion damage.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Resonance_Disc.png",
+            "vidName": "usage_Resonance_Disc.mp4"
+        },
+        "Sentient_Meat_Hook": {
+            "name": "Sentient Meat Hook",
+            "description": "20% chance on hit to fire homing hooks at up to 10 enemies for 100% TOTAL damage.",
+            "stack": "+20% additional chance to fire, +5 more enemies hooked",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Sentient_Meat_Hook.png",
+            "vidName": "usage_Sentient_Meat_Hook.mp4"
+        },
+        "Shattering_Justice": {
+            "name": "Shattering Justice",
+            "description": "After hitting an enemy 5 times, reduce their armor by 60 for 8 seconds.",
+            "stack": "+8 additional seconds of armor reduction.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Shattering_Justice.png",
+            "vidName": "usage_Shattering_Justice.mp4"
+        },
+        "Soulbound_Catalyst": {
+            "name": "Soulbound Catalyst",
+            "description": "Kills reduce equipment cooldown by 4 seconds.",
+            "stack": "+2 seconds to cooldown.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Soulbound_Catalyst.png",
+            "vidName": "usage_Soulbound_Catalyst.mp4"
+        },
+        "Unstable_Tesla_Coil": {
+            "name": "Unstable Tesla Coil",
+            "description": "Fire out lightning that hits 3 enemies for 200% base damage every 0.5s. The Tesla Coil switches off every 10 seconds.",
+            "stack": "+2 enemies hit.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Unstable_Tesla_Coil.png",
+            "vidName": "usage_Unstable_Tesla_Coil.mp4"
+        },
+        "Wake_of_Vultures": {
+            "name": "Wake of Vultures",
+            "description": "Gain the power of any killed elite monster for 8 seconds.",
+            "stack": "+5 seconds to buff length.",
+            "itemClass": "Legendary",
+            "hasVideo": false,
+            "imgName": "item_Wake_of_Vultures.png",
+            "vidName": "usage_Wake_of_Vultures.mp4"
+        },
+
+
+
+
+
+        "Artifact_Key": {
+            "name": "Artifact Key",
+            "description": "Used in the Artifact Reliquary.",
+            "itemClass": "Boss",
+            "imgName": "item_Artifact_Key.png",
+            "hasVideo": false,
+            "vidName": "usage_Artifact_Key.mp4"
+        },
+        "Genesis_Loop": {
+            "name": "Genesis Loop",
+            "description": "Falling below 25% health causes you to explode, dealing 6000% base damage. Recharges every 30 seconds.",
+            "stack": "-50% charge time.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Genesis_Loop.png",
+            "vidName": "usage_Genesis_Loop.mp4"
+        },
+        "Halcyon_Seed": {
+            "name": "Halcyon Seed",
+            "description": "Summon Aurelionite during the teleporter event. It has 100% damage and 100% health.",
+            "stack": "+50% damage, +100% health.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Halcyon_Seed.png",
+            "vidName": "usage_Halcyon_Seed.mp4"
+        },
+        "Irradiant_Pearl": {
+            "name": "Irradiant Pearl",
+            "description": "Increases ALL stats by 10%.",
+            "stack": "+10% more stats.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Irradiant_Pearl.png",
+            "vidName": "usage_Irradiant_Pearl.mp4"
+        },
+        "Item_Scrap_Yellow": {
+            "name": "Item Scrap, Yellow",
+            "description": "Does nothing. Consumed first when using a 3D printer of the same tier.",
+            "itemClass": "Boss",
+            "imgName": "item_Item_Scrap_Yellow.png",
+            "hasVideo": false,
+            "vidName": "usage_Item_Scrap_Yellow.mp4"
+        },
+        "Little_Disciple": {
+            "name": "Little Disciple",
+            "description": "Fire a tracking wisp for 300% damage. Fires every 1.6 seconds while sprinting. Fire rate increases with movement speed.",
+            "stack": "+300% increased damage.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Little_Disciple.png",
+            "vidName": "usage_Little_Disciple.mp4"
+        },
+        "Mired_Urn": {
+            "name": "Mired Urn",
+            "description": "While in combat, the nearest character to you within 13m will be 'tethered' to you, dealing 100% damage per second, applying tar, and healing you for 100% of the damage dealt.",
+            "stack": "+1 characters tethered at once.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Mired_Urn.png",
+            "vidName": "usage_Mired_Urn.mp4"
+        },
+        "Molten_Perforator": {
+            "name": "Molten Perforator",
+            "description": "10% chance on hit to call forth 3 magma balls from an enemy, dealing 300% damage each.",
+            "stack": "+300% damage dealt.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Molten_Perforator.png",
+            "vidName": "usage_Molten_Perforator.mp4"
+        },
+        "Pearl": {
+            "name": "Pearl",
+            "description": "Increases maximum health by 10%.",
+            "stack": "10% max health.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Pearl.png",
+            "vidName": "usage_Pearl.mp4"
+        },
+        "Queens_Gland": {
+            "name": "Queen's Gland",
+            "description": "Every 30 seconds, summon a Beetle Guard with bonus 300% damage and 100% health.",
+            "stack": "+1 Beetle Guard.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Queens_Gland.png",
+            "vidName": "usage_Queens_Gland.mp4"
+        },
+        "Shatterspleen": {
+            "name": "Shatterspleen",
+            "description": "Gain 5% critical chance. Critical striles bleed enemies for 240% base damage. Bleeding enemies explode on death for 400% damage, plus an additional 15% of their maximum health.",
+            "stack": "+400% explosion damage, +15% maximum health explosion damage.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Shatterspleen.png",
+            "vidName": "usage_Shatterspleen.mp4"
+        },
+        "Titanic_Knurl": {
+            "name": "Titanic Knurl",
+            "description": "Increase maximum health by 40 and base health regeneration by +1.6 hp/s.",
+            "stack": "+40 additional maximum health, +1.6 hp/s additional health regen.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Titanic_Knurl.png",
+            "vidName": "usage_Titanic_Knurl.mp4"
+        },
+
+
+
+
+
+        "Blast_Shower": {
+            "name": "Blast Shower",
+            "description": "Cleanse all negative effects. Includes debuffs, damage over time, and nearby projectiles.",
+            "cooldown": 20,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Blast_Shower.png",
+            "vidName": "usage_Blast_Shower.mp4"
+        },
+        "Disposable_Missile_Launcher": {
+            "name": "Disposable Missile Launcher",
+            "description": "Fire a swarm of 12 missiles that deal 300% damage each.",
+            "cooldown": 45,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Disposable_Missile_Launcher.png",
+            "vidName": "usage_Disposable_Missile_Launcher.mp4"
+        },
+        "Eccentric_Vase": {
+            "name": "Eccentric Vase",
+            "description": "Create a quantum tunnel of up to 1000m in length. Lasts 30 seconds.",
+            "cooldown": 45,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Eccentric_Vase.png",
+            "vidName": "usage_Eccentric_Vase.mp4"
+        },
+        "Foreign_Fruit": {
+            "name": "Foreign Fruit",
+            "description": "Instantly heal for 50% of your maximum health.",
+            "cooldown": 45,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Foreign_Fruit.png",
+            "vidName": "usage_Foreign_Fruit.mp4"
+        },
+        "Forgive_Me_Please": {
+            "name": "Forgive Me Please",
+            "description": "Throw a cursed doll that thriggers any 'On Kill' effects you have every 1 second for 8 seconds.",
+            "cooldown": 45,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Forgive_Me_Please.png",
+            "vidName": "usage_Forgive_Me_Please.mp4"
+        },
+        "Fuel_Array": {
+            "name": "Fuel Array",
+            "description": "After a short delay, cause an explosion for 300% of player health that is guaranteed to kill the player. Can be used to unlock REX in the Abyssal Depths stage. Found on the excape pod you land with.",
+            "itemClass": "Equipment",
+            "imgName": "item_Fuel_Array.png",
+            "hasVideo": false,
+            "vidName": "usage_Fuel_Array.mp4"
+        },
+        "Gnarled_Woodsprite": {
+            "name": "Gnarled Woodsprite",
+            "description": "Gain a Woodsprite follower that heals for 1.5% of your maximum health/second. Can be send to an ally to heal them for 10% of their maximum health.",
+            "cooldown": 15,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Gnarled_Woodsprite.png",
+            "vidName": "usage_Gnarled_Woodsprite.mp4"
+        },
+        "Gorags_Opus": {
+            "name": "Gorags Opus",
+            "description": "All allies enter a frenzy for 7 seconds. Increases movement speed by 50% and attack speed by 100%.",
+            "cooldown": 34,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Gorags_Opus.png",
+            "vidName": "usage_Gorags_Opus.mp4"
+        },
+        "Jade_Elephant": {
+            "name": "Jade Elephant",
+            "description": "Gain 500 armor for 5 seconds.",
+            "cooldown": 45,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Jade_Elephant.png",
+            "vidName": "usage_Jade_Elephant.mp4"
+        },
+        "Milky_Chrysalis": {
+            "name": "Milky Chrysalis",
+            "description": "Sprout wings and fly for 15 seconds. Gain +20% movement speed for the duration.",
+            "cooldown": 60,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Milky_Chrysalis.png",
+            "vidName": "usage_Milky_Chrysalis.mp4"
+        },
+        "Ocular_HUD": {
+            "name": "Ocular HUD",
+            "description": "Gain +100% Critical Strike chance for 8 seconds.",
+            "cooldown": 60,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Ocular_HUD.png",
+            "vidName": "usage_Ocular_HUD.mp4"
+        },
+        "Preon_Accumulator": {
+            "name": "Preon Accumulator",
+            "description": "After a short charge period, fire a slow-moving orb that zaps enemies within 35m for up to 600% damage/second. On contact, detonate in a 20m radius explosion for 4000% damage.",
+            "cooldown": 140,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Preon_Accumulator.png",
+            "vidName": "usage_Preon_Accumulator.mp4"
+        },
+        "Primordial_Cube": {
+            "name": "Primordial Cube",
+            "description": "Fire a black hole that draws enemies within 30m into its center. Lasts 10 seconds.",
+            "cooldown": 60,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Primordial_Cube.png",
+            "vidName": "usage_Primordial_Cube.mp4"
+        },
+        "Radar_Scanner": {
+            "name": "Radar Scanner",
+            "description": "Reveal all interactables within 500m for 10 seconds.",
+            "cooldown": 45,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Radar_Scanner.png",
+            "vidName": "usage_Radar_Scanner.mp4"
+        },
+        "Recycler": {
+            "name": "Recycler",
+            "description": "Transform an Item or Equipment into a different one of the same tier. Can only be used on the target item once.",
+            "cooldown": 45,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Recycler.png",
+            "vidName": "usage_Recycler.mp4"
+        },
+        "Royal_Capacitor": {
+            "name": "Royal Capacitor",
+            "description": "Call down a lightning strike on a targeted monster for 3000% damage and stunning nearby monsters.",
+            "cooldown": 20,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Royal_Capacitor.png",
+            "vidName": "usage_Royal_Capacitor.mp4"
+        },
+        "Sawmerang": {
+            "name": "Sawmerang",
+            "description": "Throw three large saw blades that slice through enemies for 400% damage each. Also deals an additional 100% damage/second while bleeding enemies. Can strike enemes again on the way back.",
+            "cooldown": 45,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Sawmerang.png",
+            "vidName": "usage_Sawmerang.mp4"
+        },
+        "Super_Massive_Leech": {
+            "name": "Super Massive Leech",
+            "description": "Heal for 20% of the damage you deal. Lasts 8 seconds.",
+            "cooldown": 60,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Super_Massive_Leech.png",
+            "vidName": "usage_Super_Massive_Leech.mp4"
+        },
+        "The_Back-up": {
+            "name": "The Back-up",
+            "description": "Call 4 Strike Drones to fight for you. Drones stay for 25 seconds.",
+            "cooldown": 100,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_The_Back-up.png",
+            "vidName": "usage_The_Back-up.mp4"
+        },
+        "The_Crowdfunder": {
+            "name": "The Crowdfunder",
+            "description": "Fires a continuous barrage that deals 100% damage per bullet. Costs $1 per bullet, and cost increases over time.",
+            "itemClass": "Equipment",
+            "imgName": "item_The_Crowdfunder.png",
+            "hasVideo": false,
+            "vidName": "usage_The_Crowdfunder.mp4"
+        },
+        "Volcanic_Egg": {
+            "name": "Volcanic Egg",
+            "description": "Turn into a draconic fireball for 5 seconds. Deal 500% damage on impact. Detonates at the end for 800% damage.",
+            "cooldown": 30,
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Volcanic_Egg.png",
+            "vidName": "usage_Volcanic_Egg.mp4"
+        },
+        "Spectral_Circlet": {
+            "name": "Spectral Circlet",
+            "description": "Grants a large aura which grants invisibilty to any ally. Attacks apply a slow on hit.",
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Spectral_Circlet.png",
+            "vidName": "usage_Spectral_Circlet.mp4"
+        },
+        "Her_Biting_Embrace": {
+            "name": "Her Biting Embrace",
+            "description": "",
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Her_Biting_Embrace.png",
+            "vidName": "usage_Her_Biting_Embrace.mp4"
+        },
+        "Ifrits_Distinction": {
+            "name": "Ifrit's Distinction",
+            "description": "",
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Ifrits_Distinction.png",
+            "vidName": "usage_Ifrits_Distinction.mp4"
+        },
+        "Nkuhanas_Retort": {
+            "name": "N'kuhana's Retort",
+            "description": "",
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Nkuhanas_Retort.png",
+            "vidName": "usage_Nkuhanas_Retort.mp4"
+        },
+        "Silence_Between_Two_Strikes": {
+            "name": "Silence Between Two Strikes",
+            "description": "",
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Silence_Between_Two_Strikes.png",
+            "vidName": "usage_Silence_Between_Two_Strikes.mp4"
+        },
+
+
+
+
+
+
+        "Beads_of_Fealty": {
+            "name": "Beads of Fealty",
+            "description": "When the player enters the Celestial Portal to enter 'A Moment, Fractured' and obliterates themself at the Obelisk, they will be transported to 'A Moment, Whole' instead of dying.",
+            "itemClass": "Lunar",
+            "imgName": "item_Beads_of_Fealty.png",
+            "hasVideo": false,
+            "vidName": "usage_Beads_of_Fealty.mp4"
+        },
+        "Brittle_Crown": {
+            "name": "Brittle Crown",
+            "description": "30% chance on hit to gain 2 gold. Scales over time. Lose gold on taking damage equal to 100% of the maximum health percentage you lost",
+            "stack": "+100% max health percentage.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Brittle_Crown.png",
+            "vidName": "usage_Brittle_Crown.mp4"
+        },
+        "Corpsebloom": {
+            "name": "Corpsebloom",
+            "description": "Heal +100% more. All healing is applied over time. Can heal for a maximum of 10% of your health per second.",
+            "stack": "+100% more healing, +50% reduced max hp healed per second.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Corpsebloom.png",
+            "vidName": "usage_Corpsebloom.mp4"
+        },
+        "Defiant_Gouge": {
+            "name": "Defiant Gouge",
+            "description": "Using a Shrine summons enemies nearby. Scales over time.",
+            "stack": "Stronger enemies per stack.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Defiant_Gouge.png",
+            "vidName": "usage_Defiant_Gouge.mp4"
+        },
+        "Effigy_of_Grief": {
+            "name": "Effigy of Grief",
+            "description": "All characters wihtin are slowed by 50% and have their armor reduced by 20. Can place up to 5.",
+            "cooldown": 45,
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Effigy_of_Grief.png",
+            "vidName": "usage_Effigy_of_Grief.mp4"
+        },
+        "Focused_Convergence": {
+            "name": "Focused Convergence",
+            "description": "Teleporters charge 30% faster, but the size of the Teleporter zone is 50% smaller.",
+            "stack": "+30% faster charge speed, -50% Teleporter zone size.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Focused_Convergence.png",
+            "vidName": "usage_Focused_Convergence.mp4"
+        },
+        "Gesture_of_the_Drowned": {
+            "name": "Gesture of the Drowned",
+            "description": "Reduces Equipment cooldown by 50%. Forces your Equipment to activate whenever it is off cooldown.",
+            "stack": "+15% reduced cooldown time.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Gesture_of_the_Drowned.png",
+            "vidName": "usage_Gesture_of_the_Drowned.mp4"
+        },
+        "Glowing_Meteorite": {
+            "name": "Glowing Meteorite",
+            "description": "Rain meteors from teh sky, damaging ALL characters for 600% damage per blast. Lasts 20 seconds.",
+            "cooldown": 140,
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Glowing_Meteorite.png",
+            "vidName": "usage_Glowing_Meteorite.mp4"
+        },
+        "Hellfire_Tincture": {
+            "name": "Hellfire Tincture",
+            "description": "Ignite ALL characters within 15m for 12 seconds. Deal 5% of your maxumim health per second as burning to yourself. The burn is 0.5x stronger on allies, and 24x stronger on enemies.",
+            "cooldown": 45,
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Hellfire_Tincture.png",
+            "vidName": "usage_Hellfire_Tincture.mp4"
+        },
+        "Mercurial_Rachis": {
+            "name": "Mercurial Rachis",
+            "description": "Creates a Ward of Power in a random location nearby that buffs both enemies and allies within 16m, causing them to deal +50% damage.",
+            "stack": "+50% area of effect.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Mercurial_Rachis.png",
+            "vidName": "usage_Mercurial_Rachis.mp4"
+        },
+        "Purity": {
+            "name": "Purity",
+            "description": "All skill cooldowns are reduced by 2 seconds. All random effects are rolled 1 time for an unfavourable outcome.",
+            "stack": "+1 reduces skill cooldown seconds, +1 roll.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Purity.png",
+            "vidName": "usage_Purity.mp4"
+        },
+        "Shaped_Glass": {
+            "name": "Shaped Glass",
+            "description": "Increase base damage by 100%. Reduce maximum health by 50%.",
+            "stack": "+100% damage, -50% max health.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Shaped_Glass.png",
+            "vidName": "usage_Shaped_Glass.mp4"
+        },
+        "Spinel_Tonic": {
+            "name": "Spinel Tonic",
+            "description": "Drink the Tonic, gaining a boost for 20 seconds. Increases damage by +100%, attack speed by +70%, armor by +20, maximum health by +50%, passive health regen by +300%, and movespeed by +30%. When the tonic wears off, you have a 20% chance to gain a Tonic Affliction, reducing all your stats by -5%.",
+            "cooldown": 60,
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Spinel_Tonic.png",
+            "vidName": "usage_Spinel_Tonic.mp4"
+        },
+        "Strides_of_Heresy": {
+            "name": "Strides of Heresy",
+            "description": "Replace your Utility Skill with Shadowfade. Fade away, becoming intangible and gaining +30% movement speed. Heal for 25% of your maximum health. Lasts 3 seconds.",
+            "stack": "+25% maximum health healed, +3 additional seconds in Shadowfade.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Strides_of_Heresy.png",
+            "vidName": "usage_Strides_of_Heresy.mp4"
+        },
+        "Transcendence": {
+            "name": "Transcendence",
+            "description": "Convert all but 1 health into regenerating shields. Gain 50% maximum health.",
+            "stack": "+25% additional maximum health.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Transcendence.png",
+            "vidName": "usage_Transcendence.mp4"
+        },
+        "Visions_of_Heresy": {
+            "name": "Visions of Heresy",
+            "description": "Replace your Primary Skills with Hungering Gaze. Fire a flurry of tracking shards that detonate after a delay, deaing 120% base damage. Hold up to 12 charges that reload after 2 seconds.",
+            "stack": "+12 stored charges, +2 seconds to recharge time.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Visions_of_Heresy.png",
+            "vidName": "usage_Visions_of_Heresy.mp4"
+        }
+    },
+    "classInfo": {
+        "Common": {
+            "color": "#ffffff"
+        },
+        "Uncommon": {
+            "color": "#6BBC43"
+        },
+        "Legendary": {
+            "color": "#DA5B4B"
+        },
+        "Boss": {
+            "color": "#AAC728"
+        },
+        "Equipment": {
+            "color": "#C78A31"
+        },
+        "Lunar": {
+            "color": "#48AEC8"
+        }
+    }
+}

@@ -1,8 +1,0 @@
-.itemPanel {
-    width: 70%;
-    background-color: #363636;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    overflow-x: hidden;
-}

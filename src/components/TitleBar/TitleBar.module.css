@@ -1,0 +1,57 @@
+.titleBar {
+    background-color: #474747;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleIcon {
+    position: relative;
+}
+
+.pageLink {
+    font-family: rainFontBold;
+    text-decoration: none;
+    display: inline-block;
+    color: #777777;
+    background-color: #363636;
+    width: 10%;
+    margin-left: 5px;
+    align-self: flex-end;
+    border-radius: 8px 8px 0px 0px;
+    border-right: 5px solid #222222;
+    line-height: 35px;
+    transition: all 120ms ease-in;
+}
+
+.active {
+    background-color: #252525;
+    border-color: #0e0e0e;
+    color: white;
+}
+
+.linkIcon {
+    margin-right: 3%;
+    /* margin-top: 5px; */
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.gearButton {
+    margin-right: 0.3%;
+    margin-left: 0.3%;
+    cursor: pointer;
+    width: 32px;
+}
+
+.gearButton:hover {
+    animation: gearSpin 0.3s;
+}
+
+@keyframes gearSpin {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(180deg) }
+}

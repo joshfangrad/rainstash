@@ -17,3 +17,11 @@ code {
 #root {
   height: 100%;
 }
+
+.ror1-theme {
+  --main-color: red;
+}
+
+.ror2-theme {
+  --main-color: blue;
+}

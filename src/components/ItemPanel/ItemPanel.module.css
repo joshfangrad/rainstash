@@ -1,0 +1,24 @@
+.itemPanel {
+    width: 70%;
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.loadText {
+    font-family: rainFontBold;
+    font-size: 2em;
+    color: grey;
+}
+
+.loadWrap {
+    width: 70%;
+    background-color: #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

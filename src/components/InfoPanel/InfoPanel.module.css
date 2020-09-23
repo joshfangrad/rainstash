@@ -1,0 +1,42 @@
+.infoPanel {
+    resize: horizontal;
+    min-width: 30%;
+    width: 30%;
+    background-color: #252525;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 3px solid #474747;
+    border-radius: 0.4vw;
+    margin: 0.5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 100%;
+    
+}
+
+.infoTitle {
+    font-family: rainFontBold;
+    font-size: 32px;
+    color: white;
+}
+
+.infoSubtitle {
+    color: #7e7e7e;
+    margin-top: 2%;
+    /* margin-bottom: 1%; */
+}
+
+.infoImage {
+    filter: drop-shadow(0px 0px 20px #00000070);
+    image-rendering: crisp-edges;
+    flex-shrink: 0;
+    width: 25%;
+}
+
+.spacer {
+    flex: 1;
+}
