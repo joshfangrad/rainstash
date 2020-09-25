@@ -10,30 +10,28 @@
     position: relative;
 }
 
-.pageLink {
+.linkTab {
+    opacity: 0.4;
     font-family: rainFontBold;
     text-decoration: none;
     display: inline-block;
-    color: #777777;
-    background-color: #363636;
-    width: 10%;
+    color: white;
+    background-color: #252525;
+    width: 8em;
     margin-left: 5px;
     align-self: flex-end;
     border-radius: 8px 8px 0px 0px;
-    border-right: 5px solid #222222;
+    border-right: 5px solid #0e0e0e;
     line-height: 35px;
     transition: all 120ms ease-in;
 }
 
 .active {
-    background-color: #252525;
-    border-color: #0e0e0e;
-    color: white;
+    opacity: 1;
 }
 
 .linkIcon {
     margin-right: 3%;
-    /* margin-top: 5px; */
 }
 
 .spacer {
@@ -41,8 +39,7 @@
 }
 
 .gearButton {
-    margin-right: 0.3%;
-    margin-left: 0.3%;
+    margin: 5px;
     cursor: pointer;
     width: 32px;
 }
@@ -55,3 +52,18 @@
     0% { transform: rotate(0deg) }
     100% { transform: rotate(180deg) }
 }
+
+@media only screen and (max-width: 600px) {
+    .spacer {
+        flex-grow: 0;
+        width: 2%;
+    }
+
+    .titleIcon {
+        display: none;
+    }
+
+    .linkTab {
+        flex-grow: 1;
+    }
+} 

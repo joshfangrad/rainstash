@@ -1,11 +1,26 @@
 import React from 'react';
-import styles from './InfoPanel.module.css';
 import InfoVideo from './InfoVideo';
+import { getBoolCookie } from '../../misc/cookie';
 
-function InfoPanel({ item, folderName }) {
+import styles from './InfoPanel.module.css';
+
+function InfoPanel({ item, isMobile, folderName, clearSelectedItem }) {
+    const closePanelHandler = () => {
+        clearSelectedItem();
+    }
+
     const content = () => {
         if (item !== null) {
             return (<>
+                { isMobile === true &&
+                    <img 
+                        alt={'close button'}
+                        src={'static/close3.png'}
+                        className={styles.closeButton}
+                        onClick={() => closePanelHandler()}
+                    />
+                }
+
                 <div key='title' className={styles.infoTitle}>{item.name}</div>
                 <img key='image'
                     className={styles.infoImage} 
@@ -47,7 +62,7 @@ function InfoPanel({ item, folderName }) {
                     <div key='unlock'>{item.unlock}</div>
                 </>}
 
-                {(item.hasVideo === null || item.hasVideo !== false) && <>
+                {(getBoolCookie('loadVideos', true) === true && (item.hasVideo === null || item.hasVideo !== false)) && <>
                     <span className={styles.spacer}></span>
                     <InfoVideo key='video' folderName={folderName} item={item} />
                 </>}

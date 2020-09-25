@@ -6,7 +6,11 @@ import styles from './Settings.module.css';
 const Settings = () => {
     return (
         <div className={styles.settingsWrap}>
-            <ToggleSetting label={'display Cap'} settingName={'displayCap'} defaultState={true}/>
+            <div className={styles.switchesWrap}>
+                <ToggleSetting label={'Display Caps'} settingName={'displayCap'} defaultState={true}/>
+                <ToggleSetting label={'Load Videos'} settingName={'loadVideos'} defaultState={true}/>
+                <ToggleSetting label={'Performance Mode'} settingName={'performanceMode'} defaultState={false}/>
+            </div>
         </div>
     );
 }

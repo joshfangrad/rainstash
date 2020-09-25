@@ -8,7 +8,7 @@ function TitleBar({ onSearchChange, searchString }) {
     //method for changing styling if the link button is active
     const isActive = ({ isCurrent }) => {
         return {
-          className: `${styles.pageLink} ${isCurrent ? styles.active : styles.inactive}`  
+          className: `${styles.linkTab} ${isCurrent ? styles.active : styles.inactive}`  
         };
     };
 
@@ -18,11 +18,11 @@ function TitleBar({ onSearchChange, searchString }) {
             
             <Link to='ror1' getProps={isActive} >
                 <img src='static/ror1Icon.png' alt='ror1Icon' className={styles.linkIcon}/>
-                ror1
+                ror 1
             </Link>
             <Link to='ror2' getProps={isActive} >
                 <img src='static/ror2Icon.png' alt='ror2Icon' className={styles.linkIcon}/>
-                ror2
+                ror 2
             </Link>
 
             <span className={styles.spacer}></span>

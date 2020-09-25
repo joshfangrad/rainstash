@@ -9,3 +9,17 @@
     min-height: calc(100% - 40px);
     display: flex;
 }
+
+.noFlair * {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    text-shadow: none;
+    animation: none;
+    filter: none;
+}
+
+.noFlair:hover * {
+    animation: none;
+}

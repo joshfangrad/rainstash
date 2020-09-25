@@ -65,20 +65,33 @@ const ItemPage = (props) => {
         }
     }, [selectedItem, setSelectedItem]);
 
-    const item = hoveredItem ? hoveredItem : selectedItem;
+    const clearSelectedItem = useCallback(() => {
+        setSelectedItem(null);
+    }, [setSelectedItem]);
 
+    const item = hoveredItem ? hoveredItem : selectedItem;
     return (<>
-        <InfoPanel key='InfoPanel' folderName={props.folderName} item={item} />
-        <ItemPanel 
-            key='ItemPanel' 
-            selectedItem={selectedItem}
-            manifest={manifest}
-            folderName={props.folderName}
-            searchString={props.searchString}
-            onMouseOut={() => mouseOutHandler()}
-            onMouseOver={item => mouseOverHandler(item)}
-            onMouseClick={item => mouseClickHandler(item)}
-        />
+        { (props.isMobile === false || (props.isMobile === true && selectedItem)) &&
+            <InfoPanel 
+                key='InfoPanel' 
+                item={item} 
+                isMobile={props.isMobile}
+                folderName={props.folderName} 
+                clearSelectedItem={clearSelectedItem}
+            />
+        }
+        { (props.isMobile === false || (props.isMobile === true && !selectedItem)) &&
+            <ItemPanel 
+                key='ItemPanel' 
+                selectedItem={selectedItem}
+                manifest={manifest}
+                folderName={props.folderName}
+                searchString={props.searchString}
+                onMouseOut={() => mouseOutHandler()}
+                onMouseOver={item => mouseOverHandler(item)}
+                onMouseClick={item => mouseClickHandler(item)}
+            />
+        }
     </>)
 }
 

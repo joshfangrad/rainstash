@@ -1,9 +1,20 @@
 .settingsWrap {
     display: flex;
+    width: 100%;
+}
+
+.switchesWrap {
+    display: flex;
+    width: 50%;
     flex-direction: column;
-    /* box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    border: 3px solid #474747;
-    border-radius: 0.4vw;
-    margin: 0.5vw; */
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .settingsWrap {
+        flex-direction: column;
+    }
+    .switchesWrap {
+        width: 100%;
+    }
 }
