@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "rainFont";
+  font-style: normal;
+  src: url('./fonts/riskofRainFont/RiskofRainFont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "rainFontBold";
+  font-style: bold;
+  src: url('./fonts/RiskofRainSquare/RiskofRainSquare.ttf') format('truetype');
+}
+
+body {
+    height: 100%;
+    margin: 0%;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    font-family: rainFont;
+    overflow-y: hidden;
+}
+
+.subtitle {
+    font-size: 0.5em;
+    color: #a1a1a1;
+}
+
+.wrapper {
+    height: 100%;
+    width: 60%;
+    margin: 0%;
+    background-color: #363636;
+}
+
+.spacer {
+    margin: 15%;
+}
+
+a {
+    color: #e7543a;
+;
+}
+
+a:visited {
+    color: #e7543a;
+}
+
+div {
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+img {
+    height: 15%;
+    image-rendering: crisp-edges;
+}
