@@ -12,13 +12,13 @@ export default {
             'vanilla': {
                 'description': 'Vanilla items. Comes with the base game.'
             },
-            'starstorm': {
-                'description': <>
-                    An expansion adding new survivors, items, artifacts, stages, enemies and much more to Risk of Rain.
-                    Go pick it up over at
-                    <a target='_blank' rel='noopener noreferrer' href='https://rainfusion.ml/'> Rainfusion</a>.
-                </>
-            }
+            // 'starstorm': {
+            //     'description': <>
+            //         An expansion adding new survivors, items, artifacts, stages, enemies and much more to Risk of Rain.
+            //         Go pick it up over at
+            //         <a target='_blank' rel='noopener noreferrer' href='https://rainfusion.ml/'> Rainfusion</a>.
+            //     </>
+            // }
         }
     },
     'ror2': {

@@ -23,8 +23,8 @@
             "description": "Upon opening/activating an object, fire 8 fireworks that deal 300% damage.",
             "stack": "+2 Fireworks launched.",
             "itemClass": "Common Items",
-            "imgName": "item_Bundle_of_Fireworks.png",
-            "vidName": "usage_Bundle_of_Fireworks.mp4"
+            "imgName": "item_Bundle_Of_Fireworks.png",
+            "vidName": "usage_Bundle_Of_Fireworks.mp4"
         },
         "Bustling_Fungus": {
             "name": "Bustling Fungus",
@@ -443,8 +443,8 @@
             "description": "On kill: 33% chance to create a lava pillar from the enemy's corpse for 250% damage.",
             "stack": "Further increases lava pillar damage by +100%.",
             "itemClass": "Uncommon Items",
-            "imgName": "item_Will-o-the-Wisp.png",
-            "vidName": "usage_Will-o-the-Wisp.mp4"
+            "imgName": "item_Will-O-The-Wisp.png",
+            "vidName": "usage_Will-O-The-Wisp.mp4"
         },
         "Alien_Head": {
             "name": "Alien Head",
@@ -854,8 +854,8 @@
             "embryo": "Summons an additional ghost per enemy.",
             "hasVideo": false,
             "itemClass": "Use Items",
-            "imgName": "item_Jar_of_Souls.png",
-            "vidName": "usage_Jar_of_Souls.mp4"
+            "imgName": "item_Jar_Of_Souls.png",
+            "vidName": "usage_Jar_Of_Souls.mp4"
         },
         "Lost_Doll": {
             "name": "Lost Doll",
