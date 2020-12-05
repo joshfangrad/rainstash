@@ -12,8 +12,7 @@ function getCookie(key) {
 }
 
 //adds or modifies a cookie.
-export function setCookie(key, value, expireDays) {
-    expireDays = expireDays || 5;
+export function setCookie(key, value, expireDays = 365) {
     let date = new Date();
     date.setTime(+date + (expireDays * 86400000));
     let expires = `expires=${date.toGMTString()}`;

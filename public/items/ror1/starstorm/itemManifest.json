@@ -614,9 +614,7 @@
         }
     },
     "classInfo": {
-        "Boss Items": {
-            "color": ""
-        },
+        
         "Common Items": {
             "color": ""
         },
@@ -636,6 +634,9 @@
             "color": ""
         },
         "Uncommon Items": {
+            "color": ""
+        },
+        "Boss Items": {
             "color": ""
         },
         "Use Items": {

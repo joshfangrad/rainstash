@@ -1,5 +1,6 @@
-import React, { useState, useCallback, useEffect } from 'react';
-import { getOrCreateEnabledItems } from '../misc/cookie';
+import React, { useState, useCallback, useEffect, useContext } from 'react';
+import { getBoolCookie, getOrCreateEnabledItems } from '../misc/cookie';
+import mobileContext from './mobileContext';
 import InfoPanel from './InfoPanel/InfoPanel';
 import ItemPanel from './ItemPanel/ItemPanel';
 
@@ -12,10 +13,18 @@ const ItemPage = (props) => {
     useEffect(() => {
         (async () => {
             //get manifests to load from cookies
-            const manifestsToLoad = getOrCreateEnabledItems(props.folderName);
-        
-            let combinedManifest = {'items': {}, 'classInfo': {} };
-        
+            let manifestsToLoad; 
+            //if mods are not enabled, just load vanilla
+            if ( getBoolCookie('mods', false) === true ) {
+                manifestsToLoad = getOrCreateEnabledItems(props.folderName);
+                //make sure vanilla loads first
+                manifestsToLoad = manifestsToLoad.sort((a) => a !== 'vanilla');
+            } else {
+                manifestsToLoad = ['vanilla'];
+            }
+
+            let combinedManifest = { 'items': {}, 'classInfo': {} };
+            
             //go through all manifests to be loaded
             for (const manifestName of manifestsToLoad) {
                 const result = await fetch(process.env.PUBLIC_URL + `items/${props.folderName}/${manifestName}/itemManifest.json`);
@@ -26,7 +35,7 @@ const ItemPage = (props) => {
                     for (const item of Object.values(manifest.items)) {
                         item.manifestName = manifestName;
                     }
-                    Object.assign(combinedManifest.items, manifest.items) 
+                    Object.assign(combinedManifest.items, manifest.items);
                 }
                 // if (manifest.classInfo) { Object.assign(combinedManifest.classInfo, manifest.classInfo) }
                 if (manifest.classInfo) {
@@ -70,19 +79,18 @@ const ItemPage = (props) => {
     }, [setSelectedItem]);
 
     const item = hoveredItem ? hoveredItem : selectedItem;
+    const isMobile = useContext(mobileContext);
+
     return (<>
-        { (props.isMobile === false || (props.isMobile === true && selectedItem)) &&
-            <InfoPanel 
-                key='InfoPanel' 
+        { (isMobile === false || (isMobile === true && selectedItem)) &&
+            <InfoPanel
                 item={item} 
-                isMobile={props.isMobile}
                 folderName={props.folderName} 
                 clearSelectedItem={clearSelectedItem}
             />
         }
-        { (props.isMobile === false || (props.isMobile === true && !selectedItem)) &&
-            <ItemPanel 
-                key='ItemPanel' 
+        { (isMobile === false || (isMobile === true && !selectedItem)) &&
+            <ItemPanel
                 selectedItem={selectedItem}
                 manifest={manifest}
                 folderName={props.folderName}

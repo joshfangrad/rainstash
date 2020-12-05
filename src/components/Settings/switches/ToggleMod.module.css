@@ -1,8 +1,8 @@
-.toggleSetting {
+.toggleMod {
     display: flex;
-    padding: 0.5em;
-    margin: 1em;
-    margin-bottom: 0em;
+    padding: 0.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     border-radius: 0.3em 0.3em 0.3em 0.3em;
     background-color: #474747;
     align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .toggleLabel {
-    margin-right: 2%;
+    margin-right: 1%;
     margin-left: 1%;
 }
 
@@ -24,8 +24,8 @@
 	border: 0.2em solid #ffffff;
     border-radius: 0.3em;
     padding: 0.5em;
-    width: 2.5em;
-    height: 2.5em;
+    width: 2em;
+    height: 2em;
     margin-left: 2%;
     display: inline-block;
     transition: all 120ms ease-in;
@@ -40,7 +40,6 @@
     padding: 0.3em;
 }
 
-
 .horizontalLine {
     position: relative;
     flex-grow: 1;
@@ -54,3 +53,5 @@
     border-bottom: 3px dashed #646464;
     width: 100%;
 }
+
+

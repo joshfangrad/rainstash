@@ -18,9 +18,11 @@
 }
 
 .closeButton {
-    width: 2em;
+    width: 2.5em;
     display: none;
+    cursor: pointer;
     align-self: flex-end;
+    margin: 0.2em;
 
 }
 
@@ -62,6 +64,7 @@
 @media only screen and (max-width: 600px) {
     .infoPanel {
         width: 100%;
+        resize: none;
     }
     
     .closeButton {

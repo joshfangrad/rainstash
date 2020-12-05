@@ -967,6 +967,42 @@
             "imgName": "item_Volcanic_Egg.png",
             "vidName": "usage_Volcanic_Egg.mp4"
         },
+        "Her_Biting_Embrace": {
+            "name": "Her Biting Embrace",
+            "description": "Attacked enemies are slowed by 20% on hit. Slow duration is based on Proc Coefficient, with a base of 1.5 seconds. When the player dies while holding this, they will explode for 150% damage ina addition to freezing nearby enemies.",
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Her_Biting_Embrace.png",
+            "vidName": "usage_Her_Biting_Embrace.mp4"
+        },
+        "Ifrits_Distinction": {
+            "name": "Ifrit's Distinction",
+            "description": "Grants a fire train that follows the player that ignites enemies. Burn duration is based on Proc Coefficient, with a base of 4 seconds.",
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Ifrits_Distinction.png",
+            "vidName": "usage_Ifrits_Distinction.mp4"
+        },
+        "Nkuhanas_Retort": {
+            "name": "N'kuhana's Retort",
+            "description": "Player periodically release 3-4 spiked balls that sprouts spikes from where they land. Spikes will nullify the target's healing.",
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Nkuhanas_Retort.png",
+            "vidName": "usage_Nkuhanas_Retort.mp4"
+        },
+        "Silence_Between_Two_Strikes": {
+            "name": "Silence Between Two Strikes",
+            "description": "50% of the players health is replaced with shields and attacks attach lighting bombs which explode after a short period, dealing 50% TOTAL damage.",
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Silence_Between_Two_Strikes.png",
+            "vidName": "usage_Silence_Between_Two_Strikes.mp4"
+        },
         "Spectral_Circlet": {
             "name": "Spectral Circlet",
             "description": "Grants a large aura which grants invisibilty to any ally. Attacks apply a slow on hit.",
@@ -976,43 +1012,6 @@
             "imgName": "item_Spectral_Circlet.png",
             "vidName": "usage_Spectral_Circlet.mp4"
         },
-        "Her_Biting_Embrace": {
-            "name": "Her Biting Embrace",
-            "description": "",
-            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
-            "itemClass": "Equipment",
-            "hasVideo": false,
-            "imgName": "item_Her_Biting_Embrace.png",
-            "vidName": "usage_Her_Biting_Embrace.mp4"
-        },
-        "Ifrits_Distinction": {
-            "name": "Ifrit's Distinction",
-            "description": "",
-            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
-            "itemClass": "Equipment",
-            "hasVideo": false,
-            "imgName": "item_Ifrits_Distinction.png",
-            "vidName": "usage_Ifrits_Distinction.mp4"
-        },
-        "Nkuhanas_Retort": {
-            "name": "N'kuhana's Retort",
-            "description": "",
-            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
-            "itemClass": "Equipment",
-            "hasVideo": false,
-            "imgName": "item_Nkuhanas_Retort.png",
-            "vidName": "usage_Nkuhanas_Retort.mp4"
-        },
-        "Silence_Between_Two_Strikes": {
-            "name": "Silence Between Two Strikes",
-            "description": "",
-            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
-            "itemClass": "Equipment",
-            "hasVideo": false,
-            "imgName": "item_Silence_Between_Two_Strikes.png",
-            "vidName": "usage_Silence_Between_Two_Strikes.mp4"
-        },
-
 
 
 

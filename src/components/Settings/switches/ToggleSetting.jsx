@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
-import { getBoolCookie, setCookie } from '../../misc/cookie';
+import React, { useCallback, useState } from 'react'
+import { getBoolCookie, setCookie } from '../../../misc/cookie';
 
 import styles from './ToggleSetting.module.css'
 
 
 const ToggleSetting = (props) => {
-    const [checked, setChecked] = useState( getBoolCookie(props.settingName, props.startingState) );
+    const [checked, setChecked] = useState( getBoolCookie(props.settingName, props.defaultState) );
 
     //update state and cookie on click
-    const changeHandler = (e) => {
+    const changeHandler = useCallback((e) => {
         setChecked(e.target.checked);
         setCookie(props.settingName, e.target.checked ? 'true' : 'false');
-    };
+        if (props.onChange) {
+            props.onChange(e.target.checked);
+        }
+    }, [props]);
 
     return (
         <label htmlFor={`check_${props.settingName}`} className={styles.toggleSetting}>

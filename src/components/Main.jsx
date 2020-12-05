@@ -1,15 +1,17 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { Router } from "@reach/router";
+import { getBoolCookie } from '../misc/cookie';
+import { Router } from '@reach/router';
 import ItemPage from './ItemPage';
 import Settings from './Settings/Settings';
 import TitleBar from './TitleBar/TitleBar';
-import { getBoolCookie } from '../misc/cookie';
+import mobileContext from './mobileContext';
 
 import styles from './Main.module.css';
 
 function Main() {
     const [searchString, setSearchString] = useState('');
     const [isMobile, setIsMobile] = useState(false);
+    const [performanceMode, setPerformanceMode] = useState( getBoolCookie('performanceMode', false) );
 
     //handler for the searchbar, called by input.onChange
     const searchBarHandler = useCallback((e) => {
@@ -28,6 +30,7 @@ function Main() {
         setIsMobile(match.matches);
         //set listener
         match.addEventListener('change', (e) => resizeHandler(e));
+
         return () => {
             match.removeEventListener(resizeHandler);
         }
@@ -35,30 +38,32 @@ function Main() {
     }, [setIsMobile, resizeHandler]);
 
     //determine if performance mode is running or not
-    let performanceModeClass = getBoolCookie('performanceMode', false) === true ? styles.noFlair : ''; 
+    let performanceModeClass = performanceMode === true ? styles.noFlair : ''; 
 
     return (
-        <div className={`${styles.mainFlex} ${performanceModeClass}`}>
-            <TitleBar 
-                onSearchChange={(e) => searchBarHandler(e)}
-                searchString={searchString}
-            />
-            <Router className={styles.panelsFlex}>
-                <ItemPage
-                    path='ror1'
-                    folderName='ror1'
-                    isMobile={isMobile}
+        <mobileContext.Provider value={isMobile}>
+            <div className={`${styles.mainFlex} ${performanceModeClass}`}>
+                <TitleBar 
+                    onSearchChange={(e) => searchBarHandler(e)}
                     searchString={searchString}
                 />
-                <ItemPage
-                    path='ror2' default
-                    folderName='ror2'
-                    isMobile={isMobile}
-                    searchString={searchString}
-                />
-                <Settings path='settings' />
-            </Router>
-        </div>
+                <Router className={styles.panelsFlex}>
+                    <ItemPage
+                        path='ror1'
+                        folderName='ror1'
+                        searchString={searchString}
+                    />
+                    <ItemPage
+                        path='ror2' default
+                        folderName='ror2'
+                        searchString={searchString}
+                    />
+                    <Settings path='settings'
+                        setPerformanceMode={(value) => setPerformanceMode(value)}
+                    />
+                </Router>
+            </div>
+        </mobileContext.Provider>
     );
 }
 

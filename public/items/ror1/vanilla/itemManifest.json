@@ -683,7 +683,6 @@
             "description": "On kill: Grants a firetrail, 5% movement speed, and 1 damage for 6 seconds.",
             "stack": "+5% movement speed, increases duration",
             "drop": "Dropped by the Magma Worm.",
-            "hasVideo": false,
             "itemClass": "Boss Items",
             "imgName": "item_Burning_Witness.png",
             "vidName": "usage_Burning_Witness.mp4"
@@ -693,7 +692,6 @@
             "description": "Increase health by 40, health regeneration by 1.2/second, and armor by 6.",
             "stack": "+40 health, +1.2 health regen, +6 armor.",
             "drop": "Dropped by the Colossus.",
-            "hasVideo": false,
             "itemClass": "Boss Items",
             "imgName": "item_Colossal_Knurl.png",
             "vidName": "usage_Colossal_Knurl.mp4"
@@ -703,7 +701,6 @@
             "description": "On Hit: 8% chance to incinerate enemies for 220% damage.",
             "stack": "+30% damage.",
             "drop": "Dropped by Ifrit.",
-            "hasVideo": false,
             "itemClass": "Boss Items",
             "imgName": "item_Ifrits_Horn.png",
             "vidName": "usage_Ifrits_Horn.mp4"
@@ -713,7 +710,6 @@
             "description": "Summon an Imp bodyguard that revives every 60 seconds.",
             "stack": "Increase his health, damage, and speed, and change his color.",
             "drop": "Dropped by the Imp Overlord.",
-            "hasVideo": false,
             "itemClass": "Boss Items",
             "imgName": "item_Imp_Overlords_Tentacle.png",
             "vidName": "usage_Imp_Overlords_Tentacle.mp4"
@@ -723,7 +719,6 @@
             "description": "On Hit: 8% chance to smite enemies for 200% damage.",
             "stack": "+1 spark.",
             "drop": "Dropped by the Ancient Wisp.",
-            "hasVideo": false,
             "itemClass": "Boss Items",
             "imgName": "item_Legendary_Spark.png",
             "vidName": "usage_Legendary_Spark.mp4"
@@ -734,7 +729,6 @@
             "cooldown": 22.5,
             "embryo": "Shoot 12 nematocysts instead of 6.",
             "drop": "Dropped by the Wandering Vagrant.",
-            "hasVideo": false,
             "itemClass": "Boss Items",
             "imgName": "item_Nematocyst_Nozzle.png",
             "vidName": "usage_Nematocyst_Nozzle.mp4"
@@ -1062,7 +1056,7 @@
         },
         "Enigma": {
             "name": "Enigma",
-            "description": "Enigma will replace your active item. Using enigma will trigger a random use item effect. When Enigma is active, <span class='purple'>Small Enigma</span>s will drop instead of Use Items.",
+            "description": "Enigma will replace your active item. Using enigma will trigger a random use item effect. When Enigma is active, Small Enigmas will drop instead of Use Items.",
             "unlock": "Found in the Sunken Tomb.",
             "itemClass": "Special Items",
             "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
@@ -1072,7 +1066,7 @@
         },
         "Sacrifice": {
             "name": "Sacrifice",
-            "description": "Enemies have a chance to drop items, but chests no longer spawn. Does not share the same drop roll as <span class='green'>56 Leaf Clover</span>.",
+            "description": "Enemies have a chance to drop items, but chests no longer spawn. Does not share the same drop roll as 56 Leaf Clover.",
             "unlock": "Found in the Magma Barracks.",
             "itemClass": "Special Items",
             "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
@@ -1103,7 +1097,7 @@
         "Origin": {
             "name": "Origin",
             "description": "Every 10 minutes, a portal materializes and summons 3 Purple imps, and 1 Imp Vanguard.",
-            "unlock": "Defeat <span class='red'>Providence</span> with all other artifacts activated.",
+            "unlock": "Defeat Providence with all other artifacts activated.",
             "itemClass": "Special Items",
             "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
             "hasVideo": false,

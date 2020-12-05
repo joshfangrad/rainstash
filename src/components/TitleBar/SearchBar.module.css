@@ -6,12 +6,13 @@
 
 .searchBar {
     width: 100%;
+    height: 40px;
     background-color: #252525;
     font-family: rainFont;
-    font-size: 0.8em;
+    font-size: 80%;
     color: white;
     border-width: 0px;
-    padding: 1em;
+    padding-left: 1em;
 }
 
 .clearButton {

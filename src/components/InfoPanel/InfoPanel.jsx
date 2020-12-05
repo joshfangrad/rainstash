@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import InfoVideo from './InfoVideo';
 import { getBoolCookie } from '../../misc/cookie';
 
 import styles from './InfoPanel.module.css';
+import mobileContext from '../mobileContext';
 
-function InfoPanel({ item, isMobile, folderName, clearSelectedItem }) {
+function InfoPanel({ item, folderName, clearSelectedItem }) {
     const closePanelHandler = () => {
         clearSelectedItem();
     }
+
+    const isMobile = useContext(mobileContext);
 
     const content = () => {
         if (item !== null) {
