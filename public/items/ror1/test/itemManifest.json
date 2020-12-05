@@ -1,0 +1,49 @@
+{
+    "items": {
+    
+        "Test_One": {
+            "name": "Test One",
+            "description": "The first test item.",
+            "stack": "you get more test items..? You can't take more than 15 of these though. that'd be impolite.",
+            "unlock": "Press every key on your keyboard at once in the exact same moment you kill providence.",
+            "hasVideo": false,
+            "maxStacks": 15,
+            "itemClass": "test items",
+            "imgName": "item_Test_One.png",
+            "vidName": ""
+        },
+    
+        "Test_Two": {
+            "name": "Test Two",
+            "description": "IT'S THE SECOND TEST ITEM!!!!!!!",
+            "stack": "REEEEEEEEE",
+            "hasVideo": false,
+            "itemClass": "test items",
+            "imgName": "item_Test_Two.png",
+            "vidName": ""
+        },
+
+        "Test_Three": {
+            "name": "Test Three",
+            "description": "The third test item.",
+            "drop": "Dropped by nobody. Sorry. ¯\\_(ツ)_\/¯",
+            "cooldown": 1337,
+            "embryo": "Doubles all your test items. maybe.",
+            "hasVideo": false,
+            "itemClass": "test items",
+            "imgName": "item_Test_Three.png",
+            "vidName": ""
+        }
+    },
+
+    "classInfo": {
+        "test items": { "color": "#5867c6", 
+            "textFlair": "<span class='gray'>These are temporary examples of modded items, They're not actually in the game.</span><br><br>" }
+    },
+
+    "commandSort": [
+        "Test_Three",
+        "Test_Two",
+        "Test_One"
+    ]
+}

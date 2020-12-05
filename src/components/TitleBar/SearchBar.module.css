@@ -1,0 +1,41 @@
+.searchWrap {
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+}
+
+.searchBar {
+    width: 100%;
+    height: 40px;
+    background-color: #252525;
+    font-family: rainFont;
+    font-size: 80%;
+    color: white;
+    border-width: 0px;
+    padding-left: 1em;
+}
+
+.clearButton {
+    position: absolute;
+    height: 80%;
+    right: 1%;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    z-index: 1;
+    object-fit: contain;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+    animation: clearButtonPulse 0.3s;
+}
+
+@keyframes clearButtonPulse {
+    0% { transform: scale(0.0) }
+    50% { transform: scale(1.2) }
+    75% { transform: scale(0.8) }
+    100% { transform: scale(1.0) }
+}

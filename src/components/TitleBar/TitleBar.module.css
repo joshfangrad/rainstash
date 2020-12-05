@@ -1,0 +1,69 @@
+.titleBar {
+    background-color: #474747;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleIcon {
+    position: relative;
+}
+
+.linkTab {
+    opacity: 0.4;
+    font-family: rainFontBold;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background-color: #252525;
+    width: 8em;
+    margin-left: 5px;
+    align-self: flex-end;
+    border-radius: 8px 8px 0px 0px;
+    border-right: 5px solid #0e0e0e;
+    line-height: 35px;
+    transition: all 120ms ease-in;
+}
+
+.linkTab.active {
+    opacity: 1;
+}
+
+.linkIcon {
+    margin-right: 3%;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.gearButton {
+    margin: 5px;
+    cursor: pointer;
+    width: 32px;
+}
+
+.gearButton:hover {
+    animation: gearSpin 0.3s;
+}
+
+@keyframes gearSpin {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(180deg) }
+}
+
+@media only screen and (max-width: 600px) {
+    .spacer {
+        flex-grow: 0;
+        width: 2%;
+    }
+
+    .titleIcon {
+        display: none;
+    }
+
+    .linkTab {
+        flex-grow: 1;
+    }
+} 

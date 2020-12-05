@@ -1,0 +1,55 @@
+.toggleSetting {
+    display: flex;
+    padding: 0.3em;
+    margin-top: 1em;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    background-color: #474747;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 200ms ease-in;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.toggleLabel {
+    margin-right: 2%;
+    margin-left: 1%;
+}
+
+.toggleSwitch {
+    appearance: none;
+    background-clip: content-box;
+	border: 0.2em solid #ffffff;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: 2%;
+    display: inline-block;
+    transition: all 120ms ease-in;
+}
+
+.toggleSwitch:hover {
+    background-color: #5f5f5f;
+}
+
+.toggleSwitch:checked {
+    background-color: #F4F3B7;
+    padding: 0.3em;
+}
+
+
+.horizontalLine {
+    position: relative;
+    flex-grow: 1;
+}
+
+.horizontalLine:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom: 3px dashed #646464;
+    width: 100%;
+}

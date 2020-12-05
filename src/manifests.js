@@ -1,4 +1,0 @@
-let manifests = [
-    'vanilla',
-    'test'
-]

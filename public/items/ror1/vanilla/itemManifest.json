@@ -1,0 +1,1163 @@
+{
+    "items": {
+        "Barbed_Wire": {
+            "name": "Barbed Wire",
+            "description": "Touching enemies deals 50% damage/sec.",
+            "stack": "+20% larger radius, +17% damage/sec. Deminishing returns on damage/sec increase.",
+            "itemClass": "Common Items",
+            "imgName": "item_Barbed_Wire.png",
+            "vidName": "usage_Barbed_Wire.mp4"
+        },
+        "Bitter_Root": {
+            "name": "Bitter Root",
+            "description": "Gain 8% max HP.",
+            "stack": "Further gain 8% max HP, up to 38 stacks (300% extra HP).",
+            "unlock": "Reach 650 health.",
+            "maxStacks": 38,
+            "itemClass": "Common Items",
+            "imgName": "item_Bitter_Root.png",
+            "vidName": "usage_Bitter_Root.mp4"
+        },
+        "Bundle_Of_Fireworks": {
+            "name": "Bundle of Fireworks",
+            "description": "Upon opening/activating an object, fire 8 fireworks that deal 300% damage.",
+            "stack": "+2 Fireworks launched.",
+            "itemClass": "Common Items",
+            "imgName": "item_Bundle_Of_Fireworks.png",
+            "vidName": "usage_Bundle_Of_Fireworks.mp4"
+        },
+        "Bustling_Fungus": {
+            "name": "Bustling Fungus",
+            "description": "After 2 seconds, heal for 4.5% of your health every second.",
+            "stack": "4.5% More Healing.",
+            "itemClass": "Common Items",
+            "imgName": "item_Bustling_Fungus.png",
+            "vidName": "usage_Bustling_Fungus.mp4"
+        },
+        "Crowbar": {
+            "name": "Crowbar",
+            "description": "On Hit: Deal +50% damage to enemies above 80% health.",
+            "stack": "+30% damage.",
+            "itemClass": "Common Items",
+            "imgName": "item_Crowbar.png",
+            "vidName": "usage_Crowbar.mp4"
+        },
+        "Fire_Shield": {
+            "name": "Fire Shield",
+            "description": "After being hit for 10% of your maximum health in one hit: explode, dealing 400% damage and knocking back enemies.",
+            "stack": "Increases explosion damage by 200%, and increases knockback by 20%.",
+            "itemClass": "Common Items",
+            "imgName": "item_Fire_Shield.png",
+            "vidName": "usage_Fire_Shield.mp4"
+        },
+        "First_Aid_Kit": {
+            "name": "First Aid Kit",
+            "description": "Heal for 10 health after 1.1 seconds of getting hit.",
+            "stack": "Each additional First Aid Kit increases the heal by 10.",
+            "itemClass": "Common Items",
+            "imgName": "item_First_Aid_Kit.png",
+            "vidName": "usage_First_Aid_Kit.mp4"
+        },
+        "Gasoline": {
+            "name": "Gasoline",
+            "description": "On kill: Killing enemies burns the ground for 60% damage for 2 seconds.",
+            "stack": "+40% damage.",
+            "itemClass": "Common Items",
+            "imgName": "item_Gasoline.png",
+            "vidName": "usage_Gasoline.mp4"
+        },
+        "Headstompers": {
+            "name": "Headstompers",
+            "description": "Hurt enemies by falling for up to 507% damage.",
+            "stack": "Increases damage by 30%.",
+            "itemClass": "Common Items",
+            "imgName": "item_Headstompers.png",
+            "vidName": "usage_Headstompers.mp4"
+        },
+        "Hermits_Scarf": {
+            "name": "Hermit's Scarf",
+            "description": "10% chance to evade attacks.",
+            "stack": "Increases dodge chance +5%, up to a maximum of 35% at 6 stacks.",
+            "unlock": "Huntress: Achieve 200% attack speed.",
+            "maxStacks": 6,
+            "itemClass": "Common Items",
+            "imgName": "item_Hermits_Scarf.png",
+            "vidName": "usage_Hermits_Scarf.mp4"
+        },
+        "Lens_Makers_Glasses": {
+            "name": "Lens Maker's Glasses",
+            "description": "On Hit: your attacks have a 7% chance to critically strike, dealing double damage.",
+            "stack": "+7% crit chance. 100% chance to crit on 14 stacks.",
+            "maxStacks": 14,
+            "itemClass": "Common Items",
+            "imgName": "item_Lens_Makers_Glasses.png",
+            "vidName": "usage_Lens_Makers_Glasses.mp4"
+        },
+        "Life_Savings": {
+            "name": "Life Savings",
+            "description": "Generate $1 every 3 seconds.",
+            "stack": "+1 gold generation rate.",
+            "itemClass": "Common Items",
+            "imgName": "item_Life_Savings.png",
+            "vidName": "usage_Life_Savings.mp4"
+        },
+        "Meat_Nugget": {
+            "name": "Meat Nugget",
+            "description": "On Hit: 8% chance to drop 2 meat nuggets that heals for 2x6 health.",
+            "stack": "+6 health per meat nugget.",
+            "itemClass": "Common Items",
+            "imgName": "item_Meat_Nugget.png",
+            "vidName": "usage_Meat_Nugget.mp4"
+        },
+        "Monster_Tooth": {
+            "name": "Monster Tooth",
+            "description": "On kill: Killing an enemy heals you for 10 health.",
+            "stack": "+5 more health after kill.",
+            "itemClass": "Common Items",
+            "imgName": "item_Monster_Tooth.png",
+            "vidName": "usage_Monster_Tooth.mp4"
+        },
+        "Mortar_Tube": {
+            "name": "Mortar Tube",
+            "description": "On Hit: 9% chance to fire a mortar for 170% damage",
+            "stack": "+170% damage.",
+            "itemClass": "Common Items",
+            "imgName": "item_Mortar_Tube.png",
+            "vidName": "usage_Mortar_Tube.mp4"
+        },
+        "Mysterious_Vial": {
+            "name": "Mysterious Vial",
+            "description": "Increase health regeneration by 1.2 per second.",
+            "stack": "+1.2 health per second.",
+            "itemClass": "Common Items",
+            "imgName": "item_Mysterious_Vial.png",
+            "vidName": "usage_Mysterious_Vial.mp4"
+        },
+        "Pauls_Goat_Hoof": {
+            "name": "Paul's Goat Hoof",
+            "description": "+20% movement speed.",
+            "stack": "Further increases movement speed by 20%, caps at around 25.",
+            "unlock": "Fail a shrine 3 times in a row.",
+            "maxStacks": 25,
+            "itemClass": "Common Items",
+            "imgName": "item_Pauls_Goat_Hoof.png",
+            "vidName": "usage_Pauls_Goat_Hoof.mp4"
+        },
+        "Rusty_Blade": {
+            "name": "Rusty Blade",
+            "description": "On Hit: 15% chance to bleed an enemy for 4x35% damage.",
+            "stack": "15% extra chance to bleed, 100% chance at 7 stacks.",
+            "maxStacks": 7,
+            "itemClass": "Common Items",
+            "imgName": "item_Rusty_Blade.png",
+            "vidName": "usage_Rusty_Blade.mp4"
+        },
+        "Snake_Eyes": {
+            "name": "Snake Eyes",
+            "description": "Failing a shrine increases crit chance by 5%.",
+            "stack": "Further increases crit chance by 3% for each shrine fail.",
+            "unlock": "Pass a shrine 4 times in a row.",
+            "itemClass": "Common Items",
+            "imgName": "item_Snake_Eyes.png",
+            "vidName": "usage_Snake_Eyes.mp4"
+        },
+        "Soldiers_Syringe": {
+            "name": "Soldier's Syringe",
+            "description": "Increases attack speed by 15%.",
+            "stack": "adds another 15% increase up to 13 times, maxing at +195%",
+            "unlock": "Commando: Dodge 7 lethal attacks.",
+            "maxStacks": 13,
+            "itemClass": "Common Items",
+            "imgName": "item_Soldiers_Syringe.png",
+            "vidName": "usage_Soldiers_Syringe.mp4"
+        },
+        "Spikestrip": {
+            "name": "Spikestrip",
+            "description": "When hit, drops spikestrips (lasts for 2 seconds) that slow enemies by 20%",
+            "stack": "Increases the duration of spikestrips by 1 second per stack.",
+            "unlock": "Enforcer: Block 2000 damage total with your shield.",
+            "itemClass": "Common Items",
+            "imgName": "item_Spikestrip.png",
+            "vidName": "usage_Spikestrip.mp4"
+        },
+        "Sprouting_Egg": {
+            "name": "Sprouting Egg",
+            "description": "After not being hit for 7 seconds, increase health regen by 2.4 health per second.",
+            "stack": "+2.4 heath per second out of combat.",
+            "itemClass": "Common Items",
+            "imgName": "item_Sprouting_Egg.png",
+            "vidName": "usage_Sprouting_Egg.mp4"
+        },
+        "Sticky_Bomb": {
+            "name": "Sticky Bomb",
+            "description": "On Hit: 8% chance to attach a bomb to an enemy, detonating for 140% damage.",
+            "stack": "+40% damage.",
+            "unlock": "Engineer: Detonate 15 \"Bounding Mines\" within 5 seconds.",
+            "itemClass": "Common Items",
+            "imgName": "item_Sticky_Bomb.png",
+            "vidName": "usage_Sticky_Bomb.mp4"
+        },
+        "Taser": {
+            "name": "Taser",
+            "description": "On Hit: 7% chance to snare enemies for 1.5 seconds.",
+            "stack": "Increases snare duration by 0.5 seconds.",
+            "unlock": "Loader: Travel for 20,000 feet using the Hydraulic Gauntlet.",
+            "itemClass": "Common Items",
+            "imgName": "item_Taser.png",
+            "vidName": "usage_Taser.mp4"
+        },
+        "Warbanner": {
+            "name": "Warbanner",
+            "description": "On level up drop a banner. Raise attack/move speed by 30% and damage by 4.",
+            "stack": "Area of effect increased by 40% of base size.",
+            "itemClass": "Common Items",
+            "imgName": "item_Warbanner.png",
+            "vidName": "usage_Warbanner.mp4"
+        },
+        "56_Leaf_Clover": {
+            "name": "56 Leaf Clover",
+            "description": "Elite mobs have a 4% chance to drop items.",
+            "stack": "+1.5% item drop chance, up to a maximum of 100% at 65 stacks.",
+            "unlock": "Kill the Scavenger.",
+            "maxStacks": 65,
+            "itemClass": "Uncommon Items",
+            "imgName": "item_56_Leaf_Clover.png",
+            "vidName": "usage_56_Leaf_Clover.mp4"
+        },
+        "Arms_Race": {
+            "name": "Arms Race",
+            "description": "On drone action: 9% chance for drones to fire missiles and mortars.",
+            "stack": "+10% chance to fire missiles, +170% more mortar damage",
+            "unlock": "HAN-D: Kill 10 enemies with FORCED-REASSEMBLY simultaneously.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Arms_Race.png",
+            "vidName": "usage_Arms_Race.mp4"
+        },
+        "AtG_Missile_Mk_1": {
+            "name": "AtG Missile Mk. 1",
+            "description": "On Hit: 10% chance of firing a missile that deals 300% damage.",
+            "stack": "+10% chance to fire missiles.",
+            "maxStacks": 10,
+            "itemClass": "Uncommon Items",
+            "imgName": "item_AtG_Missile_Mk_1.png",
+            "vidName": "usage_AtG_Missile_Mk_1.mp4"
+        },
+        "Boxing_Gloves": {
+            "name": "Boxing Gloves",
+            "description": "On Hit: hitting enemies have a 15% chance to knock them back.",
+            "stack": "6% multiplicatively increase in knockback chance.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Boxing_Gloves.png",
+            "vidName": "usage_Boxing_Gloves.mp4"
+        },
+        "Chargefield_Generator": {
+            "name": "Chargefield Generator",
+            "description": "On kill: generate a lightning ring, dealing 100% damage/sec for 6 seconds. Subsequent kills will expland the ring.",
+            "stack": "+10% damage/sec.",
+            "unlock": "Mercenary: Eviscerate 50 enemies.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Chargefield_Generator.png",
+            "vidName": "usage_Chargefield_Generator.mp4"
+        },
+        "Concussion_Grenade": {
+            "name": "Concussion Grenade",
+            "description": "On Hit: 6% chance to stun enemies for two seconds.",
+            "stack": "+6% increased stun chance, stacks multiplicatively.",
+            "unlock": "Engineer: Kill a Boss in 15 seconds or less.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Concussion_Grenade.png",
+            "vidName": "usage_Concussion_Grenade.mp4"
+        },
+        "Dead_Mans_Foot": {
+            "name": "Dead Man's Foot",
+            "description": "Drop a poison mine at low health for 4x150% damage.",
+            "stack": "+1 poison tick.",
+            "unlock": "Find the Bloated Survivor.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Dead_Mans_Foot.png",
+            "vidName": "usage_Dead_Mans_Foot.mp4"
+        },
+        "Energy_Cell": {
+            "name": "Energy Cell",
+            "description": "Increased attack speed by up to 40% based on how much HP you have lost.",
+            "stack": "+20% increased maximum attack speed, caps at 90% increase with 4 cells.",
+            "maxStacks": 4,
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Energy_Cell.png",
+            "vidName": "usage_Energy_Cell.mp4"
+        },
+        "Filial_Imprinting": {
+            "name": "Filial Imprinting",
+            "description": "Hatch a creature who drops attack speed/health regen/move speed buffs every 20 seconds.",
+            "stack": "+1 hatched creature.",
+            "unlock": "Drown 20 Whorls.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Filial_Imprinting.png",
+            "vidName": "usage_Filial_Imprinting.mp4"
+        },
+        "Frost_Relic": {
+            "name": "Frost Relic",
+            "description": "On kill: Killing an enemy surrounds you with 3 icicles that deal 3x33% damage.",
+            "stack": "+1 additional icicle.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Frost_Relic.png",
+            "vidName": "usage_Frost_Relic.mp4"
+        },
+        "Golden_Gun": {
+            "name": "Golden Gun",
+            "description": "Deals bonus damage per gold, up to 40% damage at 700 gold. Scales with time.",
+            "stack": "Halves the gold required for max damage.",
+            "unlock": "Bank 20,000 gold.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Golden_Gun.png",
+            "vidName": "usage_Golden_Gun.mp4"
+        },
+        "Guardians_Heart": {
+            "name": "Guardian's Heart",
+            "description": "Gain a 60 health shield. Recharges in 7 seconds.",
+            "stack": "+60 Shield.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Guardians_Heart.png",
+            "vidName": "usage_Guardians_Heart.mp4"
+        },
+        "Harvesters_Scythe": {
+            "name": "Harvester's Scythe",
+            "description": "On crit: heal for 8 health. Gain 5% critical chance.",
+            "stack": "+5% critical chance and +2 health on a critical strike.",
+            "unlock": "use a health shrine that drops you below 5% health.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Harvesters_Scythe.png",
+            "vidName": "usage_Harvesters_Scythe.mp4"
+        },
+        "Hopoo_Feather": {
+            "name": "Hopoo Feather",
+            "description": "Gain another jump.",
+            "stack": "Adds an additional jump.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Hopoo_Feather.png",
+            "vidName": "usage_Hopoo_Feather.mp4"
+        },
+        "Infusion": {
+            "name": "Infusion",
+            "description": "On kill: killing an enemy increases your health permanently by 1.",
+            "stack": "+0.5 health on kill.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Infusion.png",
+            "vidName": "usage_Infusion.mp4"
+        },
+        "Leeching_Seed": {
+            "name": "Leeching Seed",
+            "description": "On Hit: Dealing damage heals you for 2 health. If the shot pierces and hits mutiple enemies, there will be diminishing returns for each subsequent enemy hit.",
+            "stack": "+1 health on hit.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Leeching_Seed.png",
+            "vidName": "usage_Leeching_Seed.mp4"
+        },
+        "Panic_Mines": {
+            "name": "Panic Mines",
+            "description": "Drop a mine at low health for 500% damage.",
+            "stack": "+1 mines dropped.",
+            "unlock": "Miner: Survive the teleporter event without falling below 50% health.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Panic_Mines.png",
+            "vidName": "usage_Panic_Mines.mp4"
+        },
+        "Predatory_Instincts": {
+            "name": "Predatory Instincts",
+            "description": "On crit: increase attack speed by 10%. Stacks up to 30%.",
+            "stack": "+5% crit chance. Further increase 1% attack speed increment on crit strikes.",
+            "unlock": "Huntress: Defeat the Legendary Wisp without taking damage.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Predatory_Instincts.png",
+            "vidName": "usage_Predatory_Instincts.mp4"
+        },
+        "Prison_Shackles": {
+            "name": "Prison Shackles",
+            "description": "On Hit: Slow enemies by 20% on every attack.",
+            "stack": "+0.5s slowing duration.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Prison_Shackles.png",
+            "vidName": "usage_Prison_Shackles.mp4"
+        },
+        "Red_Whip": {
+            "name": "Red Whip",
+            "description": "Leaving combat for 1.5 seconds boosts your movement speed by 80%.",
+            "stack": "None.",
+            "maxStacks": 1,
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Red_Whip.png",
+            "vidName": "usage_Red_Whip.mp4"
+        },
+        "Rusty_Jetpack": {
+            "name": "Rusty Jetpack",
+            "description": "Decrease gravity by 50% and increase jump height by 10%.",
+            "stack": "+10% jump height.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Rusty_Jetpack.png",
+            "vidName": "usage_Rusty_Jetpack.mp4"
+        },
+        "Smart_Shopper": {
+            "name": "Smart Shopper",
+            "description": "+25% enemy gold drops.",
+            "stack": "+25% more enemy gold drops.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Smart_Shopper.png",
+            "vidName": "usage_Smart_Shopper.mp4"
+        },
+        "Time_Keepers_Secret": {
+            "name": "Time Keeper's Secret",
+            "description": "Falling to low health stops time for 3 seconds.",
+            "stack": "+1s time stop duration, up to a maximum of 10 seconds at 8 stacks.",
+            "maxStacks": 8,
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Time_Keepers_Secret.png",
+            "vidName": "usage_Time_Keepers_Secret.mp4"
+        },
+        "Tough_Times": {
+            "name": "Tough Times",
+            "description": "Increase armor by 14.",
+            "stack": "+14 armor.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Tough_Times.png",
+            "vidName": "usage_Tough_Times.mp4"
+        },
+        "Toxic_Centipede": {
+            "name": "Toxic Centipede",
+            "description": "Infect enemies, dealing 50% damage/sec. Bounces to other enemies on death.",
+            "stack": "Increases damage dealt.",
+            "unlock": "Acrid: Spread 10,000 feet of \"Caustic Sludge\".",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Toxic_Centipede.png",
+            "vidName": "usage_Toxic_Centipede.mp4"
+        },
+        "Ukulele": {
+            "name": "Ukulele",
+            "description": "On Hit: 20% chance to fire chain lighting for 4x33% damage.",
+            "stack": "+33% damage per bounce.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Ukulele.png",
+            "vidName": "usage_Ukulele.mp4"
+        },
+        "Will-O-The-Wisp": {
+            "name": "Will-o'-the-Wisp",
+            "description": "On kill: 33% chance to create a lava pillar from the enemy's corpse for 250% damage.",
+            "stack": "Further increases lava pillar damage by +100%.",
+            "itemClass": "Uncommon Items",
+            "imgName": "item_Will-O-The-Wisp.png",
+            "vidName": "usage_Will-O-The-Wisp.mp4"
+        },
+        "Alien_Head": {
+            "name": "Alien Head",
+            "description": "Decreases your cooldowns by 25%.",
+            "stack": "Stacks multiplicatively up to 3 times. (60% reduction).",
+            "unlock": "Obtain 7 Monster Teeth and 1 Guardian's Heart.",
+            "maxStacks": 3,
+            "itemClass": "Rare Items",
+            "imgName": "item_Alien_Head.png",
+            "vidName": "usage_Alien_Head.mp4"
+        },
+        "Ancient_Scepter": {
+            "name": "Ancient Scepter",
+            "description": "Upgrade your fourth ability; this is unique to each character class.",
+            "stack": "Does not stack.",
+            "unlock": "Mercenary: Beat the game on Monsoon difficulty.",
+            "maxStacks": 1,
+            "itemClass": "Rare Items",
+            "imgName": "item_Ancient_Scepter.png",
+            "vidName": "usage_Ancient_Scepter.mp4"
+        },
+        "AtG_Missile_Mk_2": {
+            "name": "AtG Missile Mk. 2",
+            "description": "On Hit: 7% chance to fire three missiles that deal 3x300% damage.",
+            "stack": "+7% chance to fire missiles. 100% at 15 stacks.",
+            "maxStacks": 15,
+            "itemClass": "Rare Items",
+            "imgName": "item_AtG_Missile_Mk_2.png",
+            "vidName": "usage_AtG_Missile_Mk_2.mp4"
+        },
+        "Beating_Embryo": {
+            "name": "Beating Embryo",
+            "description": "Use Items have a 30% chance to deal double the effect.",
+            "stack": "Increases duplication chance by 30%. 100% at 4 stacks.",
+            "maxStacks": 4,
+            "itemClass": "Rare Items",
+            "imgName": "item_Beating_Embryo.png",
+            "vidName": "usage_Beating_Embryo.mp4"
+        },
+        "Brilliant_Behemoth": {
+            "name": "Brilliant Behemoth",
+            "description": "On Hit: your projectiles explode for a bonus 20% damage to nearby enemies.",
+            "stack": "+20% damage.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Brilliant_Behemoth.png",
+            "vidName": "usage_Brilliant_Behemoth.mp4"
+        },
+        "Ceremonial_Dagger": {
+            "name": "Ceremonial Dagger",
+            "description": "On kill: fire out 4 heat-seeking bolts that deal 100% damage.",
+            "stack": "Fires +2 additional bolts.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Ceremonial_Dagger.png",
+            "vidName": "usage_Ceremonial_Dagger.mp4"
+        },
+        "Dios_Friend": {
+            "name": "Dio's friend",
+            "description": "Taking fatal damage revives you to 40% health. Invincible for 2 seconds.",
+            "stack": "Can not be stacked for multiple revives, but if the revive effect has been used picking up another will reset it.",
+            "unlock": "Die 50 times.",
+            "maxStacks": 1,
+            "itemClass": "Rare Items",
+            "imgName": "item_Dios_Friend.png",
+            "vidName": "usage_Dios_Friend.mp4"
+        },
+        "Firemans_Boots": {
+            "name": "Fireman's Boots",
+            "description": "Walking leaves behind a fire trail that burns for 35% damage.",
+            "stack": "+20% damage.",
+            "unlock": "Survive in lava for 1 minute straight.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Firemans_Boots.png",
+            "vidName": "usage_Firemans_Boots.mp4"
+        },
+        "Happiest_Mask": {
+            "name": "Happiest Mask",
+            "description": "On kill: spawn a ghost of the killed enemy with 70% health and 50% damage for 15 seconds.",
+            "stack": "Increases ghost damage and durability.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Happiest_Mask.png",
+            "vidName": "usage_Happiest_Mask.mp4"
+        },
+        "Heaven_Cracker": {
+            "name": "Heaven Cracker",
+            "description": "Every 4 basic attacks pierce through enemies for 100% damage.",
+            "stack": "Reduce attacks required by 1 per additional Heaven Cracker. Pierces every attack at 4 stacks.",
+            "maxStacks": 4,
+            "itemClass": "Rare Items",
+            "imgName": "item_Heaven_Cracker.png",
+            "vidName": "usage_Heaven_Cracker.mp4"
+        },
+        "Hyper-Threader": {
+            "name": "Hyper-Threader",
+            "description": "On Hit: Every attack fires a laser, dealing 40% damage and bouncing to 2 enemies.",
+            "stack": "+1 additional bounce.",
+            "unlock": "Commando: Activate the third teleporter without being hit once.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Hyper-Threader.png",
+            "vidName": "usage_Hyper-Threader.mp4"
+        },
+        "Interstellar_Desk_Plant": {
+            "name": "Interstellar Desk Plant",
+            "description": "On kill: spawn an alien plant that heals you for 8 HP.",
+            "stack": "+3 health per fruit.",
+            "unlock": "CHEF: SEAR/FLAMBE 20 Sand Crabs.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Interstellar_Desk_Plant.png",
+            "vidName": "usage_Interstellar_Desk_Plant.mp4"
+        },
+        "Laser_Turbine": {
+            "name": "Laser Turbine",
+            "description": "All your attacks charge the generator. At full power, fire a laser for 2000% damage.",
+            "stack": "Increases charge amount per ability use.",
+            "unlock": "CHEF: Have 20 cleavers in the air simultaneously.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Laser_Turbine.png",
+            "vidName": "usage_Laser_Turbine.mp4"
+        },
+        "Old_Box": {
+            "name": "Old Box",
+            "description": "Drop a jack-in-the-box at low health, fearing enemies for 2 seconds.",
+            "stack": "Widens the health range.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Old_Box.png",
+            "vidName": "usage_Old_Box.mp4"
+        },
+        "Permafrost": {
+            "name": "Permafrost",
+            "description": "On Hit: Chance to stun enemies for 1.5 seconds and slow enemies by 60% for three seconds.",
+            "stack": "Further increases chance by 6%.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Permafrost.png",
+            "vidName": "usage_Permafrost.mp4"
+        },
+        "Photon_Jetpack": {
+            "name": "Photon Jetpack",
+            "description": "Allows the player to fly for up to 1.6 seconds nonstop; the jetpack's fuel tank quickly refills when not in use.",
+            "stack": "+0.8 sec maximum flight duration.",
+            "unlock": "End a teleporter timer with 0 enemies on the map.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Photon_Jetpack.png",
+            "vidName": "usage_Photon_Jetpack.mp4"
+        },
+        "Plasma_Chain": {
+            "name": "Plasma Chain",
+            "description": "On Hit: Chance to tether onto enemies dealing 60% damage per second.",
+            "stack": "Max tethers increased.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Plasma_Chain.png",
+            "vidName": "usage_Plasma_Chain.mp4"
+        },
+        "Rapid_Mitosis": {
+            "name": "Rapid Mitosis",
+            "description": "Reduce the cooldown of Use Items by 25%.",
+            "stack": "Further reduces item cooldowns by 25%, multiplicatively. Soft caps at around 30 stacks.",
+            "maxStacks": 30,
+            "itemClass": "Rare Items",
+            "imgName": "item_Rapid_Mitosis.png",
+            "vidName": "usage_Rapid_Mitosis.mp4"
+        },
+        "Repulsion_Armor": {
+            "name": "Repulsion Armor",
+            "description": "After 6 hits reduce and reflect incoming damage by 83% for 3 seconds.",
+            "stack": "Increases length of reflection by 1 second to a cap of 8 seconds.",
+            "maxStacks": 5,
+            "itemClass": "Rare Items",
+            "imgName": "item_Repulsion_Armor.png",
+            "vidName": "usage_Repulsion_Armor.mp4"
+        },
+        "Shattering_Justice": {
+            "name": "Shattering Justice",
+            "description": "Attacks reduce enemy armor by 5. Reduction stacks up to 25.",
+            "stack": "Increases debuff length by 0.5 seconds.",
+            "unlock": "Miner: Reach level 10 without getting hurt more than once.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Shattering_Justice.png",
+            "vidName": "usage_Shattering_Justice.mp4"
+        },
+        "Telescopic_Sight": {
+            "name": "Telescopic Sight",
+            "description": "On Hit: 1% chance to instantly kill an enemy.",
+            "stack": "+0.5% proc chance up to a maximum of 3%.",
+            "unlock": "Sniper: 1-shot kill 10 enemies consecutively.",
+            "maxStacks": 5,
+            "itemClass": "Rare Items",
+            "imgName": "item_Telescopic_Sight.png",
+            "vidName": "usage_Telescopic_Sight.mp4"
+        },
+        "Tesla_Coil": {
+            "name": "Tesla Coil",
+            "description": "Shock nearby enemies for 150% damage.",
+            "stack": "+50% damage.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Tesla_Coil.png",
+            "vidName": "usage_Tesla_Coil.mp4"
+        },
+        "Thallium": {
+            "name": "Thallium",
+            "description": "On Hit: damage/slow by 500 enemy damage% and 100% speed over 3 seconds.",
+            "stack": "Does not stack.",
+            "maxStacks": 1,
+            "itemClass": "Rare Items",
+            "imgName": "item_Thallium.png",
+            "vidName": "usage_Thallium.mp4"
+        },
+        "The_Hit_List": {
+            "name": "The Hit List",
+            "description": "On kill: killing a marked enemy permanently increases damage by 0.5, up to a maximum of 20.",
+            "stack": "Increase amount of markable enemies.",
+            "unlock": "Bandit: Reset your cooldown 15 times consecutively.",
+            "itemClass": "Rare Items",
+            "imgName": "item_The_Hit_List.png",
+            "vidName": "usage_The_Hit_List.mp4"
+        },
+        "The_Ol_Lopper": {
+            "name": "The Ol' Lopper",
+            "description": "100% critical chance on enemies below 9% health.",
+            "stack": "+4% health threshold, up to a cap of 35% health at 8 stacks",
+            "unlock": "Survive 40 minutes.",
+            "maxStacks": 8,
+            "itemClass": "Rare Items",
+            "imgName": "item_The_Ol_Lopper.png",
+            "vidName": "usage_The_Ol_Lopper.mp4"
+        },
+        "Wicked_Ring": {
+            "name": "Wicked Ring",
+            "description": "On crit: reduce cooldowns by 1 second.",
+            "stack": "+1s cooldown reduction on crit, +6% critical chance.",
+            "unlock": "Collect 4 Keycards.",
+            "itemClass": "Rare Items",
+            "imgName": "item_Wicked_Ring.png",
+            "vidName": "usage_Wicked_Ring.mp4"
+        },
+        "Burning_Witness": {
+            "name": "Burning Witness",
+            "description": "On kill: Grants a firetrail, 5% movement speed, and 1 damage for 6 seconds.",
+            "stack": "+5% movement speed, increases duration",
+            "drop": "Dropped by the Magma Worm.",
+            "itemClass": "Boss Items",
+            "imgName": "item_Burning_Witness.png",
+            "vidName": "usage_Burning_Witness.mp4"
+        },
+        "Colossal_Knurl": {
+            "name": "Colossal Knurl",
+            "description": "Increase health by 40, health regeneration by 1.2/second, and armor by 6.",
+            "stack": "+40 health, +1.2 health regen, +6 armor.",
+            "drop": "Dropped by the Colossus.",
+            "itemClass": "Boss Items",
+            "imgName": "item_Colossal_Knurl.png",
+            "vidName": "usage_Colossal_Knurl.mp4"
+        },
+        "Ifrits_Horn": {
+            "name": "Ifrit's Horn",
+            "description": "On Hit: 8% chance to incinerate enemies for 220% damage.",
+            "stack": "+30% damage.",
+            "drop": "Dropped by Ifrit.",
+            "itemClass": "Boss Items",
+            "imgName": "item_Ifrits_Horn.png",
+            "vidName": "usage_Ifrits_Horn.mp4"
+        },
+        "Imp_Overlords_Tentacle": {
+            "name": "Imp Overlord's Tentacle",
+            "description": "Summon an Imp bodyguard that revives every 60 seconds.",
+            "stack": "Increase his health, damage, and speed, and change his color.",
+            "drop": "Dropped by the Imp Overlord.",
+            "itemClass": "Boss Items",
+            "imgName": "item_Imp_Overlords_Tentacle.png",
+            "vidName": "usage_Imp_Overlords_Tentacle.mp4"
+        },
+        "Legendary_Spark": {
+            "name": "Legendary Spark",
+            "description": "On Hit: 8% chance to smite enemies for 200% damage.",
+            "stack": "+1 spark.",
+            "drop": "Dropped by the Ancient Wisp.",
+            "itemClass": "Boss Items",
+            "imgName": "item_Legendary_Spark.png",
+            "vidName": "usage_Legendary_Spark.mp4"
+        },
+        "Nematocyst_Nozzle": {
+            "name": "Nematocyst Nozzle",
+            "description": "Shoot out 6 nematocysts that deal 200% damage.",
+            "cooldown": 22.5,
+            "embryo": "Shoot 12 nematocysts instead of 6.",
+            "drop": "Dropped by the Wandering Vagrant.",
+            "itemClass": "Boss Items",
+            "imgName": "item_Nematocyst_Nozzle.png",
+            "vidName": "usage_Nematocyst_Nozzle.mp4"
+        },
+        "Captains_Brooch": {
+            "name": "Captain's Brooch",
+            "description": "Call down a chest nearby.",
+            "cooldown": 135,
+            "embryo": "Calls down an additional chest.",
+            "hasVideo": false,
+            "unlock": "Unlock a Golden Chest with the Skeleton Key.",
+            "itemClass": "Use Items",
+            "imgName": "item_Captains_Brooch.png",
+            "vidName": "usage_Captains_Brooch.mp4"
+        },
+        "Carrara_Marble": {
+            "name": "Carrara Marble",
+            "description": "Place a marble gate. Teleport back to the gate by activating again.",
+            "cooldown": 45,
+            "embryo": "None.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Carrara_Marble.png",
+            "vidName": "usage_Carrara_Marble.mp4"
+        },
+        "Crudely_Drawn_Buddy": {
+            "name": "Crudely Drawn Buddy",
+            "description": "Blow up a decoy, attracting enemies for 8 seconds. Looks just like you.",
+            "cooldown": 45,
+            "embryo": "Doubles duration of decoy to 16 seconds.",
+            "hasVideo": false,
+            "unlock": "Sniper: Achieve 20 consecutive perfect reloads",
+            "itemClass": "Use Items",
+            "imgName": "item_Crudely_Drawn_Buddy.png",
+            "vidName": "usage_Crudely_Drawn_Buddy.mp4"
+        },
+        "Disposable_Missile_Launcher": {
+            "name": "Disposable Missile Launcher",
+            "description": "Fire a swarm of 12 missiles.",
+            "cooldown": 45,
+            "embryo": "Doubles the amount of missiles to 24.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Disposable_Missile_Launcher.png",
+            "vidName": "usage_Disposable_Missile_Launcher.mp4"
+        },
+        "Drone_Repair_Kit": {
+            "name": "Drone Repair Kit",
+            "description": "Repairs all drones to full health.",
+            "cooldown": 45,
+            "embryo": "None.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Drone_Repair_Kit.png",
+            "vidName": "usage_Drone_Repair_Kit.mp4"
+        },
+        "Dynamite_Plunger": {
+            "name": "Dynamite Plunger",
+            "description": "Hitting an enemy drops dynamite. Use to detonate for 400% damage.",
+            "cooldown": 45,
+            "embryo": "Throws two dynamite at once.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Dynamite_Plunger.png",
+            "vidName": "usage_Dynamite_Plunger.mp4"
+        },
+        "Foreign_Fruit": {
+            "name": "Foreign Fruit",
+            "description": "Heal yourself for 50% of your health.",
+            "cooldown": 45,
+            "embryo": "Recover all of your health.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Foreign_Fruit.png",
+            "vidName": "usage_Foreign_Fruit.mp4"
+        },
+        "Gigantic_Amethyst": {
+            "name": "Gigantic Amethyst",
+            "description": "Reset all your cooldowns.",
+            "cooldown": 8,
+            "embryo": "None.",
+            "hasVideo": false,
+            "unlock": "Loader: Kill the Overloading Magma Worm.",
+            "itemClass": "Use Items",
+            "imgName": "item_Gigantic_Amethyst.png",
+            "vidName": "usage_Gigantic_Amethyst.mp4"
+        },
+        "Glowing_Meteorite": {
+            "name": "Glowing Meteorite",
+            "description": "Meteors fall from the sky, damaging enemies and friends for 220% damage. Lasts 8 seconds.",
+            "cooldown": 70,
+            "embryo": "Doubled active duration.",
+            "hasVideo": false,
+            "unlock": "Deal 5000 damage in one shot.",
+            "itemClass": "Use Items",
+            "imgName": "item_Glowing_Meteorite.png",
+            "vidName": "usage_Glowing_Meteorite.mp4"
+        },
+        "Gold-plated_Bomb": {
+            "name": "Gold-plated Bomb",
+            "description": "use 50% of your gold to create a bomb, dealing 1 damage per gold spent.",
+            "cooldown": 45,
+            "embryo": "2 damage per gold spent.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Gold-plated_Bomb.png",
+            "vidName": "usage_Gold-plated_Bomb.mp4"
+        },
+        "Minefield": {
+            "name": "Minefield",
+            "description": "Drop 7 mines at your feet, each dealing 400% damage.",
+            "cooldown": 45,
+            "embryo": "Drop 6 additional mines, for a total of 13.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Minefield.png",
+            "vidName": "usage_Minefield.mp4"
+        },
+        "Jar_Of_Souls": {
+            "name": "Jar of Souls",
+            "description": "Duplicate every enemy as a ghost to fight on your side.",
+            "cooldown": 45,
+            "embryo": "Summons an additional ghost per enemy.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Jar_Of_Souls.png",
+            "vidName": "usage_Jar_Of_Souls.mp4"
+        },
+        "Lost_Doll": {
+            "name": "Lost Doll",
+            "description": "Sacrifice 25% health to damage an enemy for 500% of your maximum health.",
+            "cooldown": 45,
+            "embryo": "None.",
+            "hasVideo": false,
+            "unlock": "Survive a boss with less than 20% health.",
+            "itemClass": "Use Items",
+            "imgName": "item_Lost_Doll.png",
+            "vidName": "usage_Lost_Doll.mp4"
+        },
+        "Massive_Leech": {
+            "name": "Massive Leech",
+            "description": "For 10 seconds, every hit heals you for 10 health.",
+            "cooldown": 45,
+            "embryo": "Each hit heals 9 more health",
+            "hasVideo": false,
+            "unlock": " Acrid: Spread Epidemic to 25 enemies.",
+            "itemClass": "Use Items",
+            "imgName": "item_Massive_Leech.png",
+            "vidName": "usage_Massive_Leech.mp4"
+        },
+        "Pillaged_Gold": {
+            "name": "Pillaged Gold",
+            "description": "For 14 seconds, every monster will drop 1 gold on hit.",
+            "cooldown": 45,
+            "embryo": "None.",
+            "hasVideo": false,
+            "unlock": "Bandit: Kill a boss with \"Lights Out\"",
+            "itemClass": "Use Items",
+            "imgName": "item_Pillaged_Gold.png",
+            "vidName": "usage_Pillaged_Gold.mp4"
+        },
+        "Prescriptions": {
+            "name": "Prescriptions",
+            "description": "Increase damage by 10 and attack speed by %40 for 8 seconds.",
+            "cooldown": 45,
+            "embryo": "Doubles the attack speed increment to +80%",
+            "hasVideo": false,
+            "unlock": "Enforcer: Stay in \"Shield Mode\" for 5 minutes straight (in combat).",
+            "itemClass": "Use Items",
+            "imgName": "item_Prescriptions.png",
+            "vidName": "usage_Prescriptions.mp4"
+        },
+        "Rotten_Brain": {
+            "name": "Rotten Brain",
+            "description": "Throw a brain that bounces in place, damaging/slowing enemies for 6x200%.",
+            "cooldown": 45,
+            "embryo": "Throw an additional brain.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Rotten_Brain.png",
+            "vidName": "usage_Rotten_Brain.mp4"
+        },
+        "Safeguard_Lantern": {
+            "name": "Safeguard Lantern",
+            "description": "Drop a lantern for 10 seconds. Fears and damages enemies for 20% damage.",
+            "cooldown": 45,
+            "embryo": "Doubles duration to 20 seconds.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Safeguard_Lantern.png",
+            "vidName": "usage_Safeguard_Lantern.mp4"
+        },
+        "Sawmerang": {
+            "name": "Sawmerang",
+            "description": "Throw out a sawmerang for 500% damage and bleed for 4*100%.",
+            "cooldown": 45,
+            "embryo": "Launches an identical Sawmerang behind the player.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Sawmerang.png",
+            "vidName": "usage_Sawmerang.mp4"
+        },
+        "Shattered_Mirror": {
+            "name": "Shattered Mirror",
+            "description": "For 15 seconds, double all of your abilities' damage and effects.",
+            "cooldown": 75,
+            "embryo": "Damage and effects are tripled instead.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Shattered_Mirror.png",
+            "vidName": "usage_Shattered_Mirror.mp4"
+        },
+        "Shield_Generator": {
+            "name": "Shield Generator",
+            "description": "Become invincible for 8 seconds.",
+            "cooldown": 45,
+            "embryo": "Doubles invincibility duration.",
+            "hasVideo": false,
+            "unlock": "HAN-D: Stay above 70% health for 25 minutes.",
+            "itemClass": "Use Items",
+            "imgName": "item_Shield_Generator.png",
+            "vidName": "usage_Shield_Generator.mp4"
+        },
+        "Explorers_Key": {
+            "name": "Explorer's Key",
+            "description": "Open all the chests in view.",
+            "cooldown": 90,
+            "embryo": "None.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Explorers_Key.png",
+            "vidName": "usage_Explorers_Key.mp4"
+        },
+        "Snowglobe": {
+            "name": "Snowglobe",
+            "description": "Summon a snowstorm that freezes monsters at a 30% chance over 7 seconds.",
+            "cooldown": 45,
+            "embryo": "Doubles the duration of the snowstorm.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Snowglobe.png",
+            "vidName": "usage_Snowglobe.mp4"
+        },
+        "The_Back-up": {
+            "name": "The Back-up",
+            "description": "Create 4 drones to fight for you for 10 seconds.",
+            "cooldown": 45,
+            "embryo": "+2 Drones.",
+            "hasVideo": false,
+            "unlock": "Have 4 drone helpers at once.",
+            "itemClass": "Use Items",
+            "imgName": "item_The_Back-up.png",
+            "vidName": "usage_The_Back-up.mp4"
+        },
+        "Thqwib": {
+            "name": "Thqwib",
+            "description": "Release a bloom of 30 thqwibs, detonating on impact for 200%.",
+            "cooldown": 45,
+            "embryo": "Releases twice as many Thqwibs.",
+            "hasVideo": false,
+            "itemClass": "Use Items",
+            "imgName": "item_Thqwib.png",
+            "vidName": "usage_Thqwib.mp4"
+        },
+        "Unstable_Watch": {
+            "name": "Unstable Watch",
+            "description": "Stop time for 7 seconds.",
+            "cooldown": 67.5,
+            "embryo": "Doubles duration to 14 seconds.",
+            "hasVideo": false,
+            "unlock": "Complete the first stage in under 5 minutes.",
+            "itemClass": "Use Items",
+            "imgName": "item_Unstable_Watch.png",
+            "vidName": "usage_Unstable_Watch.mp4"
+        },
+        "Honor": {
+            "name": "Honor",
+            "description": "Enemies always spawn as elites.",
+            "unlock": "Found in the Desolate Forest.",
+            "itemClass": "Special Items",
+            "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
+            "hasVideo": false,
+            "imgName": "item_Honor.png",
+            "vidName": "usage_Honor.mp4"
+        },
+        "Kin": {
+            "name": "Kin",
+            "description": "Only one enemy type will spawn per stage.",
+            "unlock": "Found in Dried Lake.",
+            "itemClass": "Special Items",
+            "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
+            "hasVideo": false,
+            "imgName": "item_Kin.png",
+            "vidName": "usage_Kin.mp4"
+        },
+        "Distortion": {
+            "name": "Distortion",
+            "description": "Locks a random skill every minute, but gives you 25% cooldown reduction.",
+            "unlock": "Found in the Damp Caverns.",
+            "itemClass": "Special Items",
+            "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
+            "hasVideo": false,
+            "imgName": "item_Distortion.png",
+            "vidName": "usage_Distortion.mp4"
+        },
+        "Spite": {
+            "name": "Spite",
+            "description": "Enemies release small bouncing explosives. These explosives only hurt the player.",
+            "unlock": "Found in the Sky Meadow.",
+            "itemClass": "Special Items",
+            "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
+            "hasVideo": false,
+            "imgName": "item_Spite.png",
+            "vidName": "usage_Spite.mp4"
+        },
+        "Glass": {
+            "name": "Glass",
+            "description": "You start with 500% more damage, but have 10% of your normal HP. Upon leveling up, recieve 300% and 25% of the damage and health increase, respectively.",
+            "unlock": "Found in the Ancient Valley.",
+            "itemClass": "Special Items",
+            "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
+            "hasVideo": false,
+            "imgName": "item_Glass.png",
+            "vidName": "usage_Glass.mp4"
+        },
+        "Enigma": {
+            "name": "Enigma",
+            "description": "Enigma will replace your active item. Using enigma will trigger a random use item effect. When Enigma is active, Small Enigmas will drop instead of Use Items.",
+            "unlock": "Found in the Sunken Tomb.",
+            "itemClass": "Special Items",
+            "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
+            "hasVideo": false,
+            "imgName": "item_Enigma.png",
+            "vidName": "usage_Enigma.mp4"
+        },
+        "Sacrifice": {
+            "name": "Sacrifice",
+            "description": "Enemies have a chance to drop items, but chests no longer spawn. Does not share the same drop roll as 56 Leaf Clover.",
+            "unlock": "Found in the Magma Barracks.",
+            "itemClass": "Special Items",
+            "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
+            "hasVideo": false,
+            "imgName": "item_Sacrifice.png",
+            "vidName": "usage_Sacrifice.mp4"
+        },
+        "Command": {
+            "name": "Command",
+            "description": "Items are replaced with boxes that allow the player to choose the dropped item.",
+            "unlock": "Found in the Hive Cluster.",
+            "itemClass": "Special Items",
+            "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
+            "hasVideo": false,
+            "imgName": "item_Command.png",
+            "vidName": "usage_Command.mp4"
+        },
+        "Spirit": {
+            "name": "Spirit",
+            "description": "Run faster when at lower HP. Applies to monsters as well as the player.",
+            "unlock": "Found in the Temple of the Elders.",
+            "itemClass": "Special Items",
+            "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
+            "hasVideo": false,
+            "imgName": "item_Spirit.png",
+            "vidName": "usage_Spirit.mp4"
+        },
+        "Origin": {
+            "name": "Origin",
+            "description": "Every 10 minutes, a portal materializes and summons 3 Purple imps, and 1 Imp Vanguard.",
+            "unlock": "Defeat Providence with all other artifacts activated.",
+            "itemClass": "Special Items",
+            "extraInfo": "ARTIFACT. This item must be toggled on the character select screen.",
+            "hasVideo": false,
+            "imgName": "item_Origin.png",
+            "vidName": "usage_Origin.mp4"
+        },
+        "Keycard": {
+            "name": "Keycard",
+            "description": "Opens locked doors on the UES Contact Light (Final Level).",
+            "stack": "Each key unlocks one door. (Maximum of four keys)",
+            "drop": "Dropped by enemies or found in golden containers on the UES Contact Light (Final Level).",
+            "itemClass": "Misc Items",
+            "hasVideo": false,
+            "imgName": "item_Keycard.png",
+            "vidName": "usage_Keycard.mp4"
+        },
+        "Small_Enigma": {
+            "name": "Small Enigma",
+            "description": "Reduces the cooldown of use items by 5%.",
+            "stack": "Further decreases cooldown by 5%.",
+            "unlock": "Can be obtained when the Enigma artifact is enabled.",
+            "itemClass": "Misc Items",
+            "hasVideo": false,
+            "imgName": "item_Small_Enigma.png",
+            "vidName": "usage_Small_Enigma.mp4"
+        },
+        "White_Undershirt_(M)": {
+            "name": "White Undershirt (M)",
+            "description": "Increases armor by 3.",
+            "drop": "Dropped by the Armored Boar on the level Boar Beach.",
+            "maxStacks": 1,
+            "itemClass": "Misc Items",
+            "hasVideo": false,
+            "imgName": "item_White_Undershirt_(M).png",
+            "vidName": "usage_White_Undershirt_(M).mp4"
+        }
+    },
+    "classInfo": {
+        "Common Items": {
+            "color": "#ffffff"
+        },
+        "Uncommon Items": {
+            "color": "#93e180"
+        },
+        "Rare Items": {
+            "color": "#e7543a"
+        },
+        "Boss Items": {
+            "color": "#ffff00"
+        },
+        "Use Items": {
+            "color": "#ff8000"
+        },
+        "Special Items": {
+            "color": "#ab6fbe",
+            "textFlair": "ARTIFACT. This item must be toggled on the character select screen."
+        },
+        "Misc Items": {
+            "color": "#7e7e7e"
+        }
+    },
+    "commandSort": ["Mysterious_Vial", "Lens_Makers_Glasses", "Monster_Tooth", "Soldiers_Syringe", "Pauls_Goat_Hoof", "Barbed_Wire", "Sprouting_Egg", "Life_Savings", "Rusty_Blade", "Fire_Shield", "Bustling_Fungus", "Gasoline", "Bitter_Root", "Headstompers", "First_Aid_Kit", "Spikestrip", "Mortar_Tube", "Snake_Eyes", "Warbanner", "Meat_Nugget", "Crowbar", "Hermits_Scarf", "Sticky_Bomb", "Bundle_Of_Fireworks", "Taser", "Prison_Shackles", "Rusty_Jetpack", "Leeching_Seed", "Ukulele", "Golden_Gun", "AtG_Missile_Mk_1", "Concussion_Grenade", "Toxic_Centipede", "Panic_Mines", "Guardians_Heart", "Infusion", "Smart_Shopper", "Boxing_Gloves", "Harvesters_Scythe", "Tough_Times", "56_Leaf_Clover", "Energy_Cell", "Dead_Mans_Foot", "Arms_Race", "Will-O-The-Wisp", "Time_Keepers_Secret", "Chargefield_Generator", "Predatory_Instincts", "Filial_Imprinting", "Hopoo_Feather", "Red_Whip", "Frost_Relic", "Firemans_Boots", "Brilliant_Behemoth", "AtG_Missile_Mk_2", "Wicked_Ring", "Heaven_Cracker", "Beating_Embryo", "Rapid_Mitosis", "Alien_Head", "Old_Box", "Happiest_Mask", "The_Hit_List", "Ceremonial_Dagger", "Plasma_Chain", "Permafrost", "The_Ol_Lopper", "Telescopic_Sight", "Repulsion_Armor", "Tesla_Coil", "Photon_Jetpack", "Thallium", "Dios_Friend", "Shattering_Justice", "Ancient_Scepter", "Hyper-Threader", "Interstellar_Desk_Plant", "Laser_Turbine", "Explorers_Key", "Foreign_Fruit", "Lost_Doll", "Pillaged_Gold", "Disposable_Missile_Launcher", "Minefield", "Massive_Leech", "Prescriptions", "Shield_Generator", "Shattered_Mirror", "Unstable_Watch", "Safeguard_Lantern", "Jar_Of_Souls", "The_Back-up", "Drone_Repair_Kit", "Captains_Brooch", "Sawmerang", "Snowglobe", "Gold-plated_Bomb", "Rotten_Brain", "Crudely_Drawn_Buddy", "Carrara_Marble", "Glowing_Meteorite", "Gigantic_Amethyst", "Dynamite_Plunger", "Thqwib", "Keycard", "Small_Enigma", "White_Undershirt_(M)"]
+}

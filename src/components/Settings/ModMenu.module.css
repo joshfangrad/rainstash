@@ -1,0 +1,20 @@
+.modsList {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 0.5em;
+}
+
+.nameWrap {
+    display: flex;
+    justify-content: center;
+}
+
+.modsListTitle {
+    font-family: rainFontBold;
+    margin-right: 0.2em;
+}
+

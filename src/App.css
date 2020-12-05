@@ -1,0 +1,20 @@
+
+@font-face {
+  font-family: "rainFont";
+  font-style: normal;
+  src: url('./fonts/riskofRainFont/RiskofRainFont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "rainFontBold";
+  font-style: bold;
+  src: url('./fonts/RiskofRainSquare/RiskofRainSquare.ttf') format('truetype');
+}
+
+
+html, body, #app, #app>div {
+  height: 100%;
+  color: white;
+  background-color: #252525;
+  font-family: rainFont, Helvetica, sans-serif;
+}

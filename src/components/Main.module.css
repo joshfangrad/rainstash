@@ -1,0 +1,26 @@
+.mainFlex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+.panelsFlex {
+    min-height: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+}
+
+.noFlair * {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    text-shadow: none;
+    animation: none;
+    filter: none;
+}
+
+.noFlair:hover * {
+    animation: none;
+}
