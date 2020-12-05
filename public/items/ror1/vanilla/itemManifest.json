@@ -507,8 +507,8 @@
             "unlock": "Die 50 times.",
             "maxStacks": 1,
             "itemClass": "Rare Items",
-            "imgName": "item_Dios_friend.png",
-            "vidName": "usage_Dios_friend.mp4"
+            "imgName": "item_Dios_Friend.png",
+            "vidName": "usage_Dios_Friend.mp4"
         },
         "Firemans_Boots": {
             "name": "Fireman's Boots",
