@@ -3,12 +3,12 @@
   font-style: normal;
   src: url('./fonts/riskofRainFont/RiskofRainFont.ttf') format('truetype');
 }
-
+/* 
 @font-face {
   font-family: "rainFontBold";
   font-style: bold;
   src: url('./fonts/RiskofRainSquare/RiskofRainSquare.ttf') format('truetype');
-}
+} */
 
 body {
     height: 100%;
@@ -56,4 +56,14 @@ div {
 img {
     height: 15%;
     image-rendering: crisp-edges;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    body {
+        font-size: 1.5em;
+    }
 }
