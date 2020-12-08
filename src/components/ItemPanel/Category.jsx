@@ -6,7 +6,7 @@ import styles from './Category.module.css';
 
 function Category(props) {
     const [items, setItems] = useState(null);
-    
+
     useEffect(() => {
         //go through the items and add them to the category
         setItems(props.items.map((item) => {
@@ -33,6 +33,7 @@ function Category(props) {
                     isSelected={isSelected}
                     isHidden={isHidden}
                     displayCap={displayCap}
+                    folderName={props.folderName}
                     src={process.env.PUBLIC_URL + `/items/${props.folderName}/${item.manifestName}/itemIcons/${item.imgName}`}
                     onMouseOut={() => props.onMouseOut()}
                     onMouseOver={() => props.onMouseOver(item)}

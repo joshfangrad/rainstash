@@ -39,7 +39,6 @@
 
 .infoImage {
     filter: drop-shadow(0px 0px 20px #00000085);
-    image-rendering: crisp-edges;
     /* transition: all 120ms ease-in; */
     animation: zoomIn 1s;
     flex-shrink: 0;

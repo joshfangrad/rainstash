@@ -6,11 +6,10 @@ import styles from './InfoPanel.module.css';
 import mobileContext from '../mobileContext';
 
 function InfoPanel({ item, folderName, clearSelectedItem }) {
+    const isMobile = useContext(mobileContext);
     const closePanelHandler = () => {
         clearSelectedItem();
     }
-
-    const isMobile = useContext(mobileContext);
 
     const content = () => {
         if (item !== null) {

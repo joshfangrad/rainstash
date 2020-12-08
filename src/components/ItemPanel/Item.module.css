@@ -1,6 +1,5 @@
 .item {
     position: relative;
-    image-rendering: crisp-edges;
     width: 8.5vh;
     height: 8.5vh;
     margin: 5px;
@@ -9,6 +8,10 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     transition: all 120ms ease-in;
+}
+
+.ror1Items {
+    image-rendering: crisp-edges;
 }
 
 /* .item:after {

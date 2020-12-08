@@ -137,7 +137,7 @@
         "Personal_Shield_Generator": {
             "name": "Personal Shield Generator",
             "description": "Gain a shield equal to 8% of your maximum health. Recharges after not taking damage for 7 seconds.",
-            "stack": "",
+            "stack": "+8% additional max health as shield.",
             "itemClass": "Common",
             "hasVideo": false,
             "imgName": "item_Personal_Shield_Generator.png",
