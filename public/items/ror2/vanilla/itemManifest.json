@@ -5,6 +5,7 @@
             "description": "Deal an additional 20% damage to bosses.",
             "stack": "+20% additional damage dealt.",
             "itemClass": "Common",
+            "unlock": "Complete a Teleporter Event.",
             "hasVideo": false,
             "imgName": "item_Armor-Piercing_Rounds.png",
             "vidName": "usage_Armor-Piercing_Rounds.mp4"
@@ -14,6 +15,7 @@
             "description": "add +1 charge of your Secondary skill.",
             "stack": "+1 additional charge.",
             "itemClass": "Common",
+            "unlock": "Fully charge a Teleporter without getting hit.",
             "hasVideo": false,
             "imgName": "item_Backup_Magazine.png",
             "vidName": "usage_Backup_Magazine.mp4"
@@ -23,6 +25,7 @@
             "description": "Activating an interactable launches 8 fireworks that deal 300% base damage.",
             "stack": "+4 fireworks launched.",
             "itemClass": "Common",
+            "unlock": "Duplicate the same item 7 times in a row with a 3D Printer.",
             "hasVideo": false,
             "imgName": "item_Bundle_of_Fireworks.png",
             "vidName": "usage_Bundle_of_Fireworks.mp4"
@@ -32,6 +35,7 @@
             "description": "After standing still for 2 seconds, create a zone that heals for 4.5% of your health every second to all allies within 3m.",
             "stack": "+2.25% more health healed, +1.5m to area of effect.",
             "itemClass": "Common",
+            "maxStacks": 44,
             "hasVideo": false,
             "imgName": "item_Bustling_Fungus.png",
             "vidName": "usage_Bustling_Fungus.mp4"
@@ -50,6 +54,7 @@
             "description": "Deal 150% damage to enemies above 90% health.",
             "stack": "+50% more damage.",
             "itemClass": "Common",
+            "unlock": "Discover 10 unique white items.",
             "hasVideo": false,
             "imgName": "item_Crowbar.png",
             "vidName": "usage_Crowbar.mp4"
@@ -111,6 +116,7 @@
             "name": "Medkit",
             "description": "2 seconds after getting hurt, heal for 20 plus an additional 5% of maximum health.",
             "stack": "+5% maximum health healed.",
+            "unlock": "Defeat an elite monster.",
             "itemClass": "Common",
             "hasVideo": false,
             "imgName": "item_Medkit.png",
@@ -130,6 +136,7 @@
             "description": "Increases movement speed by 14%.",
             "stack": "+14% increased movement speed.",
             "itemClass": "Common",
+            "unlock": "Fail a Shrine of Chance 3 times in a row.",
             "hasVideo": false,
             "imgName": "item_Pauls_Goat_Hoof.png",
             "vidName": "usage_Pauls_Goat_Hoof.mp4"
@@ -157,6 +164,7 @@
             "description": "A hidden cache containing an item will appear in a random locaiton on each stage.",
             "stack": "Increases rarity of the item per stack.",
             "itemClass": "Common",
+            "unlock": "Defeat a Teleporter boss in under 15 seconds.",
             "hasVideo": false,
             "imgName": "item_Rusted_Key.png",
             "vidName": "usage_Rusted_Key.mp4"
@@ -202,6 +210,7 @@
             "description": "15% chance to block incoming damage. Unaffected by luck.",
             "stack": "+15% more chance to block incoming damage.",
             "itemClass": "Common",
+            "unlock": "Die 5 times.",
             "hasVideo": false,
             "imgName": "item_Tougher_Times.png",
             "vidName": "usage_Tougher_Times.mp4"
@@ -253,6 +262,7 @@
             "description": "Killing 3 enemies within 1 second send you into a frenzy for 6s, increasing movement speed by 50% and attack speed by 100%.",
             "stack": "+4 seconds of frenzy time.",
             "itemClass": "Uncommon",
+            "unlock": "Complete a Teleporter event with less than 10% health.",
             "hasVideo": false,
             "imgName": "item_Berzerkers_Pauldron.png",
             "vidName": "usage_Berzerkers_Pauldron.mp4"
@@ -280,6 +290,7 @@
             "description": "Gain an additional equipment charge. Reduce equipment cooldown by 15%.",
             "stack": "+1 additional charge, +15% reduced cooldown speed.",
             "itemClass": "Uncommon",
+            "unlock": "Pick up 5 different types of equipment.",
             "hasVideo": false,
             "imgName": "item_Fuel_Cell.png",
             "vidName": "usage_Fuel_Cell.mp4"
@@ -298,6 +309,7 @@
             "description": "Gain 5% critical chance. Critical strikes heal for 8 health.",
             "stack": "+4 health healed.",
             "itemClass": "Uncommon",
+            "unlock": "Complete a Prismatic Trial.",
             "hasVideo": false,
             "imgName": "item_Harvesters_Scythe.png",
             "vidName": "usage_Harvesters_Scythe.mp4"
@@ -316,6 +328,7 @@
             "description": "Killing an enemy increases your health permanently by 1, up to a maximum of 100 additional health.",
             "stack": "+1 health gained on kill, +100 max health.",
             "itemClass": "Uncommon",
+            "unlock": "Defeat 3000 enemies.",
             "hasVideo": false,
             "imgName": "item_Infusion.png",
             "vidName": "usage_Infusion.mp4"
@@ -333,6 +346,7 @@
             "description": "Hits that deal more than 400% damage also blast enemies with a runic flame tornado, dealing 300% TOTAL damage over time. Recharges every 10 seconds.",
             "stack": "+300% additional damage dealt.",
             "itemClass": "Uncommon",
+            "unlock": "Complete the hidden chamber in the Abandoned Aqueduct.",
             "hasVideo": false,
             "imgName": "item_Kjaros_Band.png",
             "vidName": "usage_Kjaros_Band.mp4"
@@ -360,6 +374,7 @@
             "description": "Instantly kill Elite monsters below 13% health.",
             "stack": "+13% increased kill threshhold.",
             "itemClass": "Uncommon",
+            "unlock": "Defeat 500 elite monsters.",
             "hasVideo": false,
             "imgName": "item_Old_Guillotine.png",
             "vidName": "usage_Old_Guillotine.mp4"
@@ -378,6 +393,7 @@
             "description": "Critical strikes increase attack speed by 12%. Maximum cap of 36% attack speed.",
             "stack": "+24% additional max attack speed.",
             "itemClass": "Uncommon",
+            "unlock": "Reach +200% attack speed.",
             "hasVideo": false,
             "imgName": "item_Predatory_Instincts.png",
             "vidName": "usage_Predatory_Instincts.mp4"
@@ -413,6 +429,7 @@
             "name": "Runald's Band",
             "description": "Hits that deal more than 400% damage also blast enemies with a runic ice blast, slowing them by 80% for 3 seconds and dealing 250% TOTAL damage. Recharges every 10 seconds.",
             "stack": "+3 seconds of freeze time, +250% damage dealt.",
+            "unlock": "Complete the hidden chamber in the Abandoned Aqueduct.",
             "itemClass": "Uncommon",
             "hasVideo": false,
             "imgName": "item_Runalds_Band.png",
@@ -423,6 +440,7 @@
             "description": "Activating an interactable summons a Squid Turret that attacks nearby at 100% attack speed. Lasts 30 seconds.",
             "stack": "+100% attack speed.",
             "itemClass": "Uncommon",
+            "unlock": "Purchase 6 Gunner Turrets in a single run.",
             "hasVideo": false,
             "imgName": "item_Squid_Polyp.png",
             "vidName": "usage_Squid_Polyp.mp4"
@@ -441,6 +459,7 @@
             "description": "Activating your Equipment gives you +70% attack speed for 8 seconds.",
             "stack": "+4 seconds of additional attack speed.",
             "itemClass": "Uncommon",
+            "unlock": "Activate 3 Shrines of Combat in a single stage and defeat all the spawned monsters.",
             "hasVideo": false,
             "imgName": "item_War_Horn.png",
             "vidName": "usage_War_Horn.mp4"
@@ -450,6 +469,7 @@
             "description": "Jumping while sprinting boosts you forward by 10m.",
             "stack": "+10m boost distance.",
             "itemClass": "Uncommon",
+            "unlock": "Reach +300% movespeed.",
             "hasVideo": false,
             "imgName": "item_Wax_Quail.png",
             "vidName": "usage_Wax_Quail.mp4"
@@ -472,6 +492,7 @@
             "description": "All random effects are rolled 1 time for a favourable outcome.",
             "stack": "+1 additional roll.",
             "itemClass": "Legendary",
+            "unlock": "Complete 20 stages in one run.",
             "hasVideo": false,
             "imgName": "item_57_Leaf_Clover.png",
             "vidName": "usage_57_Leaf_Clover.mp4"
@@ -499,6 +520,7 @@
             "description": "Upon killing a monster, enter a frenzy for 4 seconds where skills have no cooldowns.",
             "stack": "+4 additional seconds of frenzy.",
             "itemClass": "Legendary",
+            "unlock": "Defeat an elite boss on Monsoon difficulty.",
             "hasVideo": false,
             "imgName": "item_Brainstalks.png",
             "vidName": "usage_Brainstalks.mp4"
@@ -535,6 +557,7 @@
             "description": "Upon death, this item will be consumed and you will return to life with 3 seconds of invulnerability.",
             "stack": "More respawns.",
             "itemClass": "Legendary",
+            "unlock": "Stay alive for 30 consecutive minutes.",
             "hasVideo": false,
             "imgName": "item_Dios_Best_Friend.png",
             "vidName": "usage_Dios_Best_Friend.mp4"
@@ -597,6 +620,7 @@
             "description": "Store 100% of healing as Soul Energy. After your Soul Energy reaches 10% of your maximum health, fire a skull that deals 250% of your Soul Energy as damage.",
             "stack": "+100% healing stored as Soul Energy.",
             "itemClass": "Legendary",
+            "unlock": "Find the Altar to N'kuhana in Wetland Aspect.",
             "hasVideo": false,
             "imgName": "item_Nkuhanas_Opinion.png",
             "vidName": "usage_Nkuhanas_Opinion.mp4"
@@ -606,6 +630,7 @@
             "description": "Heal 100% more.",
             "stack": "+100% additional healing.",
             "itemClass": "Legendary",
+            "unlock": "Complete the 3rd teleporter without healing.",
             "hasVideo": false,
             "imgName": "item_Rejuvenation_Rack.png",
             "vidName": "usage_Rejuvenation_Rack.mp4"
@@ -624,6 +649,7 @@
             "description": "20% chance on hit to fire homing hooks at up to 10 enemies for 100% TOTAL damage.",
             "stack": "+20% additional chance to fire, +5 more enemies hooked",
             "itemClass": "Legendary",
+            "unlock": "Loop back to the first stage.",
             "hasVideo": false,
             "imgName": "item_Sentient_Meat_Hook.png",
             "vidName": "usage_Sentient_Meat_Hook.mp4"
@@ -642,6 +668,7 @@
             "description": "Kills reduce equipment cooldown by 4 seconds.",
             "stack": "+2 seconds to cooldown.",
             "itemClass": "Legendary",
+            "unlock": "Activate 8 unique Newt Altars.",
             "hasVideo": false,
             "imgName": "item_Soulbound_Catalyst.png",
             "vidName": "usage_Soulbound_Catalyst.mp4"
@@ -651,6 +678,7 @@
             "description": "Fire out lightning that hits 3 enemies for 200% base damage every 0.5s. The Tesla Coil switches off every 10 seconds.",
             "stack": "+2 enemies hit.",
             "itemClass": "Legendary",
+            "unlock": "Deal 5000 damage in one shot.",
             "hasVideo": false,
             "imgName": "item_Unstable_Tesla_Coil.png",
             "vidName": "usage_Unstable_Tesla_Coil.mp4"
@@ -785,6 +813,7 @@
             "description": "Cleanse all negative effects. Includes debuffs, damage over time, and nearby projectiles.",
             "cooldown": 20,
             "itemClass": "Equipment",
+            "unlock": "Die three times while burning.",
             "hasVideo": false,
             "imgName": "item_Blast_Shower.png",
             "vidName": "usage_Blast_Shower.mp4"
@@ -803,6 +832,7 @@
             "description": "Create a quantum tunnel of up to 1000m in length. Lasts 30 seconds.",
             "cooldown": 45,
             "itemClass": "Equipment",
+            "unlock": "Defeat the unique guardian of the Gilded Coast without and beacons deactivating.",
             "hasVideo": false,
             "imgName": "item_Eccentric_Vase.png",
             "vidName": "usage_Eccentric_Vase.mp4"
@@ -821,6 +851,7 @@
             "description": "Throw a cursed doll that thriggers any 'On Kill' effects you have every 1 second for 8 seconds.",
             "cooldown": 45,
             "itemClass": "Equipment",
+            "unlock": "Die 20 times.",
             "hasVideo": false,
             "imgName": "item_Forgive_Me_Please.png",
             "vidName": "usage_Forgive_Me_Please.mp4"
@@ -838,6 +869,7 @@
             "description": "Gain a Woodsprite follower that heals for 1.5% of your maximum health/second. Can be send to an ally to heal them for 10% of their maximum health.",
             "cooldown": 15,
             "itemClass": "Equipment",
+            "unlock": "Fully upgrade a Shrine of the Woods.",
             "hasVideo": false,
             "imgName": "item_Gnarled_Woodsprite.png",
             "vidName": "usage_Gnarled_Woodsprite.mp4"
@@ -883,6 +915,7 @@
             "description": "After a short charge period, fire a slow-moving orb that zaps enemies within 35m for up to 600% damage/second. On contact, detonate in a 20m radius explosion for 4000% damage.",
             "cooldown": 140,
             "itemClass": "Equipment",
+            "unlock": "Open the Timed Security Chest on Rallypoint Delta.",
             "hasVideo": false,
             "imgName": "item_Preon_Accumulator.png",
             "vidName": "usage_Preon_Accumulator.mp4"
@@ -901,6 +934,7 @@
             "description": "Reveal all interactables within 500m for 10 seconds.",
             "cooldown": 45,
             "itemClass": "Equipment",
+            "unlock": "Collect 10 monster of environment logs.",
             "hasVideo": false,
             "imgName": "item_Radar_Scanner.png",
             "vidName": "usage_Radar_Scanner.mp4"
@@ -910,6 +944,7 @@
             "description": "Transform an Item or Equipment into a different one of the same tier. Can only be used on the target item once.",
             "cooldown": 45,
             "itemClass": "Equipment",
+            "unlock": "Destroy 20 flying rocks in Sky Meadow.",
             "hasVideo": false,
             "imgName": "item_Recycler.png",
             "vidName": "usage_Recycler.mp4"
@@ -919,6 +954,7 @@
             "description": "Call down a lightning strike on a targeted monster for 3000% damage and stunning nearby monsters.",
             "cooldown": 20,
             "itemClass": "Equipment",
+            "unlock": "Defeat the Teleporter bosses after activating 2 Shrines if the Mountain.",
             "hasVideo": false,
             "imgName": "item_Royal_Capacitor.png",
             "vidName": "usage_Royal_Capacitor.mp4"
@@ -946,6 +982,7 @@
             "description": "Call 4 Strike Drones to fight for you. Drones stay for 25 seconds.",
             "cooldown": 100,
             "itemClass": "Equipment",
+            "unlock": "Repair 30 drones or turrets.",
             "hasVideo": false,
             "imgName": "item_The_Back-up.png",
             "vidName": "usage_The_Back-up.mp4"
@@ -954,6 +991,7 @@
             "name": "The Crowdfunder",
             "description": "Fires a continuous barrage that deals 100% damage per bullet. Costs $1 per bullet, and cost increases over time.",
             "itemClass": "Equipment",
+            "unlock": "Collect $30,480 total gold.",
             "imgName": "item_The_Crowdfunder.png",
             "hasVideo": false,
             "vidName": "usage_The_Crowdfunder.mp4"
@@ -1066,6 +1104,7 @@
             "description": "Teleporters charge 30% faster, but the size of the Teleporter zone is 50% smaller.",
             "stack": "+30% faster charge speed, -50% Teleporter zone size.",
             "itemClass": "Lunar",
+            "unlock": "In 4 consecutive stages don't leave the Teleporter radius until it is fully charged.",
             "hasVideo": false,
             "imgName": "item_Focused_Convergence.png",
             "vidName": "usage_Focused_Convergence.mp4"
@@ -1075,6 +1114,7 @@
             "description": "Reduces Equipment cooldown by 50%. Forces your Equipment to activate whenever it is off cooldown.",
             "stack": "+15% reduced cooldown time.",
             "itemClass": "Lunar",
+            "unlock": "Kill 20 Hermit Crabs by chasing them off the edge of the map.",
             "hasVideo": false,
             "imgName": "item_Gesture_of_the_Drowned.png",
             "vidName": "usage_Gesture_of_the_Drowned.mp4"
@@ -1084,6 +1124,7 @@
             "description": "Rain meteors from teh sky, damaging ALL characters for 600% damage per blast. Lasts 20 seconds.",
             "cooldown": 140,
             "itemClass": "Lunar",
+            "unlock": "Carry 5 Lunar Items in a single run.",
             "hasVideo": false,
             "imgName": "item_Glowing_Meteorite.png",
             "vidName": "usage_Glowing_Meteorite.mp4"
@@ -1093,6 +1134,7 @@
             "description": "Ignite ALL characters within 15m for 12 seconds. Deal 5% of your maxumim health per second as burning to yourself. The burn is 0.5x stronger on allies, and 24x stronger on enemies.",
             "cooldown": 45,
             "itemClass": "Lunar",
+            "unlock": "Kill 15 enemies simultaneously.",
             "hasVideo": false,
             "imgName": "item_Hellfire_Tincture.png",
             "vidName": "usage_Hellfire_Tincture.mp4"
@@ -1111,6 +1153,7 @@
             "description": "All skill cooldowns are reduced by 2 seconds. All random effects are rolled 1 time for an unfavourable outcome.",
             "stack": "+1 reduces skill cooldown seconds, +1 roll.",
             "itemClass": "Lunar",
+            "unlock": "Beat the game on Monsoon difficulty.",
             "hasVideo": false,
             "imgName": "item_Purity.png",
             "vidName": "usage_Purity.mp4"
@@ -1129,6 +1172,7 @@
             "description": "Drink the Tonic, gaining a boost for 20 seconds. Increases damage by +100%, attack speed by +70%, armor by +20, maximum health by +50%, passive health regen by +300%, and movespeed by +30%. When the tonic wears off, you have a 20% chance to gain a Tonic Affliction, reducing all your stats by -5%.",
             "cooldown": 60,
             "itemClass": "Lunar",
+            "unlock": "Discover and enter three unique portals.",
             "hasVideo": false,
             "imgName": "item_Spinel_Tonic.png",
             "vidName": "usage_Spinel_Tonic.mp4"
@@ -1138,6 +1182,7 @@
             "description": "Replace your Utility Skill with Shadowfade. Fade away, becoming intangible and gaining +30% movement speed. Heal for 25% of your maximum health. Lasts 3 seconds.",
             "stack": "+25% maximum health healed, +3 additional seconds in Shadowfade.",
             "itemClass": "Lunar",
+            "unlock": "Kill 15 bosses in a single run.",
             "hasVideo": false,
             "imgName": "item_Strides_of_Heresy.png",
             "vidName": "usage_Strides_of_Heresy.mp4"
@@ -1156,6 +1201,7 @@
             "description": "Replace your Primary Skills with Hungering Gaze. Fire a flurry of tracking shards that detonate after a delay, deaing 120% base damage. Hold up to 12 charges that reload after 2 seconds.",
             "stack": "+12 stored charges, +2 seconds to recharge time.",
             "itemClass": "Lunar",
+            "unlock": "Kill 15 bosses in a single run.",
             "hasVideo": false,
             "imgName": "item_Visions_of_Heresy.png",
             "vidName": "usage_Visions_of_Heresy.mp4"
