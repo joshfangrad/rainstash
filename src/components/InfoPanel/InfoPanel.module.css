@@ -18,12 +18,13 @@
 }
 
 .closeButton {
+    position: sticky;
+    top: 0.2em;
     width: 2.5em;
     display: none;
     cursor: pointer;
     align-self: flex-end;
     margin: 0.2em;
-
 }
 
 .infoTitle {

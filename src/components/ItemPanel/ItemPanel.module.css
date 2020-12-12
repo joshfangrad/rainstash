@@ -7,19 +7,17 @@
     overflow-x: hidden;
 }
 
-.loadText {
-    font-family: rainFontBold;
-    font-size: 2em;
-    color: grey;
+.grayText {
+    color: gray;
+    font-size: 1em;
+    margin: 0.5%;
 }
 
-.loadWrap {
-    width: 70%;
-    background-color: #363636;
+.verticalWrap {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 @media only screen and (max-width: 600px) {

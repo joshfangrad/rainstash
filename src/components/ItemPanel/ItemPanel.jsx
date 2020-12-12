@@ -41,11 +41,23 @@ function ItemPanel(props) {
         }
     }, [props, setCategories]);
 
-    return (
-        <div className={styles.itemPanel}>
-            {categories}
-        </div>
-    );
+    //make sure the user has some item sets selected otherwise warn them
+    if (categories !== null && Object.keys(categories).length === 0) {
+        return (
+            <div className={styles.itemPanel}>
+                <div className={styles.verticalWrap}>
+                    <div className={styles.grayText}>You don't have any item sets selected :(</div>
+                    <div className={styles.grayText}>Go select some in settings {">"} mods!</div>
+                </div>
+            </div>
+        );
+    } else {
+        return (
+            <div className={styles.itemPanel}>
+                {categories}
+            </div>
+        );
+    }
 }
 
 export default ItemPanel;

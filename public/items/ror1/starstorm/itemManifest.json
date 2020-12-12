@@ -2,645 +2,722 @@
     "items": {
         "Beating Heart": {
             "name": "Beating Heart",
-            "description": "",
-            "stack": "",
+            "description": "On death, respawn in the Red Plane. Single use per stack.",
+            "stack": "+1 use.",
             "itemClass": "Boss Items",
             "imgName": "Beating Heart.png",
-            "vidName": "Beating Heart.mp4"
+            "vidName": "Beating Heart.mp4",
+            "hasVideo": false
         },
         "Lifetime Fortune": {
             "name": "Lifetime Fortune",
-            "description": "",
-            "stack": "",
+            "description": "Gain bonus gold on entering a stage.",
+            "stack": "+40% bonus gold.",
             "itemClass": "Boss Items",
             "imgName": "Lifetime Fortune.png",
-            "vidName": "Lifetime Fortune.mp4"
+            "vidName": "Lifetime Fortune.mp4",
+            "hasVideo": false
         },
         "Scalding Scale": {
             "name": "Scalding Scale",
-            "description": "",
-            "stack": "",
+            "description": "Increases armor by 60%.",
+            "stack": "Further increases armor by 60%.",
             "itemClass": "Boss Items",
             "imgName": "Scalding Scale.png",
-            "vidName": "Scalding Scale.mp4"
+            "vidName": "Scalding Scale.mp4",
+            "hasVideo": false
         },
         "Shell Piece": {
             "name": "Shell Piece",
-            "description": "",
-            "stack": "",
+            "description": "Gain temporary immunity near death (once per stage).",
+            "stack": "+1 use per stage.",
             "itemClass": "Boss Items",
             "imgName": "Shell Piece.png",
-            "vidName": "Shell Piece.mp4"
+            "vidName": "Shell Piece.mp4",
+            "hasVideo": false
         },
         "Toxic Tail": {
             "name": "Toxic Tail",
-            "description": "",
-            "stack": "",
+            "description": "Spawn two friendly boars which attack enemies.",
+            "stack": "+2 boars.",
             "itemClass": "Boss Items",
             "imgName": "Toxic Tail.png",
-            "vidName": "Toxic Tail.mp4"
+            "vidName": "Toxic Tail.mp4",
+            "hasVideo": false
         },
         "Unearthly Lamp": {
             "name": "Unearthly Lamp",
-            "description": "",
-            "stack": "",
+            "description": "Every second attack fires a projectile dealing 125% damage.",
+            "stack": "+1 projectile.",
             "itemClass": "Boss Items",
             "imgName": "Unearthly Lamp.png",
-            "vidName": "Unearthly Lamp.mp4"
+            "vidName": "Unearthly Lamp.mp4",
+            "hasVideo": false
         },
         "Armed Backpack": {
             "name": "Armed Backpack",
-            "description": "",
-            "stack": "",
+            "description": "18.5% chance of firing a bullet behind you for 150% damage.",
+            "stack": "+6.5% chance. 100% chance at 14 stacks.",
+            "maxStacks": 14,
             "itemClass": "Common Items",
             "imgName": "Armed Backpack.png",
-            "vidName": "Armed Backpack.mp4"
+            "vidName": "Armed Backpack.mp4",
+            "hasVideo": false
         },
         "Brass Knuckles": {
             "name": "Brass Knuckles",
-            "description": "",
-            "stack": "",
+            "description": "Deal 35% extra damage to close enemies.",
+            "stack": "increases range by 45%.",
             "itemClass": "Common Items",
             "imgName": "Brass Knuckles.png",
-            "vidName": "Brass Knuckles.mp4"
+            "vidName": "Brass Knuckles.mp4",
+            "hasVideo": false
         },
         "Coffee Bag": {
             "name": "Coffee Bag",
-            "description": "",
-            "stack": "",
+            "description": "Increases movement speed by 10% and attack speed by 7.5%.",
+            "stack": "Further increases movement speed by 10% and attack speed by 7.5%.",
             "itemClass": "Common Items",
             "imgName": "Coffee Bag.png",
-            "vidName": "Coffee Bag.mp4"
+            "vidName": "Coffee Bag.mp4",
+            "hasVideo": false
         },
         "Detritive Trematode": {
             "name": "Detritive Trematode",
-            "description": "",
-            "stack": "",
+            "description": "Enemies receive damage over time upon dropping below 3% health.",
+            "maxStacks": 35,
+            "stack": "increases the health threshold up to 100% health at 35 stacks.",
             "itemClass": "Common Items",
             "imgName": "Detritive Trematode.png",
-            "vidName": "Detritive Trematode.mp4"
+            "vidName": "Detritive Trematode.mp4",
+            "hasVideo": false
         },
         "Diary": {
             "name": "Diary",
-            "description": "",
-            "stack": "",
+            "description": "Earn 0.84 experience points per second.",
+            "stack": "+0.84 experience points per second.",
             "itemClass": "Common Items",
             "imgName": "Diary.png",
-            "vidName": "Diary.mp4"
+            "vidName": "Diary.mp4",
+            "hasVideo": false
         },
         "Distinctive Stick": {
             "name": "Distinctive Stick",
-            "description": "",
-            "stack": "",
+            "description": "Grows a tree at the Teleporter's location, healing nearby players.",
+            "stack": "increases healing range.",
             "itemClass": "Common Items",
             "imgName": "Distinctive Stick.png",
-            "vidName": "Distinctive Stick.mp4"
+            "vidName": "Distinctive Stick.mp4",
+            "hasVideo": false
         },
         "Dormant Fungus": {
             "name": "Dormant Fungus",
-            "description": "",
-            "stack": "",
+            "description": "While moving, heal around 1% of your health every 1.8 seconds.",
+            "stack": "Further increases healing amount.",
             "itemClass": "Common Items",
             "imgName": "Dormant Fungus.png",
-            "vidName": "Dormant Fungus.mp4"
+            "vidName": "Dormant Fungus.mp4",
+            "hasVideo": false
         },
         "Fork": {
             "name": "Fork",
-            "description": "",
-            "stack": "",
+            "description": "Increases base damage by 25%.",
+            "stack": "Further increases base damage by 25%.",
             "itemClass": "Common Items",
             "imgName": "Fork.png",
-            "vidName": "Fork.mp4"
+            "vidName": "Fork.mp4",
+            "hasVideo": false
         },
         "Guarding Amulet": {
             "name": "Guarding Amulet",
-            "description": "",
-            "stack": "",
+            "description": "Reduces damage taken from behind you by 40%.",
+            "stack": "Further reduces damage.",
             "itemClass": "Common Items",
             "imgName": "Guarding Amulet.png",
-            "vidName": "Guarding Amulet.mp4"
+            "vidName": "Guarding Amulet.mp4",
+            "hasVideo": false
         },
         "Ice Tool": {
             "name": "Ice Tool",
-            "description": "",
-            "stack": "",
+            "description": "Gain an extra jump on walls, increases speed while climbing.",
+            "stack": "+1 jump, further increases speed up to 500%.",
             "itemClass": "Common Items",
             "imgName": "Ice Tool.png",
-            "vidName": "Ice Tool.mp4"
+            "vidName": "Ice Tool.mp4",
+            "hasVideo": false
         },
         "Malice": {
             "name": "Malice",
-            "description": "",
-            "stack": "",
+            "description": "Dealt damage spreads to one nearby enemy for 55% damage.",
+            "stack": "+1 target, increased range.",
             "itemClass": "Common Items",
             "imgName": "Malice.png",
-            "vidName": "Malice.mp4"
+            "vidName": "Malice.mp4",
+            "hasVideo": false
         },
         "Molten Coin": {
             "name": "Molten Coin",
-            "description": "",
-            "stack": "",
+            "description": "6% chance to blaze enemies and earn +$1.",
+            "stack": "Increases blaze damage, +$1.",
             "itemClass": "Common Items",
             "imgName": "Molten Coin.png",
-            "vidName": "Molten Coin.mp4"
+            "vidName": "Molten Coin.mp4",
+            "hasVideo": false
         },
         "Needles": {
             "name": "Needles",
-            "description": "",
-            "stack": "",
+            "description": "4% chance to mark enemies on hit for 100% extra critical strike chance. Lasts 3 seconds.",
+            "maxStacks": 49,
+            "stack": "+2% chance. 100% chance at 49 stacks.",
             "itemClass": "Common Items",
             "imgName": "Needles.png",
-            "vidName": "Needles.mp4"
+            "vidName": "Needles.mp4",
+            "hasVideo": false
         },
         "Wonder Herbs": {
             "name": "Wonder Herbs",
-            "description": "",
-            "stack": "",
+            "description": "Increases healing from all sources by 12%.",
+            "stack": "Further increases all healing by 12%.",
             "itemClass": "Common Items",
             "imgName": "Wonder Herbs.png",
-            "vidName": "Wonder Herbs.mp4"
+            "vidName": "Wonder Herbs.mp4",
+            "hasVideo": false
         },
         "Curse of Affliction": {
             "name": "Curse of Affliction",
-            "description": "",
-            "stack": "",
+            "description": "Falling below 50% health gives negative regeneration.",
+            "maxStacks": 5,
+            "stack": "+15% health threshold.",
             "itemClass": "Curse Items",
             "imgName": "Curse of Affliction.png",
-            "vidName": "Curse of Affliction.mp4"
+            "vidName": "Curse of Affliction.mp4",
+            "hasVideo": false
         },
         "Curse of Confusion": {
             "name": "Curse of Confusion",
-            "description": "",
-            "stack": "",
+            "description": "Controls are temporarily inverted every minute.",
+            "stack": "Halves the time threshold.",
             "itemClass": "Curse Items",
             "imgName": "Curse of Confusion.png",
-            "vidName": "Curse of Confusion.mp4"
+            "vidName": "Curse of Confusion.mp4",
+            "hasVideo": false
         },
         "Curse of Impairment": {
             "name": "Curse of Impairment",
-            "description": "",
-            "stack": "",
+            "description": "33% chance to miss an attack.",
+            "stack": "Increases chances multiplicatively.",
             "itemClass": "Curse Items",
             "imgName": "Curse of Impairment.png",
-            "vidName": "Curse of Impairment.mp4"
+            "vidName": "Curse of Impairment.mp4",
+            "hasVideo": false
         },
         "Curse of Misfortune": {
             "name": "Curse of Misfortune",
-            "description": "",
-            "stack": "",
+            "description": "Reduce the rarity of nearby items, rerolling them.",
+            "maxStacks": 2,
+            "stack": "Items always reroll at common rarity.",
             "itemClass": "Curse Items",
             "imgName": "Curse of Misfortune.png",
-            "vidName": "Curse of Misfortune.mp4"
+            "vidName": "Curse of Misfortune.mp4",
+            "hasVideo": false
         },
         "Curse of Mortality": {
             "name": "Curse of Mortality",
-            "description": "",
-            "stack": "",
+            "description": "Consecutive hits deal more damage to you.",
+            "stack": "Increases time frame for consecutive hits.",
             "itemClass": "Curse Items",
             "imgName": "Curse of Mortality.png",
-            "vidName": "Curse of Mortality.mp4"
+            "vidName": "Curse of Mortality.mp4",
+            "hasVideo": false
         },
         "Curse of Poverty": {
             "name": "Curse of Poverty",
-            "description": "",
-            "stack": "",
+            "description": "Lose gold every second.",
+            "stack": "Increases amount of gold loss.",
             "itemClass": "Curse Items",
             "imgName": "Curse of Poverty.png",
-            "vidName": "Curse of Poverty.mp4"
+            "vidName": "Curse of Poverty.mp4",
+            "hasVideo": false
         },
         "Paul's Motivational Tape": {
             "name": "Paul's Motivational Tape",
-            "description": "",
-            "stack": "",
+            "description": "Increased will to fight!",
             "itemClass": "Misc Items",
             "imgName": "Paul's Motivational Tape.png",
-            "vidName": "Paul's Motivational Tape.mp4"
+            "vidName": "Paul's Motivational Tape.mp4",
+            "hasVideo": false
         },
         "Composite Injector": {
             "name": "Composite Injector",
-            "description": "",
-            "stack": "",
+            "description": "Merge one dropped use item with the one equipped.",
+            "stack": "+1 merge.",
             "itemClass": "Rare Items",
             "imgName": "Composite Injector.png",
-            "vidName": "Composite Injector.mp4"
+            "vidName": "Composite Injector.mp4",
+            "hasVideo": false
         },
         "Droid Head": {
             "name": "Droid Head",
-            "description": "",
-            "stack": "",
+            "description": "Spawns a helping drone for 11 seconds after killing boss enemies.",
+            "stack": "+4 seconds of duration.",
             "itemClass": "Rare Items",
             "imgName": "Droid Head.png",
-            "vidName": "Droid Head.mp4"
+            "vidName": "Droid Head.mp4",
+            "hasVideo": false
         },
         "Erratic Gadget": {
             "name": "Erratic Gadget",
-            "description": "",
-            "stack": "",
+            "description": "Critical strikes deal 50% extra damage.",
+            "stack": "Further increases damage by 50%.",
             "itemClass": "Rare Items",
             "imgName": "Erratic Gadget.png",
-            "vidName": "Erratic Gadget.mp4"
+            "vidName": "Erratic Gadget.mp4",
+            "hasVideo": false
         },
         "Green Chocolate": {
             "name": "Green Chocolate",
-            "description": "",
-            "stack": "",
+            "description": "Receiving 25% or more of your health as damage increases your critical chance and damage for 5 seconds.",
+            "stack": "+4 seconds of duration.",
             "itemClass": "Rare Items",
             "imgName": "Green Chocolate.png",
-            "vidName": "Green Chocolate.mp4"
+            "vidName": "Green Chocolate.mp4",
+            "hasVideo": false
         },
         "Insecticide": {
             "name": "Insecticide",
-            "description": "",
-            "stack": "",
+            "description": "All attacks poison enemies for 25% damage over 4 seconds.",
+            "stack": "+2 seconds poison duration.",
             "itemClass": "Rare Items",
             "imgName": "Insecticide.png",
-            "vidName": "Insecticide.mp4"
+            "vidName": "Insecticide.mp4",
+            "hasVideo": false
         },
         "Juddering Egg": {
             "name": "Juddering Egg",
-            "description": "",
-            "stack": "",
+            "description": "Gain a young wurm follower which attacks nearby enemies.",
+            "stack": "+1 young wurm.",
             "itemClass": "Rare Items",
             "imgName": "Juddering Egg.png",
-            "vidName": "Juddering Egg.mp4"
+            "vidName": "Juddering Egg.mp4",
+            "hasVideo": false
         },
         "Nkota's Heritage": {
             "name": "Nkota's Heritage",
-            "description": "",
-            "stack": "",
+            "description": "Creates a free chest on level up.",
+            "stack": "Increases the chances of a higher rarity chest.",
             "itemClass": "Rare Items",
             "imgName": "Nkota's Heritage.png",
-            "vidName": "Nkota's Heritage.mp4"
+            "vidName": "Nkota's Heritage.mp4",
+            "hasVideo": false
         },
         "Portable Reactor": {
             "name": "Portable Reactor",
-            "description": "",
-            "stack": "",
+            "description": "Become invincible for 40 seconds after entering a stage.",
+            "stack": "Further increases duration by 15 seconds, with a maximum of 150 seconds at 8 stacks.",
+            "maxStacks": 8,
             "itemClass": "Rare Items",
             "imgName": "Portable Reactor.png",
-            "vidName": "Portable Reactor.mp4"
+            "vidName": "Portable Reactor.mp4",
+            "hasVideo": false
         },
         "Swift Skateboard": {
             "name": "Swift Skateboard",
-            "description": "",
-            "stack": "",
+            "description": "Allows for movement during skill use.",
+            "maxStacks": 5,
+            "stack": "+70% speed while using a skill.",
             "itemClass": "Rare Items",
             "imgName": "Swift Skateboard.png",
-            "vidName": "Swift Skateboard.mp4"
+            "vidName": "Swift Skateboard.mp4",
+            "hasVideo": false
         },
         "Toys": {
-            "name": "Toys",
-            "description": "",
-            "stack": "",
+            "name": "Baby's Toys",
+            "description": "-3 levels on pickup, however you keep all stats (Reduced level up experience requirement).",
+            "stack": "Further reduces your level while keeping all stats.",
             "itemClass": "Rare Items",
             "imgName": "Toys.png",
-            "vidName": "Toys.mp4"
+            "vidName": "Toys.mp4",
+            "hasVideo": false
         },
         "Relic of Duality": {
             "name": "Relic of Duality",
-            "description": "",
-            "stack": "",
+            "description": "All attacks apply burning damage over time, getting hit freezes you.",
+            "stack": "increases the duration of both effects.",
             "itemClass": "Relic Items",
             "imgName": "Relic of Duality.png",
-            "vidName": "Relic of Duality.mp4"
+            "vidName": "Relic of Duality.mp4",
+            "hasVideo": false
         },
         "Relic of Extinction": {
             "name": "Relic of Extinction",
-            "description": "",
-            "stack": "",
+            "description": "A black hole follows you, dealing extreme damage on proximity.",
+            "stack": "Increases the size of the black hole.",
             "itemClass": "Relic Items",
             "imgName": "Relic of Extinction.png",
-            "vidName": "Relic of Extinction.mp4"
+            "vidName": "Relic of Extinction.mp4",
+            "hasVideo": false
         },
         "Relic of Force": {
             "name": "Relic of Force",
-            "description": "",
-            "stack": "",
+            "description": "Increases damage by 100%, reduces attack speed and cooldowns by 40%.",
+            "stack": "Further increases cooldowns and reduces attack speed multiplicatively.",
             "itemClass": "Relic Items",
             "imgName": "Relic of Force.png",
-            "vidName": "Relic of Force.mp4"
+            "vidName": "Relic of Force.mp4",
+            "hasVideo": false
         },
         "Relic of Gratification": {
             "name": "Relic of Gratification",
-            "description": "",
-            "stack": "",
+            "description": "Enemies drop 150% experience and gold BUT enemies deal 150% damage to you.",
+            "stack": "Stacks multiplicatively.",
             "itemClass": "Relic Items",
             "imgName": "Relic of Gratification.png",
-            "vidName": "Relic of Gratification.mp4"
+            "vidName": "Relic of Gratification.mp4",
+            "hasVideo": false
         },
         "Relic of Mass": {
             "name": "Relic of Mass",
-            "description": "",
-            "stack": "",
+            "description": "Increases health by 100%, speed requires momentum.",
+            "stack": "Further increases health by 100% health, slower momentum buildup.",
             "itemClass": "Relic Items",
             "imgName": "Relic of Mass.png",
-            "vidName": "Relic of Mass.mp4"
+            "vidName": "Relic of Mass.mp4",
+            "hasVideo": false
         },
         "Relic of Vitality": {
             "name": "Relic of Vitality",
-            "description": "",
-            "stack": "",
+            "description": "Increases regeneration by 12 hp/s, reduces health by 75% and armor by 50%.",
+            "stack": "Stacks multiplicatively.",
             "itemClass": "Relic Items",
             "imgName": "Relic of Vitality.png",
-            "vidName": "Relic of Vitality.mp4"
+            "vidName": "Relic of Vitality.mp4",
+            "hasVideo": false
         },
         "Augury": {
             "name": "Augury",
-            "description": "",
-            "stack": "",
+            "description": "Receiving damage charges dark energy. Unleash a devastating blackout on full charge.",
+            "stack": "None.",
             "itemClass": "Sibyline Items",
             "imgName": "Augury.png",
-            "vidName": "Augury.mp4"
+            "vidName": "Augury.mp4",
+            "hasVideo": false
         },
         "Entangled Energy": {
             "name": "Entangled Energy",
-            "description": "",
-            "stack": "",
+            "description": "Create an energetic discharge if 4 or more enemies stand in a line in front of you.",
+            "stack": "None.",
             "itemClass": "Sibyline Items",
             "imgName": "Entangled Energy.png",
-            "vidName": "Entangled Energy.mp4"
+            "vidName": "Entangled Energy.mp4",
+            "hasVideo": false
         },
         "Stirring Soul": {
             "name": "Stirring Soul",
-            "description": "",
-            "stack": "",
+            "description": "Killed enemies leave a soul. Souls have a chance of turning into items on contact.",
+            "stack": "None.",
             "itemClass": "Sibyline Items",
             "imgName": "Stirring Soul.png",
-            "vidName": "Stirring Soul.mp4"
+            "vidName": "Stirring Soul.mp4",
+            "hasVideo": false
         },
         "Yearning Demise": {
             "name": "Yearning Demise",
-            "description": "",
-            "stack": "",
+            "description": "Picking up items annihilates the nearest enemies.",
+            "stack": "None.",
             "itemClass": "Sibyline Items",
             "imgName": "Yearning Demise.png",
-            "vidName": "Yearning Demise.mp4"
+            "vidName": "Yearning Demise.mp4",
+            "hasVideo": false
         },
         "Balloon": {
             "name": "Balloon",
-            "description": "",
-            "stack": "",
+            "description": "Decreases your gravity by 30%.",
+            "stack": "Further decreases gravity multiplicatively.",
             "itemClass": "Uncommon Items",
             "imgName": "Balloon.png",
-            "vidName": "Balloon.mp4"
+            "vidName": "Balloon.mp4",
+            "hasVideo": false
         },
         "Broken Blood Tester": {
             "name": "Broken Blood Tester",
-            "description": "",
-            "stack": "",
+            "description": "Earn +2 gold for every 15 hp regenerated.",
+            "stack": "Earn +2 additional gold",
             "itemClass": "Uncommon Items",
             "imgName": "Broken Blood Tester.png",
-            "vidName": "Broken Blood Tester.mp4"
+            "vidName": "Broken Blood Tester.mp4",
+            "hasVideo": false
         },
         "Crowning Valiance": {
             "name": "Crowning Valiance",
-            "description": "",
-            "stack": "",
+            "description": "All stats are increased when a boss is in proximity.",
+            "stack": "Further increases all stats.",
             "itemClass": "Uncommon Items",
             "imgName": "Crowning Valiance.png",
-            "vidName": "Crowning Valiance.mp4"
+            "vidName": "Crowning Valiance.mp4",
+            "hasVideo": false
         },
         "Cryptic Source": {
             "name": "Cryptic Source",
-            "description": "",
-            "stack": "",
+            "description": "Changing direction creates bursts of energy that deal 70% damage.",
+            "stack": "Increases damage by 55%.",
             "itemClass": "Uncommon Items",
             "imgName": "Cryptic Source.png",
-            "vidName": "Cryptic Source.mp4"
+            "vidName": "Cryptic Source.mp4",
+            "hasVideo": false
         },
         "Field Accelerator": {
             "name": "Field Accelerator",
-            "description": "",
-            "stack": "",
+            "description": "Teleporters charge 100% faster when no enemies are around.",
+            "stack": "Further increases charge speed by 100%",
             "itemClass": "Uncommon Items",
             "imgName": "Field Accelerator.png",
-            "vidName": "Field Accelerator.mp4"
+            "vidName": "Field Accelerator.mp4",
+            "hasVideo": false
         },
         "Gold Medal": {
             "name": "Gold Medal",
-            "description": "",
-            "stack": "",
+            "description": "Spending gold heals you for 5 seconds.",
+            "stack": "Further increases duration by 2 seconds.",
             "itemClass": "Uncommon Items",
             "imgName": "Gold Medal.png",
-            "vidName": "Gold Medal.mp4"
+            "vidName": "Gold Medal.mp4",
+            "hasVideo": false
         },
         "Hottest Sauce": {
             "name": "Hottest Sauce",
-            "description": "",
-            "stack": "",
+            "description": "Activating a use item burns the ground and all nearby enemies for 5 seconds.",
+            "stack": "Further increases duration by 4 seconds.",
             "itemClass": "Uncommon Items",
             "imgName": "Hottest Sauce.png",
-            "vidName": "Hottest Sauce.mp4"
+            "vidName": "Hottest Sauce.mp4",
+            "hasVideo": false
         },
         "Hunter's Sigil": {
             "name": "Hunter's Sigil",
-            "description": "",
-            "stack": "",
+            "description": "Standing still increases armor by 15 and Critical Strike chance by 25%.",
+            "stack": "Further increases armor by 10 and critical chance by 20%%.",
             "itemClass": "Uncommon Items",
             "imgName": "Hunter's Sigil.png",
-            "vidName": "Hunter's Sigil.mp4"
+            "vidName": "Hunter's Sigil.mp4",
+            "hasVideo": false
         },
         "Low Quality Speakers": {
             "name": "Low Quality Speakers",
-            "description": "",
-            "stack": "",
+            "description": "Earn a speed boost at 45% health or lower.",
+            "stack": "further increases duration.",
             "itemClass": "Uncommon Items",
             "imgName": "Low Quality Speakers.png",
-            "vidName": "Low Quality Speakers.mp4"
+            "vidName": "Low Quality Speakers.mp4",
+            "hasVideo": false
         },
         "Metachronic Trinket": {
             "name": "Metachronic Trinket",
-            "description": "",
-            "stack": "",
+            "description": "Teleporter charge time is reduced by 10 seconds",
+            "stack": "Further decreases the required time by 10 seconds.",
             "itemClass": "Uncommon Items",
             "imgName": "Metachronic Trinket.png",
-            "vidName": "Metachronic Trinket.mp4"
+            "vidName": "Metachronic Trinket.mp4",
+            "hasVideo": false
         },
         "Poisonous Gland": {
             "name": "Poisonous Gland",
-            "description": "",
-            "stack": "",
+            "description": "On getting hit while at full health, create a cloud of poison for 200% dps.",
+            "stack": "Further increases damage by 120%.",
             "itemClass": "Uncommon Items",
             "imgName": "Poisonous Gland.png",
-            "vidName": "Poisonous Gland.mp4"
+            "vidName": "Poisonous Gland.mp4",
+            "hasVideo": false
         },
         "Prototype Jet Boots": {
             "name": "Prototype Jet Boots",
-            "description": "",
-            "stack": "",
+            "description": "Explode on jump for 150% damage.",
+            "stack": "Further increases damage by 150%.",
             "itemClass": "Uncommon Items",
             "imgName": "Prototype Jet Boots.png",
-            "vidName": "Prototype Jet Boots.mp4"
+            "vidName": "Prototype Jet Boots.mp4",
+            "hasVideo": false
         },
         "Roulette": {
             "name": "Roulette",
-            "description": "",
-            "stack": "",
+            "description": "Get a random stat buff every minute.",
+            "stack": "Increases the stat buff's value by 50%",
             "itemClass": "Uncommon Items",
             "imgName": "Roulette.png",
-            "vidName": "Roulette.mp4"
+            "vidName": "Roulette.mp4",
+            "hasVideo": false
         },
         "Strange Can": {
             "name": "Strange Can",
-            "description": "",
-            "stack": "",
+            "description": "8.5% chance to intoxicate enemies for 350% damage over time.",
+            "stack": "Further increases chance by 5%.",
             "itemClass": "Uncommon Items",
             "imgName": "Strange Can.png",
-            "vidName": "Strange Can.mp4"
+            "vidName": "Strange Can.mp4",
+            "hasVideo": false
         },
         "Voltaic Gauge": {
             "name": "Voltaic Gauge",
-            "description": "",
-            "stack": "",
+            "description": "Killing elites drops orbs that grant 60 temporary shield.",
+            "stack": "Further increases shield by 50.",
             "itemClass": "Uncommon Items",
             "imgName": "Voltaic Gauge.png",
-            "vidName": "Voltaic Gauge.mp4"
+            "vidName": "Voltaic Gauge.mp4",
+            "hasVideo": false
         },
         "Watch Metronome": {
             "name": "Watch Metronome",
-            "description": "",
-            "stack": "",
+            "description": "Standing Still for up to 4 seconds charges movement speed for up to 2 seconds.",
+            "stack": "Further increases duration by 2 seconds.",
             "itemClass": "Uncommon Items",
             "imgName": "Watch Metronome.png",
-            "vidName": "Watch Metronome.mp4"
+            "vidName": "Watch Metronome.mp4",
+            "hasVideo": false
         },
         "Ageless Totem": {
             "name": "Ageless Totem",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "description": "Become an aspect of Ethereality. On use creates an Ethereal explosion.",
+            "embryo": "None.",
+            "cooldown": 25,
             "itemClass": "Use Items",
             "imgName": "Ageless Totem.png",
-            "vidName": "Ageless Totem.mp4"
+            "vidName": "Ageless Totem.mp4",
+            "hasVideo": false
         },
         "Caustic Pearl": {
             "name": "Caustic Pearl",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "description": "Leave a trail that deals 20% corrosive damage to enemies. All attacks deal corrosive damage.",
             "itemClass": "Use Items",
             "imgName": "Caustic Pearl.png",
-            "vidName": "Caustic Pearl.mp4"
+            "vidName": "Caustic Pearl.mp4",
+            "hasVideo": false
         },
         "Cloaking Headband": {
             "name": "Cloaking Headband",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "description": "Become invisible for 16 seconds.",
+            "embryo": "Doubled active duration.",
+            "cooldown": 45,
             "itemClass": "Use Items",
             "imgName": "Cloaking Headband.png",
-            "vidName": "Cloaking Headband.mp4"
+            "vidName": "Cloaking Headband.mp4",
+            "hasVideo": false
         },
         "Counterfeit Teleporter": {
             "name": "Counterfeit Teleporter",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "description": "Place a teleporter anywhere. The item is removed upon use.",
+            "embryo": "None.",
+            "cooldown": 20,
             "itemClass": "Use Items",
             "imgName": "Counterfeit Teleporter.png",
-            "vidName": "Counterfeit Teleporter.mp4"
+            "vidName": "Counterfeit Teleporter.mp4",
+            "hasVideo": false
         },
         "Eclipsing Shard": {
             "name": "Eclipsing Shard",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "description": "Nearby enemies receive the Void debuff.",
             "itemClass": "Use Items",
             "imgName": "Eclipsing Shard.png",
-            "vidName": "Eclipsing Shard.mp4"
+            "vidName": "Eclipsing Shard.mp4",
+            "hasVideo": false
         },
         "Fractured Crown": {
             "name": "Fractured Crown",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "description": "Every 10 seconds, fire a laser at the nearest enemy for 20x14% damage.",
             "itemClass": "Use Items",
             "imgName": "Fractured Crown.png",
-            "vidName": "Fractured Crown.mp4"
+            "vidName": "Fractured Crown.mp4",
+            "hasVideo": false
         },
         "Greater Warbanner": {
             "name": "Greater Warbanner",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "description": "Place a warbanner which decreases skill cooldowns, increasing critical strike chance by 20 and health by 100.",
+            "embryo": "None.",
+            "cooldown": 80,
             "itemClass": "Use Items",
             "imgName": "Greater Warbanner.png",
-            "vidName": "Greater Warbanner.mp4"
+            "vidName": "Greater Warbanner.mp4",
+            "hasVideo": false
         },
         "M.I.D.A.S": {
             "name": "M.I.D.A.S",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "description": "Deducts 50% of your health, earning the same amount as gold.",
+            "embryo": "Earns you double the amount of gold.",
+            "cooldown": 60,
             "itemClass": "Use Items",
             "imgName": "M.I.D.A.S.png",
-            "vidName": "M.I.D.A.S.mp4"
+            "vidName": "M.I.D.A.S.mp4",
+            "hasVideo": false
         },
         "Pressurized Propeller": {
             "name": "Pressurized Propeller",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "description": "Launch yourself high in the air.",
+            "embryo": "Launches you even further forward.",
+            "cooldown": 15,
             "itemClass": "Use Items",
             "imgName": "Pressurized Propeller.png",
-            "vidName": "Pressurized Propeller.mp4"
+            "vidName": "Pressurized Propeller.mp4",
+            "hasVideo": false
         },
         "Pylon Fragment": {
             "name": "Pylon Fragment",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "description": "Partially restore the Pylon's health in the Red Plane, the item is removed upon use.",
+            "embryo": "None.",
+            "cooldown": 20,
             "itemClass": "Use Items",
             "imgName": "Pylon Fragment.png",
-            "vidName": "Pylon Fragment.mp4"
+            "vidName": "Pylon Fragment.mp4",
+            "hasVideo": false
         },
         "Seismic Oscillator": {
             "name": "Seismic Oscillator",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "description": "Start an earthquake which damages all grounded enemies for 65% damage.",
+            "embryo": "Doubles the damage dealt.",
+            "cooldown": 65,
             "itemClass": "Use Items",
             "imgName": "Seismic Oscillator.png",
-            "vidName": "Seismic Oscillator.mp4"
+            "vidName": "Seismic Oscillator.mp4",
+            "hasVideo": false
         },
         "Simple Magnet": {
             "name": "Simple Magnet",
-            "description": "",
-            "embryo": "",
-            "cooldown": 0,
+            "description": "Pull surrounding pickups towards you. 10% Chance to unearth a treasure.",
+            "embryo": "Increases chance by 10%. Doubled active duration.",
+            "cooldown": 20,
             "itemClass": "Use Items",
             "imgName": "Simple Magnet.png",
-            "vidName": "Simple Magnet.mp4"
+            "vidName": "Simple Magnet.mp4",
+            "hasVideo": false
         }
     },
     "classInfo": {
-        
         "Common Items": {
-            "color": ""
-        },
-        "Curse Items": {
-            "color": ""
-        },
-        "Misc Items": {
-            "color": ""
-        },
-        "Rare Items": {
-            "color": ""
-        },
-        "Relic Items": {
-            "color": ""
-        },
-        "Sibyline Items": {
-            "color": ""
+            "color": "#FFFFFF"
         },
         "Uncommon Items": {
-            "color": ""
+            "color": "#93E180"
+        },
+        "Rare Items": {
+            "color": "#E7543A"
         },
         "Boss Items": {
-            "color": ""
+            "color": "#FFFF00"
         },
         "Use Items": {
-            "color": ""
+            "color": "#FF8000"
+        },
+        "Curse Items": {
+            "color": "#000000"
+        },
+        "Misc Items": {
+            "color": "#AB62CA"
+        },
+        "Relic Items": {
+            "color": "#C649AD"
+        },
+        "Sibyline Items": {
+            "color": "#FFCCED"
         }
     }
 }

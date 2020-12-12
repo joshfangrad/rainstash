@@ -1,6 +1,8 @@
 .tooltipWrap {
     position: absolute;
     visibility: hidden;
+    -moz-user-select: text;
+    -webkit-user-select: text;
     background-color: #363636;
     border: 0.2em solid black;
     border-radius: 0.5em;

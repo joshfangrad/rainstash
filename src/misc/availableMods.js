@@ -12,13 +12,15 @@ export default {
             'vanilla': {
                 'description': 'Vanilla items. Comes with the base game.'
             },
-            // 'starstorm': {
-            //     'description': <>
-            //         An expansion adding new survivors, items, artifacts, stages, enemies and much more to Risk of Rain.
-            //         Go pick it up over at
-            //         <a target='_blank' rel='noopener noreferrer' href='https://rainfusion.ml/'> Rainfusion</a>.
-            //     </>
-            // }
+            'starstorm': {
+                'description': <>
+                    An expansion made by 
+                    <span style={{color: "#F75B00"}}> NK </span> 
+                    (<span style={{color: "#F75B00"}}>NK#0309</span> on Discord) that adds new survivors, items, artifacts, stages, enemies and much more to Risk of Rain.
+                    Go pick it up over at
+                    <a target='_blank' rel='noopener noreferrer' href='https://rainfusion.ml/'> Rainfusion</a>.
+                </>
+            }
         }
     },
     'ror2': {
