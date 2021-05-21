@@ -1171,7 +1171,7 @@
             "itemClass": "Lunar",
             "unlock": "Kill 15 Bosses in a single run.",
             "hasVideo": false,
-            "imgName": "item_Hooks_of_heresy.png",
+            "imgName": "item_Hooks_of_Heresy.png",
             "vidName": "usage_Hooks_of_heresy.mp4"
         },
         "Glowing_Meteorite": {
