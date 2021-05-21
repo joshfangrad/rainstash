@@ -20,6 +20,15 @@
             "imgName": "item_Backup_Magazine.png",
             "vidName": "usage_Backup_Magazine.mp4"
         },
+        "Bison_Steak": {
+            "name": "Bison Steak",
+            "description": "Increases maximum health by 25.",
+            "stack": "+25 additional maximum health.",
+            "itemClass": "Common",
+            "hasVideo": false,
+            "imgName": "item_Bison_Steak.png",
+            "vidName": "usage_Bison_Steak.mp4"
+        },
         "Bundle_of_Fireworks": {
             "name": "Bundle of Fireworks",
             "description": "Activating an interactable launches 8 fireworks that deal 300% base damage.",
@@ -51,8 +60,8 @@
         },
         "Crowbar": {
             "name": "Crowbar",
-            "description": "Deal 150% damage to enemies above 90% health.",
-            "stack": "+50% more damage.",
+            "description": "Deal +75% damage to enemies above 90% health.",
+            "stack": "+75% more damage.",
             "itemClass": "Common",
             "unlock": "Discover 10 unique white items.",
             "hasVideo": false,
@@ -61,8 +70,8 @@
         },
         "Energy_Drink": {
             "name": "Energy Drink",
-            "description": "Sprint speed is increased by 30%",
-            "stack": "+20% sprint speed.",
+            "description": "Sprint speed is increased by 25%",
+            "stack": "+25% sprint speed.",
             "itemClass": "Common",
             "hasVideo": false,
             "imgName": "item_Energy_Drink.png",
@@ -70,21 +79,12 @@
         },
         "Focus_Crystal": {
             "name": "Focus Crystal",
-            "description": "Increase damage to enemies within 13m by 15%.",
-            "stack": "+15% additional damage dealt.",
+            "description": "Increase damage to enemies within 13m by 20%.",
+            "stack": "+20% additional damage dealt.",
             "itemClass": "Common",
             "hasVideo": false,
             "imgName": "item_Focus_Crystal.png",
             "vidName": "usage_Focus_Crystal.mp4"
-        },
-        "Fresh_Meat": {
-            "name": "Fresh Meat",
-            "description": "Increases base health regeneration by +hp/s for 3s after killing an enemy.",
-            "stack": "+3 additional seconds.",
-            "itemClass": "Common",
-            "hasVideo": false,
-            "imgName": "item_Fresh_Meat.png",
-            "vidName": "usage_Fresh_Meat.mp4"
         },
         "Gasoline": {
             "name": "Gasoline",
@@ -161,8 +161,7 @@
         },
         "Rusted_Key": {
             "name": "Rusted Key",
-            "description": "A hidden cache containing an item will appear in a random locaiton on each stage.",
-            "stack": "Increases rarity of the item per stack.",
+            "description": "A hidden cache containing an item (80% chance Rare, 20% chance Legendary) will appear in a random location on each stage. Opening the cahce consumes this item.",
             "itemClass": "Common",
             "unlock": "Defeat a Teleporter boss in under 15 seconds.",
             "hasVideo": false,
@@ -217,8 +216,8 @@
         },
         "Tri-Tip_Dagger": {
             "name": "Tri-Tip Dagger",
-            "description": "15% chance to bleed an enemy for 240% base damage.",
-            "stack": "+15% chance to bleed.",
+            "description": "10% chance to bleed an enemy for 240% base damage.",
+            "stack": "+10% chance to bleed.",
             "maxStacks": 7,
             "hasVideo": false,
             "itemClass": "Common",
@@ -381,8 +380,8 @@
         },
         "Old_War_Stealthkit": {
             "name": "Old War Stealthkit",
-            "description": "Chance on taking damage to gain 40% movement speed and invisibility for 3 seconds. +1% chance to activate for every 1% of damage taken.",
-            "stack": "+1.5 additional seconds of speed and invisibility.",
+            "description": "Falling below 25% health gives you 40% movement speed and invisibility for 5 seconds. Recharges every 30 seconds.",
+            "stack": "-50% recharge time.",
             "itemClass": "Uncommon",
             "hasVideo": false,
             "imgName": "item_Old_War_Stealthkit.png",
@@ -390,8 +389,8 @@
         },
         "Predatory_Instincts": {
             "name": "Predatory Instincts",
-            "description": "Critical strikes increase attack speed by 12%. Maximum cap of 36% attack speed.",
-            "stack": "+24% additional max attack speed.",
+            "description": "Gain 5% critical chance. Critical strikes increase attack speed by 12%, with a maximum cap of 36% increased attack speed.",
+            "stack": "+24% maximum attack speed.",
             "itemClass": "Uncommon",
             "unlock": "Reach +200% attack speed.",
             "hasVideo": false,
@@ -564,7 +563,7 @@
         },
         "Frost_Relic": {
             "name": "Frost Relic",
-            "description": "Killing an enemy surrounds you with an ice storm that deals 600% damage per second. The storm grows with every kill, increasing its radius by 1m. Stacks up to 6m.",
+            "description": "Killing an enemy surrounds you with an ice storm that deals 600% damage per second, and slows enemies by 80% for 1.5 seconds. The storm grows with every kill, increasing its radius by 1m. Stacks up to 6m.",
             "stack": "+6m maximum radius.",
             "itemClass": "Legendary",
             "hasVideo": false,
@@ -705,10 +704,28 @@
             "hasVideo": false,
             "vidName": "usage_Artifact_Key.mp4"
         },
+        "Charged_Perforator": {
+            "name": "Charged Perforator",
+            "description": "10% chance on hit to call down a lightning strike, dealing 500% damage.",
+            "stack": "500% additional damage.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Charged_Perforator.png",
+            "vidName": "usage_Charged_Perforator.mp4"
+        },
+        "Empathy_Cores": {
+            "name": "Empathy Cores",
+            "description": "Every 30 seconds, summon two Solus Probes that gain +100% damage per ally on your team.",
+            "stack": "100% additional damage.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Empathy_Cores.png",
+            "vidName": "usage_Empathy_Cores.mp4"
+        },
         "Genesis_Loop": {
             "name": "Genesis Loop",
             "description": "Falling below 25% health causes you to explode, dealing 6000% base damage. Recharges every 30 seconds.",
-            "stack": "-50% charge time.",
+            "stack": "Recharge time divided by 2 + amount of stacks.",
             "itemClass": "Boss",
             "hasVideo": false,
             "imgName": "item_Genesis_Loop.png",
@@ -776,10 +793,19 @@
             "imgName": "item_Pearl.png",
             "vidName": "usage_Pearl.mp4"
         },
+        "Planula": {
+            "name": "Planula",
+            "description": "Heal from incoming damage for 15 points.",
+            "stack": "+15 additional points healed.",
+            "itemClass": "Boss",
+            "hasVideo": false,
+            "imgName": "item_Planula.png",
+            "vidName": "usage_Planula.mp4"
+        },
         "Queens_Gland": {
             "name": "Queen's Gland",
             "description": "Every 30 seconds, summon a Beetle Guard with bonus 300% damage and 100% health.",
-            "stack": "+1 Beetle Guard.",
+            "stack": "+1 Maximum Beetle Guards.",
             "itemClass": "Boss",
             "hasVideo": false,
             "imgName": "item_Queens_Gland.png",
@@ -1032,6 +1058,15 @@
             "imgName": "item_Nkuhanas_Retort.png",
             "vidName": "usage_Nkuhanas_Retort.mp4"
         },
+        "Shared_Design": {
+            "name": "Shared Design",
+            "description": "Attacks will cripple on hit, and occasionally fire five bomb projectiles at enemies. Gain 30% movement speed, as well as all health replaced with shields, with an additional 25% maximum health.",
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "itemClass": "Equipment",
+            "hasVideo": false,
+            "imgName": "item_Shared_Design.png",
+            "vidName": "usage_Shared_Design.mp4"
+        },
         "Silence_Between_Two_Strikes": {
             "name": "Silence Between Two Strikes",
             "description": "50% of the players health is replaced with shields and attacks attach lighting bombs which explode after a short period, dealing 50% TOTAL damage.",
@@ -1090,6 +1125,16 @@
             "imgName": "item_Defiant_Gouge.png",
             "vidName": "usage_Defiant_Gouge.mp4"
         },
+        "Essence_of_Heresy": {
+            "name": "Essence of Heresy",
+            "description": "Replace your Special Skill with Ruin. Dealing damage adds a stack of Ruin for 10 seconds. Activating the skill detonates all Ruin stacks, dealing 300% damage plus 120% damage per stack of Ruin. Recharges after 8 seconds.",
+            "stack": "+10 additional Ruin seconds, and +8 seconds additional skill recharge.",
+            "unlock": "Kill 15 Bosses in a single run.",
+            "itemClass": "Lunar",
+            "hasVideo": false,
+            "imgName": "item_Essence_of_Heresy.png",
+            "vidName": "usage_Essence_of_Heresy.mp4"
+        },
         "Effigy_of_Grief": {
             "name": "Effigy of Grief",
             "description": "All characters wihtin are slowed by 50% and have their armor reduced by 20. Can place up to 5.",
@@ -1118,6 +1163,16 @@
             "hasVideo": false,
             "imgName": "item_Gesture_of_the_Drowned.png",
             "vidName": "usage_Gesture_of_the_Drowned.mp4"
+        },
+        "Hooks_of_heresy": {
+            "name": "Hooks of heresy",
+            "description": "Replace your Secondary Skill with Slicing Maelstrom. Charge up a projectile that deals 175% damager per second to nearby enemies, exploding after 3 seconds to deal 700% damage and root enemies for 3 seconds. Recharges after 5 seconds.",
+            "stack": "+3 seconds root time, +5 seconds skill recharge time.",
+            "itemClass": "Lunar",
+            "unlock": "Kill 15 Bosses in a single run.",
+            "hasVideo": false,
+            "imgName": "item_Hooks_of_heresy.png",
+            "vidName": "usage_Hooks_of_heresy.mp4"
         },
         "Glowing_Meteorite": {
             "name": "Glowing Meteorite",
