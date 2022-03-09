@@ -27,6 +27,10 @@
     margin: 0.2em;
 }
 
+.description {
+    display: inline;
+}
+
 .infoTitle {
     font-family: rainFontBold;
     font-size: 2em;
