@@ -44,7 +44,7 @@ function InfoPanel({ item, folderName, clearSelectedItem }) {
 
         if (item.description) {
             if (item.color) {
-                info.push(<div key='description'>{GenerateDescription({ ...item.color }, item.description)}</div>);
+                info.push(<div key='description'>{GenerateDescription([ ...item.color ], item.description)}</div>);
             } else {
                 info.push(<div key='description'>{item.description}</div>);
             }
@@ -91,34 +91,47 @@ function InfoPanel({ item, folderName, clearSelectedItem }) {
 }
 
 //method to go though the description text, and re-color stack components by seperating the text into divs
-const GenerateDescription = (color, description, constructedDescription = []) => {
-    console.log(color);
-    let lowestIndex;
-    let lowestWord;
-    for (const word of Object.keys(color)) {
-        if (word.length !== 0) {
-            const index = description.indexOf(word);
-            if (index !== -1 && (lowestIndex === undefined || index < lowestIndex)) {
-                lowestIndex = index;
-                lowestWord = word;
+const GenerateDescription = (colorList, description, constructedDescription = []) => {
+    
+    //if we've used up all our color modifiers supplied, tack on the last bit of the description and finish
+    if (colorList.length === 0) { 
+        constructedDescription.push(
+            <div key={description + Math.random()} className={styles.description}>{description}</div>
+        );
+        return constructedDescription;
+    }
+
+    //get the first item from the color list and search for matches in the description
+    const [word, color] = Object.entries(colorList[0])[0];
+
+    if (word.length === 0 || color.length === 0) {
+        console.log(`malformed color entry: ${word} : ${color}`);
+    } else {
+        const index = description.indexOf(word);
+        if (index !== -1) {
+            // if there's text before the match, make sure it gets added to the constructed description
+            if (index > 0) {
+
+                const textBeforeMatch = description.slice(0, index);
+                constructedDescription.push(
+                    <div key={textBeforeMatch + Math.random()} className={styles.description}>{textBeforeMatch}</div>
+                );
             }
+
+            // add the match to the constructed description
+            const matchText = description.slice(index, index + word.length);
+            constructedDescription.push(
+                <div key={matchText + Math.random()} style={{color: color}} className={styles.description}>{matchText}</div>
+            );
+
+            //remove the description chunks we've processed
+            description = description.slice(index + word.length);
         }
     }
 
-    if (lowestIndex !== undefined) {
-        constructedDescription.push(
-            <div key={description.slice(0, lowestIndex) + Math.random()} className={styles.description} >{description.slice(0, lowestIndex)}</div>
-        ); 
-        constructedDescription.push(
-            <div key={lowestWord + Math.random()} className={styles.description} style={{color: color[lowestWord]}} >{lowestWord}</div>
-        );
-
-        //remove the entry before we run another iteration
-        delete color[lowestWord];
-        return GenerateDescription(color, description.slice(lowestIndex + lowestWord.length), constructedDescription);
-    }
-    constructedDescription.push(<div key='end' className={styles.description}>{description}</div>);
-    return constructedDescription;
+    // remove color we just searched for
+    colorList.shift();
+    return GenerateDescription(colorList, description, constructedDescription);
 }
 
 export default InfoPanel;

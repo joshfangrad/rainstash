@@ -3,9 +3,11 @@
         "Animated Mechanism": {
             "name": "Animated Mechanism",
             "description": "Shoot a projectile at the nearest enemy every 3 seconds. Projectiles deal 200% (+100% per stack) damage on impact. Cooldown is reduced with less hp, up to 0.42 times per second at 1 hp.",
-            "color": {
-                "(+100% per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+100% per stack)": "green"
+                }
+            ],
             "itemClass": "Boss Items",
             "imgName": "Animated Mechanism.png",
             "vidName": "Animated Mechanism.mp4",
@@ -22,9 +24,11 @@
         "Lifetime Fortune": {
             "name": "Lifetime Fortune",
             "description": "Grants a buff every 10,000 gold earned that grants +50% health and damage for 30 (+30 per stack) seconds.",
-            "color": {
-                "(+30 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+30 per stack)": "green"
+                }
+            ],
             "itemClass": "Boss Items",
             "imgName": "Lifetime Fortune.png",
             "vidName": "Lifetime Fortune.mp4",
@@ -33,9 +37,11 @@
         "Scalding Scale": {
             "name": "Scalding Scale",
             "description": "Increases armor by 60% (+60% per stack).",
-            "color": {
-                "(+60% per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+60% per stack)": "green"
+                }
+            ],
             "itemClass": "Boss Items",
             "imgName": "Scalding Scale.png",
             "vidName": "Scalding Scale.mp4",
@@ -44,10 +50,14 @@
         "Shell Piece": {
             "name": "Shell Piece",
             "description": "When taking damage that would kill you, instead receive 2 seconds of invincibility. Can activate 1 (+1 per stack) time(s) per stage.",
-            "color": {
-                "(+1 per stack)": "green",
-                "(s)": "gray"
-            },
+            "color": [
+                {
+                    "(+1 per stack)": "green"
+                },
+                {
+                    "(s)": "gray"
+                }
+            ],
             "itemClass": "Boss Items",
             "imgName": "Shell Piece.png",
             "vidName": "Shell Piece.mp4",
@@ -56,9 +66,11 @@
         "Toxic Tail": {
             "name": "Toxic Tail",
             "description": "Spawn 2 (+2 per stack) friendly boars which attack enemies.",
-            "color": {
-                "(+2 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+2 per stack)": "green"
+                }
+            ],
             "itemClass": "Boss Items",
             "imgName": "Toxic Tail.png",
             "vidName": "Toxic Tail.mp4",
@@ -67,9 +79,11 @@
         "Unearthly Lamp": {
             "name": "Unearthly Lamp",
             "description": "Every second attack fires 1 (+1 per stack) projectile dealing 125% damage.",
-            "color": {
-                "(+1 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+1 per stack)": "green"
+                }
+            ],
             "itemClass": "Boss Items",
             "imgName": "Unearthly Lamp.png",
             "vidName": "Unearthly Lamp.mp4",
@@ -79,9 +93,14 @@
             "name": "Armed Backpack",
             "description": "18.5% (+6.5% per stack) chance of firing a bullet behind you for 150% damage. 100% chance at 14 stacks.",
             "maxStacks": 14,
-            "color": {
-                "(+6.5% per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+6.5% per stack)": "green"
+                },
+                {
+                    "100% chance at 14 stacks.": "grey"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Armed Backpack.png",
             "vidName": "Armed Backpack.mp4",
@@ -90,9 +109,11 @@
         "Brass Knuckles": {
             "name": "Brass Knuckles",
             "description": "Deal 35% extra damage to enemies within 30 (+13 per stack) pixels.",
-            "color": {
-                "(+13 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+13 per stack)": "green"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Brass Knuckles.png",
             "vidName": "Brass Knuckles.mp4",
@@ -101,10 +122,14 @@
         "Coffee Bag": {
             "name": "Coffee Bag",
             "description": "Increases movement speed by 10% (+10% per stack) and attack speed by 7.5% (+7.5% per stack).",
-            "color": {
-                "(+10% per stack)": "green",
-                "(+7.5% per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+10% per stack)": "green"
+                },
+                {
+                    "(+7.5% per stack)": "green"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Coffee Bag.png",
             "vidName": "Coffee Bag.mp4",
@@ -114,9 +139,11 @@
             "name": "Detritive Trematode",
             "description": "Attacked enemies receive damage over time (4% max hp per second for 7 seconds) when they drop below 3% hp. Stacks non-linearly increase the health threshold, up to 100% at 35 stacks.",
             "maxStacks": 35,
-            "color": {
-                "(4% max hp per second for 7 seconds)": "gray" 
-            },
+            "color": [
+                {
+                    "(4% max hp per second for 7 seconds)": "gray"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Detritive Trematode.png",
             "vidName": "Detritive Trematode.mp4",
@@ -125,9 +152,11 @@
         "Diary": {
             "name": "Diary",
             "description": "Earn 0.84 (+0.84 per stack) experience points per second.",
-            "color": {
-                "(+0.84 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+0.84 per stack)": "green"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Diary.png",
             "vidName": "Diary.mp4",
@@ -136,9 +165,11 @@
         "Distinctive Stick": {
             "name": "Distinctive Stick",
             "description": "Grows a tree at the Teleporter's location, healing players within 100 (+40 per stack) pixels.",
-            "color": {
-                "(+40 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+40 per stack)": "green"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Distinctive Stick.png",
             "vidName": "Distinctive Stick.mp4",
@@ -147,9 +178,11 @@
         "Dormant Fungus": {
             "name": "Dormant Fungus",
             "description": "While moving, heal around 1% (non-linear increase per stack) of your health every 1.8 seconds.",
-            "color": {
-                "(non-linear increase per stack)": "green"
-            },
+            "color": [
+                {
+                    "(non-linear increase per stack)": "green"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Dormant Fungus.png",
             "vidName": "Dormant Fungus.mp4",
@@ -158,9 +191,11 @@
         "Fork": {
             "name": "Fork",
             "description": "Increases base damage by 25% (+25% per stack).",
-            "color": {
-                "(+25% per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+25% per stack)": "green"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Fork.png",
             "vidName": "Fork.mp4",
@@ -169,9 +204,11 @@
         "Guarding Amulet": {
             "name": "Guarding Amulet",
             "description": "Reduces damage taken from behind you by 40% (non-linear increase per stack).",
-            "color": {
-                "(non-linear increase per stack)": "green"
-            },
+            "color": [
+                {
+                    "(non-linear increase per stack)": "green"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Guarding Amulet.png",
             "vidName": "Guarding Amulet.mp4",
@@ -180,11 +217,17 @@
         "Ice Tool": {
             "name": "Ice Tool",
             "description": "Gain 1 (+1 per stack) extra jump(s) on walls, increases speed by 30% (+30% per stack) while climbing.",
-            "color": {
-                "(+1 per stack)": "green",
-                "(s)": "gray",
-                "(+30% per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+1 per stack)": "green"
+                },
+                {
+                    "(s)": "gray"
+                },
+                {
+                    "(+30% per stack)": "green"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Ice Tool.png",
             "vidName": "Ice Tool.mp4",
@@ -193,11 +236,17 @@
         "Malice": {
             "name": "Malice",
             "description": "Dealt damage spreads to 1 (+1 per stack) enemy/enemies within 40 (+5 per stack) pixels for 55% damage.",
-            "color": {
-                "(+1 per stack)": "green",
-                "/enemies": "gray",
-                "(+5 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+1 per stack)": "green"
+                },
+                {
+                    "/enemies": "gray"
+                },
+                {
+                    "(+5 per stack)": "green"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Malice.png",
             "vidName": "Malice.mp4",
@@ -206,10 +255,14 @@
         "Molten Coin": {
             "name": "Molten Coin",
             "description": "6% chance to blaze enemies for 6 (+4 per stack) seconds, and earn +$1 (+$1 per stack). Blaze deals 20% damage 1 per second.",
-            "color": {
-                "(+4 per stack)": "green",
-                "(+$1 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+4 per stack)": "green"
+                },
+                {
+                    "(+$1 per stack)": "green"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Molten Coin.png",
             "vidName": "Molten Coin.mp4",
@@ -219,9 +272,14 @@
             "name": "Needles",
             "description": "4% (+2% per stack) chance to mark enemies on hit for 3 seconds. Marked enemies receive 100% extra critical strike chance. 100% chance to mark at 49 stacks.",
             "maxStacks": 49,
-            "color": {
-                "(+2% per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+2% per stack)": "green"
+                },
+                {
+                    "100% chance to mark at 49 stacks.": "grey"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Needles.png",
             "vidName": "Needles.mp4",
@@ -230,9 +288,11 @@
         "Wonder Herbs": {
             "name": "Wonder Herbs",
             "description": "Increases healing from all sources by 12% (+12% per stack).",
-            "color": {
-                "(+12% per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+12% per stack)": "green"
+                }
+            ],
             "itemClass": "Common Items",
             "imgName": "Wonder Herbs.png",
             "vidName": "Wonder Herbs.mp4",
@@ -242,9 +302,11 @@
             "name": "Curse of Affliction",
             "description": "Falling below 50% (+15% per stack) health gives negative regeneration.",
             "maxStacks": 5,
-            "color": {
-                "(+15% per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+15% per stack)": "red"
+                }
+            ],
             "itemClass": "Curse Items",
             "imgName": "Curse of Affliction.png",
             "vidName": "Curse of Affliction.mp4",
@@ -253,12 +315,17 @@
         "Curse of Confusion": {
             "name": "Curse of Confusion",
             "description": "every (1 / stacks) minute, Controls are reversed for 5 (+ 6 / stacks) seconds.",
-            "color": {
-                "1 / stacks": "red",
-                "+ 6": "red",
-                "/ stacks": "green"
-
-            },
+            "color": [
+                {
+                    "1 / stacks": "red"
+                },
+                {
+                    "+ 6": "red"
+                },
+                {
+                    "/ stacks": "green"
+                }
+            ],
             "itemClass": "Curse Items",
             "imgName": "Curse of Confusion.png",
             "vidName": "Curse of Confusion.mp4",
@@ -267,9 +334,11 @@
         "Curse of Impairment": {
             "name": "Curse of Impairment",
             "description": "33% chance to miss an attack. Stacks logarithmically grow the chance.",
-            "color": {
-                "Stacks logarithmically grow the chance": "red"
-            },
+            "color": [
+                {
+                    "Stacks logarithmically grow the chance": "red"
+                }
+            ],
             "itemClass": "Curse Items",
             "imgName": "Curse of Impairment.png",
             "vidName": "Curse of Impairment.mp4",
@@ -279,6 +348,11 @@
             "name": "Curse of Misfortune",
             "description": "Reduce the rarity of nearby items, rerolling them. A second stack guarantees Common items.",
             "maxStacks": 2,
+            "color": [
+                {
+                    "A second stack guarantees Common items.": "red"
+                }
+            ],
             "itemClass": "Curse Items",
             "imgName": "Curse of Misfortune.png",
             "vidName": "Curse of Misfortune.mp4",
@@ -287,9 +361,11 @@
         "Curse of Mortality": {
             "name": "Curse of Mortality",
             "description": "Consecutive hits deal more damage to you. Stacks increase time frame for consecutive hits.",
-            "color": {
-                "Stacks increase time frame for consecutive hits.": "red"
-            },
+            "color": [
+                {
+                    "Stacks increase time frame for consecutive hits.": "red"
+                }
+            ],
             "itemClass": "Curse Items",
             "imgName": "Curse of Mortality.png",
             "vidName": "Curse of Mortality.mp4",
@@ -298,9 +374,11 @@
         "Curse of Poverty": {
             "name": "Curse of Poverty",
             "description": "Lose gold every second. Stacks increase gold loss.",
-            "color": {
-                "Stacks increase gold loss": "green"
-            },
+            "color": [
+                {
+                    "Stacks increase gold loss": "red"
+                }
+            ],
             "itemClass": "Curse Items",
             "imgName": "Curse of Poverty.png",
             "vidName": "Curse of Poverty.mp4",
@@ -309,6 +387,7 @@
         "Paul's Motivational Tape": {
             "name": "Paul's Motivational Tape",
             "description": "Increased will to fight!",
+            "color": [],
             "itemClass": "Misc Items",
             "imgName": "Paul's Motivational Tape.png",
             "vidName": "Paul's Motivational Tape.mp4",
@@ -317,9 +396,11 @@
         "Bane Flask": {
             "name": "Bane Flask",
             "description": "Killed enemies spread their debuffs and DOT effects to nearby enemies. Applies bane, dealing 30% damage every 2 seconds. Stacks increase radus by 100%.",
-            "color": {
-                "Stacks increase radus by 100%": "green"
-            },
+            "color": [
+                {
+                    "Stacks increase radus by 100%": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Bane Flask.png",
             "vidName": "Bane Flask.mp4",
@@ -328,9 +409,11 @@
         "Composite Injector": {
             "name": "Composite Injector",
             "description": "Merge one dropped use item with the one equipped. 1 Additional merge per stack.",
-            "color": {
-                "1 Additional merge per stack": "green"
-            },
+            "color": [
+                {
+                    "1 Additional merge per stack": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Composite Injector.png",
             "vidName": "Composite Injector.mp4",
@@ -339,9 +422,11 @@
         "Droid Head": {
             "name": "Droid Head",
             "description": "Spawns a helping drone for 11 (+4 per stack) seconds after killing boss enemies.",
-            "color": {
-                "(+4 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+4 per stack)": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Droid Head.png",
             "vidName": "Droid Head.mp4",
@@ -350,9 +435,11 @@
         "Erratic Gadget": {
             "name": "Erratic Gadget",
             "description": "Critical strikes deal 50% (+50% per stack) extra damage.",
-            "color": {
-                "(+50% per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+50% per stack)": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Erratic Gadget.png",
             "vidName": "Erratic Gadget.mp4",
@@ -361,9 +448,11 @@
         "Galvanic Core": {
             "name": "Galvanic Core",
             "description": "10% (+7% per stack) chance to stun. Stunned enemies debuff all nearby enemies, reducing their hp by 20%, speed by 0.8 and damage by 30%.",
-            "color": {
-                "(+7% per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+7% per stack)": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Galvanic Core.png",
             "vidName": "Galvanic Core.mp4",
@@ -372,9 +461,11 @@
         "Green Chocolate": {
             "name": "Green Chocolate",
             "description": "Receiving 25% or more of your health as damage increases your critical chance and damage for 5 (+4 per stack) seconds.",
-            "color": {
-                "(+4 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+4 per stack)": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Green Chocolate.png",
             "vidName": "Green Chocolate.mp4",
@@ -383,9 +474,11 @@
         "Insecticide": {
             "name": "Insecticide",
             "description": "All attacks poison enemies for 25% damage over 4 (+2 per stack) seconds.",
-            "color": {
-                "(+2 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+2 per stack)": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Insecticide.png",
             "vidName": "Insecticide.mp4",
@@ -394,9 +487,11 @@
         "Juddering Egg": {
             "name": "Juddering Egg",
             "description": "Gain 1 (+1 per stack) young wurm follower which attacks nearby enemies.",
-            "color": {
-                "(+1 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+1 per stack)": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Juddering Egg.png",
             "vidName": "Juddering Egg.mp4",
@@ -405,9 +500,11 @@
         "Nkota's Heritage": {
             "name": "Nkota's Heritage",
             "description": "Creates a free chest on level up. Stacks increase the chance of higher rarity chests.",
-            "color": {
-                "Stacks increase the chance of higher rarity chests": "green"
-            },
+            "color": [
+                {
+                    "Stacks increase the chance of higher rarity chests": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Nkota's Heritage.png",
             "vidName": "Nkota's Heritage.mp4",
@@ -417,9 +514,11 @@
             "name": "Portable Reactor",
             "description": "Become invincible for 40 (+15 per stack) seconds after entering a stage. Maximum of 150 seconds at 8 stacks.",
             "maxStacks": 8,
-            "color": {
-                "(+15 per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+15 per stack)": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Portable Reactor.png",
             "vidName": "Portable Reactor.mp4",
@@ -429,9 +528,11 @@
             "name": "Swift Skateboard",
             "description": "Allows for movement during skill use. Stacks increase speed during skill use by +70%.",
             "maxStacks": 5,
-            "color": {
-                "Stacks increase speed during skill use by +70%": "green"
-            },
+            "color": [
+                {
+                    "Stacks increase speed during skill use by +70%": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Swift Skateboard.png",
             "vidName": "Swift Skateboard.mp4",
@@ -440,9 +541,11 @@
         "Toys": {
             "name": "Baby's Toys",
             "description": "-3 levels on pickup, however you keep all stats (Reduced level up experience requirement). Further stacks repeat this effect.",
-            "color": {
-                "Further stacks repeat this effect": "green"
-            },
+            "color": [
+                {
+                    "Further stacks repeat this effect": "green"
+                }
+            ],
             "itemClass": "Rare Items",
             "imgName": "Toys.png",
             "vidName": "Toys.mp4",
@@ -451,9 +554,11 @@
         "Relic of Duality": {
             "name": "Relic of Duality",
             "description": "All attacks apply burning damage over time, getting hit freezes you. Stacks increase duration of the effects.",
-            "color": {
-                "Stacks increase duration of the effects": "gray"
-            },
+            "color": [
+                {
+                    "Stacks increase duration of the effects": "gray"
+                }
+            ],
             "itemClass": "Relic Items",
             "imgName": "Relic of Duality.png",
             "vidName": "Relic of Duality.mp4",
@@ -462,10 +567,14 @@
         "Relic of Echelon": {
             "name": "Relic of Echelon",
             "description": "Each use item activation grants you an 8 (+6 per stack) second buff that increases health by 5000 and damage by 150. Increases use item cooldown by 15% (+15% per stack).",
-            "color": {
-                "(+6 per stack)": "green",
-                "(+15% per stack)": "red"
-            },
+            "color": [
+                {
+                    "(+6 per stack)": "green"
+                },
+                {
+                    "(+15% per stack)": "red"
+                }
+            ],
             "itemClass": "Relic Items",
             "imgName": "Relic of Echelon.png",
             "vidName": "Relic of Echelon.mp4",
@@ -484,9 +593,11 @@
         "Relic of Extinction": {
             "name": "Relic of Extinction",
             "description": "A black hole follows you, dealing extreme damage on proximity. Stacks increase the size of the black hole.",
-            "color": {
-                "Stacks increase the size of the black hole": "green"
-            },
+            "color": [
+                {
+                    "Stacks increase the size of the black hole": "green"
+                }
+            ],
             "itemClass": "Relic Items",
             "imgName": "Relic of Extinction.png",
             "vidName": "Relic of Extinction.mp4",
@@ -495,16 +606,23 @@
         "Relic of Force": {
             "name": "Relic of Force",
             "description": "Increases damage by 100% (+100%(multiplicative) per stack), reduces attack speed and cooldowns by 40% (-40%(multiplicative) per stack).",
-            "stack": "Further increases cooldowns and reduces attack speed multiplicatively.",
-            "color": {
-                "(+100%": "green",
-                "(multiplicative)": "gray",
-                " per stack)": "green",
-
-                "(-40%": "green",
-                "(multiplicative)": "gray",
-                " per stack)": "green"
-            },
+            "color": [
+                {
+                    "(+100%": "green"
+                },
+                {
+                    "(multiplicative)": "gray"
+                },
+                {
+                    " per stack)": "green"
+                },
+                {
+                    "(-40%": "green"
+                },
+                {
+                    "(multiplicative)": "gray"
+                }
+            ],
             "itemClass": "Relic Items",
             "imgName": "Relic of Force.png",
             "vidName": "Relic of Force.mp4",
@@ -512,11 +630,7 @@
         },
         "Relic of Gratification": {
             "name": "Relic of Gratification",
-            "description": "Enemies drop 150% experience and gold BUT enemies deal 150% damage to you.",
-            "stack": "Stacks multiplicatively.",
-            "color": {
-                "": "green"
-            },
+            "description": "Enemies drop 150% experience and gold, but enemies deal 150% damage to you. Stacks multiplicatively.",
             "itemClass": "Relic Items",
             "imgName": "Relic of Gratification.png",
             "vidName": "Relic of Gratification.mp4",
@@ -524,11 +638,15 @@
         },
         "Relic of Mass": {
             "name": "Relic of Mass",
-            "description": "Increases health by 100% (+100% per stack), speed requires momentum. ",
-            "stack": "Further increases health by 100% health, slower momentum buildup.",
-            "color": {
-                "(+100% per stack)": "green"
-            },
+            "description": "Increases health by 100% (+100% per stack), speed requires momentum (slower momentum buildup per stack). ",
+            "color": [
+                {
+                    "(+100% per stack)": "green"
+                },
+                {
+                    "(slower momentum buildup per stack)": "red"
+                }
+            ],
             "itemClass": "Relic Items",
             "imgName": "Relic of Mass.png",
             "vidName": "Relic of Mass.mp4",
@@ -536,11 +654,7 @@
         },
         "Relic of Vitality": {
             "name": "Relic of Vitality",
-            "description": "Increases regeneration by 12 hp/s, reduces health by 75% and armor by 50%.",
-            "stack": "Stacks multiplicatively.",
-            "color": {
-                "": "green"
-            },
+            "description": "Increases regeneration by 12 hp/s, reduces health by 75% and armor by 50%. Stacks multiplicatively.",
             "itemClass": "Relic Items",
             "imgName": "Relic of Vitality.png",
             "vidName": "Relic of Vitality.mp4",
@@ -549,10 +663,7 @@
         "Augury": {
             "name": "Augury",
             "description": "Receiving damage charges dark energy. Unleash a devastating blackout on full charge.",
-            "stack": "None.",
-            "color": {
-                "": "green"
-            },
+            "maxStacks": 1,
             "itemClass": "Sibyline Items",
             "imgName": "Augury.png",
             "vidName": "Augury.mp4",
@@ -561,10 +672,7 @@
         "Entangled Energy": {
             "name": "Entangled Energy",
             "description": "Create an energetic discharge if 4 or more enemies stand in a line in front of you.",
-            "stack": "None.",
-            "color": {
-                "": "green"
-            },
+            "maxStacks": 1,
             "itemClass": "Sibyline Items",
             "imgName": "Entangled Energy.png",
             "vidName": "Entangled Energy.mp4",
@@ -573,9 +681,7 @@
         "Nucleus Gems": {
             "name": "Nucleus Gems",
             "description": "Gold drops become sharp gems that deal 200% damage per second while in contact with enemies.",
-            "color": {
-                "": "green"
-            },
+            "maxStacks": 1,
             "itemClass": "Sibyline Items",
             "imgName": "Nucleus Gems.png",
             "vidName": "Nucleus Gems.mp4",
@@ -584,10 +690,7 @@
         "Oracle's Ordeal": {
             "name": "Oracle's Ordeal",
             "description": "All relevant map interactables are shown by arrows.",
-            "stack": "None.",
-            "color": {
-                "": "green"
-            },
+            "maxStacks": 1,
             "itemClass": "Sibyline Items",
             "imgName": "Oracle's Ordeal.png",
             "vidName": "Oracle's Ordeal.mp4",
@@ -596,10 +699,7 @@
         "Stirring Soul": {
             "name": "Stirring Soul",
             "description": "Killed enemies leave a soul. Souls have a chance of turning into items on contact.",
-            "stack": "None.",
-            "color": {
-                "": "green"
-            },
+            "maxStacks": 1,
             "itemClass": "Sibyline Items",
             "imgName": "Stirring Soul.png",
             "vidName": "Stirring Soul.mp4",
@@ -608,9 +708,7 @@
         "Thriving Growth": {
             "name": "Thriving Growth",
             "description": "Killed enemies leave flowers which increase movement speed by 20% and heal you by 2% of your max health every second.",
-            "color": {
-                "": "green"
-            },
+            "maxStacks": 1,
             "itemClass": "Sibyline Items",
             "imgName": "Thriving Growth.png",
             "vidName": "Thriving Growth.mp4",
@@ -619,10 +717,7 @@
         "Yearning Demise": {
             "name": "Yearning Demise",
             "description": "Picking up items annihilates the nearest enemies.",
-            "stack": "None.",
-            "color": {
-                "": "green"
-            },
+            "maxStacks": 1,
             "itemClass": "Sibyline Items",
             "imgName": "Yearning Demise.png",
             "vidName": "Yearning Demise.mp4",
@@ -630,11 +725,12 @@
         },
         "Balloon": {
             "name": "Balloon",
-            "description": "Decreases your gravity by 30%.",
-            "stack": "Further decreases gravity multiplicatively.",
-            "color": {
-                "": "green"
-            },
+            "description": "Decreases your gravity by 30%. Stacks further decrease gravity multiplicatively.",
+            "color": [
+                {
+                    "Stacks further decrease gravity multiplicatively.": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Balloon.png",
             "vidName": "Balloon.mp4",
@@ -642,11 +738,12 @@
         },
         "Broken Blood Tester": {
             "name": "Broken Blood Tester",
-            "description": "Earn +2 gold for every 15 hp regenerated.",
-            "stack": "Earn +2 additional gold",
-            "color": {
-                "": "green"
-            },
+            "description": "Earn +2 (+2 per stack) gold for every 15 hp regenerated.",
+            "color": [
+                {
+                    "(+2 per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Broken Blood Tester.png",
             "vidName": "Broken Blood Tester.mp4",
@@ -654,11 +751,12 @@
         },
         "Crowning Valiance": {
             "name": "Crowning Valiance",
-            "description": "All stats are increased when a boss is in proximity.",
-            "stack": "Further increases all stats.",
-            "color": {
-                "": "green"
-            },
+            "description": "All stats are increased when a boss is in proximity. Stacks boost stats further.",
+            "color": [
+                {
+                    "Stacks boost stats further.": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Crowning Valiance.png",
             "vidName": "Crowning Valiance.mp4",
@@ -666,11 +764,12 @@
         },
         "Cryptic Source": {
             "name": "Cryptic Source",
-            "description": "Changing direction creates bursts of energy that deal 70% damage.",
-            "stack": "Increases damage by 55%.",
-            "color": {
-                "": "green"
-            },
+            "description": "Changing direction creates bursts of energy that deal 70% (+55% per stack) damage.",
+            "color": [
+                {
+                    "(+55% per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Cryptic Source.png",
             "vidName": "Cryptic Source.mp4",
@@ -678,11 +777,12 @@
         },
         "Field Accelerator": {
             "name": "Field Accelerator",
-            "description": "Teleporters charge 100% faster when no enemies are around.",
-            "stack": "Further increases charge speed by 100%",
-            "color": {
-                "": "green"
-            },
+            "description": "Teleporters charge 100% (+100% per stack) faster when no enemies are around.",
+            "color": [
+                {
+                    "(+100% per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Field Accelerator.png",
             "vidName": "Field Accelerator.mp4",
@@ -690,11 +790,12 @@
         },
         "Gold Medal": {
             "name": "Gold Medal",
-            "description": "Spending gold heals you for 5 seconds.",
-            "stack": "Further increases duration by 2 seconds.",
-            "color": {
-                "": "green"
-            },
+            "description": "Spending gold heals you for 5 (+2 per stack) seconds.",
+            "color": [
+                {
+                    "(+2 per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Gold Medal.png",
             "vidName": "Gold Medal.mp4",
@@ -702,11 +803,12 @@
         },
         "Hottest Sauce": {
             "name": "Hottest Sauce",
-            "description": "Activating a use item burns the ground and all nearby enemies for 5 seconds.",
-            "stack": "Further increases duration by 4 seconds.",
-            "color": {
-                "": "green"
-            },
+            "description": "Activating a use item burns the ground and all nearby enemies for 5 (+4 per stack) seconds.",
+            "color": [
+                {
+                    "(+4 per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Hottest Sauce.png",
             "vidName": "Hottest Sauce.mp4",
@@ -714,11 +816,15 @@
         },
         "Hunter's Sigil": {
             "name": "Hunter's Sigil",
-            "description": "Standing still increases armor by 15 and Critical Strike chance by 25%.",
-            "stack": "Further increases armor by 10 and critical chance by 20%%.",
-            "color": {
-                "": "green"
-            },
+            "description": "Standing still increases armor by 15 (+10 per stack) and Critical Strike chance by 25% (+20% per stack).",
+            "color": [
+                {
+                    "(+10 per stack)": "green"
+                },
+                {
+                    "(+20% per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Hunter's Sigil.png",
             "vidName": "Hunter's Sigil.mp4",
@@ -726,11 +832,12 @@
         },
         "Low Quality Speakers": {
             "name": "Low Quality Speakers",
-            "description": "Earn a speed boost at 45% health or lower.",
-            "stack": "further increases duration.",
-            "color": {
-                "": "green"
-            },
+            "description": "Earn a speed boost at 45% health or lower. Stacks increase boost duration.",
+            "color": [
+                {
+                    "Stacks increase boost duration.": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Low Quality Speakers.png",
             "vidName": "Low Quality Speakers.mp4",
@@ -738,11 +845,12 @@
         },
         "Metachronic Trinket": {
             "name": "Metachronic Trinket",
-            "description": "Teleporter charge time is reduced by 10 seconds",
-            "stack": "Further decreases the required time by 10 seconds.",
-            "color": {
-                "": "green"
-            },
+            "description": "Teleporter charge time is reduced by 10 (+10 per stack) seconds",
+            "color": [
+                {
+                    "(+10 per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Metachronic Trinket.png",
             "vidName": "Metachronic Trinket.mp4",
@@ -750,11 +858,12 @@
         },
         "Poisonous Gland": {
             "name": "Poisonous Gland",
-            "description": "On getting hit while at full health, create a cloud of poison for 200% dps.",
-            "stack": "Further increases damage by 120%.",
-            "color": {
-                "": "green"
-            },
+            "description": "On getting hit while at full health, create a cloud of poison for 200% (+120% per stack) dps.",
+            "color": [
+                {
+                    "(+120% per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Poisonous Gland.png",
             "vidName": "Poisonous Gland.mp4",
@@ -762,11 +871,12 @@
         },
         "Prototype Jet Boots": {
             "name": "Prototype Jet Boots",
-            "description": "Explode on jump for 150% damage.",
-            "stack": "Further increases damage by 150%.",
-            "color": {
-                "": "green"
-            },
+            "description": "Explode on jump for 150% (+150% per stack) damage.",
+            "color": [
+                {
+                    "(+150% per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Prototype Jet Boots.png",
             "vidName": "Prototype Jet Boots.mp4",
@@ -774,11 +884,12 @@
         },
         "Roulette": {
             "name": "Roulette",
-            "description": "Get a random stat buff every minute.",
-            "stack": "Increases the stat buff's value by 50%",
-            "color": {
-                "": "green"
-            },
+            "description": "Get a random stat buff every minute. Stacks increase buff strength by 50%.",
+            "color": [
+                {
+                    "Stacks increase buff strength by 50%.": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Roulette.png",
             "vidName": "Roulette.mp4",
@@ -786,11 +897,12 @@
         },
         "Strange Can": {
             "name": "Strange Can",
-            "description": "8.5% chance to intoxicate enemies for 350% damage over time.",
-            "stack": "Further increases chance by 5%.",
-            "color": {
-                "": "green"
-            },
+            "description": "8.5% (+5% per stack) chance to intoxicate enemies for 350% damage over time.",
+            "color": [
+                {
+                    "(+5% per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Strange Can.png",
             "vidName": "Strange Can.mp4",
@@ -798,11 +910,12 @@
         },
         "Voltaic Gauge": {
             "name": "Voltaic Gauge",
-            "description": "Killing elites drops orbs that grant 60 temporary shield.",
-            "stack": "Further increases shield by 50.",
-            "color": {
-                "": "green"
-            },
+            "description": "Killing elites drops orbs that grant 60 (+50 per stack) temporary shield.",
+            "color": [
+                {
+                    "(+50 per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Voltaic Gauge.png",
             "vidName": "Voltaic Gauge.mp4",
@@ -810,11 +923,12 @@
         },
         "Watch Metronome": {
             "name": "Watch Metronome",
-            "description": "Standing Still for up to 4 seconds charges movement speed for up to 2 seconds.",
-            "stack": "Further increases duration by 2 seconds.",
-            "color": {
-                "": "green"
-            },
+            "description": "Standing Still for up to 4 seconds charges movement speed for up to 2 (+2 per stack) seconds.",
+            "color": [
+                {
+                    "(+2 per stack)": "green"
+                }
+            ],
             "itemClass": "Uncommon Items",
             "imgName": "Watch Metronome.png",
             "vidName": "Watch Metronome.mp4",
@@ -823,9 +937,6 @@
         "Ageless Totem": {
             "name": "Ageless Totem",
             "description": "Become an aspect of Ethereality. On use creates an Ethereal explosion.",
-            "color": {
-                "": "green"
-            },
             "embryo": "None.",
             "cooldown": 25,
             "itemClass": "Use Items",
@@ -836,9 +947,6 @@
         "Back Thruster": {
             "name": "Back Thruster",
             "description": "Gain an acceleration boost for 4 seconds.",
-            "color": {
-                "": "green"
-            },
             "embryo": "Doubled duration.",
             "cooldown": 45,
             "itemClass": "Use Items",
@@ -850,9 +958,6 @@
             "name": "Caustic Pearl",
             "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
             "description": "Leave a trail that deals 20% corrosive damage to enemies. All attacks deal corrosive damage.",
-            "color": {
-                "": "green"
-            },
             "itemClass": "Use Items",
             "imgName": "Caustic Pearl.png",
             "vidName": "Caustic Pearl.mp4",
@@ -861,9 +966,6 @@
         "Cloaking Headband": {
             "name": "Cloaking Headband",
             "description": "Become invisible for 16 seconds.",
-            "color": {
-                "": "green"
-            },
             "embryo": "Doubled active duration.",
             "cooldown": 45,
             "itemClass": "Use Items",
@@ -874,9 +976,6 @@
         "Counterfeit Teleporter": {
             "name": "Counterfeit Teleporter",
             "description": "Place a teleporter anywhere. The item is removed upon use.",
-            "color": {
-                "": "green"
-            },
             "embryo": "None.",
             "cooldown": 20,
             "itemClass": "Use Items",
@@ -888,9 +987,6 @@
             "name": "Eclipsing Shard",
             "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
             "description": "Nearby enemies receive the Void debuff.",
-            "color": {
-                "": "green"
-            },
             "itemClass": "Use Items",
             "imgName": "Eclipsing Shard.png",
             "vidName": "Eclipsing Shard.mp4",
@@ -900,9 +996,6 @@
             "name": "Fractured Crown",
             "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
             "description": "Every 10 seconds, fire a laser at the nearest enemy for 20x14% damage.",
-            "color": {
-                "": "green"
-            },
             "itemClass": "Use Items",
             "imgName": "Fractured Crown.png",
             "vidName": "Fractured Crown.mp4",
@@ -911,9 +1004,6 @@
         "Greater Warbanner": {
             "name": "Greater Warbanner",
             "description": "Place a warbanner which decreases skill cooldowns, increasing critical strike chance by 20 and health by 100.",
-            "color": {
-                "": "green"
-            },
             "embryo": "None.",
             "cooldown": 80,
             "itemClass": "Use Items",
@@ -924,9 +1014,6 @@
         "M.I.D.A.S": {
             "name": "M.I.D.A.S",
             "description": "Deducts 50% of your health, earning the same amount as gold.",
-            "color": {
-                "": "green"
-            },
             "embryo": "Earns you double the amount of gold.",
             "cooldown": 60,
             "itemClass": "Use Items",
@@ -937,9 +1024,6 @@
         "Mind-shift Gas": {
             "name": "Mind-shift Gas",
             "description": "Throw a canister which releases a gas for 10 seconds. The gas makes attack each other.",
-            "color": {
-                "": "green"
-            },
             "embryo": "Doubled duration.",
             "cooldown": 50,
             "itemClass": "Use Items",
@@ -950,9 +1034,6 @@
         "Pressurized Propeller": {
             "name": "Pressurized Propeller",
             "description": "Launch yourself high in the air.",
-            "color": {
-                "": "green"
-            },
             "embryo": "Launches you even further forward.",
             "cooldown": 15,
             "itemClass": "Use Items",
@@ -963,9 +1044,6 @@
         "Pylon Fragment": {
             "name": "Pylon Fragment",
             "description": "Partially restore the Pylon's health in the Red Plane, the item is removed upon use.",
-            "color": {
-                "": "green"
-            },
             "embryo": "None.",
             "cooldown": 20,
             "itemClass": "Use Items",
@@ -976,9 +1054,6 @@
         "Roller": {
             "name": "Roller",
             "description": "Launch a moving roller forwards, the roller stuns and ground enemies on contact for 6 seconds.",
-            "color": {
-                "": "green"
-            },
             "embryo": "Doubled stun duration.",
             "cooldown": 40,
             "itemClass": "Use Items",
@@ -989,9 +1064,6 @@
         "Seismic Oscillator": {
             "name": "Seismic Oscillator",
             "description": "Start an earthquake which damages all grounded enemies for 65% damage.",
-            "color": {
-                "": "green"
-            },
             "embryo": "Doubles the damage dealt.",
             "cooldown": 65,
             "itemClass": "Use Items",
@@ -1002,9 +1074,6 @@
         "Simple Magnet": {
             "name": "Simple Magnet",
             "description": "Pull surrounding pickups towards you. 10% Chance to unearth a treasure.",
-            "color": {
-                "": "green"
-            },
             "embryo": "Increases chance by 10%. Doubled active duration.",
             "cooldown": 20,
             "itemClass": "Use Items",
@@ -1015,9 +1084,6 @@
         "White Flag": {
             "name": "White Flag",
             "description": "Place a white flag which disallows everyone inside its radius to attack or take damage for 8 seconds.",
-            "color": {
-                "": "green"
-            },
             "embryo": "Doubled duration.",
             "cooldown": 45,
             "itemClass": "Use Items",
