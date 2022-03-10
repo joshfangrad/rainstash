@@ -10,7 +10,7 @@
             ],
             "unlock": "Complete a Teleporter Event.",
             "itemClass": "Common",
-            "imgName": "item_Armor-Piercing_Rounds.png",
+            "imgName": "item_Armor-Piercing_Rounds.webp",
             "vidName": "usage_Armor-Piercing_Rounds.mp4",
             "hasVideo": false
         },
@@ -24,7 +24,7 @@
             ],
             "unlock": "Fully charge a Teleporter without getting hit.",
             "itemClass": "Common",
-            "imgName": "item_Backup_Magazine.png",
+            "imgName": "item_Backup_Magazine.webp",
             "vidName": "usage_Backup_Magazine.mp4",
             "hasVideo": false
         },
@@ -37,7 +37,7 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Bison_Steak.png",
+            "imgName": "item_Bison_Steak.webp",
             "vidName": "usage_Bison_Steak.mp4",
             "hasVideo": false
         },
@@ -51,7 +51,7 @@
             ],
             "unlock": "Duplicate the same item 7 times in a row with a 3D Printer.",
             "itemClass": "Common",
-            "imgName": "item_Bundle_of_Fireworks.png",
+            "imgName": "item_Bundle_of_Fireworks.webp",
             "vidName": "usage_Bundle_of_Fireworks.mp4",
             "hasVideo": false
         },
@@ -68,7 +68,7 @@
             ],
             "maxStacks": 44,
             "itemClass": "Common",
-            "imgName": "item_Bustling_Fungus.png",
+            "imgName": "item_Bustling_Fungus.webp",
             "vidName": "usage_Bustling_Fungus.mp4",
             "hasVideo": false
         },
@@ -81,7 +81,7 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Cautious_Slug.png",
+            "imgName": "item_Cautious_Slug.webp",
             "vidName": "usage_Cautious_Slug.mp4",
             "hasVideo": false
         },
@@ -95,8 +95,24 @@
             ],
             "unlock": "Discover 10 unique white items.",
             "itemClass": "Common",
-            "imgName": "item_Crowbar.png",
+            "imgName": "item_Crowbar.webp",
             "vidName": "usage_Crowbar.mp4",
+            "hasVideo": false
+        },
+        "Delicate_Watch": {
+            "name": "Delicate Watch",
+            "description": "Increase damage by 20% (+20% per stack). Taking damage below 20% health breaks the item. Breaking can be prevented by Power Elixir.",
+            "color": [
+                {
+                    "(+20% per stack)": "green"
+                },
+                {
+                    "Breaking can be prevented by Power Elixir": "gray"
+                }
+            ],
+            "itemClass": "Common",
+            "imgName": "item_Delicate_Watch.webp",
+            "vidName": "usage_Delicate_Watch.mp4",
             "hasVideo": false
         },
         "Energy_Drink": {
@@ -108,7 +124,7 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Energy_Drink.png",
+            "imgName": "item_Energy_Drink.webp",
             "vidName": "usage_Energy_Drink.mp4",
             "hasVideo": false
         },
@@ -121,7 +137,7 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Focus_Crystal.png",
+            "imgName": "item_Focus_Crystal.webp",
             "vidName": "usage_Focus_Crystal.mp4",
             "hasVideo": false
         },
@@ -137,16 +153,15 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Gasoline.png",
+            "imgName": "item_Gasoline.webp",
             "vidName": "usage_Gasoline.mp4",
             "hasVideo": false
         },
         "Item_Scrap_White": {
             "name": "Item Scrap, White",
             "description": "Does nothing. Consumed first when using a 3D printer of the same tier.",
-            "color": [],
             "itemClass": "Common",
-            "imgName": "item_Item_Scrap_White.png",
+            "imgName": "item_Item_Scrap_White.webp",
             "vidName": "usage_Item_Scrap_White.mp4",
             "hasVideo": false
         },
@@ -160,7 +175,7 @@
             ],
             "maxStacks": 10,
             "itemClass": "Common",
-            "imgName": "item_Lens-Makers_Glasses.png",
+            "imgName": "item_Lens-Makers_Glasses.webp",
             "vidName": "usage_Lens-Makers_Glasses.mp4",
             "hasVideo": false
         },
@@ -174,8 +189,24 @@
             ],
             "unlock": "Defeat an elite monster.",
             "itemClass": "Common",
-            "imgName": "item_Medkit.png",
+            "imgName": "item_Medkit.webp",
             "vidName": "usage_Medkit.mp4",
+            "hasVideo": false
+        },
+        "Mocha": {
+            "name": "Mocha",
+            "description": "Increases attack speed by 7.5% (+7.5% per stack) and movement speed by 7% (+7% per stack).",
+            "color": [
+                {
+                    "(+7.5% per stack)": "green"
+                },
+                {
+                    "(+7% per stack)": "green"
+                }
+            ],
+            "itemClass": "Common",
+            "imgName": "item_Mocha.webp",
+            "vidName": "usage_Mocha.mp4",
             "hasVideo": false
         },
         "Monster_Tooth": {
@@ -187,8 +218,21 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Monster_Tooth.png",
+            "imgName": "item_Monster_Tooth.webp",
             "vidName": "usage_Monster_Tooth.mp4",
+            "hasVideo": false
+        },
+        "Oddly-Shaped_Opal": {
+            "name": "Oddly-shaped Opal",
+            "description": "Increase armor by 100 (+100 per stack) while out of danger. Once hit, Recharges after not taking damage for 7 seconds.",
+            "color": [
+                {
+                    "(+100 per stack)": "green"
+                }
+            ],
+            "itemClass": "Common",
+            "imgName": "item_Oddly-shaped_Opal.webp",
+            "vidName": "usage_Oddly-shaped_Opal.mp4",
             "hasVideo": false
         },
         "Pauls_Goat_Hoof": {
@@ -201,7 +245,7 @@
             ],
             "unlock": "Fail a Shrine of Chance 3 times in a row.",
             "itemClass": "Common",
-            "imgName": "item_Pauls_Goat_Hoof.png",
+            "imgName": "item_Pauls_Goat_Hoof.webp",
             "vidName": "usage_Pauls_Goat_Hoof.mp4",
             "hasVideo": false
         },
@@ -214,8 +258,21 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Personal_Shield_Generator.png",
+            "imgName": "item_Personal_Shield_Generator.webp",
             "vidName": "usage_Personal_Shield_Generator.mp4",
+            "hasVideo": false
+        },
+        "Power_Elixir": {
+            "name": "Power Elixir",
+            "description": "Taking damage to below 25% health consumes this item, healing you for 75% of maximum health. Can prevent the breaking of Delicate Watch.",
+            "color": [
+                {
+                    "Can prevent the breaking of Delicate Watch": "gray"
+                }
+            ],
+            "itemClass": "Common",
+            "imgName": "item_Power_Elixir.webp",
+            "vidName": "usage_Power_Elixir.mp4",
             "hasVideo": false
         },
         "Repulsion_Armor_Plate": {
@@ -227,24 +284,40 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Repulsion_Armor_Plate.png",
+            "imgName": "item_Repulsion_Armor_Plate.webp",
             "vidName": "usage_Repulsion_Armor_Plate.mp4",
+            "hasVideo": false
+        },
+        "Roll_of_Pennies": {
+            "name": "Roll of Pennies",
+            "description": "Gain 3 (+3 per stack) gold on taking damage from an enemy. Scales over time.",
+            "color": [
+                {
+                    "(+3 per stack)": "green"
+                },
+                {
+                    "Scales over time": "gray"
+                }
+            ],
+            "itemClass": "Common",
+            "imgName": "item_Roll_of_Pennies.webp",
+            "vidName": "usage_Roll_of_Pennies.mp4",
             "hasVideo": false
         },
         "Rusted_Key": {
             "name": "Rusted Key",
-            "description": "A hidden cache containing an item (80% chance Rare, 20% chance Legendary) will appear in a random location on each stage. Opening the cahce consumes this item.",
+            "description": "A hidden cache containing an item (80% Uncommon, 20% Legendary) will appear in a random location on each stage. Opening the cahce consumes this item.",
             "color": [
                 {
-                    "80% chance Rare": "#6BBC43"
+                    "80% Uncommon": "#6BBC43"
                 },
                 {
-                    "20% chance Legendary": "#DA5B4B"
+                    "20% Legendary": "#DA5B4B"
                 }
             ],
             "unlock": "Defeat a Teleporter boss in under 15 seconds.",
             "itemClass": "Common",
-            "imgName": "item_Rusted_Key.png",
+            "imgName": "item_Rusted_Key.webp",
             "vidName": "usage_Rusted_Key.mp4",
             "hasVideo": false
         },
@@ -257,7 +330,7 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Soldiers_Syringe.png",
+            "imgName": "item_Soldiers_Syringe.webp",
             "vidName": "usage_Soldiers_Syringe.mp4",
             "hasVideo": false
         },
@@ -270,7 +343,7 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Sticky_Bomb.png",
+            "imgName": "item_Sticky_Bomb.webp",
             "vidName": "usage_Sticky_Bomb.mp4",
             "hasVideo": false
         },
@@ -283,7 +356,7 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Stun_Grenade.png",
+            "imgName": "item_Stun_Grenade.webp",
             "vidName": "usage_Stun_Grenade.mp4",
             "hasVideo": false
         },
@@ -296,7 +369,7 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Topaz_Brooch.png",
+            "imgName": "item_Topaz_Brooch.webp",
             "vidName": "usage_Topaz_Brooch.mp4",
             "hasVideo": false
         },
@@ -310,7 +383,7 @@
             ],
             "unlock": "Die 5 times.",
             "itemClass": "Common",
-            "imgName": "item_Tougher_Times.png",
+            "imgName": "item_Tougher_Times.webp",
             "vidName": "usage_Tougher_Times.mp4",
             "hasVideo": false
         },
@@ -324,7 +397,7 @@
             ],
             "maxStacks": 7,
             "itemClass": "Common",
-            "imgName": "item_Tri-Tip_Dagger.png",
+            "imgName": "item_Tri-Tip_Dagger.webp",
             "vidName": "usage_Tri-Tip_Dagger.mp4",
             "hasVideo": false
         },
@@ -337,7 +410,7 @@
                 }
             ],
             "itemClass": "Common",
-            "imgName": "item_Warbanner.png",
+            "imgName": "item_Warbanner.webp",
             "vidName": "usage_Warbanner.mp4",
             "hasVideo": false
         },
@@ -350,7 +423,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_AtG_Missile_Mk_1.png",
+            "imgName": "item_AtG_Missile_Mk_1.webp",
             "vidName": "usage_AtG_Missile_Mk_1.mp4",
             "hasVideo": false
         },
@@ -363,7 +436,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Bandolier.png",
+            "imgName": "item_Bandolier.webp",
             "vidName": "usage_Bandolier.mp4",
             "hasVideo": false
         },
@@ -377,7 +450,7 @@
             ],
             "unlock": "Complete a Teleporter event with less than 10% health.",
             "itemClass": "Uncommon",
-            "imgName": "item_Berzerkers_Pauldron.png",
+            "imgName": "item_Berzerkers_Pauldron.webp",
             "vidName": "usage_Berzerkers_Pauldron.mp4",
             "hasVideo": false
         },
@@ -390,7 +463,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Chronobauble.png",
+            "imgName": "item_Chronobauble.webp",
             "vidName": "usage_Chronobauble.mp4",
             "hasVideo": false
         },
@@ -403,7 +476,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Death_Mark.png",
+            "imgName": "item_Death_Mark.webp",
             "vidName": "usage_Death_Mark.mp4",
             "hasVideo": false
         },
@@ -420,7 +493,7 @@
             ],
             "unlock": "Pick up 5 different types of equipment.",
             "itemClass": "Uncommon",
-            "imgName": "item_Fuel_Cell.png",
+            "imgName": "item_Fuel_Cell.webp",
             "vidName": "usage_Fuel_Cell.mp4",
             "hasVideo": false
         },
@@ -433,7 +506,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Ghors_Tome.png",
+            "imgName": "item_Ghors_Tome.webp",
             "vidName": "usage_Ghors_Tome.mp4",
             "hasVideo": false
         },
@@ -447,7 +520,7 @@
             ],
             "unlock": "Complete a Prismatic Trial.",
             "itemClass": "Uncommon",
-            "imgName": "item_Harvesters_Scythe.png",
+            "imgName": "item_Harvesters_Scythe.webp",
             "vidName": "usage_Harvesters_Scythe.mp4",
             "hasVideo": false
         },
@@ -460,8 +533,37 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Hopoo_Feather.png",
+            "imgName": "item_Hopoo_Feather.webp",
             "vidName": "usage_Hopoo_Feather.mp4",
+            "hasVideo": false
+        },
+        "Hunter's_Harpoon": {
+            "name": "Hunter's Harpoon",
+            "description": "Killing an enemy increases movement speed by 125%, fading over 1 (+0.5 per stack) second(s)",
+            "color": [
+                {
+                    "(+0.5 per stack)": "green"
+                },
+                {
+                    "(s)": "gray"
+                }
+            ],
+            "itemClass": "Uncommon",
+            "imgName": "item_Hunter's_Harpoon.webp",
+            "vidName": "usage_Hunter's_Harpoon.mp4",
+            "hasVideo": false
+        },
+        "Ignition_Tank": {
+            "name": "Ignition Tank",
+            "description": "Ignite effects deal +300% (+300% per stack) more damage over time.",
+            "color": [
+                {
+                    "(+300% per stack)": "green"
+                }
+            ],
+            "itemClass": "Uncommon",
+            "imgName": "item_Ignition_Tank.webp",
+            "vidName": "usage_Ignition_Tank.mp4",
             "hasVideo": false
         },
         "Infusion": {
@@ -477,16 +579,15 @@
             ],
             "unlock": "Defeat 3000 enemies.",
             "itemClass": "Uncommon",
-            "imgName": "item_Infusion.png",
+            "imgName": "item_Infusion.webp",
             "vidName": "usage_Infusion.mp4",
             "hasVideo": false
         },
         "Item_Scrap_Green": {
             "name": "Item Scrap, Green",
             "description": "Does nothing. Consumed first when using a 3D printer of the same tier.",
-            "color": [],
             "itemClass": "Uncommon",
-            "imgName": "item_Item_Scrap_Green.png",
+            "imgName": "item_Item_Scrap_Green.webp",
             "vidName": "usage_Item_Scrap_Green.mp4",
             "hasVideo": false
         },
@@ -500,7 +601,7 @@
             ],
             "unlock": "Complete the hidden chamber in the Abandoned Aqueduct.",
             "itemClass": "Uncommon",
-            "imgName": "item_Kjaros_Band.png",
+            "imgName": "item_Kjaros_Band.webp",
             "vidName": "usage_Kjaros_Band.mp4",
             "hasVideo": false
         },
@@ -513,7 +614,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Leeching_Seed.png",
+            "imgName": "item_Leeching_Seed.webp",
             "vidName": "usage_Leeching_Seed.mp4",
             "hasVideo": false
         },
@@ -526,7 +627,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Lepton_Daisy.png",
+            "imgName": "item_Lepton_Daisy.webp",
             "vidName": "usage_Lepton_Daisy.mp4",
             "hasVideo": false
         },
@@ -540,7 +641,7 @@
             ],
             "unlock": "Defeat 500 elite monsters.",
             "itemClass": "Uncommon",
-            "imgName": "item_Old_Guillotine.png",
+            "imgName": "item_Old_Guillotine.webp",
             "vidName": "usage_Old_Guillotine.mp4",
             "hasVideo": false
         },
@@ -553,7 +654,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Old_War_Stealthkit.png",
+            "imgName": "item_Old_War_Stealthkit.webp",
             "vidName": "usage_Old_War_Stealthkit.mp4",
             "hasVideo": false
         },
@@ -567,7 +668,7 @@
             ],
             "unlock": "Reach +200% attack speed.",
             "itemClass": "Uncommon",
-            "imgName": "item_Predatory_Instincts.png",
+            "imgName": "item_Predatory_Instincts.webp",
             "vidName": "usage_Predatory_Instincts.mp4",
             "hasVideo": false
         },
@@ -583,7 +684,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Razorwire.png",
+            "imgName": "item_Razorwire.webp",
             "vidName": "usage_Razorwire.mp4",
             "hasVideo": false
         },
@@ -596,8 +697,21 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Red_Whip.png",
+            "imgName": "item_Red_Whip.webp",
             "vidName": "usage_Red_Whip.mp4",
+            "hasVideo": false
+        },
+        "Regenerating_Scrap": {
+            "name": "Regenerating Scrap",
+            "description": "Does nothing. Prioritized when used with Uncommon 3D printers. At the start of each stage, it regenerates.",
+            "color": [
+                {
+                    "Uncommon": "#6BBC43"
+                }
+            ],
+            "itemClass": "Uncommon",
+            "imgName": "item_Regenerating_Scrap.webp",
+            "vidName": "usage_Regenerating_Scrap.mp4",
             "hasVideo": false
         },
         "Rose_Buckler": {
@@ -609,7 +723,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Rose_Buckler.png",
+            "imgName": "item_Rose_Buckler.webp",
             "vidName": "usage_Rose_Buckler.mp4",
             "hasVideo": false
         },
@@ -626,8 +740,43 @@
             ],
             "unlock": "Complete the hidden chamber in the Abandoned Aqueduct.",
             "itemClass": "Uncommon",
-            "imgName": "item_Runalds_Band.png",
+            "imgName": "item_Runalds_Band.webp",
             "vidName": "usage_Runalds_Band.mp4",
+            "hasVideo": false
+        },
+        "Shipping_Request_Form": {
+            "name": "Shipping Request Form",
+            "description": "A delivery containing 2 items (79% Common, 20% Uncommon, 1% Legendary) will appear in a random location. Stacks increase item rarity.",
+            "color": [
+                {
+                    "79% Common": "#ffffff"
+                },
+                {
+                    "20% Uncommon": "#6BBC43"
+                },
+                {
+                    "1% Legendary": "#DA5B4B"
+                }
+            ],
+            "itemClass": "Uncommon",
+            "imgName": "item_Shipping_Request_Form.webp",
+            "vidName": "usage_Shipping_Request_Form.mp4",
+            "hasVideo": false
+        },
+        "Shuriken": {
+            "name": "Shuriken",
+            "description": "Activating your Primary Skill also throws a shuriken that deals 400% (+100% per stack) base damage. You can hold up to 3 (+1 per stack) shurikens which all reload over 10 seconds.",
+            "color": [
+                {
+                    "(+100% per stack)": "green"
+                },
+                {
+                    "(+1 per stack)": "green"
+                }
+            ],
+            "itemClass": "Uncommon",
+            "imgName": "item_Shuriken.webp",
+            "vidName": "usage_Shuriken.mp4",
             "hasVideo": false
         },
         "Squid_Polyp": {
@@ -640,7 +789,7 @@
             ],
             "unlock": "Purchase 6 Gunner Turrets in a single run.",
             "itemClass": "Uncommon",
-            "imgName": "item_Squid_Polyp.png",
+            "imgName": "item_Squid_Polyp.webp",
             "vidName": "usage_Squid_Polyp.mp4",
             "hasVideo": false
         },
@@ -656,7 +805,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Ukulele.png",
+            "imgName": "item_Ukulele.webp",
             "vidName": "usage_Ukulele.mp4",
             "hasVideo": false
         },
@@ -670,7 +819,7 @@
             ],
             "unlock": "Activate 3 Shrines of Combat in a single stage and defeat all the spawned monsters.",
             "itemClass": "Uncommon",
-            "imgName": "item_War_Horn.png",
+            "imgName": "item_War_Horn.webp",
             "vidName": "usage_War_Horn.mp4",
             "hasVideo": false
         },
@@ -684,7 +833,7 @@
             ],
             "unlock": "Reach +300% movespeed.",
             "itemClass": "Uncommon",
-            "imgName": "item_Wax_Quail.png",
+            "imgName": "item_Wax_Quail.webp",
             "vidName": "usage_Wax_Quail.mp4",
             "hasVideo": false
         },
@@ -700,7 +849,7 @@
                 }
             ],
             "itemClass": "Uncommon",
-            "imgName": "item_Will-o-the-wisp.png",
+            "imgName": "item_Will-o-the-wisp.webp",
             "vidName": "usage_Will-o-the-wisp.mp4",
             "hasVideo": false
         },
@@ -714,7 +863,7 @@
             ],
             "unlock": "Complete 20 stages in one run.",
             "itemClass": "Legendary",
-            "imgName": "item_57_Leaf_Clover.png",
+            "imgName": "item_57_Leaf_Clover.webp",
             "vidName": "usage_57_Leaf_Clover.mp4",
             "hasVideo": false
         },
@@ -727,7 +876,7 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Aegis.png",
+            "imgName": "item_Aegis.webp",
             "vidName": "usage_Aegis.mp4",
             "hasVideo": false
         },
@@ -740,8 +889,43 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Alien_Head.png",
+            "imgName": "item_Alien_Head.webp",
             "vidName": "usage_Alien_Head.mp4",
+            "hasVideo": false
+        },
+        "Bens_Raincoat": {
+            "name": "Ben's Raincoat",
+            "description": "Whenever you would recieve a debuff, prevent it. Increases maximum health by 100 (+100 per stack).",
+            "color": [
+                {
+                    "(+100 per stack)": "green"
+                }
+            ],
+            "itemClass": "Legendary",
+            "imgName": "item_Ben's_Raincoat.webp",
+            "vidName": "usage_Ben's_Raincoat.mp4",
+            "hasVideo": false
+        },
+        "Bottled_Chaos": {
+            "name": "Bottled Chaos",
+            "description": "On Equipment use, trigger a random Equipment effect 1 (+1 per stack) time(s).",
+            "color": [
+                {
+                    "Equipment": "#C78A31"
+                },
+                {
+                    "Equipment": "#C78A31"
+                },
+                {
+                    "(+1 per stack)": "green"
+                },
+                {
+                    "(s)": "gray"
+                }
+            ],
+            "itemClass": "Legendary",
+            "imgName": "item_Bottled_Chaos.webp",
+            "vidName": "usage_Bottled_Chaos.mp4",
             "hasVideo": false
         },
         "Brainstalks": {
@@ -754,7 +938,7 @@
             ],
             "unlock": "Defeat an elite boss on Monsoon difficulty.",
             "itemClass": "Legendary",
-            "imgName": "item_Brainstalks.png",
+            "imgName": "item_Brainstalks.webp",
             "vidName": "usage_Brainstalks.mp4",
             "hasVideo": false
         },
@@ -767,7 +951,7 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Brilliant_Behemoth.png",
+            "imgName": "item_Brilliant_Behemoth.webp",
             "vidName": "usage_Brilliant_Behemoth.mp4",
             "hasVideo": false
         },
@@ -780,7 +964,7 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Ceremonial_Dagger.png",
+            "imgName": "item_Ceremonial_Dagger.webp",
             "vidName": "usage_Ceremonial_Dagger.mp4",
             "hasVideo": false
         },
@@ -793,17 +977,16 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Defensive_Microbots.png",
+            "imgName": "item_Defensive_Microbots.webp",
             "vidName": "usage_Defensive_Microbots.mp4",
             "hasVideo": false
         },
         "Dios_Best_Friend": {
             "name": "Dio's Best Friend",
             "description": "Upon death, this item will be consumed and you will return to life with 3 seconds of invulnerability. Further pickups provide an additional respawn.",
-            "color": [],
             "unlock": "Stay alive for 30 consecutive minutes.",
             "itemClass": "Legendary",
-            "imgName": "item_Dios_Best_Friend.png",
+            "imgName": "item_Dios_Best_Friend.webp",
             "vidName": "usage_Dios_Best_Friend.mp4",
             "hasVideo": false
         },
@@ -816,7 +999,7 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Frost_Relic.png",
+            "imgName": "item_Frost_Relic.webp",
             "vidName": "usage_Frost_Relic.mp4",
             "hasVideo": false
         },
@@ -829,7 +1012,7 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_H3AD-5T_v2.png",
+            "imgName": "item_H3AD-5T_v2.webp",
             "vidName": "usage_H3AD-5T_v2.mp4",
             "hasVideo": false
         },
@@ -842,7 +1025,7 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Happiest_Mask.png",
+            "imgName": "item_Happiest_Mask.webp",
             "vidName": "usage_Happiest_Mask.mp4",
             "hasVideo": false
         },
@@ -855,7 +1038,7 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Hardlight_Afterburner.png",
+            "imgName": "item_Hardlight_Afterburner.webp",
             "vidName": "usage_Hardlight_Afterburner.mp4",
             "hasVideo": false
         },
@@ -868,17 +1051,29 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Interstellar_Desk_Plant.png",
+            "imgName": "item_Interstellar_Desk_Plant.webp",
             "vidName": "usage_Interstellar_Desk_Plant.mp4",
             "hasVideo": false
         },
         "Item_Scrap_Red": {
             "name": "Item Scrap, Red",
             "description": "Does nothing. Consumed first when using a 3D printer of the same tier.",
-            "color": [],
             "itemClass": "Legendary",
-            "imgName": "item_Item_Scrap_Red.png",
+            "imgName": "item_Item_Scrap_Red.webp",
             "vidName": "usage_Item_Scrap_Red.mp4",
+            "hasVideo": false
+        },
+        "Laser_Scope": {
+            "name": "Laser Scope",
+            "description": "Critical Strikes deal an additional 100% (+100% per stack) damage.",
+            "color": [
+                {
+                    "(+100% per stack)": "green"
+                }
+            ],
+            "itemClass": "Legendary",
+            "imgName": "item_Laser_Scope.webp",
+            "vidName": "usage_Laser_Scope.mp4",
             "hasVideo": false
         },
         "Nkuhanas_Opinion": {
@@ -891,8 +1086,24 @@
             ],
             "unlock": "Find the Altar to N'kuhana in Wetland Aspect.",
             "itemClass": "Legendary",
-            "imgName": "item_Nkuhanas_Opinion.png",
+            "imgName": "item_Nkuhanas_Opinion.webp",
             "vidName": "usage_Nkuhanas_Opinion.mp4",
+            "hasVideo": false
+        },
+        "Pocket_I.C.B.M.": {
+            "name": "Pocket I.C.B.M.",
+            "description": "All missile items and Equipment fire an additional 2 missiles. Increase missile damage by 0% (+50% per stack).",
+            "color": [
+                {
+                    "Equipment": "#C78A31"
+                },
+                {
+                    "(+50% per stack)": "green"
+                }
+            ],
+            "itemClass": "Legendary",
+            "imgName": "item_Pocket_ICBM.webp",
+            "vidName": "usage_Pocket_ICBM.mp4",
             "hasVideo": false
         },
         "Rejuvenation_Rack": {
@@ -905,7 +1116,7 @@
             ],
             "unlock": "Complete the 3rd teleporter without healing.",
             "itemClass": "Legendary",
-            "imgName": "item_Rejuvenation_Rack.png",
+            "imgName": "item_Rejuvenation_Rack.webp",
             "vidName": "usage_Rejuvenation_Rack.mp4",
             "hasVideo": false
         },
@@ -921,7 +1132,7 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Resonance_Disc.png",
+            "imgName": "item_Resonance_Disc.webp",
             "vidName": "usage_Resonance_Disc.mp4",
             "hasVideo": false
         },
@@ -938,7 +1149,7 @@
             ],
             "unlock": "Loop back to the first stage.",
             "itemClass": "Legendary",
-            "imgName": "item_Sentient_Meat_Hook.png",
+            "imgName": "item_Sentient_Meat_Hook.webp",
             "vidName": "usage_Sentient_Meat_Hook.mp4",
             "hasVideo": false
         },
@@ -951,7 +1162,7 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Shattering_Justice.png",
+            "imgName": "item_Shattering_Justice.webp",
             "vidName": "usage_Shattering_Justice.mp4",
             "hasVideo": false
         },
@@ -965,8 +1176,34 @@
             ],
             "unlock": "Activate 8 unique Newt Altars.",
             "itemClass": "Legendary",
-            "imgName": "item_Soulbound_Catalyst.png",
+            "imgName": "item_Soulbound_Catalyst.webp",
             "vidName": "usage_Soulbound_Catalyst.mp4",
+            "hasVideo": false
+        },
+        "Spare_Drone_Parts": {
+            "name": "Spare Drone Parts",
+            "description": "Gain Col. Droneman. Drones gain +50% (+50% per stack) attack speed and cooldown reduction. Drones gain 10% chance to fire a missile on hit, dealing 300% TOTAL damage. Drones gain an automatic chain gun that deals 6x100% damage, bouncing to 2 enemies.",
+            "color": [
+                {
+                    "(+50% per stack)": "green"
+                }
+            ],
+            "itemClass": "Legendary",
+            "imgName": "item_Spare_Drone_Parts.webp",
+            "vidName": "usage_Spare_Drone_Parts.mp4",
+            "hasVideo": false
+        },
+        "Symbiotic_Scorpion": {
+            "name": "Symbiotic Scorpion",
+            "description": "100% chance on hit to reduce armor by 2 (+2 per stack) permanently.",
+            "color": [
+                {
+                    "(+2 per stack)": "green"
+                }
+            ],
+            "itemClass": "Legendary",
+            "imgName": "item_Symbiotic_Scorpion.webp",
+            "vidName": "usage_Symbiotic_Scorpion.mp4",
             "hasVideo": false
         },
         "Unstable_Tesla_Coil": {
@@ -979,7 +1216,7 @@
             ],
             "unlock": "Deal 5000 damage in one shot.",
             "itemClass": "Legendary",
-            "imgName": "item_Unstable_Tesla_Coil.png",
+            "imgName": "item_Unstable_Tesla_Coil.webp",
             "vidName": "usage_Unstable_Tesla_Coil.mp4",
             "hasVideo": false
         },
@@ -992,16 +1229,15 @@
                 }
             ],
             "itemClass": "Legendary",
-            "imgName": "item_Wake_of_Vultures.png",
+            "imgName": "item_Wake_of_Vultures.webp",
             "vidName": "usage_Wake_of_Vultures.mp4",
             "hasVideo": false
         },
         "Artifact_Key": {
             "name": "Artifact Key",
             "description": "Used in the Artifact Reliquary.",
-            "color": [],
             "itemClass": "Boss",
-            "imgName": "item_Artifact_Key.png",
+            "imgName": "item_Artifact_Key.webp",
             "vidName": "usage_Artifact_Key.mp4",
             "hasVideo": false
         },
@@ -1014,8 +1250,21 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Charged_Perforator.png",
+            "imgName": "item_Charged_Perforator.webp",
             "vidName": "usage_Charged_Perforator.mp4",
+            "hasVideo": false
+        },
+        "Defense_Nucleus": {
+            "name": "Defense Nucleus",
+            "description": "Killing elite monsters spawns an Alpha Construct. Limited to 4 (+4 per stack).",
+            "color": [
+                {
+                    "(+4 per stack)": "green"
+                }
+            ],
+            "itemClass": "Boss",
+            "imgName": "item_Defense_Nucleus.webp",
+            "vidName": "usage_Defense_Nucleus.mp4",
             "hasVideo": false
         },
         "Empathy_Cores": {
@@ -1027,7 +1276,7 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Empathy_Cores.png",
+            "imgName": "item_Empathy_Cores.webp",
             "vidName": "usage_Empathy_Cores.mp4",
             "hasVideo": false
         },
@@ -1040,7 +1289,7 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Genesis_Loop.png",
+            "imgName": "item_Genesis_Loop.webp",
             "vidName": "usage_Genesis_Loop.mp4",
             "hasVideo": false
         },
@@ -1056,7 +1305,7 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Halcyon_Seed.png",
+            "imgName": "item_Halcyon_Seed.webp",
             "vidName": "usage_Halcyon_Seed.mp4",
             "hasVideo": false
         },
@@ -1069,16 +1318,15 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Irradiant_Pearl.png",
+            "imgName": "item_Irradiant_Pearl.webp",
             "vidName": "usage_Irradiant_Pearl.mp4",
             "hasVideo": false
         },
         "Item_Scrap_Yellow": {
             "name": "Item Scrap, Yellow",
             "description": "Does nothing. Consumed first when using a 3D printer of the same tier.",
-            "color": [],
             "itemClass": "Boss",
-            "imgName": "item_Item_Scrap_Yellow.png",
+            "imgName": "item_Item_Scrap_Yellow.webp",
             "vidName": "usage_Item_Scrap_Yellow.mp4",
             "hasVideo": false
         },
@@ -1091,7 +1339,7 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Little_Disciple.png",
+            "imgName": "item_Little_Disciple.webp",
             "vidName": "usage_Little_Disciple.mp4",
             "hasVideo": false
         },
@@ -1104,7 +1352,7 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Mired_Urn.png",
+            "imgName": "item_Mired_Urn.webp",
             "vidName": "usage_Mired_Urn.mp4",
             "hasVideo": false
         },
@@ -1117,7 +1365,7 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Molten_Perforator.png",
+            "imgName": "item_Molten_Perforator.webp",
             "vidName": "usage_Molten_Perforator.mp4",
             "hasVideo": false
         },
@@ -1130,7 +1378,7 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Pearl.png",
+            "imgName": "item_Pearl.webp",
             "vidName": "usage_Pearl.mp4",
             "hasVideo": false
         },
@@ -1143,7 +1391,7 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Planula.png",
+            "imgName": "item_Planula.webp",
             "vidName": "usage_Planula.mp4",
             "hasVideo": false
         },
@@ -1159,7 +1407,7 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Queens_Gland.png",
+            "imgName": "item_Queens_Gland.webp",
             "vidName": "usage_Queens_Gland.mp4",
             "hasVideo": false
         },
@@ -1175,7 +1423,7 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Shatterspleen.png",
+            "imgName": "item_Shatterspleen.webp",
             "vidName": "usage_Shatterspleen.mp4",
             "hasVideo": false
         },
@@ -1191,225 +1439,498 @@
                 }
             ],
             "itemClass": "Boss",
-            "imgName": "item_Titanic_Knurl.png",
+            "imgName": "item_Titanic_Knurl.webp",
             "vidName": "usage_Titanic_Knurl.mp4",
+            "hasVideo": false
+        },
+        "Benthic_Bloom": {
+            "name": "Benthic Bloom",
+            "description": "Upgrades 3 (+3 per stack) random items to items of the next higher rarity at the start of each stage. Corrupts all 57 Leaf Clovers.",
+            "color": [
+                {
+                    "(+3 per stack)": "green"
+                },
+                {
+                    "Corrupts all 57 Leaf Clovers": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Benthic_Bloom.webp",
+            "vidName": "usage_Benthic_Bloom.mp4",
+            "hasVideo": false
+        },
+        "Encrusted_Key": {
+            "name": "Encrusted Key",
+            "description": "A hidden cache containing an item (60% Common, 30% Uncommon, 10% Legendary) will appear in a random location on each stage. Opening the cache consumes this item. Corrupts all Rusted Keys.",
+            "color": [
+                {   
+                    "60% Common": "#ffffff"
+                },
+                {
+                    "30% Uncommon": "#6BBC43"
+                },
+                {
+                    "10% Legendary": "#DA5B4B"
+                },
+                {
+                    "Corrupts all Rusted Keys": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Encrusted_Key.webp",
+            "vidName": "usage_Encrusted_Key.mp4",
+            "hasVideo": false
+        },
+        "Lost_Seers_Lenses": {
+            "name": "Lost Seer's Lenses",
+            "description": "Your attacks have a 0.5% (+0.5% per stack) chance to instantly kill a non-Boss enemy. Corrupts all Lens-Maker's Glasses.",
+            "color": [
+                {
+                    "(+0.5% per stack)": "green"
+                },
+                {
+                    "Corrupts all Lens-Maker's Glasses": "#D05FB4"
+                }
+            ],
+            "maxStacks": 200,
+            "itemClass": "Void",
+            "imgName": "item_Lost_Seers_Lenses.webp",
+            "vidName": "usage_Lost_Seers_Lenses.mp4",
+            "hasVideo": false
+        },
+        "Lysate_Cell": {
+            "name": "Lysate Cell",
+            "description": "Add +1 (+1 per stack) charge of your Special skill. Reduces Special skill cooldown by 33%. Corrupts all Fuel Cells.",
+            "color": [
+                {
+                    "(+1 per stack)": "green"
+                },
+                {
+                    "Corrupts all Fuel Cells": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Lysate_Cell.webp",
+            "vidName": "usage_Lysate_Cell.mp4",
+            "hasVideo": false
+        },
+        "Needletick": {
+            "name": "Needletick",
+            "description": "10% (+10% per stack) chance on hit to apply Collapse to an enemy. Corrupts all Tri-Tip Daggers. (Collapse: 3 seconds after Collapse is first applied to a target, all stacks of Collapse are consumed, dealing 400% damage per stack consumed).",
+            "color": [
+                {
+                    "(+10% per stack)": "green"
+                },
+                {
+                    "Corrupts all Tri-Tip Daggers": "#D05FB4"
+                },
+                {
+                    "(Collapse: 3 seconds after Collapse is first applied to a target, all stacks of Collapse are consumed, dealing 400% damage per stack consumed)": "gray"
+                }
+            ],
+            "maxStacks": 10,
+            "itemClass": "Void",
+            "imgName": "item_Needletick.webp",
+            "vidName": "usage_Needletick.mp4",
+            "hasVideo": false
+        },
+        "Newly_Hatched_Zoea": {
+            "name": "Newly Hatched Zoea",
+            "description": "Every 60 (-50% per stack) seconds, gain a random Void ally. Can have up to 1 (+1 per stack) allies at a time. Corrupts all Boss items.",
+            "color": [
+                {
+                    "(-50% per stack)": "green"
+                },
+                {
+                    "(+1 per stack)": "green"
+                },
+                {
+                    "Corrupts all": "#D05FB4"
+                },
+                {
+                    "Boss": "#AAC728"
+                },
+                {
+                    "items": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Newly_Hatched_Zoea.webp",
+            "vidName": "usage_Newly_Hatched_Zoea.mp4",
+            "hasVideo": false
+        },
+        "Plasma_Shrimp": {
+            "name": "Plasma Shrimp",
+            "description": "Gain a shield equal to 10% of your maximum health. While you have a shield, hitting an enemy fires a missile that deals 40% (+40% per stack) TOTAL damage. Corrupts all AtG Missile Mk. 1s.",
+            "color": [
+                {
+                    "(+40% per stack)": "green"
+                },
+                {
+                    "Corrupts all AtG Missile Mk. 1s": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Plasma_Shrimp.webp",
+            "vidName": "usage_Plasma_Shrimp.mp4",
+            "hasVideo": false
+        },
+        "Pluripotent_Larva": {
+            "name": "Pluripotent Larva",
+            "description": "Upon death, this item will be consumed and you will return to life with 3 seconds of invulnerability, and all items that can be corrupted will be. Corrupts all Dio's Best Friends.",
+            "color": [
+                {
+                    "Corrupts all Dio's Best Friends": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Pluripotent_Larva.webp",
+            "vidName": "usage_Pluripotent_Larva.mp4",
+            "hasVideo": false
+        },
+        "Polylute": {
+            "name": "Polylute",
+            "description": "25% chance to fire lightning for 60% TOTAL damage up to 3 (+3 per stack) times. Corrupts all Ukuleles.",
+            "color": [
+                {
+                    "(+3 per stack)": "green"
+                },
+                {
+                    "Corrupts all Ukuleles": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Polylute.webp",
+            "vidName": "usage_Polylute.mp4",
+            "hasVideo": false
+        },
+        "Safer_Spaces": {
+            "name": "Safer Spaces",
+            "description": "Blocks incoming damage once. Recharges after 15 seconds (-10% per stack) Corrupts all Tougher Times.",
+            "color": [
+                {
+                    "(-10% per stack)": "green"
+                },
+                {
+                    "Corrupts all Tougher Times": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Safer_Spaces.webp",
+            "vidName": "usage_Safer_Spaces.mp4",
+            "hasVideo": false
+        },
+        "Singularity_Band": {
+            "name": "Singularity Band",
+            "description": "Hits that deal more than 400% damage also fire a black hole that draws enemies within 15m into its center. Lasts 5 seconds before collapsing, dealing 100% (+100% per stack) TOTAL damage. Recharges every 20 seconds. Corrupts all Runald's and Kjaro's Bands.",
+            "color": [
+                {
+                    "(+100% per stack)": "green"
+                },
+                {
+                    "Corrupts all Runald's and Kjaro's Bands": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Singularity_Band.webp",
+            "vidName": "usage_Singularity_Band.mp4",
+            "hasVideo": false
+        },
+        "Tentabauble": {
+            "name": "Tentabauble",
+            "description": "5% (+5% per stack) chance on hit to root enemies for 1 (+1 per stack) second(s). Corrupts all Chronobaubles.",
+            "color": [
+                {
+                    "(+5% per stack)": "green"
+                },
+                {
+                    "(+1 per stack)": "green"
+                },
+                {
+                    "(s)": "gray"
+                },
+                {
+                    "Corrupts all ": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Tentabauble.webp",
+            "vidName": "usage_Tentabauble.mp4",
+            "hasVideo": false
+        },
+        "Voidsent_Flame": {
+            "name": "Voidsent Flame",
+            "description": "Upon hitting an enemy at full health, spawn a lava pillar in a 12m (+2.4m per stack) radius for 350% (+280% per stack) base damage. Corrupts all Will-o'-the-wisps.",
+            "color": [
+                {
+                    "(+2.4m per stack)": "green"
+                },
+                {
+                    "(+280% per stack)": "green"
+                },
+                {
+                    "Corrupts all Will-o'-the-wisps": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Voidsent_Flame.webp",
+            "vidName": "usage_Voidsent_Flame.mp4",
+            "hasVideo": false
+        },
+        "Weeping_Fungus": {
+            "name": "Weeping Fungus",
+            "description": "Heals for 2% (+2% per stack) of your health every second while sprinting. Corrupts all Bustling Fungi.",
+            "color": [
+                {
+                    "(+2% per stack)": "green"
+                },
+                {
+                    "Corrupts all Bustling Fungi": "#D05FB4"
+                }
+            ],
+            "itemClass": "Void",
+            "imgName": "item_Weeping_Fungus.webp",
+            "vidName": "usage_Weeping_Fungus.mp4",
             "hasVideo": false
         },
         "Blast_Shower": {
             "name": "Blast Shower",
             "description": "Cleanse all negative effects. Includes debuffs, damage over time, and nearby projectiles.",
-            "color": [],
             "unlock": "Die three times while burning.",
             "cooldown": 20,
             "itemClass": "Equipment",
-            "imgName": "item_Blast_Shower.png",
+            "imgName": "item_Blast_Shower.webp",
             "vidName": "usage_Blast_Shower.mp4",
             "hasVideo": false
         },
         "Disposable_Missile_Launcher": {
             "name": "Disposable Missile Launcher",
             "description": "Fire a swarm of 12 missiles that deal 300% damage each.",
-            "color": [],
             "cooldown": 45,
             "itemClass": "Equipment",
-            "imgName": "item_Disposable_Missile_Launcher.png",
+            "imgName": "item_Disposable_Missile_Launcher.webp",
             "vidName": "usage_Disposable_Missile_Launcher.mp4",
             "hasVideo": false
         },
         "Eccentric_Vase": {
             "name": "Eccentric Vase",
             "description": "Create a quantum tunnel of up to 1000m in length. Lasts 30 seconds.",
-            "color": [],
             "unlock": "Defeat the unique guardian of the Gilded Coast without and beacons deactivating.",
             "cooldown": 45,
             "itemClass": "Equipment",
-            "imgName": "item_Eccentric_Vase.png",
+            "imgName": "item_Eccentric_Vase.webp",
             "vidName": "usage_Eccentric_Vase.mp4",
+            "hasVideo": false
+        },
+        "Executive_Card": {
+            "name": "Executive Card",
+            "description": "Whenever you make a gold purchase, get 10% of the spent gold back. If the purchase is a multishop terminal, the other terminals will remain open. ",
+            "cooldown": 0.1,
+            "itemClass": "Equipment",
+            "imgName": "item_Executive_Card.webp",
+            "vidName": "usage_Executive_Card.mp4",
             "hasVideo": false
         },
         "Foreign_Fruit": {
             "name": "Foreign Fruit",
             "description": "Instantly heal for 50% of your maximum health.",
-            "color": [],
             "cooldown": 45,
             "itemClass": "Equipment",
-            "imgName": "item_Foreign_Fruit.png",
+            "imgName": "item_Foreign_Fruit.webp",
             "vidName": "usage_Foreign_Fruit.mp4",
             "hasVideo": false
         },
         "Forgive_Me_Please": {
             "name": "Forgive Me Please",
             "description": "Throw a cursed doll that thriggers any 'On Kill' effects you have every 1 second for 8 seconds.",
-            "color": [],
             "unlock": "Die 20 times.",
             "cooldown": 45,
             "itemClass": "Equipment",
-            "imgName": "item_Forgive_Me_Please.png",
+            "imgName": "item_Forgive_Me_Please.webp",
             "vidName": "usage_Forgive_Me_Please.mp4",
             "hasVideo": false
         },
         "Fuel_Array": {
             "name": "Fuel Array",
-            "description": "After a short delay, cause an explosion for 300% of player health that is guaranteed to kill the player. Can be used to unlock REX in the Abyssal Depths stage. Found on the excape pod you land with.",
-            "color": [],
+            "description": "When falling below 50% health, causes an explosion dealing 300% of the player's health that is guaranteed to kill. Can be used to unlock REX in the Abyssal Depths stage. Found on the excape pod that the player lands in.",
             "itemClass": "Equipment",
-            "imgName": "item_Fuel_Array.png",
+            "imgName": "item_Fuel_Array.webp",
             "vidName": "usage_Fuel_Array.mp4",
             "hasVideo": false
         },
         "Gnarled_Woodsprite": {
             "name": "Gnarled Woodsprite",
             "description": "Gain a Woodsprite follower that heals for 1.5% of your maximum health/second. Can be send to an ally to heal them for 10% of their maximum health.",
-            "color": [],
             "unlock": "Fully upgrade a Shrine of the Woods.",
             "cooldown": 15,
             "itemClass": "Equipment",
-            "imgName": "item_Gnarled_Woodsprite.png",
+            "imgName": "item_Gnarled_Woodsprite.webp",
             "vidName": "usage_Gnarled_Woodsprite.mp4",
+            "hasVideo": false
+        },
+        "Goobo_Jr": {
+            "name": "Goobo Jr.",
+            "description": "Spawn a gummy clone that has 200% damage and 200% health. Expires after 30 seconds.",
+            "cooldown": 100,
+            "itemClass": "Equipment",
+            "imgName": "item_Goobo_Jr.webp",
+            "vidName": "usage_Goobo_Jr.mp4",
             "hasVideo": false
         },
         "Gorags_Opus": {
             "name": "Gorags Opus",
             "description": "All allies enter a frenzy for 7 seconds. Increases movement speed by 50% and attack speed by 100%.",
-            "color": [],
             "cooldown": 34,
             "itemClass": "Equipment",
-            "imgName": "item_Gorags_Opus.png",
+            "imgName": "item_Gorags_Opus.webp",
             "vidName": "usage_Gorags_Opus.mp4",
             "hasVideo": false
         },
         "Jade_Elephant": {
             "name": "Jade Elephant",
             "description": "Gain 500 armor for 5 seconds.",
-            "color": [],
             "cooldown": 45,
             "itemClass": "Equipment",
-            "imgName": "item_Jade_Elephant.png",
+            "imgName": "item_Jade_Elephant.webp",
             "vidName": "usage_Jade_Elephant.mp4",
             "hasVideo": false
         },
         "Milky_Chrysalis": {
             "name": "Milky Chrysalis",
             "description": "Sprout wings and fly for 15 seconds. Gain +20% movement speed for the duration.",
-            "color": [],
             "cooldown": 60,
             "itemClass": "Equipment",
-            "imgName": "item_Milky_Chrysalis.png",
+            "imgName": "item_Milky_Chrysalis.webp",
             "vidName": "usage_Milky_Chrysalis.mp4",
+            "hasVideo": false
+        },
+        "Molotov_(6-Pack)": {
+            "name": "Molotov (6-Pack)",
+            "description": "Throw 6 molotov cocktails that ignites enemies for 500% base damage. Each molotov leaves a burning area for 200% damage per second. ",
+            "cooldown": 45,
+            "itemClass": "Equipment",
+            "imgName": "item_Molotov_(6-Pack).webp",
+            "vidName": "usage_Molotov_(6-Pack).mp4",
             "hasVideo": false
         },
         "Ocular_HUD": {
             "name": "Ocular HUD",
             "description": "Gain +100% Critical Strike chance for 8 seconds.",
-            "color": [],
             "cooldown": 60,
             "itemClass": "Equipment",
-            "imgName": "item_Ocular_HUD.png",
+            "imgName": "item_Ocular_HUD.webp",
             "vidName": "usage_Ocular_HUD.mp4",
             "hasVideo": false
         },
         "Preon_Accumulator": {
             "name": "Preon Accumulator",
             "description": "After a short charge period, fire a slow-moving orb that zaps enemies within 35m for up to 600% damage/second. On contact, detonate in a 20m radius explosion for 4000% damage.",
-            "color": [],
             "unlock": "Open the Timed Security Chest on Rallypoint Delta.",
             "cooldown": 140,
             "itemClass": "Equipment",
-            "imgName": "item_Preon_Accumulator.png",
+            "imgName": "item_Preon_Accumulator.webp",
             "vidName": "usage_Preon_Accumulator.mp4",
             "hasVideo": false
         },
         "Primordial_Cube": {
             "name": "Primordial Cube",
             "description": "Fire a black hole that draws enemies within 30m into its center. Lasts 10 seconds.",
-            "color": [],
             "cooldown": 60,
             "itemClass": "Equipment",
-            "imgName": "item_Primordial_Cube.png",
+            "imgName": "item_Primordial_Cube.webp",
             "vidName": "usage_Primordial_Cube.mp4",
             "hasVideo": false
         },
         "Radar_Scanner": {
             "name": "Radar Scanner",
             "description": "Reveal all interactables within 500m for 10 seconds.",
-            "color": [],
             "unlock": "Collect 10 monster of environment logs.",
             "cooldown": 45,
             "itemClass": "Equipment",
-            "imgName": "item_Radar_Scanner.png",
+            "imgName": "item_Radar_Scanner.webp",
             "vidName": "usage_Radar_Scanner.mp4",
             "hasVideo": false
         },
         "Recycler": {
             "name": "Recycler",
             "description": "Transform an Item or Equipment into a different one of the same tier. Can only be used on the target item once.",
-            "color": [],
             "unlock": "Destroy 20 flying rocks in Sky Meadow.",
             "cooldown": 45,
             "itemClass": "Equipment",
-            "imgName": "item_Recycler.png",
+            "imgName": "item_Recycler.webp",
             "vidName": "usage_Recycler.mp4",
+            "hasVideo": false
+        },
+        "Remote_Caffeinator": {
+            "name": "Remote Caffeinator",
+            "description": "Request an Eclipse Zero Vending Machine from the UES Safe Travels. Delivery guaranteed in 5 seconds, dealing 2000% damage where it lands. Machine can be interacted with to heal up to 3 targets for 25% of their maximum health.",
+            "cooldown": 60,
+            "itemClass": "Equipment",
+            "imgName": "item_Remote_Caffeinator.webp",
+            "vidName": "usage_Remote_Caffeinator.mp4",
             "hasVideo": false
         },
         "Royal_Capacitor": {
             "name": "Royal Capacitor",
             "description": "Call down a lightning strike on a targeted monster for 3000% damage and stunning nearby monsters.",
-            "color": [],
             "unlock": "Defeat the Teleporter bosses after activating 2 Shrines if the Mountain.",
             "cooldown": 20,
             "itemClass": "Equipment",
-            "imgName": "item_Royal_Capacitor.png",
+            "imgName": "item_Royal_Capacitor.webp",
             "vidName": "usage_Royal_Capacitor.mp4",
             "hasVideo": false
         },
         "Sawmerang": {
             "name": "Sawmerang",
             "description": "Throw three large saw blades that slice through enemies for 400% damage each. Also deals an additional 100% damage/second while bleeding enemies. Can strike enemes again on the way back.",
-            "color": [],
             "cooldown": 45,
             "itemClass": "Equipment",
-            "imgName": "item_Sawmerang.png",
+            "imgName": "item_Sawmerang.webp",
             "vidName": "usage_Sawmerang.mp4",
             "hasVideo": false
         },
         "Super_Massive_Leech": {
             "name": "Super Massive Leech",
             "description": "Heal for 20% of the damage you deal. Lasts 8 seconds.",
-            "color": [],
             "cooldown": 60,
             "itemClass": "Equipment",
-            "imgName": "item_Super_Massive_Leech.png",
+            "imgName": "item_Super_Massive_Leech.webp",
             "vidName": "usage_Super_Massive_Leech.mp4",
             "hasVideo": false
         },
         "The_Back-up": {
             "name": "The Back-up",
             "description": "Call 4 Strike Drones to fight for you. Drones stay for 25 seconds.",
-            "color": [],
             "unlock": "Repair 30 drones or turrets.",
             "cooldown": 100,
             "itemClass": "Equipment",
-            "imgName": "item_The_Back-up.png",
+            "imgName": "item_The_Back-up.webp",
             "vidName": "usage_The_Back-up.mp4",
             "hasVideo": false
         },
         "The_Crowdfunder": {
             "name": "The Crowdfunder",
             "description": "Fires a continuous barrage that deals 100% damage per bullet. Costs $1 per bullet, and cost increases over time.",
-            "color": [],
             "unlock": "Collect $30,480 total gold.",
             "itemClass": "Equipment",
-            "imgName": "item_The_Crowdfunder.png",
+            "imgName": "item_The_Crowdfunder.webp",
             "vidName": "usage_The_Crowdfunder.mp4",
+            "hasVideo": false
+        },
+        "Trophy_Hunters_Tricorn": {
+            "name": "Trophy Hunter's tricorn",
+            "description": "Execute any enemy capable of spawning a unique reward, and it will drop that item. Equipment is consumed on use. ",
+            "itemClass": "Equipment",
+            "imgName": "item_Trophy_Hunters_Tricorn.webp",
+            "vidName": "usage_Trophy_Hunters_Tricorn.mp4",
             "hasVideo": false
         },
         "Volcanic_Egg": {
             "name": "Volcanic Egg",
             "description": "Turn into a draconic fireball for 5 seconds. Deal 500% damage on impact. Detonates at the end for 800% damage.",
-            "color": [],
             "cooldown": 30,
             "itemClass": "Equipment",
-            "imgName": "item_Volcanic_Egg.png",
+            "imgName": "item_Volcanic_Egg.webp",
             "vidName": "usage_Volcanic_Egg.mp4",
             "hasVideo": false
         },
@@ -1417,19 +1938,26 @@
             "name": "Her Biting Embrace",
             "description": "Attacked enemies are slowed by 20% on hit. Slow duration is based on Proc Coefficient, with a base of 1.5 seconds. When the player dies while holding this, they will explode for 150% damage ina addition to freezing nearby enemies.",
             "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
-            "color": [],
             "itemClass": "Equipment",
-            "imgName": "item_Her_Biting_Embrace.png",
+            "imgName": "item_Her_Biting_Embrace.webp",
             "vidName": "usage_Her_Biting_Embrace.mp4",
+            "hasVideo": false
+        },
+        "His_Reassurance": {
+            "name": "His Reassurance",
+            "description": "Heal all nearby allies over time, and drop a healing orb on death.",
+            "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
+            "itemClass": "Equipment",
+            "imgName": "item_His_Reassurance.webp",
+            "vidName": "usage_His_Reassurance.mp4",
             "hasVideo": false
         },
         "Ifrits_Distinction": {
             "name": "Ifrit's Distinction",
             "description": "Grants a fire train that follows the player that ignites enemies. Burn duration is based on Proc Coefficient, with a base of 4 seconds.",
             "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
-            "color": [],
             "itemClass": "Equipment",
-            "imgName": "item_Ifrits_Distinction.png",
+            "imgName": "item_Ifrits_Distinction.webp",
             "vidName": "usage_Ifrits_Distinction.mp4",
             "hasVideo": false
         },
@@ -1437,9 +1965,8 @@
             "name": "N'kuhana's Retort",
             "description": "Player periodically release 3-4 spiked balls that sprouts spikes from where they land. Spikes will nullify the target's healing.",
             "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
-            "color": [],
             "itemClass": "Equipment",
-            "imgName": "item_Nkuhanas_Retort.png",
+            "imgName": "item_Nkuhanas_Retort.webp",
             "vidName": "usage_Nkuhanas_Retort.mp4",
             "hasVideo": false
         },
@@ -1447,9 +1974,8 @@
             "name": "Shared Design",
             "description": "Attacks will cripple on hit, and occasionally fire five bomb projectiles at enemies. Gain 30% movement speed, as well as all health replaced with shields, with an additional 25% maximum health.",
             "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
-            "color": [],
             "itemClass": "Equipment",
-            "imgName": "item_Shared_Design.png",
+            "imgName": "item_Shared_Design.webp",
             "vidName": "usage_Shared_Design.mp4",
             "hasVideo": false
         },
@@ -1457,9 +1983,8 @@
             "name": "Silence Between Two Strikes",
             "description": "50% of the players health is replaced with shields and attacks attach lighting bombs which explode after a short period, dealing 50% TOTAL damage.",
             "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
-            "color": [],
             "itemClass": "Equipment",
-            "imgName": "item_Silence_Between_Two_Strikes.png",
+            "imgName": "item_Silence_Between_Two_Strikes.webp",
             "vidName": "usage_Silence_Between_Two_Strikes.mp4",
             "hasVideo": false
         },
@@ -1467,31 +1992,29 @@
             "name": "Spectral Circlet",
             "description": "Grants a large aura which grants invisibilty to any ally. Attacks apply a slow on hit.",
             "extraInfo": "ASPECT. Takes up an Equipment slot, but can not be used.",
-            "color": [],
             "itemClass": "Equipment",
-            "imgName": "item_Spectral_Circlet.png",
+            "imgName": "item_Spectral_Circlet.webp",
             "vidName": "usage_Spectral_Circlet.mp4",
             "hasVideo": false
         },
         "Beads_of_Fealty": {
             "name": "Beads of Fealty",
             "description": "When the player enters the Celestial Portal to enter 'A Moment, Fractured' and obliterates themself at the Obelisk, they will be transported to 'A Moment, Whole' instead of dying.",
-            "color": [],
             "itemClass": "Lunar",
-            "imgName": "item_Beads_of_Fealty.png",
+            "imgName": "item_Beads_of_Fealty.webp",
             "vidName": "usage_Beads_of_Fealty.mp4",
             "hasVideo": false
         },
         "Brittle_Crown": {
             "name": "Brittle Crown",
-            "description": "30% chance on hit to gain 2 gold. Scales over time. Lose gold on taking damage equal to 100% (+100% per stack) of the maximum health percentage you lost",
+            "description": "30% chance on hit to gain 2 gold. Scales over time. Lose gold on taking damage equal to 100% (+100% per stack) of the maximum health percentage you lost.",
             "color": [
                 {
                     "(+100% per stack)": "green"
                 }
             ],
             "itemClass": "Lunar",
-            "imgName": "item_Brittle_Crown.png",
+            "imgName": "item_Brittle_Crown.webp",
             "vidName": "usage_Brittle_Crown.mp4",
             "hasVideo": false
         },
@@ -1507,7 +2030,7 @@
                 }
             ],
             "itemClass": "Lunar",
-            "imgName": "item_Corpsebloom.png",
+            "imgName": "item_Corpsebloom.webp",
             "vidName": "usage_Corpsebloom.mp4",
             "hasVideo": false
         },
@@ -1520,8 +2043,24 @@
                 }
             ],
             "itemClass": "Lunar",
-            "imgName": "item_Defiant_Gouge.png",
+            "imgName": "item_Defiant_Gouge.webp",
             "vidName": "usage_Defiant_Gouge.mp4",
+            "hasVideo": false
+        },
+        "Egocentrism": {
+            "name": "Egocentrism",
+            "description": "Every 3 (-50% per stack) seconds, gain an orbiting bomb that detones on impact for 360% damage, up to a maximum of 3 (+1 per stack) bombs. Every 60 seconds, a random item is converted into this item.",
+            "color": [
+                {
+                    "(-50% per stack)": "green"
+                },
+                {
+                    "(+1 per stack)": "green"
+                }
+            ],
+            "itemClass": "Lunar",
+            "imgName": "item_Egocentrism.webp",
+            "vidName": "usage_Egocentrism.mp4",
             "hasVideo": false
         },
         "Essence_of_Heresy": {
@@ -1537,17 +2076,32 @@
             ],
             "unlock": "Kill 15 Bosses in a single run.",
             "itemClass": "Lunar",
-            "imgName": "item_Essence_of_Heresy.png",
+            "imgName": "item_Essence_of_Heresy.webp",
             "vidName": "usage_Essence_of_Heresy.mp4",
+            "hasVideo": false
+        },
+        "Eulogy_Zero": {
+            "name": "Eulogy Zero",
+            "description": "Items have a 5% (+5% per stack) chance to become a Lunar item instead.",
+            "color": [
+                {
+                    "(+5% per stack)": "green"
+                },
+                {
+                    "Lunar": "#48AEC8"
+                }
+            ],
+            "itemClass": "Lunar",
+            "imgName": "item_Eulogy_Zero.webp",
+            "vidName": "usage_Eulogy_Zero.mp4",
             "hasVideo": false
         },
         "Effigy_of_Grief": {
             "name": "Effigy of Grief",
             "description": "All characters wihtin are slowed by 50% and have their armor reduced by 20. Can place up to 5.",
-            "color": [],
             "cooldown": 45,
             "itemClass": "Lunar",
-            "imgName": "item_Effigy_of_Grief.png",
+            "imgName": "item_Effigy_of_Grief.webp",
             "vidName": "usage_Effigy_of_Grief.mp4",
             "hasVideo": false
         },
@@ -1565,7 +2119,7 @@
             "maxStacks": 3,
             "unlock": "In 4 consecutive stages don't leave the Teleporter radius until it is fully charged.",
             "itemClass": "Lunar",
-            "imgName": "item_Focused_Convergence.png",
+            "imgName": "item_Focused_Convergence.webp",
             "vidName": "usage_Focused_Convergence.mp4",
             "hasVideo": false
         },
@@ -1579,7 +2133,7 @@
             ],
             "unlock": "Kill 20 Hermit Crabs by chasing them off the edge of the map.",
             "itemClass": "Lunar",
-            "imgName": "item_Gesture_of_the_Drowned.png",
+            "imgName": "item_Gesture_of_the_Drowned.webp",
             "vidName": "usage_Gesture_of_the_Drowned.mp4",
             "hasVideo": false
         },
@@ -1596,29 +2150,43 @@
             ],
             "unlock": "Kill 15 Bosses in a single run.",
             "itemClass": "Lunar",
-            "imgName": "item_Hooks_of_Heresy.png",
+            "imgName": "item_Hooks_of_Heresy.webp",
             "vidName": "usage_Hooks_of_heresy.mp4",
+            "hasVideo": false
+        },
+        "Light_Flux_Pauldron": {
+            "name": "Light Flux Pauldron",
+            "description": "Decrease skill cooldowns by 50% (+50% per stack). Decrease attack speed by 50% (+50% per stack).",
+            "color": [
+                {
+                    "(+50% per stack)": "green"
+                },
+                {
+                    "(+50% per stack)": "red"
+                }
+            ],
+            "itemClass": "Lunar",
+            "imgName": "item_Light_Flux_Pauldron.webp",
+            "vidName": "usage_Light_Flux_Pauldron.mp4",
             "hasVideo": false
         },
         "Glowing_Meteorite": {
             "name": "Glowing Meteorite",
             "description": "Rain meteors from the sky, damaging ALL characters for 600% damage per blast. Lasts 20 seconds.",
-            "color": [],
             "unlock": "Carry 5 Lunar Items in a single run.",
             "cooldown": 140,
             "itemClass": "Lunar",
-            "imgName": "item_Glowing_Meteorite.png",
+            "imgName": "item_Glowing_Meteorite.webp",
             "vidName": "usage_Glowing_Meteorite.mp4",
             "hasVideo": false
         },
         "Hellfire_Tincture": {
             "name": "Hellfire Tincture",
             "description": "Ignite ALL characters within 15m for 12 seconds. Deal 5% of your maxumim health per second as burning to yourself. The burn is 0.5x stronger on allies, and 24x stronger on enemies.",
-            "color": [],
             "unlock": "Kill 15 enemies simultaneously.",
             "cooldown": 45,
             "itemClass": "Lunar",
-            "imgName": "item_Hellfire_Tincture.png",
+            "imgName": "item_Hellfire_Tincture.webp",
             "vidName": "usage_Hellfire_Tincture.mp4",
             "hasVideo": false
         },
@@ -1631,7 +2199,7 @@
                 }
             ],
             "itemClass": "Lunar",
-            "imgName": "item_Mercurial_Rachis.png",
+            "imgName": "item_Mercurial_Rachis.webp",
             "vidName": "usage_Mercurial_Rachis.mp4",
             "hasVideo": false
         },
@@ -1651,7 +2219,7 @@
             ],
             "unlock": "Beat the game on Monsoon difficulty.",
             "itemClass": "Lunar",
-            "imgName": "item_Purity.png",
+            "imgName": "item_Purity.webp",
             "vidName": "usage_Purity.mp4",
             "hasVideo": false
         },
@@ -1667,8 +2235,24 @@
                 }
             ],
             "itemClass": "Lunar",
-            "imgName": "item_Shaped_Glass.png",
+            "imgName": "item_Shaped_Glass.webp",
             "vidName": "usage_Shaped_Glass.mp4",
+            "hasVideo": false
+        },
+        "Stone_Flux_Pauldron": {
+            "name": "Stone Flux Pauldron",
+            "description": "Increase max health by 100% (+100% per stack). Reduce movement speed by 50% (+50% per stack).",
+            "color": [
+                {
+                    "(+100% per stack)": "green"
+                },
+                {
+                    "(+50% per stack)": "red"
+                }
+            ],
+            "itemClass": "Lunar",
+            "imgName": "item_Stone_Flux_Pauldron.webp",
+            "vidName": "usage_Stone_Flux_Pauldron.mp4",
             "hasVideo": false
         },
         "Spinel_Tonic": {
@@ -1677,7 +2261,7 @@
             "unlock": "Discover and enter three unique portals.",
             "cooldown": 60,
             "itemClass": "Lunar",
-            "imgName": "item_Spinel_Tonic.png",
+            "imgName": "item_Spinel_Tonic.webp",
             "vidName": "usage_Spinel_Tonic.mp4",
             "hasVideo": false
         },
@@ -1694,7 +2278,7 @@
             ],
             "unlock": "Kill 15 bosses in a single run.",
             "itemClass": "Lunar",
-            "imgName": "item_Strides_of_Heresy.png",
+            "imgName": "item_Strides_of_Heresy.webp",
             "vidName": "usage_Strides_of_Heresy.mp4",
             "hasVideo": false
         },
@@ -1707,7 +2291,7 @@
                 }
             ],
             "itemClass": "Lunar",
-            "imgName": "item_Transcendence.png",
+            "imgName": "item_Transcendence.webp",
             "vidName": "usage_Transcendence.mp4",
             "hasVideo": false
         },
@@ -1724,7 +2308,7 @@
             ],
             "unlock": "Kill 15 bosses in a single run.",
             "itemClass": "Lunar",
-            "imgName": "item_Visions_of_Heresy.png",
+            "imgName": "item_Visions_of_Heresy.webp",
             "vidName": "usage_Visions_of_Heresy.mp4",
             "hasVideo": false
         }
@@ -1741,6 +2325,9 @@
         },
         "Boss": {
             "color": "#AAC728"
+        },
+        "Void": {
+            "color": "#D05FB4"
         },
         "Equipment": {
             "color": "#C78A31"
