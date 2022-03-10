@@ -5,7 +5,7 @@ import ToggleSetting from './switches/ToggleSetting';
 
 import styles from './Settings.module.css';
 
-const Settings = ({ setPerformanceMode }) => {
+const Settings = ({ setPerformanceMode, setUseRorFont }) => {
     const [modsEnabled, setModsEnabled] = useState( getBoolCookie('mods', false) );
     
     return (
@@ -13,7 +13,7 @@ const Settings = ({ setPerformanceMode }) => {
             <div className={styles.settingsTitle}>S e t t i n g s</div>
             <div className={styles.switchesWrap}>
                 <ToggleSetting 
-                    label={'Display Caps'} 
+                    label={'Display Item Caps'} 
                     settingName={'displayCap'} 
                     defaultState={true}
                 />
@@ -27,6 +27,12 @@ const Settings = ({ setPerformanceMode }) => {
                     settingName={'performanceMode'} 
                     defaultState={false} 
                     onChange={(value) => setPerformanceMode(value)}
+                />
+                <ToggleSetting 
+                    label={'Use Risk of Rain font'} 
+                    settingName={'useRorFont'} 
+                    defaultState={true} 
+                    onChange={(value) => setUseRorFont(value)}
                 />
                 <ToggleSetting 
                     label={'Mods'} 
@@ -45,7 +51,7 @@ const Settings = ({ setPerformanceMode }) => {
             <div className={styles.dividerLine}></div>
             <div className={styles.infoWrap}>
                 <a 
-                    href={'https://github.com/Fustran/rainstash'}  
+                    href={'https://github.com/joshfangrad/rainstash'}  
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.repoLink}

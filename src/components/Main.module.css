@@ -11,6 +11,10 @@
     justify-content: center;
 }
 
+.noRorFont * {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 .noFlair * {
     -webkit-transition: none;
     -moz-transition: none;

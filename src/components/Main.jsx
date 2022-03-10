@@ -12,6 +12,7 @@ function Main() {
     const [searchString, setSearchString] = useState('');
     const [isMobile, setIsMobile] = useState(false);
     const [performanceMode, setPerformanceMode] = useState( getBoolCookie('performanceMode', false) );
+    const [useRorFont, setUseRorFont] = useState( getBoolCookie('useRorFont', true) );
 
     //handler for the searchbar, called by input.onChange
     const searchBarHandler = useCallback((e) => {
@@ -38,11 +39,12 @@ function Main() {
     }, [setIsMobile, resizeHandler]);
 
     //determine if performance mode is running or not
-    let performanceModeClass = performanceMode === true ? styles.noFlair : ''; 
+    const performanceModeClass = performanceMode === true ? styles.noFlair : ''; 
+    const useRorFontClass = useRorFont === false ? styles.noRorFont : '';
 
     return (
         <mobileContext.Provider value={isMobile}>
-            <div className={`${styles.mainFlex} ${performanceModeClass}`}>
+            <div className={`${styles.mainFlex} ${performanceModeClass} ${useRorFontClass}`}>
                 <TitleBar 
                     onSearchChange={(e) => searchBarHandler(e)}
                     searchString={searchString}
@@ -60,6 +62,7 @@ function Main() {
                     />
                     <Settings path='settings'
                         setPerformanceMode={(value) => setPerformanceMode(value)}
+                        setUseRorFont={(value) => setUseRorFont(value)}
                     />
                 </Router>
             </div>
