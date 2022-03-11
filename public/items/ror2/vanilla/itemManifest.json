@@ -395,7 +395,7 @@
                     "(+10% per stack)": "green"
                 }
             ],
-            "maxStacks": 7,
+            "maxStacks": 10,
             "itemClass": "Common",
             "imgName": "item_Tri-Tip_Dagger.webp",
             "vidName": "usage_Tri-Tip_Dagger.mp4",

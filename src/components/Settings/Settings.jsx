@@ -29,7 +29,7 @@ const Settings = ({ setPerformanceMode, setUseRorFont }) => {
                     onChange={(value) => setPerformanceMode(value)}
                 />
                 <ToggleSetting 
-                    label={'Use Risk of Rain font'} 
+                    label={'Risk of Rain Font'} 
                     settingName={'useRorFont'} 
                     defaultState={true} 
                     onChange={(value) => setUseRorFont(value)}
