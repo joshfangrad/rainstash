@@ -17,7 +17,8 @@ function Category(props) {
             //determine if the item is being searched for or not
             let isHidden = false;
             if (props.searchString !== '' && !isSelected) {
-                const regex = new RegExp(props.searchString, 'i')
+                const sanitizedInput = props.searchString.replace(/[#-.]|[[-^]|[?|{}]/g, '\\$&')
+                const regex = new RegExp(sanitizedInput, 'i')
                 if (regex.test(item.name) || regex.test(item.description)) {
                     isHidden = false;
                 } else {
